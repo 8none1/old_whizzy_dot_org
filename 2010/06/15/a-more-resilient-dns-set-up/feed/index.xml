@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: A more resilient DNS set up	</title>
+	<atom:link href="/2010/06/15/a-more-resilient-dns-set-up/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/06/15/a-more-resilient-dns-set-up/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Tue, 15 Jun 2010 10:23:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+</channel>
+</rss>

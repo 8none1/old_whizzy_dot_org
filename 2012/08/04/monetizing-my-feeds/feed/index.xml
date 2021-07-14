@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Monetizing my feeds	</title>
+	<atom:link href="/2012/08/04/monetizing-my-feeds/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/08/04/monetizing-my-feeds/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Thu, 16 Aug 2012 08:21:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: will		</title>
+		<link>/2012/08/04/monetizing-my-feeds/#comment-47</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 16 Aug 2012 08:21:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=403#comment-47</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/08/04/monetizing-my-feeds/#comment-46&quot;&gt;Ron&lt;/a&gt;.
+
+Not a bad idea.  If I get the time and the inclination I&#039;ll record something and put it up in YouTube]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/08/04/monetizing-my-feeds/#comment-46">Ron</a>.</p>
+<p>Not a bad idea.  If I get the time and the inclination I&#8217;ll record something and put it up in YouTube</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ron		</title>
+		<link>/2012/08/04/monetizing-my-feeds/#comment-46</link>
+
+		<dc:creator><![CDATA[Ron]]></dc:creator>
+		<pubDate>Thu, 16 Aug 2012 01:23:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=403#comment-46</guid>
+
+					<description><![CDATA[This is very good information but a touch techie for me, could you include a link for a video demo? TY...]]></description>
+			<content:encoded><![CDATA[<p>This is very good information but a touch techie for me, could you include a link for a video demo? TY&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

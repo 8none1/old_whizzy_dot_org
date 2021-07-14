@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Arduino &#8211; whizzy.org</title>
+	<atom:link href="/category/arduino/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Sat, 14 Nov 2020 08:51:27 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>Whizzy Labs Wireless Sensor</title>
+		<link>/2019/06/11/whizzy-labs-wireless-sensor/</link>
+					<comments>/2019/06/11/whizzy-labs-wireless-sensor/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2019 15:36:26 +0000</pubDate>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[IoT]]></category>
+		<guid isPermaLink="false">/?p=878</guid>
+
+					<description><![CDATA[Sheesh! Making a wireless sensor has proven to be a lot harder than [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Sheesh! Making a wireless sensor has proven to be a lot harder than I had expected.</p>
+<p>Like a lot of weekend hardware hackers I thought it would be fun to build a wireless temperature sensor. I could use it as a feedback mechanism for my <a href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">Raspberry Pi heating controller</a>, I could create graphs of temperatures in different rooms (everyone loves a graph right?), and with a little bit of forward planning I could make a fairly useful Arduino breakout board which could be used for lots of other fun wireless projects.</p>
+<p>I&#8217;ve been through four iterations of the design before I finally found something that worked. I could have avoided some of this if I&#8217;d have spent more time testing on breadboard, but then I wouldn&#8217;t get to order colourful PCBs!</p>
+<p><img class="alignnone size-large wp-image-949" src="/wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-1024x327.jpg" alt="" width="770" height="246" srcset="/wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-1024x327.jpg 1024w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-300x96.jpg 300w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-768x246.jpg 768w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-1200x384.jpg 1200w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12.jpg 1276w" sizes="(max-width: 770px) 100vw, 770px" /></p>
+<h2>The Brief</h2>
+<h3>Cheap</h3>
+<p>In common with a lot of my other weekend projects, this is very likely to be a white elephant, so it needs to be cheap to start with.  There are lots of excellent wireless sensors already available, the <a href="https://lowpowerlab.com/shop/">Moteino</a> is well regarded.  Using that as a baseline, could I build something similar for less than £5 per unit?  The answer is &#8220;nearly&#8221;, see the Bill Of Materials below.</p>
+<h3>Use a ready made microcontroller board</h3>
+<p>I didn&#8217;t want to have to design a board which I would then have to solder an ATmega328/P to myself. Laying out that board would be hard, plus I would have to spec and solder all the supporting components. I could have done that with through-hole components I suppose, but then the board would have been massive, and I very much doubt it would have actually worked out any cheaper.  Instead, I decided that a better idea was to solder on a ready-made Arduino clone, specifically the <a href="https://www.arduino.cc/en/Main/ArduinoBoardProMini">Pro Mini</a>. I buy them from <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=321413432145&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg">this supplier on eBay</a> and I&#8217;ve never had any problems. They are 3v / 5v switchable, very reliable and turn up quickly.  Power consumption was going to be an important metric and running them off of a 3V supply would be essential.</p>
+<h3>Use a ready made radio module</h3>
+<p>As with the MCU, I don&#8217;t want to be laying out a radio board or soldering surface mount components.  I needed a ready-made radio module which was cheap, readily available and had low power requirements.  I started off with the NRF24L01.  It had a small footprint, cost around 99p a unit, had a built in antenna and was supported by the <a href="http://www.airspayce.com/mikem/arduino/RadioHead/">RadioHead library</a>.  Initial testing on breadboard showed that the range of these devices would be sufficient for my house.  I designed the first two revisions of the sensor board around this radio (and a CR2032, see the battery section below).  Initial current draw was a bit too high for the CR2032, but I could have worked around that by using AAA batteries instead &#8211; but more annoying was that the range of the radios was not at all reliable.  The 2.4GHz spectrum is very noisy and the addition of two baby monitors since the original breadboard test hasn&#8217;t helped, but in testing on the PCB I found these radios to be pretty much useless.  I also tried using the version with the power amp as the central transceiver, this helped a little bit but they were still failing to get at least 50% of their transmissions to the other end, even over a couple of meters.  Other people have reported really good range with these boards, but crucially those range tests were done outside.  It&#8217;s my considered opinion that these radios and Wifi in the house do not co-exist.</p>
+<p>So I gave up with those, and tried the <strong>XL4432-SMT</strong>.  This is based on the Si443x chipset from <a href="http://www.silabs.com/products/wireless/proprietary/ezradiopro-ism-band-transmitters-recievers-transceivers">Silicon Labs</a>.  They&#8217;re <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=142189527394&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg">readily available on eBay</a> for around £.170 each, so nearly twice the price of the NRF24L01.  They&#8217;re well supported by the <a href="http://www.airspayce.com/mikem/arduino/RadioHead/">RadioHead</a> library, can run down to 1.8V, have low current draw when on (virtually nothing when in stand-by), support a wide frequency range around the 433MHz ISM band and in range testing they out-performed the NRF24L01 by a long way.  The downside is that these pre-made boards use 1.27mm pitch / castellated connections.  I had to design an Eagle part to interface with them, but that wasn&#8217;t really too hard.  See below for links to the parts I made.  Another drawback was the antenna; being a much lower frequency means they need a much longer antenna so I would need to find a project box which could hold them.<br />
+The Si443x also has a temperature sensor and a wake up timer on board.  However, reading the errata from Silicon Labs it seems that the WUT is actually broken and the temperature sensor was returning very strange results.  The datasheet says that you need to calibrate the temperature sensor so I tried doing this but go nowhere fast, and so I opted to use a 1wire sensor instead.</p>
+<p>The other option for a radio would have been an ESP8266.  You can get ready made boards cheap on eBay, and I could have done away with a separate MCU altogether but the power consumption of these devices is just too great for a project which needs to run of a couple of batteries for a year.</p>
+<h3>Run for a long time on batteries</h3>
+<p>What&#8217;s the point in a wireless sensor if you have to plug it in to the mains.  This project must run from batteries, and those batteries need to last a long time &#8211; having to change the batteries every few months would quickly get boring and the sensors would be left doing nothing.  Obviously having the MCU go in to a sleep state between runs is going to be necessary, plus a radio which has modest power requirements when running.  We can further reduce the power needs by making sure that the &#8220;work&#8221; that the sensor has to do is done as quickly as possible.  The default 1wire temperature sensor code you find will typically takes around 2700msec to read.  That&#8217;s a very long time.  I changed the code a bit by hard-coding the hardware address of the sensor on the board and by only reading two bytes of temperature data (good for 0.5 degree accuracy).  More information can be found below.</p>
+<p>From a size perspective a CR2032 battery looks very appealing.  Some early testing made me think that they would work fine but in real life I had a lot of problems.  In hindsight I think I can put most of the problems down the Brown Out Detector on the Pro Mini being set to 2.8V, more on that in a moment.</p>
+<p>UPDATE:  Whoops.  This post has been sat in drafts for nearly 2 years.  Guess it&#8217;s not getting finished then.  I&#8217;m posting this in case the above is interesting.  Topics that I wanted to cover but haven&#8217;t are:</p>
+<ul>
+<li>Fit neatly in a box</li>
+<li>Read the temperature</li>
+<li>Be extensible</li>
+<li>Reading 1wire temperature sensors quickly</li>
+<li>Lower the BOD to 1.8V</li>
+<li>Bill Of Materials</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/06/11/whizzy-labs-wireless-sensor/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hacking 433Mhz support into a cheap Carbon Monoxide detector</title>
+		<link>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/</link>
+					<comments>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2015 20:37:27 +0000</pubDate>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[IoT]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=684</guid>
+
+					<description><![CDATA[Skill level:  Easy My home automation systems use two mechanisms for communication:  Ethernet (both [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Skill level:  Easy</strong></p>
+<p>My home automation systems use two mechanisms for communication:  Ethernet (both wired and wireless) and 433MHz OOK radio.</p>
+<p>433MHz transmitters are readily available and are cheap but unreliable.  Wifi enabled MCUs such as the ESP8266 are also cheap (coming in at around the same cost as an Arduino clone, a 433MHz transmitter and a bag of bits to connect them together), they are reliable enough but extremely power hungry.  If I can plug a project into the mains then I&#8217;ll use an ESP8266 and a mobile phone charger for power, if the project needs to run off batteries then a 433MHz equipped Arduino is the way I&#8217;ve gone.</p>
+<p>Like most people playing with 433MHz radio I found reliability and range of the radio link to be super flaky.  I&#8217;ve finally got a more-or-less reliable set-up:</p>
+<ul>
+<li>A full wave dipole antenna at the receiver</li>
+<li>A high quality receiver from RF Solutions in place of the cheap ones which are bundled with transmitters. <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=231721857012&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">A decent receiver on eBay</a></li>
+<li>A big capacitor on the transmitter.  I saw the frequency and amplitude drifting massively during transmission.  Adding a 470µF cap helps.  Allow time for the cap to charge and the oscillator to stabilise, a few seconds delay seemed to do the trick.</li>
+<li>Using the RCSwitch library on the transmitter:
+<ul>
+<li>
+<pre>RCSwitch mySwitch = RCSwitch();</pre>
+</li>
+<li>
+<pre>mySwitch.setProtocol(2); // Much longer pulse lengths = much better range?</pre>
+</li>
+<li>
+<pre>mySwitch.setRepeatTransmit(20); // Just brute-force it!</pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>With this setup I can get receive a 24bit number from an Arduino running off 2 AA batteries and a coiled 1/2 wave antenna from about 5 meters indoors through walls.  That&#8217;s still poor, but it does the job.  Increasing the voltage to the transmitter would probably help.</p>
+<p>Once you have a reliable 433MHz receiver setup then you can also buy off the shelf 433MHz enabled home automation gizmos like <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=181665729292&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this smoke alarm</a> or <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281405424486&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">these door sensors</a>.  They have a set of jumpers inside where you can set an ID, which is essentially the same 24bit number that RCSwitch lets you transmit.  For what it&#8217;s worth I also have <a href="https://en.wikipedia.org/wiki/British_Standards" target="_blank" rel="noopener noreferrer">kite-marked</a> smoke detectors in my house, but from the testing I&#8217;ve done with a bit of smoldering paper the cheap imports work just fine.</p>
+<p>I couldn&#8217;t find a cheap Carbon Monoxide which also has 433MHz support so I thought I&#8217;d quickly hack one together out of <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281723682194&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this Carbon Monoxide detector</a> and an Arduino clone and 433MHz radio:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1237.jpg"><img class="alignleft size-medium wp-image-703" src="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg" alt="CO Alarm inside" width="225" height="300" srcset="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg 225w, /wp-content/uploads/2015/10/IMG_1237-768x1024.jpg 768w, /wp-content/uploads/2015/10/IMG_1237-1152x1536.jpg 1152w, /wp-content/uploads/2015/10/IMG_1237-1536x2048.jpg 1536w, /wp-content/uploads/2015/10/IMG_1237-1200x1600.jpg 1200w, /wp-content/uploads/2015/10/IMG_1237-1980x2640.jpg 1980w, /wp-content/uploads/2015/10/IMG_1237-scaled.jpg 1920w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="attachment_706" style="width: 310px" class="wp-caption alignleft"><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1238.jpg"><img aria-describedby="caption-attachment-706" class="wp-image-706 size-medium" src="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg" alt="IMG_1238" width="300" height="225" srcset="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg 300w, /wp-content/uploads/2015/10/IMG_1238-1024x768.jpg 1024w, /wp-content/uploads/2015/10/IMG_1238-768x576.jpg 768w, /wp-content/uploads/2015/10/IMG_1238-1536x1152.jpg 1536w, /wp-content/uploads/2015/10/IMG_1238-2048x1536.jpg 2048w, /wp-content/uploads/2015/10/IMG_1238-1200x900.jpg 1200w, /wp-content/uploads/2015/10/IMG_1238-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-706" class="wp-caption-text">You can barely notice it!</p></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>It&#8217;s certainly untidy, but it does the job.  If I had PCB facilities at home I&#8217;m fairly sure it could be made to fit inside the alarm, along with some more holes in the case for ventilation.</p>
+<p>The premise is simple enough.  The Arduino is powered by the 3v3 regulator on the CO alarm PCB.  The cathode of the red alarm LED is connected to pin 2 of the Arduino as an external interrupt.  When the pin goes low the Arduino wakes up and sends it&#8217;s 24bit ID number over the radio which is picked up by the receiver which sends an SMS alert, switches the boiler off, etc.  I&#8217;ve connected the radio transmitter to directly to the 3 x AA batteries (4.5 volts) via a transistor which is switched by a pin on the Arduino.  In standy-by mode the additional equipment draws a fraction of a milliamp and so I&#8217;m not worried about draining the batteries faster.</p>
+<p>As with the smoke alarms, this is not my only source of Carbon Monoxide detection.  I&#8217;ve yet to test it&#8217;s sensitivity.  This is considered to be a &#8220;well, if it works, and it turns the boiler off automatically then it&#8217;s certainly worth a go, but I&#8217;m not relying on it&#8221; project.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone)</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/</link>
+					<comments>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2015 19:39:24 +0000</pubDate>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[IoT]]></category>
+		<guid isPermaLink="false">/?p=655</guid>
+
+					<description><![CDATA[Skill level:  Easy enough if you&#8217;ve got a soldering iron. Introduction The Pro [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Skill level:</strong>  <em>Easy enough if you&#8217;ve got a soldering iron.</em></p>
+<h2>Introduction</h2>
+<p>The Pro Mini V2 is an <a href="http://www.arduino.cc/en/Main/ArduinoBoardProMini">Arduino Pro Mini</a> clone available on eBay for, typically, £1.50.  The version I buy is adjustable between 5v and 3.3v and has an ATmega 328 clocked at 8 MHz.  It&#8217;s an ideal board for development of IoT remote sensors and great for playing with and learning about the <a href="http://www.arduino.cc/">Arduino</a> development environment.</p>
+<p>Here&#8217;s a link to the version I buy and know works: <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;icep_item=321413432145&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">3V Pro Mini 2 Arduino Clone</a><img style="text-decoration: none; border: 0; padding: 0; margin: 0;" src="http://rover.ebay.com/roverimp/1/710-53481-19255-0/1?ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;item=321413432145&amp;mpt=[CACHEBUSTER]" alt="" /></p>
+<p>When you want to put a sensor in a remote location the last thing you want to do is have to run a power cable to it. I&#8217;ve experimented with solar with generally poor results so battery operation is the obvious solution.  While Li-ion batteries offer higher energy density the sweet spot still seems to be the good ol&#8217; alkaline battery.  They&#8217;re cheap, safe, recyclable and readily available.</p>
+<p>For what it&#8217;s worth the Ikea alkaline batteries offer good value:  <a href="http://www.batteryshowdown.com/results-lo.html">http://www.batteryshowdown.com/results-lo.html</a> (I suggest buying as many packets as you can carry, so that you never ever have to go back there.  Unless you like arguing with your wife of course.)</p>
+<h2>Power Usage</h2>
+<p>The ATmega 328 has various power saving functions which involve putting it to sleep when not doing anything.  I use the <a href="http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/">Rocket Scream Low Power library</a> to take care of putting the processor into a low power state, but I wasn&#8217;t seeing anything like the low power savings they detail on their site.</p>
+<p>Some quick calculations:  Let&#8217;s assume a AA battery provides 2000 mAh.  I measured my Pro Mini V2 as drawing 6.7mA when powered up and doing things and 2.8mA when in sleep mode.  As a conservative estimate, let&#8217;s say it&#8217;s running for 1 hour in every 24 hour period and asleep the rest of the time.  That averages out to about 3mAh of draw.</p>
+<p>For a 2000 mAh battery, that would give about 667 hours of runtime, or 28 days. <strong>So a standard Pro Mini V2 could run for about a month on a pair of AA batteries.  </strong>Not bad, but I think changing the batteries every month is still going to be a bit of a drag. Besides, Rocket Scream are seeing power usages in the <strong><em>micro</em></strong>-amps range when asleep.  There is clearly work to do.</p>
+<h2>How to dramatically reduce the power consumption</h2>
+<p>In this photo you can see I&#8217;ve identified some sections which are related to the power usage of the Pro Mini.</p>
+<p><a href="/wp-content/uploads/2015/06/arduino_highlights.jpg"><img class="alignleft size-medium wp-image-658" src="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg" alt="arduino_highlights" width="225" height="300" srcset="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg 225w, /wp-content/uploads/2015/06/arduino_highlights.jpg 640w" sizes="(max-width: 225px) 100vw, 225px" /></a>The red section is the power LED.  This is always on when power is applied and sucks about 0.2mA when lit. If you don&#8217;t need this to be lit all the time then you can easily remove it to save some juice.  I found the easiest way was to use a pair of cutters to snip/crush the middle of the LED and then use a soldering iron to remove the bits left over.</p>
+<p>The green section is the on-board regulator.  If you are going to be supplying power to the board via a couple of AA batteries (each battery being 1.5v, so two is 3v) then you don&#8217;t need the regulator.  You can cut this off too if you like, but.. keep reading, there&#8217;s no need to hack it off.</p>
+<p>Saving the best until last, the yellow section is the power-selection jumper to switch between 3.3v and 5v.  It passes the power supplied by the RAW pin through the regulator and on to the board.  The regulator is inherently inefficient.  You might think that you could bypass the on-board regulator by powering the board by apply power to the Vcc pin instead, but it still seems to power the regulator.  By simply unsoldering this jumper you can disable the on-board regulator and save loads of power.  <span style="text-decoration: underline;">Once removed you will need to apply power to the Vcc pin at ~ 3.3V</span>.  I used some solder-wick to clean up but you could just scrape it off with a soldering iron if you need to.</p>
+<p>Here&#8217;s one I prepared earlier.</p>
+<div id="attachment_662" style="width: 235px" class="wp-caption alignleft"><a href="/wp-content/uploads/2015/06/IMG_1029.jpg"><img aria-describedby="caption-attachment-662" class="wp-image-662 size-medium" src="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg" alt="IMG_1029" width="225" height="300" srcset="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg 225w, /wp-content/uploads/2015/06/IMG_1029.jpg 640w" sizes="(max-width: 225px) 100vw, 225px" /></a><p id="caption-attachment-662" class="wp-caption-text">With the jumper and LED removed. (Red and yellow boxes from previous image)</p></div>
+<p>&nbsp;</p>
+<p>With the LED and solder jumper removed I measured the power usage again.  Running current is now down to 3.8mA, pretty much half of what it was.  But, most impressively the power used when asleep is down to 0.004mA.  <em><strong>4 microamps! Yay!</strong></em></p>
+<p>Some more quick calculations based on the same usage as before:  average power consumption drops to 0.17mA.  That gives us 490 days, <strong>1.3 years run time off a pair of AA batteries.  </strong>That should allow for 2.5 minutes &#8220;work&#8221; an hour.  Waking up, taking some readings and sending them off via a radio should take well under 1 minute, which should allow for more power usage by a radio.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Conclusion</h2>
+<p>Unless you&#8217;re going to run your Arduino off a permanently attached serial connector, then just do this.  Get yourself a couple of AA batteries &amp; a battery holder.  Apply the +ve side of the batteries to Vcc and the -ve to ground.  Stick your multi-meter in between the battery and Vcc pin to measure the lovely low current usage.  You can read the battery power being provided with the <a href="http://provideyourown.com/2012/secret-arduino-voltmeter-measure-battery-voltage/">Secret Arduino Volt-meter</a> trick.</p>
+<p>I&#8217;ve got quite a few sensors around the house running with this set-up so I will monitor battery usage over the next few weeks or months and report back.</p>
+<p>&nbsp;</p>
+<h2>Coming Soon&#8230;</h2>
+<p>A write up of my cheapo IoT sensor network, including smoke detectors, door contact sensors, movement sensors, house-plant watering monitors, room temperature sensors and a weather station.  Plus, build an IoT sensor <em><strong>and</strong></em> buy a sausage roll for less than a fiver.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

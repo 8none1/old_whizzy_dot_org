@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Making the world a better place &#8211; whizzy.org</title>
+	<atom:link href="/category/making-the-world-a-better-place/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 03 May 2021 12:57:35 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>Ubuntu Developer Desktop Survey 2019</title>
+		<link>/2019/05/07/ubuntu-developer-desktop-survey-2019/</link>
+					<comments>/2019/05/07/ubuntu-developer-desktop-survey-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 17:53:31 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<guid isPermaLink="false">/?p=962</guid>
+
+					<description><![CDATA[It’s clear that a lot of people develop software using Ubuntu. What’s less [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>It’s clear that a lot of people develop software using Ubuntu. What’s less clear is exactly what sort of software is being built. We see reports of people developing Linux apps, Android apps, web services, self driving cars… the list is huge. We need to get better clarity; to understand how that relates to Ubuntu desktop.</p>
+
+
+
+<p>We can get some reasonable insights from the <a href="https://insights.stackoverflow.com/survey/2019">Stack Overflow Developer Survey</a>, but I&#8217;m keen to really dig down in to the Ubuntu community specifically.</p>
+
+
+
+<p>When I was chatting with <a href="https://bartongeorge.io/">Barton George</a> a few weeks back he expressed the same interest;  what <em>are</em> people doing with the <a href="https://www.dell.com/learn/us/en/555/campaigns/xps-linux-laptop_us">Sputnik</a> machines from Dell?  We want to learn more about the sorts of software projects that you&#8217;re working on so that we can make the Ubuntu developer experience as good as possible.</p>
+
+
+
+<p>To that end we put together the <a href="http://desktopdevelopersurvey2019.ubuntu.com/">Ubuntu Developer Desktop Survey</a> to help us understand more about what you’re doing and how you’re doing it. This survey is aimed primarily at people who are using Ubuntu to develop software targeting any platform. It doesn’t matter if you do that at work, at home, at school – if you’re building software then we’re glad to hear from you. To be clear: this doesn’t mean we’re abandoning our mantra of Ubuntu being for human beings, software developers are human beings too. Right now I want to get a better view in to what software developers are doing.</p>
+
+
+
+<p>The survey will close on Friday 31st May 2019 and we will publish the results very shortly afterwards.  We&#8217;ll then follow that up with some further analysis and some ideas as to how this will influence the desktop product roadmap in the future.  Please take this opportunity to help shape Ubuntu for the better.</p>
+
+
+
+<p>You can find the survey here:</p>
+
+
+
+<p style="text-align:center"><a href="http://desktopdevelopersurvey2019.ubuntu.com/">http://desktopdevelopersurvey2019.ubuntu.com/</a></p>
+
+
+
+<p>You don’t need to register or sign in to complete the form.</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/05/07/ubuntu-developer-desktop-survey-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Cisco 7941, Asterisk and SIP</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/</link>
+					<comments>/2017/02/23/cisco-7941-asterisk-and-sip/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 23 Feb 2017 23:43:31 +0000</pubDate>
+				<category><![CDATA[asterisk]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<guid isPermaLink="false">/?p=882</guid>
+
+					<description><![CDATA[Edit: I heard that Cisco have now removed the SIP firmware from their [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p style="text-align: left;">Edit: I heard that Cisco have now removed the SIP firmware from their site.  Someone seems to have hosted the files here: <a href="http://s000.tinyupload.com/index.php?file_id=44134296078826321023">http://s000.tinyupload.com/index.php?file_id=44134296078826321023</a></p>
+<p>Edit 2: Looks like the tinyupload file has gone missing too.  Try this one:<br />
+<a href="https://drive.google.com/file/d/1EBJ-s9TIMKM0JVmZFWRk2bKeGxR9srFv">https://drive.google.com/file/d/1EBJ-s9TIMKM0JVmZFWRk2bKeGxR9srFv</a></p>
+<p>I got a Cisco 7941 off eBay.  This is a phone which was £400 when new (some time around 2004) but can now be picked up for about £10.  These phones went End Of Sale in January 2010, so even if mine was one of the last phones to roll off the production line it&#8217;s still about 7 years old but it&#8217;s still working perfectly.  A testament to the good build quality of these phones, and perhaps the previous owner&#8217;s careful handling.</p>
+<p><img class="alignnone wp-image-959 size-full" src="/wp-content/uploads/2018/08/7941.jpg" alt="" width="440" height="391" srcset="/wp-content/uploads/2018/08/7941.jpg 440w, /wp-content/uploads/2018/08/7941-300x267.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></p>
+<p>Since these devices are no longer supported many companies will be getting rid of them (or probably already have) so there should be some bargains to be had for phone geeks.</p>
+<p><em><strong>Q</strong></em>: Does the Cisco 7941 work with Asterisk?<br />
+<em><strong>A</strong></em>: Yes.  You need to load the SIP firmware (the focus of this post) or chan-sccp (out of scope for this post but I&#8217;ll check it out at some point).</p>
+<p><em><strong>Q</strong></em>: Does the Cisco 7941 work with SIP?<br />
+<em><strong>A</strong></em>: Yes.  You need to flash the correct firmware though.</p>
+<p><em><strong>Q</strong></em>: Is it really hard to get working?<br />
+<em><strong>A</strong></em>: No.  If you&#8217;re comfortable with Linux and a few command line tools.  And assuming you already have Asterisk set up.</p>
+<p><em><strong>Q</strong></em>: Is a lot of the information on the web about how to set up the 7941 wrong?<br />
+<em><strong>A</strong></em>: Yes.  There is a lot of confusion about config files (the 7940 and 7941 use different ones).</p>
+<p><em><strong>Q</strong></em>: Will you tell us how you got your phone to work?<br />
+<em><strong>A</strong></em>: Yes!  However &#8211; this is what works for me.  You will need to tweak the config in places.</p>
+<p>The steps to getting this phone working as a SIP extension on Asterisk on Ubuntu / Raspberry Pi:</p>
+<ol>
+<li><a href="#tftp">Set up a TFTP server</a></li>
+<li><a href="#download">Download the SIP firmware from Cisco</a></li>
+<li><a href="#flash">Flash the phone with the firmware via the TFTP server</a></li>
+<li><a href="#asterisk">Configure the SIP extension in Asterisk</a></li>
+<li><a href="#config">Write the config files for the phone and upload them via the TFTP server</a></li>
+<li><a href="#call">Make a call!</a></li>
+<li><a href="#extras">Optional Extras</a>
+<ol>
+<li><a href="#dialplan">Dial plan</a></li>
+<li><a href="#ringtones">Ring tones</a></li>
+<li><a href="#dialtones">Dial tones</a></li>
+<li><a href="#wallpaper">Wallpaper</a></li>
+<li><a href="#directory">Telephone Directory</a></li>
+</ol>
+</li>
+<li><a href="#tip">Final Tip</a></li>
+</ol>
+<h2 id="tftp">Set up a TFTP Server</h2>
+<p>The phone will download it&#8217;s firmware and config via TFTP.  It needs to download it&#8217;s config on every boot, so you will always need a TFTP server running.  I think that if the TFTP server is unavailable it will just use the previous config, so it&#8217;s possible that you can get away without it, but I haven&#8217;t tried.  My recommendation is that you install <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</a>.  It&#8217;s a small and full featured DNS server which also includes a DHCP &amp; TFTP server which are easy to configure and it&#8217;s almost certainly packaged for your distro.  You should also (temporarily) disable any other DHCP servers on your local network so that dnsmasq is the only thing offering DHCP addresses.  This will simplify the process of getting the phone to find the TFTP server, since with dnsmasq it will all be automatic.  If you later re-enable your original DHCP server, say on your router, then you will need to configure it to give out the address of the dnsmasq TFTP server and disable DHCP on dnsmasq.  In my opinion, if you&#8217;re going to be running a Cisco IP phone on your network you&#8217;d be better off moving all DHCP to dnsmasq.</p>
+<p>The full configuration of dnsmasq it&#8217;s out of scope for this doc, but in a nutshell you need these in your dnsmasq config:</p>
+<ul>
+<li>Set up a DHCP range</li>
+</ul>
+<pre style="padding-left: 90px;">dhcp-range=192.168.1.1,192.168.1.100,24h</pre>
+<ul>
+<li>Enable the TFTP server</li>
+</ul>
+<pre style="padding-left: 90px;">enable-tftp</pre>
+<ul>
+<li>Set the TFTP path</li>
+</ul>
+<pre style="padding-left: 90px;">tftp-root=/home/&lt;your user&gt;/tftp  (or whatever works for you)
+</pre>
+<h2 id="download">Download the SIP Firmware from Cisco</h2>
+<p>Usually Cisco require a valid support contract before you can download anything useful from their website, but it seems that since these phones are now out of support they have offered up the firmware free of charge.  You do still need to register an account to download the files.  At the time of writing the latest version is <strong>9.4.2 SR 3</strong> dated 14th February 2017 &#8211; so bang up to date, even though these phones are end-of-life.  Bizarre, but good for us.  Thanks Cisco!</p>
+<p>Go here: <a href="https://software.cisco.com/download/type.html?mdfid=280083379&amp;catid=280789323">https://software.cisco.com/download/type.html?mdfid=280083379&amp;catid=280789323</a></p>
+<p>Follow the link to the SIP software.</p>
+<p>You want to download the &#8220;SIP firmware files only&#8221;</p>
+<p>Unzip that file into the root of your TFTP server (the location you set in the previous step).  You should have 8 files in there:</p>
+<pre>apps41.9-4-2ES26.sbn
+dsp41.9-4-2ES26.sbn
+term41.default.loads
+cnu41.9-4-2ES26.sbn
+jar41sip.9-4-2ES26.sbn
+term61.default.loads
+cvm41sip.9-4-2ES26.sbn
+SIP41.9-4-2SR3-1S.loads</pre>
+<p>This is everything you need to reflash your phone to the latest SIP firmware.  Now you need to get the phone to reboot in to firmware download mode.</p>
+<h2 id="flash">Flash the phone with the firmware via the TFTP server</h2>
+<ol>
+<li>Unplug the phone from the power.  Make sure that the network cable is still connected (unless you&#8217;re using using PoE).</li>
+<li>Plug the power back in and hold down the <strong>#</strong> key</li>
+<li>Eventually you will see the &#8220;line&#8221; lights start to flash orange.  It might take a couple of minutes to get to this stage, don&#8217;t give up, just keep holding down #</li>
+<li>When the line lights are flashing type <strong>123456789*0#</strong>  This will start firmware download mode.</li>
+<li>The screen will go black for a moment and then go through the process of getting an IP address and connecting to the TFTP server</li>
+<li>Once connected to the TFTP server the software download will start</li>
+<li>The phone will reboot once download is complete and present you with an &#8220;Unprovisioned&#8221; message on the screen.  This is good news!  The phone firmware has now been updated.</li>
+</ol>
+<p>I put together a video showing this process.  It&#8217;s not very interesting but it will give you an idea of what to expect.  The actual downloading of the firmware section has been sped up 3X.</p>
+<p><iframe title="How to start firmware download mode on your Cisco 7941" width="770" height="433" src="https://www.youtube.com/embed/oN63nfnC-sA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<h2 id="asterisk">Configure the SIP extension in Asterisk</h2>
+<p>Now you need to configure the SIP extension in Asterisk.  Do this as per any other SIP extension, but bear this important piece of information in mind:  The Cisco 7941 can only deal with 8 character passwords, so keep your SIP authentication secret to 8 characters.</p>
+<p>While you&#8217;re in Asterisk configuration mode, take a moment to note down these bits of information as well (in Advanced SIP settings in FreePBX):</p>
+<ul>
+<li>RTP Port range, start and end.</li>
+<li>Bind Port (probably 5060)</li>
+</ul>
+<h2 id="config">Write the config files for the phone and upload them via the TFTP server</h2>
+<p>Please take the time to read this section fully,  this is the part that is most troublesome.  The Cisco 7941 is very picky about it&#8217;s config file and even a small mistake will stop the phone from working.  These settings are specific to the 79&#215;1 series of phones running at least version 8.x of the firmware.  If your phone is not a 79&#215;1 and/or is not running v9.x.x of the firmware then these settings are not for you.</p>
+<p>Once the phone has loaded it&#8217;s firmware and booted, it will go looking for a file called SEP&lt;PHONE MAC ADDRESS&gt;.cnf.xml.  So if the MAC address of your phone is 11:22:33:44:55:66 then the config file needs to be named <strong>SEP112233445566.cnf.xml</strong>.  This file needs to be in the root of your TFTP server.</p>
+<p>You will see mention of a file called XMLDefault.cnf.xml.  If you&#8217;ve only got a few phones, don&#8217;t worry about this, you don&#8217;t need it.</p>
+<p>So here is a config file which is about as minimal as I can make it:</p>
+<pre>&lt;device&gt;
+    &lt;deviceProtocol&gt;SIP&lt;/deviceProtocol&gt;
+    &lt;sshUserId&gt;cisco&lt;/sshUserId&gt;
+    &lt;sshPassword&gt;cisco&lt;/sshPassword&gt;
+    &lt;ipAddressMode&gt;0&lt;/ipAddressMode&gt;
+
+    &lt;devicePool&gt;
+        &lt;dateTimeSetting&gt;
+            &lt;dateTemplate&gt;D/M/Ya&lt;/dateTemplate&gt;
+            &lt;timeZone&gt;GMT Standard/Daylight Time&lt;/timeZone&gt;
+            &lt;ntps&gt;
+                &lt;ntp&gt;
+                    &lt;name&gt;<strong>#IP ADDRESS OF AN NTP SERVER#</strong>&lt;/name&gt;
+                    &lt;ntpMode&gt;Unicast&lt;/ntpMode&gt;
+                &lt;/ntp&gt;
+            &lt;/ntps&gt;
+        &lt;/dateTimeSetting&gt;
+
+        &lt;callManagerGroup&gt;
+            &lt;members&gt;
+                &lt;member priority="0"&gt;
+                    &lt;callManager&gt;
+                        &lt;ports&gt;
+                            &lt;ethernetPhonePort&gt;2000&lt;/ethernetPhonePort&gt;
+                            &lt;sipPort&gt;<strong>#SIP PORT NUMBER FROM YOUR ASTERISK SERVER#</strong>&lt;/sipPort&gt;
+                        &lt;/ports&gt;
+                        &lt;processNodeName&gt;<strong>#IP ADDRESS OF YOUR ASTERISK SERVER#</strong>&lt;/processNodeName&gt;
+                    &lt;/callManager&gt;
+                &lt;/member&gt;
+            &lt;/members&gt;
+        &lt;/callManagerGroup&gt;
+    &lt;/devicePool&gt;
+
+    &lt;sipProfile&gt;
+        &lt;sipProxies&gt;
+            &lt;registerWithProxy&gt;true&lt;/registerWithProxy&gt;
+        &lt;/sipProxies&gt;
+        &lt;sipCallFeatures&gt;
+            &lt;cnfJoinEnabled&gt;true&lt;/cnfJoinEnabled&gt;
+            &lt;rfc2543Hold&gt;false&lt;/rfc2543Hold&gt;
+            &lt;callHoldRingback&gt;2&lt;/callHoldRingback&gt;
+            &lt;localCfwdEnable&gt;true&lt;/localCfwdEnable&gt;
+            &lt;semiAttendedTransfer&gt;true&lt;/semiAttendedTransfer&gt;
+            &lt;anonymousCallBlock&gt;2&lt;/anonymousCallBlock&gt;
+            &lt;callerIdBlocking&gt;2&lt;/callerIdBlocking&gt;
+            &lt;dndControl&gt;0&lt;/dndControl&gt;
+            &lt;remoteCcEnable&gt;true&lt;/remoteCcEnable&gt;
+        &lt;/sipCallFeatures&gt;
+
+        &lt;sipStack&gt;
+            &lt;sipInviteRetx&gt;6&lt;/sipInviteRetx&gt;
+            &lt;sipRetx&gt;10&lt;/sipRetx&gt;
+            &lt;timerInviteExpires&gt;180&lt;/timerInviteExpires&gt;
+            &lt;timerRegisterExpires&gt;3600&lt;/timerRegisterExpires&gt;
+            &lt;timerRegisterDelta&gt;5&lt;/timerRegisterDelta&gt;
+            &lt;timerKeepAliveExpires&gt;120&lt;/timerKeepAliveExpires&gt;
+            &lt;timerSubscribeExpires&gt;120&lt;/timerSubscribeExpires&gt;
+            &lt;timerSubscribeDelta&gt;5&lt;/timerSubscribeDelta&gt;
+            &lt;timerT1&gt;500&lt;/timerT1&gt;
+            &lt;timerT2&gt;4000&lt;/timerT2&gt;
+            &lt;maxRedirects&gt;70&lt;/maxRedirects&gt;
+            &lt;remotePartyID&gt;true&lt;/remotePartyID&gt;
+            &lt;userInfo&gt;None&lt;/userInfo&gt;
+        &lt;/sipStack&gt;
+
+        &lt;autoAnswerTimer&gt;1&lt;/autoAnswerTimer&gt;
+        &lt;autoAnswerAltBehavior&gt;false&lt;/autoAnswerAltBehavior&gt;
+        &lt;autoAnswerOverride&gt;true&lt;/autoAnswerOverride&gt;
+        &lt;transferOnhookEnabled&gt;false&lt;/transferOnhookEnabled&gt;
+        &lt;enableVad&gt;false&lt;/enableVad&gt;
+        &lt;preferredCodec&gt;g711ulaw&lt;/preferredCodec&gt;
+        &lt;dtmfAvtPayload&gt;101&lt;/dtmfAvtPayload&gt;
+        &lt;dtmfDbLevel&gt;3&lt;/dtmfDbLevel&gt;
+        &lt;dtmfOutofBand&gt;avt&lt;/dtmfOutofBand&gt;
+        &lt;alwaysUsePrimeLine&gt;false&lt;/alwaysUsePrimeLine&gt;
+        &lt;alwaysUsePrimeLineVoiceMail&gt;false&lt;/alwaysUsePrimeLineVoiceMail&gt;
+        &lt;kpml&gt;3&lt;/kpml&gt;
+        &lt;natEnabled&gt;false&lt;/natEnabled&gt;
+        &lt;phoneLabel&gt;<strong>#PHONE NAME#</strong>&lt;/phoneLabel&gt;
+        &lt;stutterMsgWaiting&gt;0&lt;/stutterMsgWaiting&gt;
+        &lt;callStats&gt;false&lt;/callStats&gt;
+        &lt;silentPeriodBetweenCallWaitingBursts&gt;10&lt;/silentPeriodBetweenCallWaitingBursts&gt;
+        &lt;disableLocalSpeedDialConfig&gt;false&lt;/disableLocalSpeedDialConfig&gt;
+        &lt;startMediaPort&gt;<strong>#RTP START PORT#</strong>&lt;/startMediaPort&gt;
+        &lt;stopMediaPort&gt;<strong>#RTP END PORT#</strong>&lt;/stopMediaPort&gt;
+
+        &lt;sipLines&gt;
+            &lt;line button="1"&gt;
+                &lt;featureID&gt;9&lt;/featureID&gt;
+                &lt;featureLabel&gt;<strong>#EXT NUM#</strong>&lt;/featureLabel&gt;
+                &lt;proxy&gt;USECALLMANAGER&lt;/proxy&gt;
+                &lt;port&gt;<strong>#SIP PORT#</strong>&lt;/port&gt;
+                &lt;name&gt;<strong>#EXT NUM#</strong>&lt;/name&gt;
+                &lt;displayName&gt;<strong>#EXT NAME#</strong>&lt;/displayName&gt;
+                &lt;autoAnswer&gt;
+                    &lt;autoAnswerEnabled&gt;2&lt;/autoAnswerEnabled&gt;
+                &lt;/autoAnswer&gt;
+                &lt;callWaiting&gt;3&lt;/callWaiting&gt;
+                &lt;authName&gt;<strong>#SIP AUTH NAME#</strong>&lt;/authName&gt;
+                &lt;authPassword&gt;<strong>#8 CHAR PASSWORD#</strong>&lt;/authPassword&gt;
+                &lt;sharedLine&gt;false&lt;/sharedLine&gt;
+                &lt;messageWaitingLampPolicy&gt;1&lt;/messageWaitingLampPolicy&gt;
+                &lt;messagesNumber&gt;<strong>#VM NUM#</strong>&lt;/messagesNumber&gt;
+                &lt;ringSettingIdle&gt;4&lt;/ringSettingIdle&gt;
+                &lt;ringSettingActive&gt;5&lt;/ringSettingActive&gt;
+                &lt;contact&gt;<strong>#EXT NUM#</strong>&lt;/contact&gt;
+                &lt;forwardCallInfoDisplay&gt;
+                    &lt;callerName&gt;true&lt;/callerName&gt;
+                    &lt;callerNumber&gt;true&lt;/callerNumber&gt;
+                    &lt;redirectedNumber&gt;false&lt;/redirectedNumber&gt;
+                    &lt;dialedNumber&gt;true&lt;/dialedNumber&gt;
+                &lt;/forwardCallInfoDisplay&gt;
+            &lt;/line&gt;
+
+            &lt;line button="2"&gt;
+                &lt;featureID&gt;9&lt;/featureID&gt;
+                &lt;featureLabel&gt;<strong>#EXT NUM#</strong>&lt;/featureLabel&gt;
+                &lt;proxy&gt;USECALLMANAGER&lt;/proxy&gt;
+                &lt;port&gt;<strong>#SIP PORT#</strong>&lt;/port&gt;
+                &lt;name&gt;<strong>#EXT NUM#</strong>&lt;/name&gt;
+                &lt;displayName&gt;<strong>#EXT NUM#</strong>&lt;/displayName&gt;
+                &lt;autoAnswer&gt;
+                    &lt;autoAnswerEnabled&gt;2&lt;/autoAnswerEnabled&gt;
+                &lt;/autoAnswer&gt;
+                &lt;callWaiting&gt;3&lt;/callWaiting&gt;
+                &lt;authName&gt;<strong>#SIP AUTH NAME#</strong>&lt;/authName&gt;
+                &lt;authPassword&gt;<strong>#8 CHAR PASSWORD#</strong>&lt;/authPassword&gt;
+                &lt;sharedLine&gt;false&lt;/sharedLine&gt;
+                &lt;messageWaitingLampPolicy&gt;1&lt;/messageWaitingLampPolicy&gt;
+                &lt;messagesNumber&gt;<strong>#VM NUM#</strong>&lt;/messagesNumber&gt;
+                &lt;ringSettingIdle&gt;4&lt;/ringSettingIdle&gt;
+                &lt;ringSettingActive&gt;5&lt;/ringSettingActive&gt;
+                &lt;contact&gt;<strong>#EXT NUM#</strong>&lt;/contact&gt;
+                &lt;forwardCallInfoDisplay&gt;
+                    &lt;callerName&gt;true&lt;/callerName&gt;
+                    &lt;callerNumber&gt;true&lt;/callerNumber&gt;
+                    &lt;redirectedNumber&gt;false&lt;/redirectedNumber&gt;
+                    &lt;dialedNumber&gt;true&lt;/dialedNumber&gt;
+                &lt;/forwardCallInfoDisplay&gt;
+            &lt;/line&gt;
+        &lt;/sipLines&gt;
+
+        &lt;voipControlPort&gt;<strong>#SIP PORT#</strong>&lt;/voipControlPort&gt;
+        &lt;dscpForAudio&gt;184&lt;/dscpForAudio&gt;
+        &lt;ringSettingBusyStationPolicy&gt;0&lt;/ringSettingBusyStationPolicy&gt;
+        &lt;dialTemplate&gt;dialplan.xml&lt;/dialTemplate&gt;
+    &lt;/sipProfile&gt;
+
+    &lt;commonProfile&gt;
+        &lt;phonePassword&gt;&lt;/phonePassword&gt;
+        &lt;backgroundImageAccess&gt;true&lt;/backgroundImageAccess&gt;
+        &lt;callLogBlfEnabled&gt;1&lt;/callLogBlfEnabled&gt;
+    &lt;/commonProfile&gt;
+
+    &lt;loadInformation&gt;SIP41.9-4-2SR3-1S&lt;/loadInformation&gt;
+    &lt;vendorConfig&gt;
+        &lt;disableSpeaker&gt;false&lt;/disableSpeaker&gt;
+        &lt;disableSpeakerAndHeadset&gt;false&lt;/disableSpeakerAndHeadset&gt;
+        &lt;pcPort&gt;0&lt;/pcPort&gt;
+        &lt;settingsAccess&gt;1&lt;/settingsAccess&gt;
+        &lt;garp&gt;0&lt;/garp&gt;
+        &lt;voiceVlanAccess&gt;0&lt;/voiceVlanAccess&gt;
+        &lt;videoCapability&gt;0&lt;/videoCapability&gt;
+        &lt;autoSelectLineEnable&gt;0&lt;/autoSelectLineEnable&gt;
+        &lt;webAccess&gt;0&lt;/webAccess&gt;
+        &lt;spanToPCPort&gt;1&lt;/spanToPCPort&gt;
+        &lt;loggingDisplay&gt;1&lt;/loggingDisplay&gt;
+        &lt;loadServer&gt;&lt;/loadServer&gt;
+        &lt;sshAccess&gt;0&lt;/sshAccess&gt;
+    &lt;/vendorConfig&gt;
+
+    &lt;versionStamp&gt;001&lt;/versionStamp&gt;
+    &lt;networkLocale&gt;United_Kingdom&lt;/networkLocale&gt;
+    &lt;networkLocaleInfo&gt;
+        &lt;name&gt;United_Kingdom&lt;/name&gt;
+        &lt;uid&gt;64&lt;/uid&gt;
+        &lt;version&gt;1.0.0.0-4&lt;/version&gt; 
+    &lt;/networkLocaleInfo&gt;
+
+    &lt;deviceSecurityMode&gt;1&lt;/deviceSecurityMode&gt;
+    &lt;authenticationURL&gt;&lt;/authenticationURL&gt;
+    &lt;servicesURL&gt;&lt;/servicesURL&gt;
+    &lt;transportLayerProtocol&gt;2&lt;/transportLayerProtocol&gt;
+    &lt;certHash&gt;&lt;/certHash&gt;
+    &lt;encrConfig&gt;false&lt;/encrConfig&gt;
+    &lt;dialToneSetting&gt;2&lt;/dialToneSetting&gt;
+&lt;/device&gt;
+
+</pre>
+<p>Copy and paste this into a text editor and search and replace the following:</p>
+<ul>
+<li>#IP ADDRESS OF AN NTP SERVER#  &#8211;  with  &#8211;  the IP address of an NTP server</li>
+<li>#SIP PORT FROM YOUR ASTERISK SERVER#  &#8211;  with  &#8211;  the SIP port of your asterisk server is listening on.  Probably 5060</li>
+<li>#IP ADDRESS OF YOUR ASTERISK SERVER#  &#8211;  with  &#8211;  the IP address of your Asterisk server</li>
+<li>#PHONE NAME#  &#8211;  with  &#8211;  the text you want to appear at the top right of the phone screen</li>
+<li>#RTP START PORT#  &#8211;  with  &#8211;  the RTP port range start from the previous stage</li>
+<li>#RTP END PORT#&#8217;  &#8211;  with  &#8211;  the RTP port range end from the the previous stage</li>
+<li>#EXT NUM#  &#8211;  with  &#8211;  the Asterisk extension number as configured in the previous stage</li>
+<li>#SIP PORT#  &#8211;  with  &#8211;  the SIP port of your Asterisk server.  Probably 5060</li>
+<li>#EXT NAME#  &#8211;  with  &#8211;  the name you want to give this extension</li>
+<li>#SIP AUTH NAME#  &#8211;  with  &#8211;  the username for the SIP extension as configured in Asterisk</li>
+<li>#8 CHAR PASSWORD#  &#8211;  with  &#8211;  the password for the SIP extension as configured in Asterisk</li>
+<li>#VM NUM#  &#8211;  with  &#8211;  the number you dial for Voicemail.  Probably *98</li>
+</ul>
+<p>Note that this config file has two lines configured.  If you just blindly search and replace you&#8217;ll end up with two extensions configured the same.</p>
+<p>Some comments on what some of the XML tags do:</p>
+<ul>
+<li>ipAddressMode &#8211; 0 is IP v4 only. But this seems to have little effect.</li>
+<li>registerWithProxy &#8211; true &#8211; Registers the device with Asterisk, this allows incoming calls to be sent to the phone.  If you&#8217;re getting &#8220;Unregistered&#8221; message on the screen, check you have this set.</li>
+<li>featureId &#8211; 9 is SIP</li>
+<li>autoAnswerEnabled &#8211; 2 &#8211; 2 seems to be &#8220;off&#8221;</li>
+<li>webAccess &#8211; 0 &#8211; 0 is on (?!)</li>
+<li>sshAccess -0 &#8211; ditto</li>
+<li>versionStamp &#8211; bump this up every time you make a change.  Something like YYYMMDD001..2..3 etc</li>
+<li>networkLocale &#8211; United_Kingdom &#8211; sets the tones to UK, see the optional extras section for more info.</li>
+<li>transportLayerProtocol &#8211; 2 is UDP, 1 is TCP</li>
+<li>dialToneSettings &#8211; 2 is &#8220;always use internal dialtone&#8221;.  See option extras for more info.</li>
+</ul>
+<p>Edit this file as necessary and then save it to the root of your TFTP server with the filename: <strong>SEP&lt;MAC&gt;.cnf.xml.  </strong>If your phone MAC address was aa:bb:33:44:55:66 then the filename would be: <strong>SEPAABB33445566.cnf.xml</strong>  Note that it&#8217;s case sensitive, letters in the MAC address should be in upper case the extensions should be in lowercase.  You can get the MAC address for the phone from the syslog on your dnsmasq server.</p>
+<p>If your phone is still in &#8220;Unprovisioned&#8221; mode it will have been asking for this config file repeatedly.  Once you save the file you should see the phone reboot shortly afterwards.  It may download the firmware again for some reason, just leave it to get on with it.</p>
+<h2 id="call">Make a call!</h2>
+<p>If everything has worked you should see your extension listed on the right hand side of the screen near the buttons, and the name of the phone should appear at the top of the screen.  If the icon next to the line buttons is that of a phone without an x through it, then you&#8217;re probably good to go!  Press the line button and see if you get a dial tone.  If not, then check the phone logs:</p>
+<ul>
+<li>Press Settings</li>
+<li>Press 6</li>
+<li>Press 1</li>
+</ul>
+<p>From these logs you should be able to tell if the phone has loaded your config correctly.  Errors about &#8220;updating locale&#8221; or &#8220;no trust list installed&#8221; can be ignored.  If there is a problem with the config file itself a generic error will be listed here.  If the phone won&#8217;t load the config file the most likely reason is that there is a typo in your XML file.  Good luck finding it.  You can SSH in to the phone to get more detailed logs and debugging information, but I haven&#8217;t tried this yet.  Google is your friend.</p>
+<h2 id="extras">Optional Extras</h2>
+<h3 id="dialplan">Dial plan</h3>
+<p>The dial plan tells the phone how to process the digits you type and when to start sending the call.  Without a dial plan the phone simply waits a period of time for you to stop typing numbers before it decides you&#8217;re done and starts the call.  By using a dial plan you can reduce the amount of time spent waiting after you&#8217;ve finished keying in the number.  Here&#8217;s an example plan I&#8217;ve edited based on this post on Phil Lavin&#8217;s blog (Thanks Phil!) <a href="http://phil.lavin.me.uk/2012/11/united-kingdom-dial-plan-xml-for-cisco-phones/">http://phil.lavin.me.uk/2012/11/united-kingdom-dial-plan-xml-for-cisco-phones/</a></p>
+<pre>&lt;DIALTEMPLATE&gt;
+    &lt;TEMPLATE MATCH="999" Timeout="0"/&gt; &lt;!-- Emergency --&gt;
+    &lt;TEMPLATE MATCH="112" Timeout="0"/&gt; &lt;!-- Emergency --&gt;
+    &lt;TEMPLATE MATCH="0500......" Timeout="0"/&gt; &lt;!-- Apparently 0500 is always 10 digits --&gt;
+    &lt;TEMPLATE MATCH="0800......" Timeout="0"/&gt; &lt;!-- Apparently 0800 is always 10 digits --&gt;
+    &lt;TEMPLATE MATCH="00*" Timeout="5"/&gt; &lt;!-- International, 00 prefixed. No fixed length --&gt;
+    &lt;TEMPLATE MATCH="0.........." Timeout="0"/&gt; &lt;!-- UK 11 digit, 0 prefixed --&gt;
+    &lt;TEMPLATE MATCH="26...." Timeout="0"/&gt; &lt;!-- My local STD numbers start 26 --&gt;
+    &lt;TEMPLATE MATCH="\*.." Timeout="0"/&gt; &lt;!-- Asterisk *.. codes --&gt;
+    &lt;TEMPLATE MATCH="\*98...." Timeout="0"/&gt; &lt;!-- Asterisk direct VM access *981234--&gt;
+    &lt;TEMPLATE MATCH="1..." Timeout="0"/&gt; &lt;!-- Internal numbers --&gt;
+    &lt;TEMPLATE MATCH="2..." Timeout="0"/&gt;  &lt;!-- Internal numbers --&gt;
+    &lt;TEMPLATE MATCH="*" Timeout="5"/&gt; &lt;!-- Anything else --&gt;
+&lt;/DIALTEMPLATE&gt;</pre>
+<p>Save this to the root of your TFTP server, named &#8220;<strong>dialplan.xml</strong>&#8221; (lowercase).</p>
+<h3 id="ringtones">Ring tones</h3>
+<p>Everyone likes novelty ringtones.  You can find plenty of ringtones in a format which is compatible with your phone (raw format, 8000 Hz sample rate, 8 bit, ulaw, max 2 seconds).  These files need to be placed in to the root of your TFTP server.  I tried putting them in a sub-directory but it didn&#8217;t work.  Then you need to create a file called &#8220;ringlist.xml&#8221; also in the root of the server.  The format of this file is:</p>
+<pre>&lt;CiscoIPPhoneRingList&gt;
+    &lt;Ring&gt;
+        &lt;DisplayName&gt;#<strong>DISPLAY TEXT</strong>#&lt;/DisplayName&gt;
+        &lt;FileName&gt;#<strong>FILENAME</strong>#&lt;/FileName&gt;
+    &lt;/Ring&gt;
+    &lt;Ring&gt;
+        &lt;DisplayName&gt;#<strong>DISPLAY TEXT</strong>#&lt;/DisplayName&gt;
+        &lt;FileName&gt;#<strong>FILENAME</strong>#&lt;/FileName&gt;
+    &lt;/Ring&gt;
+&lt;/CiscoIPPhoneRingList&gt;</pre>
+<p>Filenames are case sensitive.  Once you&#8217;ve save this file, copy it to &#8220;<strong>distinctiveringlist.xml</strong>&#8221; as well.  This will allow you to set ring tones for the default ringer and different rings for each line.</p>
+<h3 id="dialtones">Dial tones</h3>
+<p>By default the 7941 will have a psuedo North American dial tone.  This is annoyingly shrill (yes, it is).  By specifying a NetworkLocale in the phone config we can get it to load a different set of informational tones from a file stored in (per the example XML above) United_Kingdom.  In the root of the TFTP server create a directory called <strong>United_Kingdom</strong>.  In this directory you need to create a file called <strong>g3-tones.xml</strong>.  Bizarrely Cisco require you to have a support contract in order to download the correct tones settings for your country, despite giving the phone firmware away for free.  Go figure.  So this means I&#8217;m not going to paste the XML here.  If you search hard enough you&#8217;ll find an example g3-tones.xml file you can use as a base.  In our phone configuration above we told the phone to always use the internal dialing tone, so this means we only need to change the <strong>idial</strong> section of the tones file.  The magic numbers are:</p>
+<ul>
+<li>31538</li>
+<li>-780</li>
+<li>30831</li>
+<li>-973</li>
+</ul>
+<h3 id="wallpaper">Wallpaper</h3>
+<p>The phone comes with a single default wallpaper with horizontal lines on it.  This is easily replaced by your own designs with a simple PNG.   Create a directory in the root of the TFTP server called <strong>Desktops</strong>.  In here create another directory called <strong>320x196x4</strong>.</p>
+<p>In to this directory you need to place a &#8220;List.xml&#8221; file:</p>
+<pre>&lt;CiscoIPPhoneImageList&gt;
+    &lt;ImageItem Image="TFTP:Desktops/320x196x4/ubuntu-tn.png"
+       URL="TFTP:Desktops/320x196x4/ubuntu.png"/&gt;
+&lt;/CiscoIPPhoneImageList&gt;</pre>
+<p>The &#8220;<strong>-tn</strong>&#8221; in the file is a smaller thumbnail version of the larger image.  The PNGs need to be sized exactly 320&#215;196 for the large and 80&#215;49 for the thumbnail.  Here&#8217;s something to get you started:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png"><img class="aligncenter size-full wp-image-890" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png" alt="" width="80" height="49" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png"><img class="size-full wp-image-889 aligncenter" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png" alt="" width="320" height="196" srcset="/wp-content/uploads/2017/02/Ubuntu-Logo.png 320w, /wp-content/uploads/2017/02/Ubuntu-Logo-300x184.png 300w" sizes="(max-width: 320px) 100vw, 320px" /></a></p>
+<h3 id="directory">Telephone Directory</h3>
+<p>You will have noticed that the phone has a &#8220;Directories&#8221; button and a &#8220;Services&#8221; button.  I haven&#8217;t managed to add an extra phone book to the Directories button yet although I think it&#8217;s certainly possible, just that the XML file refuses to do anything.  However, I have got a phone directory working on the Services button.</p>
+<p>In the main phone config file there is a tag for &#8220;servicesURL&#8221;.  Point this to a web server on your local network which will serve up an XML file.  For example:</p>
+<pre> &lt;servicesURL&gt;http://192.168.1.1/phone/directory.xml&lt;/servicesURL&gt;</pre>
+<p>Assuming you are using Apache 2 to serve that XML file (or it could equally be a CGI script which generates the XML dynamically from a database such as the FreePBX phone book) the format looks like this:</p>
+<pre>&lt;CiscoIPPhoneDirectory&gt;
+   &lt;Title&gt;Whizzy Towers&lt;/Title&gt;
+   &lt;DirectoryEntry&gt;
+       &lt;Telephone&gt;1500&lt;/Telephone&gt;
+       &lt;Name&gt;Lenny&lt;/Name&gt;
+   &lt;/DirectoryEntry&gt;
+   &lt;DirectoryEntry&gt;
+       &lt;Telephone&gt;1234&lt;/Telephone&gt;
+       &lt;Name&gt;Speaking Clock&lt;/Name&gt;
+   &lt;/DirectoryEntry&gt;
+&lt;/CiscoIPPhoneDirectory&gt;</pre>
+<p>Important note:  You must tell Apache to serve those files as type &#8220;<strong>text/xml</strong>&#8220;.  &#8220;<strong>application/xml</strong>&#8221; will not work.</p>
+<p>You can do this via your CGI script, or if you want to serve a static file add something like this to your Apache config:</p>
+<pre> &lt;Location /phone/&gt;
+     ForceType text/xml
+ &lt;/Location&gt;</pre>
+<p>Inside your VirtualHost section.</p>
+<h2 id="tip">Final Tip</h2>
+<p>Watch /var/log/syslog on the machine running the TFTP server.  You&#8217;ll be able to see exactly what files the phone is asking for.  Bear in mind that it does ask for files it doesn&#8217;t strictly need, so don&#8217;t worry too much about file not found errors unless it&#8217;s one of the above.</p>
+<p>Here&#8217;s a final video showing the boot up for a fully configured phone</p>
+<p><iframe title="Fully configured Cisco 7941 connecting to Asterisk via SIP" width="770" height="433" src="https://www.youtube.com/embed/QlLLzbD7pHM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2017/02/23/cisco-7941-asterisk-and-sip/feed/</wfw:commentRss>
+			<slash:comments>38</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>24 hours with Amazon Prime</title>
+		<link>/2016/11/18/24-hours-with-amazon-prime/</link>
+					<comments>/2016/11/18/24-hours-with-amazon-prime/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 18 Nov 2016 19:05:14 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=803</guid>
+
+					<description><![CDATA[Preamble As a analytically minded person, is it worth getting Amazon Prime? I [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h1>Preamble</h1>
+<h2><em><strong>As a analytically minded person, is it worth getting Amazon Prime?</strong></em></h2>
+<p>I signed up yesterday and spent the evening setting up the various services.  It was on offer with £20 off, it was the day before The Grand Tour came out, and I recently bought an Amazon Dot &#8211; well played Amazon, well played.</p>
+<p>As I&#8217;m sure you&#8217;re aware Amazon Prime comes with a few bundled goodies to sweeten the deal. But are they actually useful? I think the real value is the next day delivery (if you order lots of things from Amazon), the online photo storage and perhaps the video. Everything else falls short of being good enough to be considered a real product in it&#8217;s own right.  Yes, I know that&#8217;s on purpose &#8211; but the marketing material would have you believe otherwise.  How about that.</p>
+<h3>The loan of a book a month from the Kindle Lending Library</h3>
+<p><strong>Rating: 4/10 (based on going to an actual library being 8/10)</strong><br />
+You&#8217;re not going to find many books you actually want to read in there. Browsing the catalogue from your desktop is virtually impossible and it&#8217;s been made that way deliberately. This is frustrating and annoying. Also annoying is that if you use the Kindle app on your phone you get nagged to upgrade to Kindle Unlimited all the bloody time.  You can share this with someone else on your household account, but they won&#8217;t thank you for it.</p>
+<h3>Prime Music</h3>
+<p><strong>Rating: 6.5/10 (based on Spotify Premium being 10/10)</strong><br />
+Better than I expected, but still full of annoyances. And again with the constant nagging to upgrade to Music Unlimited.<br />
+The selection is ok. It feels like they&#8217;ve taken the time to make it just-good-enough that you will use it but not good enough that you won&#8217;t consider upgrading.</p>
+<p>You can&#8217;t share this perk with anyone else in your household, and since there&#8217;s no point in two people in your household having a Prime account each, you end up setting up another Chrome profile just to access the music service for managing play lists etc. Also annoying is that you can&#8217;t play music on an Echo or Dot <em>and</em> play music in the browser at the same time. This raises the question of what will happen if you have two Amazon Alexa devices on the same account and you try and play music on both. If you can&#8217;t (and I don&#8217;t know yet, perhaps someone can comment if they do) then one of the good features of Alexa is somewhat spoiled.  (Edit: some searching suggests that indeed you cannot listen to Prime Music on more than one device at at time.)</p>
+<p>This service is a very good replacement for the kitchen radio but not a replacement for even a free Spotify subscription.  If you already have a premium Spotify account then this will be of no interest to you at all.</p>
+<h3>Prime Video</h3>
+<p><strong>Rating: 7.5/10 (based on Netflix being 10/10)</strong></p>
+<p>Not so many nag screens here, but guess what, you still need to spend more money for the full experience.  It&#8217;s a bit galling to discover that some of the headline shows need to be paid for (Game Of Thrones for example).  But, there is some genuinely good exclusive content here, The Grand Tour for example.  I don&#8217;t see myself watching it more than Netflix but it&#8217;s worth, say, 3 quid a month of the £6.50 a month Prime subscription.</p>
+<p>Installing on an iPhone was easy enough, but on Android it&#8217;s outrageously bad.  You have to install Amazon&#8217;s &#8220;Underground&#8221; app store, and to do that you have to enable &#8220;Unknown Sources&#8221;.  Unlol.  The app works fine, and you can uninstall Underground once it&#8217;s on there.  The app on my Sony TV is fine.  Prime Video doesn&#8217;t support Chromecast, which isn&#8217;t a surprise but is, you guessed it, annoying.</p>
+<h3>Next Day Delivery</h3>
+<p><strong>Rating: 10/10 (based on going to the shops being 1/10)</strong></p>
+<p>I don&#8217;t order that much from Amazon, which is why I&#8217;m wondering if this is all worth it, but when I do having it turn up the next day for &#8220;free&#8221; is nice.</p>
+<h3>Unlimited Online Photo Storage</h3>
+<p><strong>Rating: 9/10 (based on Google Drive being 7/10)</strong></p>
+<p>Google also offer unlimited photo storage, but critically they compress your photos.  The Amazon offering does not (based on MD5 sums for a picture selected at random).  There is also an excellent Linux cli util called acd_cli (<a href="https://github.com/yadayada/acd_cli">https://github.com/yadayada/acd_cli</a>).  You&#8217;ll want to exclude videos and other files from being uploaded because they will count towards your 5GB limit for other stuff.  Something like this:</p>
+<pre>acd_cli --verbose ul -xe mov -xe mp4 -xe ini . /Pictures</pre>
+<p>Don&#8217;t be surprised if this has a storage limit applied in the future.</p>
+<h3>Prime Early Access</h3>
+<p><strong>Rating: 0/10 (based on normal Amazon shopping being 10/10)</strong></p>
+<p>Early access to the electronic jumble sale that is Black Friday.  Pointless.</p>
+<h3>Twitch Prime</h3>
+<p><strong>Rating: 5/10 (based on not having it being 0/10)</strong></p>
+<p>Skip this if you don&#8217;t know what Twitch is.  With Prime you can subscribe to a channel for a month for free.  It&#8217;s a free way to support Twitch streamers you like, and you get some crappy game add-ons that you won&#8217;t ever use.</p>
+<h2>Summary</h2>
+<p>Amazon Prime is basically shareware from the late 90s.  It does do what they claim, but there are constant nags to spend money on the basis that all the good stuff is just out of reach.</p>
+<p>The new Amazon Dot in the kitchen was not warmly welcomed by everyone at Whizzy Towers but having it play music on demand has changed that perception quite a lot in the last day.  I have saved the first episode of The Grand Tour to watch tonight, which I am looking forward to since the reviews have been good, and all my photos which had previously been backed up on to a USB HDD are now slowly making their way to the cloud.  I also ordered a £5 book yesterday which arrived today as promised.</p>
+<p>However, the shortcomings have the feeling of being deliberate.  Which is more annoying than if the services were just a bit crap.</p>
+<p>So all in all you&#8217;re getting what you pay for.  It&#8217;s not amazing value, but neither is it a total rip off.  Someone at Amazon has done their job well.  I would recommend you get it.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/11/18/24-hours-with-amazon-prime/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What to do with Unity 8 now</title>
+		<link>/2016/10/14/what-to-do-with-unity-8-now/</link>
+					<comments>/2016/10/14/what-to-do-with-unity-8-now/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 14 Oct 2016 13:09:24 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<guid isPermaLink="false">/?p=786</guid>
+
+					<description><![CDATA[As you&#8217;re probably aware Ubuntu 16.10 was released yesterday and brings with it [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As you&#8217;re probably aware Ubuntu 16.10 was released yesterday and brings with it the Unity 8 desktop session as a preview of what&#8217;s being worked on right now and a reflection of the current state of play.</p>
+<p>You might have already logged in and kicked the proverbial tyres.  If not I would urge you to do so.  Please take the time to install a couple of apps as laid out here:</p>
+<p><a href="http://insights.ubuntu.com/2016/10/13/unity-8-preview-session-in-ubuntu-16-10-yakkety-yak/">http://insights.ubuntu.com/2016/10/13/unity-8-preview-session-in-ubuntu-16-10-yakkety-yak/</a></p>
+<p>The main driver for getting Unity 8 in to 16.10 was the chance to get it in the hands of users so we can get feedback and bug reports.  If you find something doesn&#8217;t work, please, log a bug.  We don&#8217;t monitor every forum or comments section on the web so the absolute best way to provide your feedback to people who can act on it is a bug report with clear steps on how to reproduce the issue (in the case of crashes) or an explanation of why you think a particular behaviour is wrong.  This is how you get things changed or fixed.</p>
+<p>You can contribute to Ubuntu by simply playing with it.</p>
+<p>Read about logging bugs in Ubuntu here: <a href="https://help.ubuntu.com/community/ReportingBugs">https://help.ubuntu.com/community/ReportingBugs</a></p>
+<p>And when you are ready to log a bug, log it against Unity 8 here: <a href="https://bugs.launchpad.net/ubuntu/+source/unity8">https://bugs.launchpad.net/ubuntu/+source/unity8</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/10/14/what-to-do-with-unity-8-now/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Apache &#8211; 20 second lag before serving pages</title>
+		<link>/2016/10/13/apache-20-second-lag-before-serving-pages/</link>
+					<comments>/2016/10/13/apache-20-second-lag-before-serving-pages/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 13 Oct 2016 10:15:09 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=780</guid>
+
+					<description><![CDATA[TL;DR:  There is no such thing as a &#8220;none&#8221; directive in Apache 2. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>TL;DR</strong>:  There is no such thing as a &#8220;none&#8221; directive in Apache 2.  If you&#8217;ve got &#8220;deny from none&#8221; or &#8220;allow from none&#8221; then you&#8217;re doing DNS lookups on each host that connects regardless of whether you want to or not.</p>
+<p>I was experiencing a very annoying problem trying to serve static HTML pages and CGI scripts from Apache 2 recently.  The problem manifested itself like this:</p>
+<ul>
+<li>Running the scripts on the server hosting Apache shows they ran in well under a second</li>
+<li>Connecting to the Apache server from the LAN, everything was fine and ran in under a second</li>
+<li>Connecting to the Apache server from the Internet, but from a machine known to my network, ran fine</li>
+<li>Connecting from an AWS Lambda script, suddenly there is a 20 second or more delay before getting data back</li>
+<li>Connecting from Digital Ocean, there is a 20 second delay</li>
+<li>Connecting from another computer on the internet, there is a 20 second delay</li>
+</ul>
+<p>What the heck is going on here?</p>
+<p>I spent time trying to debug my CGI scripts and adding lots more logging and finally convinced myself that it was a problem with the Apache config and not something like MTUs or routing problems.</p>
+<p>But what was causing it?  It started to feel like like a DNS related issue since the machines where it ran fine where all known to me, and so had corresponding entries in my local DNS server.  But but but&#8230; I clearly had &#8220;HostnameLookups Off&#8221; in my apache2.conf file.  When I looked at the logs again, I noticed that indeed hostnames were being looked up, even though I told it not to.</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2016/10/966381.jpg"><img class="aligncenter size-medium wp-image-781" src="/wp-content/uploads/2016/10/966381-300x225.jpg" alt="966381" width="300" height="225" srcset="/wp-content/uploads/2016/10/966381-300x225.jpg 300w, /wp-content/uploads/2016/10/966381.jpg 640w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Why?  Because I don&#8217;t know how to configure Apache servers properly.  At some point in time I thought this was a good idea:</p>
+<pre style="padding-left: 90px;">Order deny, allow
+Deny from none
+Allow from all</pre>
+<p>But, there is <span style="text-decoration: underline;">no such thing as a &#8220;none&#8221; directive</span>.  Apache interprets &#8220;none&#8221; as a host name and so has to look it up to see if it&#8217;s supposed to be blocking it or not, which causes a DNS lookup delays and hostnames to appear in your Apache logs.</p>
+<p>Enlightenment came from here:<a href="http://kb.simplywebhosting.com/idx/6/213/article/"> http://kb.simplywebhosting.com/idx/6/213/article/</a></p>
+<p>There is also a suggestion that inline comments can do the same thing here:  <a href="https://www.drovemebatty.com/wp/entries/11">https://www.drovemebatty.com/wp/entries/11</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/10/13/apache-20-second-lag-before-serving-pages/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hacking 433Mhz support into a cheap Carbon Monoxide detector</title>
+		<link>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/</link>
+					<comments>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2015 20:37:27 +0000</pubDate>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[IoT]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=684</guid>
+
+					<description><![CDATA[Skill level:  Easy My home automation systems use two mechanisms for communication:  Ethernet (both [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Skill level:  Easy</strong></p>
+<p>My home automation systems use two mechanisms for communication:  Ethernet (both wired and wireless) and 433MHz OOK radio.</p>
+<p>433MHz transmitters are readily available and are cheap but unreliable.  Wifi enabled MCUs such as the ESP8266 are also cheap (coming in at around the same cost as an Arduino clone, a 433MHz transmitter and a bag of bits to connect them together), they are reliable enough but extremely power hungry.  If I can plug a project into the mains then I&#8217;ll use an ESP8266 and a mobile phone charger for power, if the project needs to run off batteries then a 433MHz equipped Arduino is the way I&#8217;ve gone.</p>
+<p>Like most people playing with 433MHz radio I found reliability and range of the radio link to be super flaky.  I&#8217;ve finally got a more-or-less reliable set-up:</p>
+<ul>
+<li>A full wave dipole antenna at the receiver</li>
+<li>A high quality receiver from RF Solutions in place of the cheap ones which are bundled with transmitters. <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=231721857012&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">A decent receiver on eBay</a></li>
+<li>A big capacitor on the transmitter.  I saw the frequency and amplitude drifting massively during transmission.  Adding a 470µF cap helps.  Allow time for the cap to charge and the oscillator to stabilise, a few seconds delay seemed to do the trick.</li>
+<li>Using the RCSwitch library on the transmitter:
+<ul>
+<li>
+<pre>RCSwitch mySwitch = RCSwitch();</pre>
+</li>
+<li>
+<pre>mySwitch.setProtocol(2); // Much longer pulse lengths = much better range?</pre>
+</li>
+<li>
+<pre>mySwitch.setRepeatTransmit(20); // Just brute-force it!</pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>With this setup I can get receive a 24bit number from an Arduino running off 2 AA batteries and a coiled 1/2 wave antenna from about 5 meters indoors through walls.  That&#8217;s still poor, but it does the job.  Increasing the voltage to the transmitter would probably help.</p>
+<p>Once you have a reliable 433MHz receiver setup then you can also buy off the shelf 433MHz enabled home automation gizmos like <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=181665729292&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this smoke alarm</a> or <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281405424486&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">these door sensors</a>.  They have a set of jumpers inside where you can set an ID, which is essentially the same 24bit number that RCSwitch lets you transmit.  For what it&#8217;s worth I also have <a href="https://en.wikipedia.org/wiki/British_Standards" target="_blank" rel="noopener noreferrer">kite-marked</a> smoke detectors in my house, but from the testing I&#8217;ve done with a bit of smoldering paper the cheap imports work just fine.</p>
+<p>I couldn&#8217;t find a cheap Carbon Monoxide which also has 433MHz support so I thought I&#8217;d quickly hack one together out of <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281723682194&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this Carbon Monoxide detector</a> and an Arduino clone and 433MHz radio:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1237.jpg"><img class="alignleft size-medium wp-image-703" src="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg" alt="CO Alarm inside" width="225" height="300" srcset="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg 225w, /wp-content/uploads/2015/10/IMG_1237-768x1024.jpg 768w, /wp-content/uploads/2015/10/IMG_1237-1152x1536.jpg 1152w, /wp-content/uploads/2015/10/IMG_1237-1536x2048.jpg 1536w, /wp-content/uploads/2015/10/IMG_1237-1200x1600.jpg 1200w, /wp-content/uploads/2015/10/IMG_1237-1980x2640.jpg 1980w, /wp-content/uploads/2015/10/IMG_1237-scaled.jpg 1920w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><div id="attachment_706" style="width: 310px" class="wp-caption alignleft"><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1238.jpg"><img aria-describedby="caption-attachment-706" class="wp-image-706 size-medium" src="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg" alt="IMG_1238" width="300" height="225" srcset="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg 300w, /wp-content/uploads/2015/10/IMG_1238-1024x768.jpg 1024w, /wp-content/uploads/2015/10/IMG_1238-768x576.jpg 768w, /wp-content/uploads/2015/10/IMG_1238-1536x1152.jpg 1536w, /wp-content/uploads/2015/10/IMG_1238-2048x1536.jpg 2048w, /wp-content/uploads/2015/10/IMG_1238-1200x900.jpg 1200w, /wp-content/uploads/2015/10/IMG_1238-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-706" class="wp-caption-text">You can barely notice it!</p></div></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>It&#8217;s certainly untidy, but it does the job.  If I had PCB facilities at home I&#8217;m fairly sure it could be made to fit inside the alarm, along with some more holes in the case for ventilation.</p>
+<p>The premise is simple enough.  The Arduino is powered by the 3v3 regulator on the CO alarm PCB.  The cathode of the red alarm LED is connected to pin 2 of the Arduino as an external interrupt.  When the pin goes low the Arduino wakes up and sends it&#8217;s 24bit ID number over the radio which is picked up by the receiver which sends an SMS alert, switches the boiler off, etc.  I&#8217;ve connected the radio transmitter to directly to the 3 x AA batteries (4.5 volts) via a transistor which is switched by a pin on the Arduino.  In standy-by mode the additional equipment draws a fraction of a milliamp and so I&#8217;m not worried about draining the batteries faster.</p>
+<p>As with the smoke alarms, this is not my only source of Carbon Monoxide detection.  I&#8217;ve yet to test it&#8217;s sensitivity.  This is considered to be a &#8220;well, if it works, and it turns the boiler off automatically then it&#8217;s certainly worth a go, but I&#8217;m not relying on it&#8221; project.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Snapping Mosquitto MQTT broker</title>
+		<link>/2015/02/04/snapping-mosquitto-mqtt-broker/</link>
+					<comments>/2015/02/04/snapping-mosquitto-mqtt-broker/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 04 Feb 2015 17:32:44 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<guid isPermaLink="false">/?p=598</guid>
+
+					<description><![CDATA[As part of my ever expanding home automation system I wanted to use [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p style="text-align: justify;"><em>As part of my ever expanding home automation system I wanted to use MQTT to publish data on my network. With the release of the Raspberry Pi 2 I can run Ubuntu Core to create a reliable, secure and easily updated server which is a perfect fit for requirements of an MQTT broker and general HA controller. I asked some Ubuntu friends to help me package Mosquitto as a Snap, and in return I would write down how we did it. Here&#8217;s the story&#8230;</em></p>
+<p>Start by reading this: <a title="https://developer.ubuntu.com/en/snappy/" href="https://developer.ubuntu.com/en/snappy/">https://developer.ubuntu.com/en/snappy/</a></p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">In summary;</span> a Snappy application is secure because it&#8217;s wrapped with AppArmor. It&#8217;s easier to install and upgrade because everything is packaged in a single file and installed to a single location. That location is backed-up before you install a new version, and so if the installation goes wrong you can revert to the previous version easily by copying the original files back (or rather, Snappy will do all of that for you). Simplifying things slightly there are two types of Snappy &#8220;application&#8221;: Apps and Frameworks. Frameworks can extend the OS and provide a mediation layer to access shared resources. Apps are your more traditional top-level items which can use the provided frameworks, or bundle everything they need in to their Snap. This makes things much easier for app providers because they are now in charge &#8211; they can be assured that no library will change underneath them.  This is a huge benefit!</p>
+<h2>Let&#8217;s get Mosquitto snapped.</h2>
+<h3>1. Install QEMU to run an Ubuntu Core machine</h3>
+<p><a title="http://www.ubuntu.com/cloud/tools/snappy#snappy-local" href="http://www.ubuntu.com/cloud/tools/snappy#snappy-local">http://www.ubuntu.com/cloud/tools/snappy#snappy-local</a></p>
+<p>First we install the KVM hypervisor:</p>
+<pre style="padding-left: 60px;">sudo apt-get install qemu-kvm</pre>
+<p>Then check everything is as it should be with:</p>
+<pre style="padding-left: 60px;">kvm-ok</pre>
+<p>Now download the latest Ubuntu Core image from here: <a title="http://cdimage.ubuntu.com/ubuntu-core/preview/" href="http://cdimage.ubuntu.com/ubuntu-core/preview/">http://cdimage.ubuntu.com/ubuntu-core/preview/</a>  At the time of writing this is the newest x86-64 image: <a title="http://cdimage.ubuntu.com/ubuntu-core/preview/ubuntu-core-alpha-02_amd64-virt.img" href="http://cdimage.ubuntu.com/ubuntu-core/preview/ubuntu-core-alpha-02_amd64-virt.img">http://cdimage.ubuntu.com/ubuntu-core/preview/ubuntu-core-alpha-02_amd64-virt.img</a></p>
+<p>Then launch the virtual machine. This command port forwards 8022 on your local machine to 22 on the virtual machine, so you can SSH to port 8022 on localhost and actually connect to the Ubuntu Core machine. It gives the Core machine 512MB of RAM, nicely achievable on a modest budget (The Pi2 has 1 GB).  We also forward port 1883 from to the VM, which will allow us to connect to the Mosquitto server on our VM once it&#8217;s all installed.</p>
+<pre style="padding-left: 60px;">kvm -m 512 -redir :8022::22 -redir :1883::1883 &lt;vm image file&gt;</pre>
+<p>Once it&#8217;s booted you can connect to it with SSH. The username and password are &#8220;ubuntu&#8221;.</p>
+<pre style="padding-left: 60px;">ssh -p 8022 ubuntu@localhost</pre>
+<p>To make things a bit easier, why not use key authentication? On your host machine:</p>
+<pre style="padding-left: 60px;">ssh-copy-id -p 8022 ubuntu@localhost</pre>
+<p>We should also upgrade our Ubuntu Core VM before we start.  SSH in to your box and run:</p>
+<pre style="padding-left: 60px;">sudo snappy update
+sudo reboot</pre>
+<h3>2. Build Mosquitto in the right way</h3>
+<p>Back on your host (not the virtual machine you just created above) create some directories to hold the code and download the latest stable source and the build dependencies for Mosquitto:</p>
+<pre style="padding-left: 60px;">sudo apt-get install build-essential cmake
+sudo apt-get build-dep mosquitto</pre>
+<pre style="padding-left: 60px;">mkdir -p mosquitto/install mosquitto/build</pre>
+<pre style="padding-left: 60px;">cd mosquitto</pre>
+<pre style="padding-left: 60px;">wget http://mosquitto.org/files/source/mosquitto-1.3.5.tar.gz</pre>
+<pre style="padding-left: 60px;">tar xvzf mosquitto-1.3.5.tar.gz</pre>
+<pre style="padding-left: 60px;">cd build</pre>
+<p>Time to build Mosquitto.  Before you run the commands below, a bit of background information.  The cmake line will force cmake to install the binaries to the location specified with INSTALL_PREFIX, rather than /usr/local.  This is required to bundle all of the binaries and other files to the &#8220;install&#8221; directory we created above, making it possible to package as a Snappy.</p>
+<pre style="padding-left: 60px;">cmake -DCMAKE_INSTALL_PREFIX=`readlink -f ../install/` ../mosquitto-1.3.5</pre>
+<pre style="padding-left: 60px;">make -j`nproc`
+
+make install</pre>
+<p>nproc spits out the number of processor cores you have, so the make line above will use as many processor cores as you have available.  It&#8217;s not required, and for Mosquitto which is fairly small it&#8217;s not worth worrying about, but for a bigger job this is quite handy.</p>
+<p>If you look in the &#8220;../install&#8221; directory you&#8217;ll see a familiar structure containing all the goodies needed by Mosquitto.</p>
+<h3>3. Find the libraries needed and copy them in to your Snappy project</h3>
+<p>Change in to the install/lib directory and use ldd to display the linked libraries for the two main .so files:</p>
+<pre style="padding-left: 60px;">ldd lib/libmosquitto.so.1.3.5 lib/libmosquittopp.so.1.3.5 | grep '=&gt;' | awk '{ print $1 }' | sort | uniq</pre>
+<p>This uses ldd to show the libraries required by Mosquitto, and then sorts them in to a nice list. You&#8217;ll see something like this:</p>
+<pre style="padding-left: 60px;">libcares.so.2
+libcrypto.so.1.0.0
+libc.so.6
+libdl.so.2
+libgcc_s.so.1
+libmosquitto.so.1
+libm.so.6
+libpthread.so.0
+librt.so.1
+libssl.so.1.0.0
+libstdc++.so.6
+linux-vdso.so.1</pre>
+<p>Now, on the Ubuntu Core machine we can run this little script:</p>
+<pre style="padding-left: 60px;">for i in `cat`; do find /lib /usr/lib -name $i; done</pre>
+<p>Copy the list from the previous command to the clipboard and then paste it in to terminal where this command is running and hit Ctrl-D to submit the list.  The script will then search Ubuntu Core for the libraries required.  If it finds them they will be displayed, if it doesn&#8217;t then they are not available in Ubuntu Core by default and will need to be included in your Snappy package.</p>
+<p><code>linux-vdso</code> is the Linux kernel and is available on every Linux system by default, so we don&#8217;t need to provide that specifically.</p>
+<p><code>libssl, libcrypto, libpthread, librt, libc </code>and<code> libdl</code> are all available in Ubuntu Core by default &#8211; so we don&#8217;t need those either.</p>
+<p>That leaves just <code>libcares</code> to be copied in to our package.</p>
+<pre style="padding-left: 60px;"> cp /usr/lib/x86_64-linux-gnu/libcares.so.2.1.0 .</pre>
+<p>We should already be in the &#8216;lib&#8217; directory, hence the &#8216;.&#8217; above.  We are copying libcares in to the lib directory of our Snap, and when we run the Snap we will pass in the library path to make sure Mosquitto can find it.  More on this later.</p>
+<h3>4. Add the meta data required for the Snappy package</h3>
+<p>Reference: <a title=" https://developer.ubuntu.com/en/snappy/guides/packaging-format-apps/" href="https://developer.ubuntu.com/en/snappy/guides/packaging-format-apps/">https://developer.ubuntu.com/en/snappy/guides/packaging-format-apps/</a></p>
+<p>Create the meta data directory inside the install directory (change to the install directory, it should just be cd ..):</p>
+<pre style="padding-left: 60px;">mkdir meta</pre>
+<p>Create the package.yaml file:</p>
+<pre style="padding-left: 60px;">nano meta/package.yaml</pre>
+<p>And this is what we&#8217;re putting in it:</p>
+<pre style="padding-left: 60px;">name: mosquitto.willcooke
+architecture: amd64
+version: 1.3.5
+icon:
+services:
+ - name: mosquitto
+ start: ./sbin/mosquitto.sh
+ports:
+ required: 1883</pre>
+<p>Information about these fields and what they mean is available in the reference linked to above, but they are easily understandable.  A comment on the name though, you need to append .&lt;yournamespace&gt; where your namespace is as you select in your Ubuntu myapps account.  One thing to mention, you can see that to start our Snap we are calling a shell script.  This allows us to pass in extra options to Mosquitto when it runs.</p>
+<p>Next we need to create a readme file:</p>
+<pre style="padding-left: 60px;">nano meta/readme.md</pre>
+<p>This file needs to contain at least a couple of non-blank lines.  Here&#8217;s what we put in it:</p>
+<pre style="padding-left: 60px;">This is a Snappy package for Mosquitto MQTT broker.</pre>
+<pre style="padding-left: 60px;">Information about Mosquitto is available here:  http://mosquitto.org/</pre>
+<pre style="padding-left: 60px;">Information about MQTT is available here: http://mqtt.org/</pre>
+<p>We also need to configure our Mosquitto server, by editing the conf file.  Most of the settings can be left as default, so we will create a new conf file with only the bits in we need.</p>
+<pre style="padding-left: 60px;">mv etc/mosquitto/mosquitto.conf etc/mosquitto/mosquitto.conf.ori</pre>
+<pre style="padding-left: 60px;">nano etc/mosquitto/mosquitto.conf</pre>
+<p>Add these two lines:</p>
+<pre style="padding-left: 60px;">user root
+persistence_location /var/apps/mosquitto/current/</pre>
+<p>We need to change this to run as root.  Since our Snap will be confined there is no risk here.  I expect the ability to run as non-root users when using Snappy will be improved, but really it&#8217;s not necessary.</p>
+<p>We also need to add a small shell script to start Mosquitto with the right options.  Create a file in install/sbin called mosquitto.sh:</p>
+<pre style="padding-left: 60px;">nano sbin/mosquitto.sh</pre>
+<p>And add this:</p>
+<pre style="padding-left: 30px;">#!/bin/sh
+LD_LIBRARY_PATH=./lib:$LD_LIBRARY_PATH exec ./sbin/mosquitto -c etc/mosquitto/mosquitto.conf</pre>
+<p>We are specifying where to find the extra libraries we require and where to find the conf file.  Make that file executable:</p>
+<pre style="padding-left: 60px;">chmod +x sbin/mosquitto.sh</pre>
+<h3>5. Build your Snappy package</h3>
+<p>Add the Snappy PPA to get the build tools, and then install them:</p>
+<pre style="padding-left: 60px;">sudo add-apt-repository ppa:snappy-dev/beta
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt install snappy-tools</pre>
+<p>In your <code>install</code> directory run:</p>
+<pre style="padding-left: 60px;">snappy build .</pre>
+<p>If you see an error about ImportError: No module named &#8216;click.repository&#8217; then you likely have a clash between the Click library version in the SDK team PPA and the version in the Snappy PPA.  This will be fixed soon, but in the meantime I would suggest installing ppa-purge via apt-get and then running <code>sudo ppa-purge ppa:ubuntu-sdk-team/ppa</code>.</p>
+<p>If you see an error about &#8220;expected &lt;block end&gt;&#8221; in the package.yaml check the whitespace in the file.  It&#8217;s likely a copy and paste error.</p>
+<h3>6. Install your Snappy package</h3>
+<p>Once you have your .snap file you can install it to your virtual machine like this:</p>
+<pre>snappy-remote --url=ssh://localhost:8022 install ./mosquitto_1.3.5_amd64.snap</pre>
+<p>&nbsp;</p>
+<h3>7. Test your Snappy package</h3>
+<p>If everything has gone to plan Mosquitto should now be running on your virtual machine.  In order to test you&#8217;ll need to write a test Publisher and Subscriber.  I used the Python Paho library.</p>
+<p>Here&#8217;s an example Publisher:</p>
+<pre style="padding-left: 60px;">#!/usr/bin/python</pre>
+<pre style="padding-left: 60px;">import paho.mqtt.client as mqtt
+from datetime import datetime
+from time import sleep</pre>
+<pre style="padding-left: 60px;">def send_mqtt(topic, message):
+ log("Sending MQTT")
+ log("Topic: "+topic)
+ log("Message: "+message)
+ mqttc.reconnect()
+ mqttc.publish(topic, message)
+ mqttc.loop() 
+ mqttc.disconnect()</pre>
+<pre style="padding-left: 60px;">print "Time server starting up...."
+mqttc = mqtt.Client("python_pub")
+mqttc.connect("localhost", 1883)</pre>
+<pre style="padding-left: 60px;">while True:
+ tstr = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+ send_mqtt("/information/time",tstr)
+ sleep(10)</pre>
+<p>And here&#8217;s an example Subscriber:</p>
+<pre style="padding-left: 60px;">#!/usr/bin/python</pre>
+<pre style="padding-left: 60px;">import paho.mqtt.client as mqtt
+import datetime</pre>
+<pre style="padding-left: 60px;">def on_connect(client, userdata, rc):
+ print "Connected with result code "+str(rc)
+ client.subscribe("#")
+ 
+def on_message(client, userdata, msg):
+ print "Topic: ", msg.topic+'\nMessage: '+str(msg.payload)
+ 
+ 
+client = mqtt.Client()
+client.on_connect = on_connect
+client.on_message = on_message</pre>
+<pre style="padding-left: 60px;">client.connect("localhost", 1883, 60)</pre>
+<pre style="padding-left: 60px;">client.loop_forever()</pre>
+<p>&nbsp;</p>
+<h2>What&#8217;s next?</h2>
+<p>We&#8217;ve built a Snappy package for amd64 (or whatever your native architecture is), but we really need to be cross-architecture to give people the best choice of platform on which to use the package.  This involves cross compiling, which can be tricky to put it mildly.</p>
+<p>I spoke to <a title="https://plus.google.com/+AlexanderSack/posts" href="https://plus.google.com/+AlexanderSack/posts">Alexander Sack</a>, the Director of Ubuntu Core, and asked what was coming next for Snappy and I was very excited to hear about easier cross-compilation methods as well as a cool script to help automate gathering the libraries in to your package.  I&#8217;ll find out more about these and follow up with another post about</p>
+<h2>Special Thanks</h2>
+<p>A huge &#8220;Thank You!&#8221; to <a title="https://plus.google.com/113078171667682980510/posts" href="https://plus.google.com/113078171667682980510/posts">Saviq</a> and <a title="https://www.google.com/+DidierRoche" href="https://www.google.com/+DidierRoche">Didrocks</a> for doing the actual work and letting me watch.</p>
+<p>&nbsp;</p>
+<h2>Where to get Snappy Mosquitto</h2>
+<p>amd64 version:  <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1500/" href="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1500/">https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1500/</a><br />
+armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/" href="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/">https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/</a> (please note, I haven&#8217;t been able to test the ARM version because of a lack of hardware.  If it doesn&#8217;t work let me know and I can fix it.)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/02/04/snapping-mosquitto-mqtt-broker/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Recording screencasts from the Unity 8 Desktop Preview</title>
+		<link>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/</link>
+					<comments>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 28 Aug 2014 12:33:10 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<guid isPermaLink="false">/?p=590</guid>
+
+					<description><![CDATA[Obtaining and running Unity 8 Desktop Preview If you like playing with new [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h1>Obtaining and running Unity 8 Desktop Preview</h1>
+<p>If you like playing with new toys you might have already downloaded and tried the Unity 8 Desktop Preview (available here:  <a href="http://cdimage.ubuntu.com/ubuntu-desktop-next/daily-live/current/" target="_blank" rel="noopener noreferrer">http://cdimage.ubuntu.com/ubuntu-desktop-next/daily-live/current/</a>)</p>
+<p>If you haven&#8217;t, you should take it for a spin.  If you have an Intel graphics everything should be fine and dandy, if not YMMV at the moment.</p>
+<ol>
+<li>Download the ISO</li>
+<li>Find a spare &gt;1GB USB thumb drive</li>
+<li>Run &#8220;disks&#8221; via the dash</li>
+<li>Highlight your USB drive and from the cog icon on the right choose &#8220;Restore Disk Image&#8230;&#8221;</li>
+<li>Select your ISO and &#8220;Start Restoring&#8221;  &#8211; this will of course erase everything else on your USB stick</li>
+<li>Done</li>
+</ol>
+<p>You can now boot from your USB stick and have a play with Unity 8.  Right now you&#8217;ll be seeing the Phone view of Unity 8, but that will all be changing in time.</p>
+<h1>Capturing a screencast</h1>
+<p>Once you&#8217;ve got everything up and running you might like to make a few screencasts, so how do you do it?  Well, the Mir developers have provided us with the mirscreencast tool so let&#8217;s use that:</p>
+<p>Switch to tty1 (ctrl+alt+f1) and log in and run:</p>
+<pre>mirscreencast --file &lt;output file&gt; -m /run/lightdm-mir-0</pre>
+<p>Then switch back to tty8 (ctrl-alt-f8) and use Unity.</p>
+<p>Your file will now be filling up FAST.  Mirscreencast will be trying to write every raw frame to that file, probably at a rate of 60 frames a second.  To kill mirscreencast I first hit ctrl-z and then:</p>
+<pre> pkill -9 mirscreencast</pre>
+<p>but there is probably a better way.</p>
+<h1>Capturing a better screencast</h1>
+<p>There are a few command line options for mirscreencast which will can help us shrink the file size a bit:</p>
+<pre>mirscreencast --file &lt;output file&gt; -m /run/lightdm-mir-0 -s 683 384 -n 3600</pre>
+<p>The option &#8220;-s&#8221; will resize the captured frames.  Note that 683 384 is exactly half my native resolution, so you will need to adjust this to your display.</p>
+<p>The option &#8220;-n&#8221; will capture n frames and then stop.  At 60 frames a second, 3600 frames is one minute.  If you use -n then mirscreencast will exit gracefully at the end.</p>
+<h1>Playing back your screencast</h1>
+<p>I am lucky enough to have a spare machine with a touch screen just for running Unity 8 on (<a href="http://www.dell.com/uk/dfh/p/inspiron-11-3137/pd" target="_blank" rel="noopener noreferrer">http://www.dell.com/uk/dfh/p/inspiron-11-3137/pd</a>) so I SCP the raw video file on to my main machine for playback and editing.</p>
+<p>I use mplayer for most of my video playback and encoding needs and it will happily play the raw video file, but it needs a few pointers:</p>
+<pre>mplayer -demuxer rawvideo -rawvideo fps=60:w=683:h=384:format=bgra &lt;filename&gt;</pre>
+<p>or, to convert the raw file into something which you can edit in OpenShot try this:</p>
+<pre>mencoder -demuxer rawvideo -rawvideo fps=60:w=683:h=384:format=bgra -ovc x264 -o &lt;output filename&gt; &lt;filename&gt;</pre>
+<p>And then you can edit and upload the processed file.  When I export from OpenShot I use the &#8220;Web&#8221; profile, then target &#8220;YouTube-HD&#8221;, &#8220;HD 720p 29.97 fps&#8221; &#8220;Med&#8221; &#8211; it&#8217;s a bit overly compressed, but it looks OK.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Raspberry Pi powered heating controller (Part 4)</title>
+		<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/</link>
+					<comments>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 04 Feb 2014 19:25:00 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<guid isPermaLink="false">/?p=571</guid>
+
+					<description><![CDATA[It&#8217;s really happening!  The breadboard prototype has been running the heating and hot [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><img class="size-medium wp-image-572 alignleft" style="background-color: black;" alt="Heating PCB" src="/wp-content/uploads/2014/02/heating5_pcb-254x300.png" width="254" height="300" srcset="/wp-content/uploads/2014/02/heating5_pcb-254x300.png 254w, /wp-content/uploads/2014/02/heating5_pcb-768x905.png 768w, /wp-content/uploads/2014/02/heating5_pcb.png 822w" sizes="(max-width: 254px) 100vw, 254px" /></p>
+<p>It&#8217;s really happening!  The breadboard prototype has been running the heating and hot water for a week or so now, and so far nothing has caught on fire.  The relays are happy, they&#8217;re not getting warm or anything, the Pi is turning things on and off when it&#8217;s supposed to, the REST API is working, and I&#8217;ve knocked up a quick Web interface to switch things remotely.  Last night for the first time I switched the heating on from the sofa, because I was a little bit cold.</p>
+<h2 style="text-align: center;">Great success!</h2>
+<p style="text-align: center;"><img class="wp-image-573 aligncenter" alt="Borat" src="http://whizzy.org/wp-content/uploads/2014/02/borat.jpg" width="297" height="297" srcset="/wp-content/uploads/2014/02/borat.jpg 297w, /wp-content/uploads/2014/02/borat-150x150.jpg 150w" sizes="(max-width: 297px) 100vw, 297px" /></p>
+<p><span style="font-size: 14px; line-height: 1.5em;">I&#8217;ve turned the breadboard layout in to a PCB design and today at 09:11 UTC it was sent off for manufacture, I should have it back in a week.  All the other components are on their way and so next weekend I should be able to put everything together and solder it to the board.  With a bit of luck it will work first time.</span></p>
+<p>I&#8217;m quite please with the board layout, it&#8217;s a fairly useful breakout board for the Raspberry Pi.  In the future I would like to re-work it with smaller traces so that it can fit directly on top of the Pi.</p>
+<p>The software to drive everything is rather basic, but I will make it available via Github anyway, it might come in handy.  I will be working on this over the coming months, so it should improve soon.  You&#8217;ll need a MySQL server set up.  The schema for the database is included in the repo.  The whole thing has grown organically and so the naming and structure is poor, but it works.</p>
+<p>Code:  <a href="https://github.com/8none1/heating">https://github.com/8none1/heating</a></p>
+<p><span style="font-size: 14px; line-height: 1.5em;">I&#8217;ve starting making some 1wire temperature sensors which I will place in various rooms and hook up back to the Pi via cat5.</span></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/02/1wire_heat.jpg"><img class="alignleft size-medium wp-image-574" alt="1wire_heat" src="/wp-content/uploads/2014/02/1wire_heat-300x225.jpg" width="300" height="225" srcset="/wp-content/uploads/2014/02/1wire_heat-300x225.jpg 300w, /wp-content/uploads/2014/02/1wire_heat.jpg 764w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I won&#8217;t be able to control individual radiators at the moment, but I can set a target temperature for a given room and rely on the TRVs to control the temperature in other rooms.</p>
+<p>I&#8217;ll also be adding outside temperature sensors and looking to replace the main room stat with another Pi in the future.</p>
+<p>In summary then, I should have the final thing built in the next couple of weeks.  More to follow when that happens.  I&#8217;m considering looking at moving the whole thing to a micro controller rather than a Pi, that would reduce the BOM quite considerably, and might even warrant a commercial product in the long run &#8211; a hackable heating controller.  Is this something people might be interested in?</p>
+<h2>Further Updates</h2>
+<ul>
+<li><a title="Raspberry Pi powered heating controller (Part 1)" href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">Part 1</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 2)" href="/2014/01/raspberry-pi-powered-heating-controller-part-2/">Part 2</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 3)" href="/2014/01/raspberry-pi-powered-heating-controller-part-3/">Part 3</a></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Raspberry Pi powered heating controller (Part 3)</title>
+		<link>/2014/01/27/raspberry-pi-powered-heating-controller-part-3/</link>
+					<comments>/2014/01/27/raspberry-pi-powered-heating-controller-part-3/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 27 Jan 2014 14:38:03 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<guid isPermaLink="false">/?p=561</guid>
+
+					<description><![CDATA[I&#8217;ve had all the parts hooked up on breadboard for a few weeks [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve had all the parts hooked up on breadboard for a few weeks now, and in theory everything works.  I haven&#8217;t actually tested the prototype with the real heating system yet as it&#8217;s been cold and I don&#8217;t want to risk blowing anything up and having to deal with a cold house and an angry family.  Sometime in the next month or so I will do that, but as far as I can tell it will Just Work (lolz).</p>
+<p><div id="attachment_562" style="width: 310px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/final_breadboard.jpg"><img aria-describedby="caption-attachment-562" class="size-medium wp-image-562 " alt="The final circuit design" src="/wp-content/uploads/2014/01/final_breadboard-300x225.jpg" width="300" height="225" /></a><p id="caption-attachment-562" class="wp-caption-text">The final circuit design</p></div></p>
+<p>In the meantime I&#8217;ve been thinking about the software to drive the thing.</p>
+<p>My programming skills are pretty basic so I have been trying to keep everything as simple as possible.  <span style="font-size: 14px; line-height: 1.5em;"> It became apparent that I was going to need some inter-process communication so that I could handle switching things on and off from outside the controller program (for web control etc).  This presented me with a problem as all the basic reading from files/FIFOs were blocking &#8211; in that they would sit and wait for a &#8220;command&#8221; to be received before continuing &#8211; and that was too limiting for my needs.  I was going to </span><span style="font-size: 14px; line-height: 1.5em;">have to deal with some kind of threading.  This troubled me deeply.  The good people of Google+ suggested a few options and in the end I decided a RESTful interface was the way to go as it should be accessible from the widest range of other languages I might have to use, and especially easy from a web browser.</span></p>
+<p>Originally I had imagined that I would have a single Python script to handle pretty much everything, including:</p>
+<ul>
+<li>Switching the relays on/off</li>
+<li>Responding to button presses</li>
+<li>Proving a scheduling engine for standard &#8220;on at this time, off at this time&#8221; behaviours</li>
+<li>Providing a way for other things to control the system</li>
+<li>Monitoring temperatures around the house</li>
+<li>Intelligent switching (e.g. it&#8217;s extra cold this morning, turn on early)</li>
+</ul>
+<p>That way, I figured, I could just write one script and each function could interact with each other function very easily.  But following a conversation with Mark S. a few years ago, and then more recently with Stuart L. I was starting to think that the monolithic architecture was not the way to go and instead I should push the intelligence out to the edges and the main loop should just deal with the basic on/off functionality.  I was worried that if something went wrong with the electronics, for example the heating turned on but never off, then it would be difficult to spot from outside the main loop.  But, given that the heating system has a lot of built-in safety features like room stats, boiler stats and hot water stats which are all wired in series with the mains that won&#8217;t be a problem, and besides the current controller doesn&#8217;t do anything more intelligent than ON or OFF.</p>
+<p>To that end I decided that I&#8217;d go with this architecture:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/Heating-System-Architecture.jpg"><img class="size-medium wp-image-564 alignnone" alt="Heating System Architecture" src="/wp-content/uploads/2014/01/Heating-System-Architecture-300x250.jpg" width="300" height="250" /></a></p>
+<p>The Relay Controller would handle switching the power on and off in the right order to the right outputs, it would handle the switches for manual override, provide feedback via LEDs, and it would provide a REST interface for anything else to control the system or find out what the current state is.  This way I can write a much more simple script to manage the scheduler for example.  It can run independently and then simply poke the relay controller at the right time.  I also decided that the relay controller would only have the ability to switch <strong>off</strong> after a certain period of time.  The default will be 60 mins.  This further simplifies things and puts just the right amount of intelligence in the core.  The scheduler just says &#8220;switch on now, and off again in 90 minutes&#8221;.  If the scheduler crashes the correct state is maintained by the controller and things just pick up from where they were when the scheduler starts again.  If the controller crashes then the power is removed from the system and it &#8220;fails safe&#8221;.</p>
+<p>The REST API is simple:</p>
+<ul>
+<li>/get/ch <em>or</em> hw/ &#8211; gets the current state of the system as a JSON object. e.g. &#8220;http://10.0.0.1/get/ch&#8221;</li>
+<li>/set/<em>ch</em> or <em>hw</em>/on <em>or</em> off &#8211; switch the system on or off.  e.g. &#8220;http://10.0.0.1/set/ch/on&#8221; switches the central eating on for the default time (60 minutes)</li>
+<li>/set/ch <em>or</em> hw/on/n &#8211; switch the system on for n minutes.  e.g. &#8220;http://10.0.0.1/set/hw/on/90&#8221; switches hot water on for 90 minutes</li>
+</ul>
+<p>I used the Python SimpleHTTPServer, the ThreadedHTTPServer and threading.Thread.</p>
+<p>I&#8217;m certain that it could be rewritten using proper OO methods and whatnot, and there is quite a lot of code which started out as an idea which then became redundant, but if you&#8217;re interested it&#8217;s available here:  <a href="/wp-content/uploads/2014/01/piheat.txt">piheat</a><a href="/wp-content/uploads/2014/01/piheat.txt"><br />
+</a></p>
+<p><span style="font-size: 14px; line-height: 1.5em;">Next on the agenda is to draw a PCB and get it made (once I&#8217;ve tested the circuit properly) and work on the scheduling engine.  At this rate I should be finished right around the time when we don&#8217;t need to use the heating any more.</span></p>
+<h2>Further Updates</h2>
+<ul>
+<li><a title="Raspberry Pi powered heating controller (Part 1)" href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">Part 1</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 2)" href="/2014/01/raspberry-pi-powered-heating-controller-part-2/">Part 2</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 4)" href="/2014/02/raspberry-pi-powered-heating-controller-part-4/">Part 4</a></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/01/27/raspberry-pi-powered-heating-controller-part-3/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Raspberry Pi powered heating controller (Part 1)</title>
+		<link>/2014/01/04/raspberry-pi-powered-heating-controller-part-1/</link>
+					<comments>/2014/01/04/raspberry-pi-powered-heating-controller-part-1/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sat, 04 Jan 2014 22:02:04 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<guid isPermaLink="false">/?p=509</guid>
+
+					<description><![CDATA[In which no Raspberry Pi&#8217;s are seen. TL;DR:  It should be fairly straight [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><span style="color: #808080; font-size: medium;"><em>In which no Raspberry Pi&#8217;s are seen.</em></span></p>
+<p><em><span style="text-decoration: underline;"><strong>TL;DR:</strong> </span> It should be fairly straight forward to add a Raspberry Pi controlled heating and hot water system to a standard UK domestic set up and, more importantly, remove it again without messing with the existing set up.  As a minimum you&#8217;ll need a Raspberry Pi and 4 relays.  A few other bits and bobs wouldn&#8217;t go a miss though.  The theory checks out, I&#8217;ve ordered the bits, come back next time to see what it looks like.</em></p>
+<p><span style="line-height: 1.5em;">It occurs to me that for a long time we&#8217;ve had a thermostat in our homes which switches the heating off when it gets warm enough, but wouldn&#8217;t it be just as useful to have something which turns the heating </span><strong style="line-height: 1.5em;">on</strong><span style="line-height: 1.5em;"> when it gets too cold?</span></p>
+<p>This thought, together with a Raspberry Pi that wasn&#8217;t doing much and a strong desire to make my home more connected, led me to think about how I might control my heating system from, say, a smart phone.  I&#8217;m far from being the first person to think of this idea, and there are loads of really good examples out there, but none of them did quite what I wanted in the way I wanted to do it.  So I&#8217;m going to start from first principals and walk through this project design to try and build a removable &amp; non-destructive add-on to an existing system.  I&#8217;m writing this at the very start of the project, so I&#8217;ve no idea if it will work, if I will break some expensive components on way to getting it working, or if I will just give up before I get to the end.  Let&#8217;s see.</p>
+<h2>Typical domestic hot water and heating systems</h2>
+<p>This may be UK specific.  Here is a very very crude diagram of a typical home set up:</p>
+<p><div id="attachment_514" style="width: 238px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/CH-HWC-2.png"><img aria-describedby="caption-attachment-514" class="size-medium wp-image-514" src="/wp-content/uploads/2014/01/CH-HWC-2-228x300.png" alt="A crude diagram of how the central heating system works in a typical UK home." width="228" height="300" /></a><p id="caption-attachment-514" class="wp-caption-text">A crude diagram of how the central heating system works in a typical UK home.</p></div></p>
+<p><span style="line-height: 1.5em;">The boiler burns gas and heats water.  That hot water is circulated around the system (called the primary circuit) by a pump and can do three jobs.  It can circulate through a heating element in a hot water cylinder and heat more water which is stored in the cylinder.  Note that the water which circulates through the element does not come in to contact with the actual water it is heating, the two are kept </span>separate for water quality reasons.  The second job it can do is circulate through radiators in the home and hear the air.  The third job is to do both.  The hot water from the boiler moves around the primary circuit losing it&#8217;s heat to either the hot water in the cylinder or the air and eventually passes through the boiler again, heats up, and goes round and round again.</p>
+<p>There are two &#8220;header&#8221; tanks of cold water in the loft.  One is for the cold water to the bathroom for flushing the loo, filling the bath, brushing your teeth, that kind of thing.  This tank also fills the hot water cylinder.  The other is the header tank for the primary system and ensures that it can&#8217;t boil dry.  Both use gravity and water pressure to make sure the water flows to where it is needed.</p>
+<p>The system in the diagram is an &#8220;open&#8221; system.  If the hot water in the cylinder gets too hot it can expand up the vent pipe and dump itself in to the cold water tank.  The cold water tank can over flow to outside.  If the hot water in the primary gets too hot it can expand up in to the header tank ready to be reused to fill the primary when the water cools.</p>
+<p>There is such a thing as a sealed pressurised system which doesn&#8217;t have these vents.  These are more complex and if you have one please be very careful in tinkering with the control mechanisms.  In an open system, if you get things wrong and the boiler runs and runs you would end up with a lot of steam in the loft.   In a pressurised system things can go pop and blast you with boiling water.  That said, in an open system you could still end up dumping a header tank full of boiling water down on to the bedrooms below.  <span style="text-decoration: underline;">People have died</span> from this happening, so tinkering with the heating system is not something to be taken lightly.</p>
+<p>In summary then; we have three things we can ask a system for:</p>
+<ol>
+<li>Make hot water</li>
+<li>Heat the house</li>
+<li>Make hot water and heat the house</li>
+</ol>
+<p>And we have a number of key elements:</p>
+<ol>
+<li>Boiler</li>
+<li>Hot water cylinder</li>
+<li>Primary header tank</li>
+<li>Cold water tank</li>
+</ol>
+<p><span style="line-height: 1.5em; font-size: 1.5em;">Typical electrical system to control hot water and heating</span></p>
+<p>Once we understand how the wet bits fit together we can take a look at the electrical components:</p>
+<p><div id="attachment_518" style="width: 310px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/Y-Plan-Wiring.gif"><img aria-describedby="caption-attachment-518" class="size-medium wp-image-518" src="/wp-content/uploads/2014/01/Y-Plan-Wiring-300x278.gif" alt="Y Plan electrical wiring plan for central heating and hot water." width="300" height="278" srcset="/wp-content/uploads/2014/01/Y-Plan-Wiring-300x278.gif 300w, /wp-content/uploads/2014/01/Y-Plan-Wiring-768x713.gif 768w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-518" class="wp-caption-text">Y Plan electrical wiring plan for central heating and hot water.</p></div></p>
+<p>There are multiple &#8220;standards&#8221; for wiring up a heating system.  You can find heaps of information on the excellent <a href="http://wiki.diyfaq.org.uk/index.php?title=Central_Heating_Controls_and_Zoning">DIY FAQ wiki</a>.</p>
+<p>My system has been wired in the &#8220;Y Plan&#8221; configuration and if you have a single 3-port valve in your airing cupboard and a couple of tanks in your loft &#8211; then there is a good chance you have too.  I will run through the wiring, and some of the inherent safety systems built in (which is why I&#8217;m keen to make sure my controller is a simple replacement for the existing controller, and is not a complete re-wire).  Before we start though, a further word of caution.  Mains electricity is lethal.  You need be comfortable playing with this stuff to consider attempting anything to do with the heating system.  It&#8217;s also probably illegal in UK due to some draconian restrictions on what a home owner can and can not do to the wiring in their own home.  Don&#8217;t try this at home kids.  A competent tradesman might be able to help you hook it all together.</p>
+<p>The incoming mains supply goes through a double pole switch which will disconnect live and neutral when switched off.  In this diagram, the live feed provides power to only the controller (sometimes you might see a parallel (switched and fused) connection to the boiler from that live).  So first and foremost, all power to the <span style="text-decoration: underline;">components</span> comes through the controller. Neutral is common to pump, boiler and valve and so is earth.</p>
+<p>Thermostats are placed in series for both the hot water circuits and the heating circuits.  These will physically break the circuit when a specific temperature is reached.</p>
+<p>Let&#8217;s consider this example:  I tell the controller to heat the water.  It connects the live feed to the &#8220;HW ON&#8221; cable via point 6 on the diagram. The current flows to the cylinder stat, which allows the current through since the temperature is lower than the trigger point it is set to.  The pump and the boiler are connected in parallel so you can&#8217;t run the boiler with out the pump running too (at least that&#8217;s the plan), and they are provided power via the room stat to point 8 on the diagram.  The boiler is told to turn on, and the pump moves that heated water around the system.  The hot water reaches the three port valve.  The valve has an electrical actuator on which moves to set position depending on what electrical connections are made to it.  In our case, no INPUT power is being applied to the valve, so it sits in it&#8217;s default position &#8211; which just happens to be &#8220;Hot water mode&#8221;, and so the heated water from the boiler passes through the hot water cylinder only.  When the hot water cylinder get&#8217;s to the right temperature the thermostats clicks over to the other contactor and now no power is applied to the pump and boiler via the HW ON output on the controller.  Instead, the grey wire, point 7 on the connector, is energised.  This tells the valve that HW is no longer required.  This system is pretty safe, since as soon as the cylinder stat is triggered power is removed from the boiler and so it would shut down.  Now, thermostats do fail, but they usually &#8220;fail safe&#8221;, but sometimes they don&#8217;t.</p>
+<p>What if I want just the heating to run?  The controller connects to the live input to the CH cable via point 4 on the connector.  This passes through the room stat which will allow the current to flow if it&#8217;s below the temperature set.  The current ends up at the valve via point 5 on the connector.  In this case, where we only want heating, the &#8220;white&#8221; wire is live (it&#8217;s black on the diagram) and the valve connects the &#8220;white&#8221; wire to the &#8220;orange&#8221; wire which goes back to point 8 on the connector, and in turn provides power to the boiler and pump.  At this point the &#8220;grey&#8221; wire is also energised, as the controller makes it&#8217;s &#8220;HW OFF&#8221; output live when you ask for only heating. The room stat is able to cut power to the circuit when it reaches the set temperature.</p>
+<p>If we want both hot water and heating, the controller energises the &#8220;CH ON&#8221; and &#8220;HW ON&#8221; outputs.  Here current is provided to the pump and boiler when any of the thermostats indicates that more heating is required.  If the HW reaches it&#8217;s temperature first, then the stat energises the grey wire, which tells the valve that no more hot water is required, and so it will move to the CH ONLY position, and current will continue to be provided by the orange wire when the valve reaches the correct position.  The heated water from the boiler will stop circulating through the hot water cylinder and go only through the radiators &#8211; concentrating the heating to where it is needed.  Pretty neat!</p>
+<p>This system strikes me as being both simple and brilliant at the same time.  It&#8217;s also pretty safe, as long as the stats are working as they should do.</p>
+<p>In summary then, the controller is able to indicate a requirement for hot water, central heating, or both by linking three outputs to live in the right sequence.  The four states are therefore:</p>
+<ol>
+<li>HW OFF, CH OFF (0,0)</li>
+<li>HW OFF, CH ON (0,1)</li>
+<li>HW ON, CH OFF (1,0)</li>
+<li>HW ON, CH ON (1,1)</li>
+</ol>
+<h2>Confirming my deductions</h2>
+<p>I&#8217;ve looked at the plumbing, and I&#8217;ve looked at the wiring, and I&#8217;m pretty sure that I know what&#8217;s going on.  Next thing to do is apply the scientific method and gather the evidence to back up my assumptions.</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller1.jpg"><img class="alignnone size-medium wp-image-505" title="The horrors that lurk behind the heating controller" src="/wp-content/uploads/2014/01/controller1-300x225.jpg" alt="Behind the heating controller" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller1-300x225.jpg 300w, /wp-content/uploads/2014/01/controller1-1024x768.jpg 1024w, /wp-content/uploads/2014/01/controller1-768x576.jpg 768w, /wp-content/uploads/2014/01/controller1-1200x900.jpg 1200w, /wp-content/uploads/2014/01/controller1.jpg 1204w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The first thing I did was to turn off the power to the heating system.  I&#8217;m paranoid, so I turned it off at the fused connection to the left of the controller and also at the fuse box.  I also wore rubber boots, and jumped in the air every time I touched a wire.  Better safe than sorry, eh?  And, rightly so it turns out.  The fused connection unit did actually cut all the power to the heating system, but look carefully at the third connection from the left and you&#8217;ll see an earth wire being used to carry live current.  This is against all the regulations.  Whoever installed this system originally was clearly a free spirit.  I was also quite impressed that they&#8217;d managed to squeeze all the connections in to a double gang back box.  What a mess.  Remember kids, only a competent person is allowed to fiddle with these things &#8211; they do a better quality job you see.</p>
+<p>Looking at the zoomed in image you can see 6 terminals:  N, L 1, 2, 3, 4.</p>
+<p>N &amp; L are self explanatory.  2 is not connected to anything, and so I don&#8217;t need to worry about it.  So that leaves three connections that do something (1, 3 and 4).  Exactly what I was expecting.  One will be CH ON, one HW ON, and one HW off.  Which is which?</p>
+<p>Looking at the back of the controller unit it&#8217;s self:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller_rear.jpg"><img class="alignnone size-medium wp-image-507" src="/wp-content/uploads/2014/01/controller_rear-300x225.jpg" alt="Rear of heating controller" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller_rear-300x225.jpg 300w, /wp-content/uploads/2014/01/controller_rear-768x576.jpg 768w, /wp-content/uploads/2014/01/controller_rear.jpg 897w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>My theory is sound!  1 is <strong>HW OFF</strong>, 3 is <strong>HW ON</strong>, 4 is <strong>CH ON</strong>.</p>
+<p>It looks like everything is connected as I had expected, but better safe than sorry.  Let&#8217;s do a bit more testing:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller2.jpg"><img class="alignnone size-medium wp-image-506" src="/wp-content/uploads/2014/01/controller2-300x225.jpg" alt="Testing harness" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller2-300x225.jpg 300w, /wp-content/uploads/2014/01/controller2-1024x768.jpg 1024w, /wp-content/uploads/2014/01/controller2-768x576.jpg 768w, /wp-content/uploads/2014/01/controller2.jpg 1141w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I wired in a few bits of cable and then (not shown) removed the connections to the rest of the system (labelling where they came from when I removed them!).  I left the L &amp; N connected.  To recap, I <strong>removed</strong> the existing wires from 1, 3 and 4 and replaced them with my cables which came down to some screw down connector blocks.  The reason I put connector blocks on the end was two fold.  Firstly, to make it easier to probe with my multimeter and secondly to stop me accidentally brushing against one of the cables and giving myself a shock.  I also labelled the permanent live with a bit of red heat-shrink, just so I don&#8217;t get confused.</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller.jpg"><img class="alignnone size-medium wp-image-508" src="/wp-content/uploads/2014/01/controller-225x300.jpg" alt="Test harness 2" width="225" height="300" srcset="/wp-content/uploads/2014/01/controller-225x300.jpg 225w, /wp-content/uploads/2014/01/controller.jpg 612w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
+<p>Putting the controlled back on, I hooked up my multimeter and switched through the options to see what happens when.  My findings are below:</p>
+<table class="wp-gallery" style="border: 2px solid #000000; height: 200px; width: 200px;" border="2" cellspacing="5" cellpadding="2" align="left">
+<tbody>
+<tr style="background-color: #a9a8a8;">
+<td></td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr style="background-color: #d9d8d8;">
+<td>ALL OFF</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr style="background-color: #a9a8a8;">
+<td>HW ONLY</td>
+<td>0</td>
+<td style="background-color: #28f10d;">240V</td>
+<td>0</td>
+</tr>
+<tr style="background-color: #d9d8d8;">
+<td>CH ONLY</td>
+<td style="background-color: #28f10d;">240V</td>
+<td>0</td>
+<td style="background-color: #28f10d;">240V</td>
+</tr>
+<tr style="background-color: #a9a8a8;">
+<td>BOTH ON</td>
+<td>0</td>
+<td style="background-color: #28f10d;">240V</td>
+<td style="background-color: #28f10d;">240V</td>
+</tr>
+</tbody>
+</table>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>Exactly what I expected.  Point 1 must, therefore be &#8220;HW OFF&#8221;, point 2 &#8220;HW ON&#8221; and point 3 &#8220;CH ON&#8221; &#8211; which they are, as we saw from the back of the controller.  I&#8217;m now confident enough with the set up to proceed with roughing out a block diagram for the controller and ordering the parts.</p>
+<p><span style="font-size: 1.5em; line-height: 1.5em;">The plan</span></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/heating_controller_block.png"><img class="alignnone size-medium wp-image-532" src="/wp-content/uploads/2014/01/heating_controller_block-300x192.png" alt="heating_controller_block" width="300" height="192" /></a>  <a href="http://whizzy.org/wp-content/uploads/2014/01/Heating-Controller-1.png"><img class="alignnone size-medium wp-image-538" src="/wp-content/uploads/2014/01/Heating-Controller-1-300x222.png" alt="Heating Controller Crude" width="300" height="222" /></a></p>
+<p>This rather unclear breadboard layout (with the awesome <a href="http://fritzing.org/home/">http://fritzing.org/home/</a>) logically lays out what I intend to do.  I&#8217;ve also added a crude block diagram for good measure.</p>
+<p>First, I will add a real-time clock module.  They&#8217;re cheap and easy to fit.  This will provide the Pi with a source of time when it can&#8217;t talk to NTP servers, and so it will be able to turn things on and off at the right times, even when the network connection is down.</p>
+<p>Next I will add four relays.  I will take the main 240V incoming supply out of the existing controller and put it through relay 1.  This relay will pass the supply on to the existing controller via the &#8220;Normally Closed&#8221; relay output.  When I switch this relay, the supply to the existing controller will be dropped, and instead routed to the other three relays which will then be able to switch this current.  These three relays will be wired in parallel with the existing controller connections, much like in the image above showing the test harness connected in to the controller connections.  That is to say: one relay will go to point 1, one to point 3 and one to point 4.  The existing safety features (thermostats in series in the circuits) are un-changed and so still offer the same protection.  In order to activate heating or hot water we switch the relays as per the table above.  By adding my new system in parallel and being able to easily switch between the two I can bring the RasPi powered one online gradually.  A few hours here, a few hours there.  And once I&#8217;m happy that it&#8217;s not going to go crazy I can leave it unsupervised for longer and longer periods.  It also means that if I update the software and break something, we can still wash.</p>
+<p>I will also add a number of 1wire temperature sensors.  I will have three on the hot water cylinder: 1 at each of the top, middle and bottom.  This will give me insight in to how much hot water is in the cylinder, and the temperature thereof.  This is not intended to be a safety system.  The temperature readings from these sensors will not be relied upon to switch things off in an emergency, that will be left to the original thermostats, <em>but</em> &#8211; we could use these readings as well to help make decisions.  I will also fit a temperature sensors in the cold water tank, the primary header tank and somewhere outside.  This will give me insight in to a couple of things:  Firstly, how cold is the water in the CW tank, and what is the temperature outside?  This has a direct effect on the number of showers that can be had from a given amount of hot water at a known temperature. Useful for trending too.  Secondly, fitting a sensor in the primary header tank can report when the header tank is getting hot.  Really, the header shouldn&#8217;t heat up too much.  If it does then either the system is &#8220;pumping over&#8221; &#8211; where the pump is <span style="text-decoration: underline;">forcing</span> water up the vent pipe pipe OR the water is so hot it has expanded enough to push water out of the vent, or I expect some combination of the two.  Either situation is sub-optimal, and with a sensor in the header tank I get some visibility of what&#8217;s going on.  I might also add a sensor to the boiler input and output, so get an idea of how much work the boiler is doing.  Adding a sensor to each room would be a nice addition at some point too.</p>
+<p>A couple of switches will be added for manually switching the hot water or heating on/off from the airing cupboard, where the current controller is situated and where the more senior visitors to Whizzy Towers will expect the heating buttons to be.</p>
+<h4>Shopping list:</h4>
+<ul>
+<li>1 x Real Time Clock.  <a href="http://www.ebay.co.uk/itm/200929798800?ssPageName=STRK:MEWNX:IT&amp;_trksid=p3984.m1439.l2649">http://www.ebay.co.uk/itm/200929798800?ssPageName=STRK:MEWNX:IT&amp;_trksid=p3984.m1439.l2649</a></li>
+<li><span style="line-height: 1.5em;">4 mains rated relays.  </span><a style="line-height: 1.5em;" href="http://www.ebay.co.uk/itm/190950013824?var=490205033810&amp;ssPageName=STRK:MEWNX:IT&amp;_trksid=p3984.m1439.l2649">http://www.ebay.co.uk/itm/190950013824?var=490205033810&amp;ssPageName=STRK:MEWNX:IT&amp;_trksid=p3984.m1439.l2649</a><span style="line-height: 1.5em;"><br />
+</span></li>
+<li><span style="line-height: 1.5em;">Some 1wire temperature sensors.  <a href="http://www.ebay.co.uk/itm/DS18S20-Temperature-Sensor-1-Wire-Dallas-Maxim-/130621920626">http://www.ebay.co.uk/itm/DS18S20-Temperature-Sensor-1-Wire-Dallas-Maxim-/130621920626</a></span></li>
+<li>A few meters of 0.75mm 5 core heat resistant flex (type 3095Y).  <a href="http://www.ebay.co.uk/itm/5-Core-Heat-Resistant-Flex-Electrical-Cable-3095Y-0-75mm-/310663083027?pt=UK_BOI_Electrical_Components_Supplies_ET&amp;var=&amp;hash=item4854f67413">http://www.ebay.co.uk/itm/5-Core-Heat-Resistant-Flex-Electrical-Cable-3095Y-0-75mm-/310663083027?pt=UK_BOI_Electrical_Components_Supplies_ET&amp;var=&amp;hash=item4854f67413</a></li>
+<li>A short bit of twin brown and earth for the connections between the 1st relay and the original controller live input.</li>
+<li>A 4k7 resistor</li>
+</ul>
+<p>Couple that with a few odd bits of wire, some LEDs a bit of Python and we should have ourselves a Raspberry Pi powered heating and hot water controller which is relatively safe, easy to remove and cheap to build.  Let&#8217;s see what happens when all the bits turn up.  Should be here in a week or so.</p>
+<p>Stay tuned.</p>
+<h2>Further Updates</h2>
+<ol>
+<li><a title="Raspberry Pi powered heating controller (Part 2)" href="/2014/01/raspberry-pi-powered-heating-controller-part-2/">Part 2</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 3)" href="/2014/01/raspberry-pi-powered-heating-controller-part-3/">Part 3</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 4)" href="/2014/02/raspberry-pi-powered-heating-controller-part-4/">Part 4</a></li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/01/04/raspberry-pi-powered-heating-controller-part-1/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Absolute beginners guide to Google Maps JavaScript v3</title>
+		<link>/2013/12/17/absolute-beginners-guide-to-google-maps-javascript-v3/</link>
+					<comments>/2013/12/17/absolute-beginners-guide-to-google-maps-javascript-v3/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 17 Dec 2013 14:58:55 +0000</pubDate>
+				<category><![CDATA[Google Maps]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=457</guid>
+
+					<description><![CDATA[Since I first published my HowTo and the subsequent follow up for novices to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Since I first published my <a title="Absolute beginners guide to Google Maps Javascript" href="/2009/05/absolute-beginners-guide-to-google-maps-javascript/">HowTo</a> and the <a title="Absolute beginners guide to Google Maps Javascript Part 2" href="/2009/05/absolute-begineers-guide-to-google-maps-javascript-part-2/">subsequent</a> follow up for novices to get a Google Map on a web page it&#8217;s been the most popular post on my site by quite a margin.  Sadly it&#8217;s been resting on its laurels, and is now quite out of date and indeed broken.  So spurred on by my recent server replacement and attempt to revitalise this blog I present the new, improved, and generally working&#8230; Beginners Guide To Google Maps JavaScript v3.</p>
+<p>The premise is simple; you&#8217;ve got a requirement to put a map on your site.  You don&#8217;t have the first clue how to do it.  You follow these instructions and you get you map.  Hopefully you&#8217;ll pick up enough to tweak the map to your requirements, if not &#8211; please ask in the comments and I&#8217;ll try and help you.  I&#8217;m assuming that you&#8217;ve got a bit of HTML experience, and that you&#8217;ve got a JavaScript debugger available to you (either Firebug for Firefox or Developer Tools built in to Chrome).</p>
+<p>I&#8217;ve based a lot of this on the official Google tutorial here:  <a href="https://developers.google.com/maps/documentation/javascript/tutorial">https://developers.google.com/maps/documentation/javascript/tutorial</a>.  (I&#8217;m pretty sure they borrowed that from me in the first place, so it&#8217;s only fair <img src="https://s.w.org/images/core/emoji/13.0.1/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> ).</p>
+<h1>Part 1.  Getting the map on the page</h1>
+<p>Get yourself an API key for Google Maps from here:  <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key" target="_blank" rel="noopener noreferrer">https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a></p>
+<p>Let&#8217;s start from the end and work back to the beginning.  Save this as an HTML document, change the API key, open it in your browser and you&#8217;ll have a map.  I&#8217;ve saved you a bit of time by already centring it on Barrow-in-Furness bus depot.</p>
+<p>[js]<br />
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+  &lt;head&gt;<br />
+&lt;title&gt;My first Google Map&lt;/title&gt;<br />
+    &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1.0, user-scalable=no&quot; /&gt;<br />
+    &lt;style type=&quot;text/css&quot;&gt;<br />
+      html { height: 100% }<br />
+      body { height: 100%; margin: 0; padding: 0 }<br />
+      #map-canvas { height: 100% }<br />
+    &lt;/style&gt;<br />
+    &lt;script type=&quot;text/javascript&quot;<br />
+      src=&quot;https://maps.googleapis.com/maps/api/js?key=XXXXXXXXXXXXXXXX&amp;sensor=false&quot;&gt;<br />
+    &lt;/script&gt;<br />
+    &lt;script type=&quot;text/javascript&quot;&gt;<br />
+      function initialize() {<br />
+      	var myLatLng = new google.maps.LatLng(54.124634, -3.237029)<br />
+        var mapOptions = {<br />
+          center: myLatLng,<br />
+          zoom: 17,<br />
+          mapTypeId: google.maps.MapTypeId.SATELLITE<br />
+          };</p>
+<p>        var map = new google.maps.Map(document.getElementById(&quot;map-canvas&quot;),<br />
+            mapOptions);</p>
+<p>        var myMarker = new google.maps.Marker({<br />
+          position: myLatLng,<br />
+          map: map,<br />
+          title: &quot;A place on Earth&quot;,<br />
+          draggable: true,<br />
+          })<br />
+        }</p>
+<p>      google.maps.event.addDomListener(window, &#8216;load&#8217;, initialize);<br />
+    &lt;/script&gt;<br />
+  &lt;/head&gt;<br />
+  &lt;body&gt;<br />
+    &lt;div id=&quot;map-canvas&quot;/&gt;<br />
+  &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+[/js]</p>
+<p>Copy and paste that in to a text editor, replace XXXXXXXXXXXXXXXX with your own API key, save it somewhere and the load it up in your browser.  You should see a satellite style map with a marker in the middle. You&#8217;re done.  Simple eh?  Read on learn a bit about how it works, and what you can do to change the appearance.</p>
+<h2>Part 1.1 Understanding the basic HTML</h2>
+<p>In order to try and guarantee a consistent layout across browsers you need to make sure that your page is rendered in &#8216;Standards Compliant&#8217; mode as opposed to &#8216;Quirks&#8217; mode. To do this you need to specify a DOCTYPE at the top of your HTML file.  We&#8217;re using a very simple &#8220;html&#8221; DOCTYPE which tells the browser that we&#8217;re HTML5.  In HTML4.x there were a plethora of variations &#8211; thankfully we don&#8217;t need to care about them anymore.  HTML5 is the way to go, and so the only DOCTYPE we care about is &#8220;html&#8221;.</p>
+<p>We set the title of the page, and then we set some initial viewport settings to help mobile browsers render the page correctly.  This is widely regarded as a good thing, and you can learn more about it from here: <a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/">http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/</a></p>
+<p>Skipping over the style and scripts for a moment, we create the main body of the page with a single div element in it.  We give it the id &#8220;map-canvas&#8221;, and then we close off the bottom of the body and mark the end of the HTML.  You won&#8217;t be surprised to read that the div we&#8217;ve just created will be where the map will soon appear.</p>
+<h2>Part 1.2 All about style</h2>
+<p>In standard HTML5 (remember the DOCTYPE from above) there are a few specifics you need to know about CSS.  If an element specifies a size as a percentage, then that percentage is calculated from the parent objects size.  Imagine you have a nested DIV, called DIV2.  It lives inside DIV1.  Where DIV1 has a fixed size of 500px by 500px, then DIV2 knows that 100% high equals 500px, but what if DIV1 didn&#8217;t have a size specified?  In that case, in standards mode, DIV2 would decide that 100% high equals zero px &#8211; because it doesn&#8217;t know any better.  This has caught people out a few times.  In order to make sure that all our DIVs can inherit a size correctly we set the height of the entire HTML page and the BODY to be 100%.  This is calculated by the browser when the page loads, and then can flow down to the elements within the page correctly.</p>
+<p>Once we have the parent elements size set correctly (the page, and the body) we can style our map DIV to be 100% high safe in the knowledge that it has enough information to render and the correct size and not 0 px high.</p>
+<h2>Part 1.3 The Meat Section</h2>
+<p>Now we&#8217;re going to look at the actual JavaScript and understand what it&#8217;s doing and in which order.</p>
+<p>First of all, we have the scripts in the HEAD tag.  The browser will load the head part of the HTML first and your scripts will be loaded before the page is fully rendered.  Any functionality that you make available in your scripts should be available to the rest of the page when it comes to need it.  This is generally the right way to do it.</p>
+<p>The first SCRIPT tag takes care of loading the Google Maps code.  We tell the browser that the content of the script is text/javascript and then where to find it.  There are a couple of parameters we pass  in to the script through the URL.  The first one is &#8220;key&#8221; &#8211; this is your simple API key for access Google Maps (see above for details of where to get this key).  The second parameter is &#8220;sensor&#8221;.  This is required and must be &#8220;false&#8221; if you&#8217;re not using a GPS (or similar) to work out where you are.  In our case, we&#8217;re just picking a point on and saying &#8220;centre the map here&#8221; &#8211; so we use false.  If were using a GPS to centre the map on our current location, then this would be &#8220;true&#8221;.</p>
+<p>This script gets loaded by the browser and now we can start to make use of the Google Maps JavaScript APIs in the rest of our page.</p>
+<p>The second script is a bit more complex, but should be easy to understand:</p>
+<p>We create a new function called &#8220;initialize&#8221;.<br />
+Inside that function we create an object called myLatLng.  We use the Google provided API google.maps.LatLng() to create an object which can be understood by the rest of the Google Maps API and pass in the co-ordinates of Barrow-in-Furness bus depot.  We use &#8220;var&#8221; to limit that object&#8217;s &#8220;scope&#8221; to within the &#8220;initialize&#8221; function &#8211; that is to say, we won&#8217;t be able to get access to that particular myLatLng from other functions on the page.<br />
+Next we create another thing called mapOptions.  The format of this is as per the spec here: <a href="https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapOptions">https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapOptions<br />
+</a></p>
+<p>There are loads of options, most of which we don&#8217;t need to worry about, so we&#8217;re just setting a few key options:  where the map is centered, how much it is zoomed in, and the type of map we see.  The map types are provided by Google as a set of constants, which are identifiable by being all in upper case.  In our case we&#8217;re using SATELLITE, but we could also use HYBRID, ROADMAP or TERRAIN.</p>
+<p>Once we&#8217;ve set up the various mapOptions we create a new var called &#8220;map&#8221; which is an instance of a Map object as provided by the Google APIs.  We pass in to it the id of the HTML object where we want the map to appear, as we created in section 1.2, and we pass in the options var which we just created.  This is enough information for the Google APIs to set up the map as we want it and put it on the page.</p>
+<p>The last thing we do in our example is add a marker.  A marker is the indicator which you use to highlight a point on the map.  Google provide a lot of icons and colours for us to use, but the default is the red tear-drop one, so we&#8217;ll stick with that for now.</p>
+<p>To create a marker we create a new instance of google.Maps.Marker and set up some of the options as we did for the map itself.  We tell it the position for the marker to appear.  We use the &#8220;myLatLng&#8221; object we created earlier.  You might notice that we are using the myLatLng object twice in our example.  Once as the centre point for the map, and once for the position of the marker.  You can probably deduce from this that the marker will appear in the centre of the map.  We also tell the marker which map it should be added to.  We only have one map on our page, but if we had many this is how you&#8217;d add a marker to the correct map.  We give it a title, which is simply a string and we make it draggable by setting the draggable option to &#8220;true&#8221;.  You can read more about the marker options here: <a href="https://developers.google.com/maps/documentation/javascript/reference?hl=en#MarkerOptions">https://developers.google.com/maps/documentation/javascript/reference?hl=en#MarkerOptions</a></p>
+<p>That&#8217;s very nearly it for our first simple map.  The last thing to do is use a DOM listener to trigger the above JavaScript when the page loads, and so make our map and marker appear.</p>
+<p>google.maps.event.addDomListener is provided via the Google APIs and we pass in three pieces of information.  window is the object provided by the browser.  The &#8216;load&#8217; event is actually is separate from the &#8220;onload&#8221; event you might have read about.  The load event signifies that the page is fully rendered and any JavaScript which wants to manipulate the DOM can begin work, and that&#8217;s what we want to do.  We want to swap the empty div with the id of &#8220;map&#8221; with the actual map.  So once the page is indeed loaded the command will execute the &#8220;initialize&#8221; function and all the magic will happen.</p>
+<p>And that&#8217;s it.  We&#8217;re done.  We&#8217;ve got a map on the page centred at our chosen location, and there is a little marker to show a specific part of the map.</p>
+<p>If you compare this to the original <a title="Absolute beginners guide to Google Maps Javascript" href="/2009/05/absolute-beginners-guide-to-google-maps-javascript/">Beginners Guide</a> I think you&#8217;ll say that this new version of the API is even easier to use.  I will try and find time of the next few months to jot down a few notes on doing more interesting things with the map but I hope that this will get you started.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/12/17/absolute-beginners-guide-to-google-maps-javascript-v3/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Device control over HDMI via CEC.  libcec FTW.</title>
+		<link>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/</link>
+					<comments>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 26 Nov 2012 15:28:18 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[tv]]></category>
+		<guid isPermaLink="false">/?p=425</guid>
+
+					<description><![CDATA[Blimey, it&#8217;s been a while.  I&#8217;ve been a bit busy, and let&#8217;s be [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Blimey, it&#8217;s been a while.  I&#8217;ve been a bit busy, and let&#8217;s be honest; writing up blog posts always sounds like a good idea, but when you get in to it &#8211; it&#8217;s really hard work.</p>
+<p>Anyway &#8211; I finally got round to buying a Pulse-Eight CEC to USB adapter:  <a href="http://www.pulse-eight.com/store/products/104-usb-hdmi-cec-adapter.aspx">http://www.pulse-eight.com/store/products/104-usb-hdmi-cec-adapter.aspx</a></p>
+<p>This awesome little box of tricks makes up for the lack of CEC control in the vast majority of HDMI-Out equipped graphics cards.  It&#8217;s the final piece in the jigsaw of a Linux based home entertainment device.  It allows you to talk to the other devices in your HDMI network; your surround sound amplifier and your big screen TV being the best examples (assuming they support CEC of course).</p>
+<p>CEC has been around for a long time but for some reason it doesn&#8217;t seem to be widely used, or very well implemented, in most consumer electronics devices.  It&#8217;s a published standard but with OEM manufacturers wanting to differentiate their products and introduce a bit of vendor lock-in, they all call it something different.  The fact is that your Toshiba Regza Link TV will talk to your Sony Bravia Link Amp just fine, for the most part.  There might be a couple of proprietary things which don&#8217;t work, but on, off, volume up, volume down etc will all just work.</p>
+<p>Pulse Eight&#8217;s USB to CEC adapter lets your computer get in on the act too, and opens up a whole realm of automatic switching, which really cuts down on the number of remote controls you need and the number of buttons you have to remember the purpose of.</p>
+<p>The good folk at Pulse Eight have also made libCEC, an open source library to allow pretty much any software to take advantage of the USB adapter.  <a href="http://libcec.pulse-eight.com/">http://libcec.pulse-eight.com/</a></p>
+<p>It comes with C++, C and .NET interfaces, and a CLI utility called cec-client.  XBMC &amp; MythTV already support libCEC and have some neat features baked right in.  It&#8217;s good, but it&#8217;s not exactly what I was looking for &#8211; I want a bit more control.</p>
+<p>Now, I don&#8217;t know anything about C++ or C or .NET, so until someone writes some Python bindings, my ticket to this party lies solely with the CLI utility cec-client.  It can do most things on the &#8220;transmit&#8221; side, so you can send commands to your other CEC devices fairly easily.  Acting on a request, or listening to the CEC traffic is a bit more complex &#8211; but not beyond the realms of possibility.</p>
+<p>This weekend I wrote (and rewrote and rewrote) a couple of Bash scripts to:</p>
+<ul>
+<li>Let me control the system volume (i.e. the real hardware, not the mixer on the computer) on the TV &amp; Amp from the PCs remote control</li>
+<li>Let me switch the TV &amp; Amp on and off</li>
+<li>Activate proper muting, again not the mixer on the computer &#8211; the hardware itself</li>
+<li>Switch the amp &amp; TV to my MythTV PC</li>
+<li>Power off all the hardware when the PC suspends, and then switching it all back on again</li>
+<li>Shut the whole lot down when the screensaver on the PC kicks in.</li>
+</ul>
+<p style="text-align: left;">I make these scripts available for your amusement:</p>
+<div>
+<ul>
+<li><a href="/wp-content/uploads/2012/11/cecserver.sh_.txt">cecserver.sh</a></li>
+<li><a href="/wp-content/uploads/2012/11/cecsimple.sh_.txt">cecsimple.sh</a></li>
+</ul>
+</div>
+<p>cecsimple is a client of the &#8220;server&#8221; which itself is a client of cec-client.  Fire up the server and then issue it commands down the FIFO either directly or via the abstraction layer which is cecsimple.sh.</p>
+<p>&nbsp;</p>
+<p>I hooked up the volume control and amp power via &#8220;irexec&#8221; and lirc.  I tell irexec to execute, for example, &#8220;cecsimple.sh volup&#8221; or &#8220;cecsimple.sh ampon&#8221;.  If the server component is already running then these commands are sent very quickly and you don&#8217;t really notice the lag.</p>
+<p>To switch the TV off when the PC goes in to suspend mode I added a script in /etc/pm/sleep.d which calls &#8220;cecsimple.sh tvoff&#8221; and then &#8220;cecsimple.sh tvon&#8221; when it resumes.  In theory if the TV is using the Amp to output surround sound audio then the TV will tell the Amp to turn off, it it&#8217;s not &#8211; it wont.</p>
+<p>To switch things off when the screensaver kicks in, I simply &#8220;sudo pm-suspend&#8221; from an &#8220;xscreensaver-command -watch&#8221; script.</p>
+<p>&nbsp;</p>
+<p>The practical upshot is that I can now control 99% of my media centre from a single remote control.  I&#8217;ve opted to use the remote connected to the PC as I found it to be the least laggy &#8211; using the TV remote to send up/down/left/right etc to the PC was sluggish.</p>
+<p>&nbsp;</p>
+<p>I think it should be possible to parse the log output from cec-client and write a &#8220;listener&#8221; component too, but it&#8217;s probably a better idea to learn some rudimentary C and do it properly.  Or some Python bindings.  Oh yeah, and you know what would be really cool, a hook in to MythTV so that when I&#8217;m watching something in surround sound the amp turns on automatically. That would be cool.</p>
+<p>&nbsp;</p>
+<p>UPDATE 3 Dec 2013:  When someone leaves the amp&#8217;s HDMI switch set on the PS3 and you switch the MythTV box on from the remote, the amp doesn&#8217;t automatically switch to MythTV.  This has been annoying me for a while now, so I fixed it.</p>
+<p>In the scripts linked to above the &#8220;active source&#8221; command does this:</p>
+<pre>send_command "tx 45 82 11 00"</pre>
+<p>4 (the MythTV device) to 5 (the amp) &#8211; 82 (switch active source) to 1.1.0.0 &#8211; but my Sony amp just ignores this request.</p>
+<p>I spent some time trying out a few alternatives with cec-client and I&#8217;ve found one which works, and it kinda makes sense why:</p>
+<pre>send_command "tx 45 70 11 00"</pre>
+<p>4 (MythTV) to 5 (Sony amp) 70 (System Audio Mode) 1.1.0.0 (the input where MythTV is connected)</p>
+<p>My assumption is that amp only speaks &#8220;system audio&#8221; &#8211; what with it being an amp.  I&#8217;ve changed the &#8220;activesrc&#8221; with the 45:70:11:00 code and now it works!  (It also switches the amp on, whether I like it or not &#8211; so it&#8217;s not perfect).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Useful links:</p>
+<ul>
+<li><a href="http://www.cec-o-matic.com/">http://www.cec-o-matic.com/</a></li>
+<li><a href="http://www.jwz.org/xscreensaver/man3.html">http://www.jwz.org/xscreensaver/man3.html</a></li>
+<li><a href="https://github.com/Pulse-Eight/libcec">https://github.com/Pulse-Eight/libcec</a></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Monetizing my feeds</title>
+		<link>/2012/08/04/monetizing-my-feeds/</link>
+					<comments>/2012/08/04/monetizing-my-feeds/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sat, 04 Aug 2012 15:32:07 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=403</guid>
+
+					<description><![CDATA[I decided I wanted to add adverts to my RSS feed. Hardly anyone [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I decided I wanted to add adverts to my RSS feed. Hardly anyone subscribes to this blog, a dozen people or so (Hello! I bet I know exactly who you all are), but I do get a few hundred hits a month on my <a title="Absolute beginners guide to Google Maps Javascript" href="/2009/05/absolute-beginners-guide-to-google-maps-javascript/">Beginners Guide To Google Maps tutorial</a>. So adding adverts to the feed shouldn&#8217;t really hurt anyone, and as a bonus the bandwidth used serving the RSS feed should reduce.</p>
+<p>AdSense lets you easily monetize a feed by sucking in an RSS feed, and this is <a style="text-decoration: none;" href="http://www.phonetipsandtricks.com/increase-adsense-earnings/"><span style="text-decoration: none; color: #3d3d3d;">how to increase your Adsense earnings</span></a>, parsing it and adding the advert code and then spitting it back out again via FeedBurner.  You can do this by logging in to your AdSense account, click &#8220;My Ads&#8221; and then expand the &#8220;Feeds&#8221; section on the left. Once you&#8217;ve filled in the boxes, it&#8217;ll provide you with a new URL for your feed complete with adverts.</p>
+<p>All this is pretty easy, but then comes the question of how you get people to see the new monetized feed?</p>
+<p>First things first, FeedBurner can generate a little bit of HTML for you to add to your WordPress Sidebar. It&#8217;s described here<a href=" http://support.google.com/feedburner/answer/78487/?hl=en&amp;"> http://support.google.com/feedburner/answer/78487/?hl=en&amp;</a> and for the sake of completeness also described here:</p>
+<ol>
+<li>Log in to FeedBurner using the same credentials as you log in to AdSense</li>
+<li>Click on <strong>Publicize</strong> from the menus near the top of the page</li>
+<li>Click on <strong>Chicklet Chooser</strong></li>
+<li>Choose the type of button you&#8217;d like to appear on you blog. Personally I think the smaller &#8220;Subscribe in a reader&#8221; is the best choice</li>
+<li>Then the Javascript at the button of the page is automatically updated, so copy it to the clipboard (ctrl-c)</li>
+<li>Go to the Admin page of your WordPress blog</li>
+<li>Choose <strong>Appearance</strong></li>
+<li>Choose <strong>Widgets</strong></li>
+<li>Drag &#8220;<strong>Text: Arbitrary text for HTML</strong>&#8221; to your sidebar</li>
+<li>Drop down the Sidebar widget and paste the text from above in to the big box</li>
+<li>Click <strong>Save</strong> and click <strong>close</strong></li>
+<li>You&#8217;re done!</li>
+</ol>
+<p>That was the easy bit. Now new subscribers to your blog feed can simply click the button and will be taken to the new monetized feed.</p>
+<p>But what about existing subscribers? Or 3rd party links which point direct at your &#8220;/feed/&#8221; URL? There&#8217;s the rub.</p>
+<p>What you need to do is redirect them to the new URL, but then if you put a <em>global</em> redirect from the old URL to the new URL, how is FeedBurner going to keep itself updated? (It&#8217;ll get redirected back to itself and so never see any of your new posts)</p>
+<p>The trick is to use <strong>mod_rewrite</strong> and check for the <strong>HTTP_USER_AGENT</strong> of &#8220;FeedBurner&#8221;.</p>
+<p>I&#8217;m going to assume that you&#8217;ve already got mod_rewrite enabled in your Apache config. If you&#8217;re running WordPress on your own server then you most likely have it enabled without even realising.</p>
+<p>In your blog&#8217;s web directory you will find a &#8220;<strong>.htaccess</strong>&#8221; file, open this up and you&#8217;ll probably see something like this:</p>
+<pre># BEGIN WordPress
+ RewriteEngine On
+ RewriteBase /
+ RewriteRule ^index.php$ - [L]
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule . /index.php [L]</pre>
+<p>What you need to do is add these lines between &#8220;<strong>RewriteBase /</strong>&#8221; and &#8220;<strong>RewriteRule ^index.php$ &#8211; [L]</strong>&#8221;</p>
+<pre>RewriteCond %{REQUEST_URI} ^/feed/* [NC]
+ RewriteCond %{HTTP_USER_AGENT} !FeedBurner
+ RewriteRule ^feed/?.*$ http://feeds.feedburner.com/Whizzyorg [R,L]
+ #Next rule</pre>
+<p>How does it work?</p>
+<p>Mod_rewrite matches all the conditions in order, when it hits a Rule it decides if all the preceding conditions are met, and if so acts on the rule. If not, if moves on to the next line. The rules are the the separators between the conditions.</p>
+<p>So the new logic says:</p>
+<ul>
+<li><span style="text-decoration: underline;">IF</span> you&#8217;re trying to get to &#8220;<strong>/feed/</strong>&#8221; (the [NC] makes it case insensitive)</li>
+<li><span style="text-decoration: underline;">AND</span> your <strong>USER_AGENT</strong> is <em>NOT</em> &#8220;FeedBurner&#8221; (the ! inverts the logic)</li>
+<li><span style="text-decoration: underline;">THEN</span> re-direct people to the new URL</li>
+</ul>
+<p>So, if you are FeedBurner you get access to the old standard WordPress RSS feed and keep yourself updated, if you&#8217;re anyone else you get redirected and see the adverts.</p>
+<p>The adverts are fairly inconspicuous and are easily blocked by those in the know, so I don&#8217;t have a problem with it.</p>
+<p>Neat!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/08/04/monetizing-my-feeds/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Over engineering FTW</title>
+		<link>/2012/03/08/over-engineering-ftw/</link>
+					<comments>/2012/03/08/over-engineering-ftw/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 08 Mar 2012 20:26:37 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=383</guid>
+
+					<description><![CDATA[Working from home has many advantages.  No commuting, relaxed approach to being dressed, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Working from home has many advantages.  No commuting, relaxed approach to being dressed, loud music.</p>
+<p>One of the drawbacks however, is that you are entirely reliant on your broadband connection.  You could, as many do, have a 3G modem/phone as a backup.  Fine for a few hours, but you&#8217;re soon going to run in to data caps, invisible proxies and traffic shapers (more so than a fixed line telco).</p>
+<p>&nbsp;</p>
+<p>So what to do?  My solution has been to get a second line installed.  The big UK telcos are running a lot of offers at the moment to try and secure as many customers as they can in readiness for their Triple &amp; Quadruple Play strategies.  This means you can get a reasonable ADSL line and line rental for about 15 to 20 quid a month.</p>
+<p>When you&#8217;re as reliant on a connection as I am, that&#8217;s money well spent.  It also gives you a perfect opportunity to play with some new toys!</p>
+<p>Now, you could simply plug in another wifi router to the new line, and when the primary connection fails move your connections over to the secondary one.  But where&#8217;s the fun in that?  What you <em><strong>really</strong></em> want to do is some load-balancing and multi-path routing over both the lines.  You won&#8217;t see a sudden doubling in download speeds in normal browsing, but certain activities which open a lot of connections to different IP address should benefit, <em><strong>and</strong></em> you get to play with routing tables.</p>
+<p>Here&#8217;s what it looks like:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2012/03/Networksetup.png"><img class="alignnone size-medium wp-image-385" title="Networksetup" src="/wp-content/uploads/2012/03/Networksetup-300x88.png" alt="" width="300" height="88" srcset="/wp-content/uploads/2012/03/Networksetup-300x88.png 300w, /wp-content/uploads/2012/03/Networksetup-768x227.png 768w, /wp-content/uploads/2012/03/Networksetup.png 956w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>&nbsp;</p>
+<p>We don&#8217;t really get much diversity until we get south of the exchange, and even then we&#8217;re probably going to live in the same fibre all the way to The Internet, but we do work round the much more common problem of ISP configuration errors.</p>
+<p>Here&#8217;s how it works:</p>
+<p>Router 1 (R1) and Router 2 (R2) are two independent ADSL modem/routers  connected to a phone line each and the ethernet port connected to a NIC in a server.  These modem/routers also take care of NAT, so that any traffic coming from inside your network will be translated to appear as if it had come from the appropriate router on it&#8217;s way to the rest of the internet.  The server has three NICs in total, one each for the two routers and one back to the LAN for everyone else on the network to use as a gateway.</p>
+<pre>$IF0 = eth0
+$IF1 = eth1
+$IF2 = eth2</pre>
+<p>The IP addresses associated with those interfaces are:</p>
+<pre>$IP0 = 192.168.3.100
+$IP1 = 192.168.1.1
+$IP2 = 192.168.2.1</pre>
+<p>The routers are configured with these LAN IPs:</p>
+<pre>$P1 = 192.168.1.254
+$P2 = 192.168.2.254</pre>
+<p>As you can see on the diagram, the networks are all /24 (255.255.255.0) which gives us network numbers of:</p>
+<pre>$P0_NET = 192.168.3.0
+$P1_NET = 192.168.1.0
+$P2_NET = 192.168.2.0</pre>
+<p>Then we configure the Ubuntu box as a router &amp; NATing gateway:</p>
+<p>1.  Enable IP forwarding by editing<em> /etc/sysctl.conf</em> and uncommenting or adding a line like this:</p>
+<pre>net.ipv4.ip_forward=1</pre>
+<p>2.  Create two new routing tables.  Edit /etc/iproute2/rt_tables and add a line for each of your providers.  For example:</p>
+<pre>1 my_isp_name
+2 my_other_isp_name</pre>
+<p>3. Create some routes in each of the routing tables so the server knows where to send data.  They take the general format of:</p>
+<pre>ip route add <em>$P1_NET</em> dev <em>$IF1</em> src <em>$IP1</em> table my_isp_name
+ip route add default via <em>$P1</em> table my_isp_name
+ip route add <em>$P2_NET</em> dev <em>$IF2</em> src <em>$IP2</em> table my_other_isp_name
+ip route add default via <em>$P2</em> table my_other_isp_name</pre>
+<p>&nbsp;</p>
+<p>Using the real numbers and the template above gives us this actual set of commands:</p>
+<pre>ip route add 192.168.1.0 dev eth1 src 192.168.1.1 table my_isp_name
+ip route add default via 192.168.1.254 via eth1 table my_isp_name
+ip route add 192.168.2.0 dev eth2 src 192.168.2.1 table my_other_isp_name
+ip route add default via 192.168.2.254 via eth1 table my_other_isp_name</pre>
+<p>&nbsp;</p>
+<p>In english, that means:  In order to send traffic to the 192.168.1.0 network or the 192.168.2.0 network send it out of eth1 or eth2 from IP address 192.168.1.1 or 192.168.2.1.  These routes are then stored in the relevent routing table; either one called my_isp_name or one called my_other_isp_name.</p>
+<p>&nbsp;</p>
+<p>4. Create some additional routes for communicating between the routing tables and the local interfaces.  This is as much of an efficiency saving as anything, telling each routing table the quickest way to the other interfaces.</p>
+<pre>ip route add <em>$P0_NET</em> dev $IF0 table my_isp_name
+ip route add <em>$P2_NET</em> dev <em>$IF2</em> table my_isp_name
+ip route add 127.0.0.0/8 dev lo table my_isp_name
+ip route add <em>$P0_NET</em> dev <em>$IF0</em> table my_other_isp_name
+ip route add <em>$P1_NET</em> dev <em>$IF1</em> table my_other_isp_name
+ip route add 127.0.0.0/8 dev lo table my_other_isp_name</pre>
+<p>5.  Add the routes to the main routing table, so that traffic knows how to find the networks which have the gateways to the internet on:</p>
+<pre>ip route add <em>$P1_NET</em> dev <em>$IF1</em> src <em>$IP1</em>
+ip route add <em>$P2_NET</em> dev <em>$IF2</em> src <em>$IP2</em></pre>
+<p>6.  Apply the correct routing rules depending on where the traffic is coming from:</p>
+<pre>ip rule add from <em>$IP1</em> table my_isp_name
+ip rule add from <em>$IP2</em> table my_other_isp_name</pre>
+<p>7.  The science bit.  Create a route which will send traffic down each of the internet connections in turn.  This is a global default route, so any traffic which isn&#8217;t bound for the local <em>$P0_NET</em> network will use this rule to get to the internet.</p>
+<pre>ip route add default scope global nexthop via <em>$P1</em> dev <em>$IF1</em> weight 2 nexthop via <em>$P2</em> dev <em>$IF2</em> weight 1</pre>
+<p>As you can see, this isn&#8217;t a 50/50 split.  We&#8217;ve applied some weighting, in this case because I get more GBs with my_isp_name.  We&#8217;re actually going to send twice as much traffic down <em>$IF1</em> as we are down <em>$IF2</em>.</p>
+<p>8.  By default, routes to other networks are cached for 10 mins.  This means that once a route is decided on, traffic will always follow the same route for at least the next 10 minutes.  The counter will be reset every time that particular route is used.  This is great for large downloads because it means that your IP address isn&#8217;t suddenly going to change half way through getting the file.  But, for something like IRC where it&#8217;s possible that no traffic will be sent for 10 minutes, then the IRC server could well see your IP address changing as traffic flips between the two routes.  IRC servers don&#8217;t like that.  So you need to fix some routes so that traffic will always follow the same path.</p>
+<pre>ip route add 174.143.119.91/32 via <em>$P2</em></pre>
+<p>This sets the route to a specific Freenode IRC server to always go via my_other_isp_name.</p>
+<p>9.  Last of all, we need to add an extra layer of NAT so that traffic can find its way back to the host on the LAN side.  This is necessary because our internet modem/routers are not really routers at all.  They simply take traffic from one side, rewrite the headers and push it out the other side, while maintaining a look up table of what came from where and doing the reverse when a reply arrives. If you can configure the routes on to your modem, then you don&#8217;t need to be reading this in the first place, so let&#8217;s assume you can&#8217;t.</p>
+<pre>iptables --table nat --append POSTROUTING --out-interface $IF1 -j MASQUERADE
+iptables --table nat --append POSTROUTING --out-interface $IF2 -j MASQUERADE
+iptables --append FORWARD --in-interface $IF0 -j ACCEPT</pre>
+<p>For things like port forwarding you do now have to deal with a bit of an odd NAT situation.  For example, let&#8217;s assume I want to run a web server on the same machine that runs the routing.  I decide to only make the server available on the WAN IP address of $R1.  I set up Router 1 to NAT port 80 on the WAN to port 80 on $IP1.  Then I need to configure the web server on the routing server to listen on that interface.  Not too bad really.</p>
+<p>And there you have it.  Two internet connections, both available to all the clients on your network.  Make sure that your clients use the IP address of the server as their default gateway and everything should just work.  The additional load on the server is negligible.</p>
+<p>If you reboot the server you&#8217;ll need to add all the routing information again, so create yourself a Bash and have it run from /etc/rc.local or something.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/03/08/over-engineering-ftw/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>TCP sessions causing lag</title>
+		<link>/2011/07/04/tcp-sessions-causing-lag/</link>
+					<comments>/2011/07/04/tcp-sessions-causing-lag/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 04 Jul 2011 12:06:33 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=353</guid>
+
+					<description><![CDATA[I like to play Call Of Duty online on this year&#8217;s some of [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I like to play Call Of Duty online on <A href="https://gamingbuff.com/">this year&#8217;s some of the best gaming monitors</a>. I find it&#8217;s a really good way to get angry and frustrated at inanimate objects. I also run a Bit Torrent client on my network.</p>
+<p>I don&#8217;t suck at MW2 and I&#8217;m not too bad at Black Ops either, but on the PS3 Black Ops has been very unstable to the point of hanging the console.</p>
+<p>Anyway, what really gets me cross is Lag. You can tell a match is going to be laggy the second the game opens. It feels as if you&#8217;re running through treacle. &#8220;GET A MOVE ON&#8221; I scream. And then it starts; you get shot while behind brick walls, your shots fail to connect even though &#8220;IT WAS CLEARLY A HEADSHOT WHY WONT YOU JUST DIE?&#8221;. And so on. You know what I&#8217;m talking about.</p>
+<p>Originally I had a written a script to ping the PS3 and when it came online and tell Transmission to pause all the Torrents. When the PS3 went offline again it would start them. I thought this would be enough, but it isn&#8217;t. Even with Transmission paused and the bandwidth limited to zero kBps it still maintains a connection to other peers.</p>
+<p>While this isn&#8217;t a significant amount of traffic over the WAN &#8211; it really does cause lag. Presumably having something like 1000 NAT sessions in the memory of my router is a bit of a stretch, so now I simply kill Transmission when the PS3 comes online. It takes a few minutes for the sessions to get pruned but it&#8217;s made a noticeable difference to the quality of my matches.</p>
+<p>Of course, you&#8217;re still at the mercy of the internet connection of whoever hosts the match &#8211; but that&#8217;s beyond your control.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/04/tcp-sessions-causing-lag/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Trimming Freesat Channels In MythTV</title>
+		<link>/2011/06/08/trimming-freesat-channels-in-mythtv/</link>
+					<comments>/2011/06/08/trimming-freesat-channels-in-mythtv/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 08 Jun 2011 12:42:58 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[tv]]></category>
+		<guid isPermaLink="false">/?p=342</guid>
+
+					<description><![CDATA[There are loads and loads of free-to-air channels available on the Astra 28 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>There are loads and loads of free-to-air channels available on the Astra 28 constellation, the vast majority of which I do not watch.</p>
+<p>So to make things a bit easier for me after a full re-scan, I&#8217;ve put together a list of the channels I don&#8217;t watch and with a tiny bit of SQL I can trim them from my channel list.</p>
+<p>To make things a bit easier for <em>you</em> here is a SQL dump of my &#8220;unwatched channels&#8221; list:</p>
+<p><a href="/wp-content/uploads/2012/08/unwatched_channels.sql_.txt">unwatched_channels.sql</a></p>
+<p>And here is the SQL to trim these from your channel list:</p>
+<p><code>update channel set visible=0,useonairguide=0 where name in (select name from unwatched_channels)</code></p>
+<p>You&#8217;ll probably want to edit that list yourself to remove and add the channels as you prefer. Generally speaking, my list trims:</p>
+<ul>
+<li>Regional variations</li>
+<li>Specialist interest</li>
+<li>Shopping</li>
+<li>Games and other text based services</li>
+</ul>
+<p>I&#8217;ll update this list occasionally, this page will always have my most up to date information.</p>
+<ul>
+<li>UPDATE: 6 Sept 11.  Refreshed channel list</li>
+<li>UPDATE: 8 Oct 11. Refreshed channel list</li>
+<li>UPDATE: 14 Dec 2011.  Refreshed channel list</li>
+<li>UPDATE: 4 Aug 2012.  Refreshed channel list</li>
+<li>UPDATE: 29 Dec 2013.  New list of channel IDs available here: <a href="http://whizzy.org/wp-content/uploads/2013/12/unwatched_by_chanid.csv">unwatched_by_chanid</a>.  Add a new table and import that CSV file.  Then do a &#8220;update channel set visible=0 where chanid in (select chanid from &lt;your new table&gt;&#8221;</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/06/08/trimming-freesat-channels-in-mythtv/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>LogWatch SMART monitoring</title>
+		<link>/2010/09/27/logwatch-smart-monitoring/</link>
+					<comments>/2010/09/27/logwatch-smart-monitoring/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 27 Sep 2010 11:09:23 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=299</guid>
+
+					<description><![CDATA[Why is one of my boxes reporting SMART data in the LogWatch and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Why is one of my boxes reporting SMART data in the LogWatch and the others not?</p>
+<p>I&#8217;d installed smartmontools but it just doesn&#8217;t seem to be working.</p>
+<p>Finally sussed it.   Have a look at /etc/default/smartmontools and enable deamon</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/09/27/logwatch-smart-monitoring/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hauppauge WinTV Nova-S Plus on Linux</title>
+		<link>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/</link>
+					<comments>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 04 Aug 2010 17:15:09 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<category><![CDATA[tv]]></category>
+		<guid isPermaLink="false">/?p=291</guid>
+
+					<description><![CDATA[The Nova-S Plus is a  good card.  http://www.hauppauge.co.uk/site/products/data_novasplus.html But, it would appear there [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The Nova-S Plus is a  good card.  <a href="http://www.hauppauge.co.uk/site/products/data_novasplus.html">http://www.hauppauge.co.uk/site/products/data_novasplus.html</a></p>
+<p>But, it would appear there is a defect in these boards, or at least a strange design, which means that they won&#8217;t lock on to some frequencies which require the 22kHz tone sending to the LNB with new drivers because there&#8217;s no link between the flange and dolphin-points.  There&#8217;s plenty to read about here:</p>
+<p><a href="https://bugzilla.kernel.org/show_bug.cgi?id=9476">https://bugzilla.kernel.org/show_bug.cgi?id=9476</a></p>
+<p>And there&#8217;s a patch which fixes the problem by controlling the tone generator directly but it&#8217;ll never get in to the main kernel.  For your convenience here is a link to a binary driver built for Ubuntu Lucid kernel version 2.6.32-23-generic:</p>
+<p><a href="/wp-content/uploads/2010/08/isl6421.ko">/wp-content/uploads/2010/08/isl6421.ko</a></p>
+<p>Replace the current isl6421.ko from /lib/modules/2.6.32-23-generic/kernel/drivers/media/dvb/frontends/isl6421.ko with this one.  It might also work for newer kernel versions, or not.  Who knows?  Not me.</p>
+<p>I&#8217;ve also got a Hauppauge S2 HD and this patched driver doesn&#8217;t seem to effect it.</p>
+<p>Search hints:</p>
+<p>Hauppauge Nova S plus linux won&#8217;t lock horizontal 22khz tone can&#8217;t pick up some channels. You can also check out my guide on <a style="text-decoration: none" href="http://outdoormoviehq.com/ultimate-guide-to-outdoor-movies/"><font color="#555555">Everything You Need to Set Up a Backyard Cinema</font></a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>A more resilient DNS set up</title>
+		<link>/2010/06/15/a-more-resilient-dns-set-up/</link>
+					<comments>/2010/06/15/a-more-resilient-dns-set-up/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 15 Jun 2010 10:23:43 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=275</guid>
+
+					<description><![CDATA[A replacement for ZoneEdit?]]></description>
+										<content:encoded><![CDATA[<p>ZonEdit are suffering from a DDOS attack or something and their default free servers have stopped responding.  (See: <a href="http://www.zoneedit.com/status.html?">http://www.zoneedit.com/status.html?</a>)</p>
+<p>This has caused me a few problems, the main one being that my MX records are held at ZoneEdit and so my email has effectively stopped working.  Initially I was thinking of a quick workaround, but actually this is working rather nicely.</p>
+<p>What I&#8217;ve done is:</p>
+<ul>
+<li>Created an account at <a href="http://www.web-dns.co.uk/">http://www.web-dns.co.uk/</a> and added similar entries as I did with ZoneEdit.  Namely, my MX records pointing back to Google, the A record for this site and a few others and some CNAME records for other Google services.</li>
+<li>Updated the nameservers for the whizzy.org domain at my registrar to have ZoneEdit&#8217;s two free DNS servers as 1 and 2, and then the first web-dns server as number 3.</li>
+</ul>
+<p>That&#8217;s it.  If ZoneEdit stop working, then once the old cached entries have expired new DNS requests start being serviced by web DNS while the ZoneEdit servers are down.   I could in theory have three different DNS services listed with my registrar but ZoneEdit have been really good, so I&#8217;m happy to stick with them for now.  If this sort of thing happens in the future then maybe I&#8217;ll host the DNS myself.</p>
+<p>Web DNS gives you much rawer access to the zone file compared to ZoneEdit, but a bit of googling and you&#8217;ll be fine.  For example, for an MX record:</p>
+<ol>
+<li>Leave the first box (the name box) emtpy.</li>
+<li>Leave the TTL as 3600</li>
+<li>Change the IN to MX</li>
+<li>Set the number (auxiliary information)to zero for the first mail server, and 10 for the second, 20 for the third and so on.</li>
+<li>Set the data (the last box) to, in the case of Google Mail (e.g. Google Apps for Domains) to ASPMX.L.GOOGLE.COM.  (note the trailing dot, very important)</li>
+<li>Add the other mail servers in the same way</li>
+</ol>
+<p>For a straight forward hostname resolution e.g. www.whizzy.org:</p>
+<ol>
+<li>Set the first box to WWW</li>
+<li>Leave the TTL as 3600</li>
+<li>Change the IN to A</li>
+<li>Set the number to zero</li>
+<li>Set the data to your server IP address, e.g. 174.133.50.212</li>
+</ol>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/15/a-more-resilient-dns-set-up/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

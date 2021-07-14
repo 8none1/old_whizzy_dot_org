@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>So called humor &#8211; whizzy.org</title>
+	<atom:link href="/category/so-called-humor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 26 Oct 2009 17:28:57 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>A bit of satire&#8230;</title>
+		<link>/2009/10/26/a-bit-of-satire/</link>
+					<comments>/2009/10/26/a-bit-of-satire/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 26 Oct 2009 17:28:57 +0000</pubDate>
+				<category><![CDATA[So called humor]]></category>
+		<guid isPermaLink="false">/?p=240</guid>
+
+					<description><![CDATA[Did you read about this? Police Issue Spotter Cards Stuart has made a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Did you read about this?</p>
+<p><a href="http://www.guardian.co.uk/uk/2009/oct/25/spotter-cards">Police Issue Spotter Cards</a></p>
+<p><a href="http://www.kryogenix.org/">Stuart</a> has made a rather splendid <a href="http://policetroublemaker.appspot.com/">mash-up app</a> to let you stick it to The Man.</p>
+<p><img alt="" src="http://policetroublemaker.appspot.com/c?p=http%3A%2F%2Ftinyurl.com%2Fygsch9h" title="Police Spotter Cards" class="alignnone" width="748" height="550" /></p>
+<p>Freedom RIP.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/10/26/a-bit-of-satire/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Same</title>
+		<link>/2009/09/28/the-same/</link>
+					<comments>/2009/09/28/the-same/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 28 Sep 2009 10:24:43 +0000</pubDate>
+				<category><![CDATA[So called humor]]></category>
+		<guid isPermaLink="false">/?p=231</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p><img src="/wp-content/uploads/2009/09/brown.jpg" alt="Brown" title="Brown" width="144" height="196" class="alignnone size-full wp-image-229" /><img src="/wp-content/uploads/2009/09/uppity.jpg" alt="Uppity" title="Uppity" width="180" height="196" class="alignnone size-full wp-image-230" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/09/28/the-same/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

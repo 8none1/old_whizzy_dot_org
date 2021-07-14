@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Cisco 7941, Asterisk and SIP	</title>
+	<atom:link href="/2017/02/23/cisco-7941-asterisk-and-sip/feed/" rel="self" type="application/rss+xml" />
+	<link>/2017/02/23/cisco-7941-asterisk-and-sip/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Wed, 19 May 2021 18:49:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Ricardo		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-7480</link>
+
+		<dc:creator><![CDATA[Ricardo]]></dc:creator>
+		<pubDate>Wed, 19 May 2021 18:49:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-7480</guid>
+
+					<description><![CDATA[Hi there,
+
+I downloaded the provided firmware here at the current date, but it wouldn&#039;t upgrade. I searched in the web, found several firmwares, I upgraded to 8.4.2 first, then 8.5.4, then 9.2.1, but whenever I would try to upgrade to the provided 9.4.2RS3 it would fail.
+In the meanwhile I found this link: https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares
+Which has 9.4.2-1 which worked as well. In the meanwhile I believe that this firmware 9.4.2RS3 here is for another phone model and someone just changed the name of the files, as all other firmwares worked fine on my 7941 phone.
+
+Thank you for the tutorial, its super and was super helpful nonetheless.]]></description>
+			<content:encoded><![CDATA[<p>Hi there,</p>
+<p>I downloaded the provided firmware here at the current date, but it wouldn&#8217;t upgrade. I searched in the web, found several firmwares, I upgraded to 8.4.2 first, then 8.5.4, then 9.2.1, but whenever I would try to upgrade to the provided 9.4.2RS3 it would fail.<br />
+In the meanwhile I found this link: <a href="https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares" rel="nofollow ugc">https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares</a><br />
+Which has 9.4.2-1 which worked as well. In the meanwhile I believe that this firmware 9.4.2RS3 here is for another phone model and someone just changed the name of the files, as all other firmwares worked fine on my 7941 phone.</p>
+<p>Thank you for the tutorial, its super and was super helpful nonetheless.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dan Keizer		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-6648</link>
+
+		<dc:creator><![CDATA[Dan Keizer]]></dc:creator>
+		<pubDate>Thu, 22 Apr 2021 16:11:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-6648</guid>
+
+					<description><![CDATA[Just found this post/thread.  Looks like excellent work.  I note that the link to the firmware update files is not responding (tinyupload.com site) - if someone has a different link (or can make one to offer) that would be appreciated.   we have a number of these phones to integrate into our asterisk server.]]></description>
+			<content:encoded><![CDATA[<p>Just found this post/thread.  Looks like excellent work.  I note that the link to the firmware update files is not responding (tinyupload.com site) &#8211; if someone has a different link (or can make one to offer) that would be appreciated.   we have a number of these phones to integrate into our asterisk server.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-171</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2020 18:21:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-171</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-170&quot;&gt;Gareth&lt;/a&gt;.
+
+Someone seems to have uploaded the files here:  http://s000.tinyupload.com/index.php?file_id=44134296078826321023]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-170">Gareth</a>.</p>
+<p>Someone seems to have uploaded the files here:  <a href="http://s000.tinyupload.com/index.php?file_id=44134296078826321023" rel="nofollow ugc">http://s000.tinyupload.com/index.php?file_id=44134296078826321023</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gareth		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-170</link>
+
+		<dc:creator><![CDATA[Gareth]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2020 14:34:09 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-170</guid>
+
+					<description><![CDATA[Cisco seem to have removed the 7941/7961 firmware from their support section.
+
+
+Any chance I could get a copy of the version you are using since it is later than mine?]]></description>
+			<content:encoded><![CDATA[<p>Cisco seem to have removed the 7941/7961 firmware from their support section.</p>
+<p>Any chance I could get a copy of the version you are using since it is later than mine?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Taha Siddiqi		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-169</link>
+
+		<dc:creator><![CDATA[Taha Siddiqi]]></dc:creator>
+		<pubDate>Tue, 25 Aug 2020 15:46:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-169</guid>
+
+					<description><![CDATA[Hi 
+
+i need help i am using 7941 and 7942 SIP phone but i am unable to load Telephone Directory and Wallpaper as per the above given procedure through TFTP32 application, please be so kind to let me know how can i upload. 
+
+i am using below mention firmware : 
+
+7941 &#124; 7941-7961-sip.8-4-2S
+7942 &#124; 7942-7962-sip.8-4-2S]]></description>
+			<content:encoded><![CDATA[<p>Hi </p>
+<p>i need help i am using 7941 and 7942 SIP phone but i am unable to load Telephone Directory and Wallpaper as per the above given procedure through TFTP32 application, please be so kind to let me know how can i upload. </p>
+<p>i am using below mention firmware : </p>
+<p>7941 | 7941-7961-sip.8-4-2S<br />
+7942 | 7942-7962-sip.8-4-2S</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Graham Galea		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-168</link>
+
+		<dc:creator><![CDATA[Graham Galea]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2020 02:18:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-168</guid>
+
+					<description><![CDATA[Hi. The Mitel PBX I am connecting the 7941 phones to has System Speed Calls. Example 829 is a speed dial for 430829. The Mitel phone recognise the speed dial but the cisco 7941 doesn&#039;t. Is there a way to configure the phone to recognise system speed calls?]]></description>
+			<content:encoded><![CDATA[<p>Hi. The Mitel PBX I am connecting the 7941 phones to has System Speed Calls. Example 829 is a speed dial for 430829. The Mitel phone recognise the speed dial but the cisco 7941 doesn&#8217;t. Is there a way to configure the phone to recognise system speed calls?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rich Pavlovsky		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-167</link>
+
+		<dc:creator><![CDATA[Rich Pavlovsky]]></dc:creator>
+		<pubDate>Thu, 04 Jun 2020 02:47:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-167</guid>
+
+					<description><![CDATA[Worked like a champ for me.  Asterisk 16 running on FreeNAS (in a jail).  Got several Cisco IP 7941&#039;s from Goodwill for a few bucks.  Flashed firmware to the SIP firmware you mentioned (it is still the latest on this old model).  Carefully crafted the SEPMAC.cnf.xml file and spent several nights troubleshooting (and being very frustrated). I relied a lot on the Cisco web interface to carefully review the logs.  I think if any addition to your very well done post would be to walk people thru that cause it does give line numbers etc on the XML file parsing errors.  Anyways, thank you again for creating this.  A fun little technical project to keep me occupied in these troubling times.]]></description>
+			<content:encoded><![CDATA[<p>Worked like a champ for me.  Asterisk 16 running on FreeNAS (in a jail).  Got several Cisco IP 7941&#8217;s from Goodwill for a few bucks.  Flashed firmware to the SIP firmware you mentioned (it is still the latest on this old model).  Carefully crafted the SEPMAC.cnf.xml file and spent several nights troubleshooting (and being very frustrated). I relied a lot on the Cisco web interface to carefully review the logs.  I think if any addition to your very well done post would be to walk people thru that cause it does give line numbers etc on the XML file parsing errors.  Anyways, thank you again for creating this.  A fun little technical project to keep me occupied in these troubling times.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JD		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-166</link>
+
+		<dc:creator><![CDATA[JD]]></dc:creator>
+		<pubDate>Sat, 09 May 2020 13:51:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-166</guid>
+
+					<description><![CDATA[Thank you for your SEPxxx.cnf.xml work for my 7945G SIP45.9-3-1SR4-1S after stuck at registering.]]></description>
+			<content:encoded><![CDATA[<p>Thank you for your SEPxxx.cnf.xml work for my 7945G SIP45.9-3-1SR4-1S after stuck at registering.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-165</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Tue, 24 Mar 2020 10:37:18 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-165</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-164&quot;&gt;Dominikk&lt;/a&gt;.
+
+Thanks Dominikk, that&#039;s good to know]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-164">Dominikk</a>.</p>
+<p>Thanks Dominikk, that&#8217;s good to know</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dominikk		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-164</link>
+
+		<dc:creator><![CDATA[Dominikk]]></dc:creator>
+		<pubDate>Fri, 13 Mar 2020 20:53:04 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-164</guid>
+
+					<description><![CDATA[I can confirm Asterisk newest version (as of March 2020) andCisco 7941G with newest SIP Cisco FW (as of March 2020) only works via TCP. The problem is that the phone is NOT answering UDP &quot;ChallengeSent&quot; packets sent from Asterisk to Cisco Phone. See the FreePBX fail2ban log for details.
+
+Solution is very easy:
+Enable TCP in FreePBX at Settings =&#062; Asterisk SIP Settings =&#062; SIP Leacy Settings tab =&#062; Activate TCP =&#062; Yes
+
+Change the config file from above from
+ 2
+to
+ 1
+for TCP.
+
+Done the phone works instantly.]]></description>
+			<content:encoded><![CDATA[<p>I can confirm Asterisk newest version (as of March 2020) andCisco 7941G with newest SIP Cisco FW (as of March 2020) only works via TCP. The problem is that the phone is NOT answering UDP &#8220;ChallengeSent&#8221; packets sent from Asterisk to Cisco Phone. See the FreePBX fail2ban log for details.</p>
+<p>Solution is very easy:<br />
+Enable TCP in FreePBX at Settings =&gt; Asterisk SIP Settings =&gt; SIP Leacy Settings tab =&gt; Activate TCP =&gt; Yes</p>
+<p>Change the config file from above from<br />
+ 2<br />
+to<br />
+ 1<br />
+for TCP.</p>
+<p>Done the phone works instantly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Angus Mackenzie		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-163</link>
+
+		<dc:creator><![CDATA[Angus Mackenzie]]></dc:creator>
+		<pubDate>Sun, 29 Sep 2019 11:44:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-163</guid>
+
+					<description><![CDATA[Thank you so much for this comprehensive how-to. I&#039;ve got things working between the Cyber Attic and the kitchen after a couple of days wrestling with dhcpd, tftpd etc.
+
+Current freePBX on raspberry pi uses port 5160 for CHAN_SIP and 5060 for CHAN_PJSP, which I spotted for the SEP[MAC].cnf.xml files. For a while I got error tones when trying to dial, but changing that port number in the FreePBX gui -&#062; Settings -&#062; Asterisk SIP settings seemed to help, or maybe it was the reboot.]]></description>
+			<content:encoded><![CDATA[<p>Thank you so much for this comprehensive how-to. I&#8217;ve got things working between the Cyber Attic and the kitchen after a couple of days wrestling with dhcpd, tftpd etc.</p>
+<p>Current freePBX on raspberry pi uses port 5160 for CHAN_SIP and 5060 for CHAN_PJSP, which I spotted for the SEP[MAC].cnf.xml files. For a while I got error tones when trying to dial, but changing that port number in the FreePBX gui -&gt; Settings -&gt; Asterisk SIP settings seemed to help, or maybe it was the reboot.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-162</link>
+
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Thu, 13 Jun 2019 21:55:49 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-162</guid>
+
+					<description><![CDATA[I just purchased 25 x 7941 PLUS other Cisco stuff for 99p from eBay and made a local pick up - bargain?
+
+The phones are/were set up for SCCP.
+
+I managed to upgrade the firmware of one of the phones to SIP, SIP41.9-2-1S.
+
+ The cnf.xml file appears to upload, : sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980], from the TFTP server but the phone still displays &quot;Unprovisioned&quot;
+
+The editor used was the Micosoft XML notepad that seems to be do the job.
+
+This is my first attempt at this and my first impression was that it looked straight forward but this does not appear to be the case!!
+
+Any tips and samples of working files would be most welcome.
+
+Cheers - John
+
+
+A fuller sample of the log from the TFTP server is listed below -
+
+Connection received from 192.168.1.82 on port 50869 [13/06 22:42:10.439]
+Read request for file . Mode octet [13/06 22:42:10.439]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.439]
+Connection received from 192.168.1.82 on port 52770 [13/06 22:42:10.533]
+Read request for file . Mode octet [13/06 22:42:10.533]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.533]
+Connection received from 192.168.1.82 on port 49583 [13/06 22:42:10.658]
+Read request for file . Mode octet [13/06 22:42:10.658]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.658]
+Connection received from 192.168.1.82 on port 52363 [13/06 22:42:10.956]
+Read request for file . Mode octet [13/06 22:42:10.956]
+Using local port 60547 [13/06 22:42:10.957]
+: sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980]]]></description>
+			<content:encoded><![CDATA[<p>I just purchased 25 x 7941 PLUS other Cisco stuff for 99p from eBay and made a local pick up &#8211; bargain?</p>
+<p>The phones are/were set up for SCCP.</p>
+<p>I managed to upgrade the firmware of one of the phones to SIP, SIP41.9-2-1S.</p>
+<p> The cnf.xml file appears to upload, : sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980], from the TFTP server but the phone still displays &#8220;Unprovisioned&#8221;</p>
+<p>The editor used was the Micosoft XML notepad that seems to be do the job.</p>
+<p>This is my first attempt at this and my first impression was that it looked straight forward but this does not appear to be the case!!</p>
+<p>Any tips and samples of working files would be most welcome.</p>
+<p>Cheers &#8211; John</p>
+<p>A fuller sample of the log from the TFTP server is listed below &#8211;</p>
+<p>Connection received from 192.168.1.82 on port 50869 [13/06 22:42:10.439]<br />
+Read request for file . Mode octet [13/06 22:42:10.439]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.439]<br />
+Connection received from 192.168.1.82 on port 52770 [13/06 22:42:10.533]<br />
+Read request for file . Mode octet [13/06 22:42:10.533]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.533]<br />
+Connection received from 192.168.1.82 on port 49583 [13/06 22:42:10.658]<br />
+Read request for file . Mode octet [13/06 22:42:10.658]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.658]<br />
+Connection received from 192.168.1.82 on port 52363 [13/06 22:42:10.956]<br />
+Read request for file . Mode octet [13/06 22:42:10.956]<br />
+Using local port 60547 [13/06 22:42:10.957]<br />
+: sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Arsenio		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-161</link>
+
+		<dc:creator><![CDATA[Arsenio]]></dc:creator>
+		<pubDate>Sun, 07 Apr 2019 12:02:01 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-161</guid>
+
+					<description><![CDATA[This piece of work is awesome!!
+I managed to migrate the all the phones in one single day!!
+You, sir, make my day!!!
+Thanks!
+Just a note: there is a chance the the &quot;Wallpaper&quot; section is missing some infos?
+I followed the instructions, but I was not able to set my custom wallpaper :(
+In any case, great work!]]></description>
+			<content:encoded><![CDATA[<p>This piece of work is awesome!!<br />
+I managed to migrate the all the phones in one single day!!<br />
+You, sir, make my day!!!<br />
+Thanks!<br />
+Just a note: there is a chance the the &#8220;Wallpaper&#8221; section is missing some infos?<br />
+I followed the instructions, but I was not able to set my custom wallpaper 🙁<br />
+In any case, great work!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bobmclane		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-160</link>
+
+		<dc:creator><![CDATA[bobmclane]]></dc:creator>
+		<pubDate>Sun, 24 Mar 2019 16:56:22 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-160</guid>
+
+					<description><![CDATA[Hi Guys,
+Great article am getting there however my 7961 sets most things up but gets to local then fails with the following and gets stuck in a restarting loop - 
+
+4:50:44p SEP00070E576A29.cnf.xml(TFTP)
+4:51:28p Error Updating Locale
+
+TFTP shows mk-sip.jat error where do I get this file from, I presume its missing this which is the main cause of the locale issue???
+Connection received from 192.168.1.51 on port 50544 [24/03 16:50:44.621]
+Read request for file . Mode octet [24/03 16:50:44.621]
+Using local port 49705 [24/03 16:50:44.621]
+: sent 15 blks, 7534 bytes in 0 s. 0 blk resent [24/03 16:50:44.822]
+Connection received from 192.168.1.51 on port 50769 [24/03 16:51:27.410]
+Read request for file . Mode octet [24/03 16:51:27.410]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [24/03 16:51:27.410]
+Connection received from 192.168.1.51 on port 52626 [24/03 16:52:00.026]
+Read request for file . Mode octet [24/03 16:52:00.026]
+Using local port 55186 [24/03 16:52:00.026]
+: sent 2 blks, 953 bytes in 0 s. 0 blk resent [24/03 16:52:00.048]
+
+Any help appreciated!
+
+Thanks
+BOB]]></description>
+			<content:encoded><![CDATA[<p>Hi Guys,<br />
+Great article am getting there however my 7961 sets most things up but gets to local then fails with the following and gets stuck in a restarting loop &#8211; </p>
+<p>4:50:44p SEP00070E576A29.cnf.xml(TFTP)<br />
+4:51:28p Error Updating Locale</p>
+<p>TFTP shows mk-sip.jat error where do I get this file from, I presume its missing this which is the main cause of the locale issue???<br />
+Connection received from 192.168.1.51 on port 50544 [24/03 16:50:44.621]<br />
+Read request for file . Mode octet [24/03 16:50:44.621]<br />
+Using local port 49705 [24/03 16:50:44.621]<br />
+: sent 15 blks, 7534 bytes in 0 s. 0 blk resent [24/03 16:50:44.822]<br />
+Connection received from 192.168.1.51 on port 50769 [24/03 16:51:27.410]<br />
+Read request for file . Mode octet [24/03 16:51:27.410]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [24/03 16:51:27.410]<br />
+Connection received from 192.168.1.51 on port 52626 [24/03 16:52:00.026]<br />
+Read request for file . Mode octet [24/03 16:52:00.026]<br />
+Using local port 55186 [24/03 16:52:00.026]<br />
+: sent 2 blks, 953 bytes in 0 s. 0 blk resent [24/03 16:52:00.048]</p>
+<p>Any help appreciated!</p>
+<p>Thanks<br />
+BOB</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nick D		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-159</link>
+
+		<dc:creator><![CDATA[Nick D]]></dc:creator>
+		<pubDate>Sun, 03 Mar 2019 15:32:39 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-159</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-153&quot;&gt;AM&lt;/a&gt;.
+
+I had this exact same problem using FreePBX and pjSIP.  Tried for hours to get the phone to work with the default FreePBX setting of UDP only but then finally tried to enable TCP on the FreePBX side and it starting working instantly.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-153">AM</a>.</p>
+<p>I had this exact same problem using FreePBX and pjSIP.  Tried for hours to get the phone to work with the default FreePBX setting of UDP only but then finally tried to enable TCP on the FreePBX side and it starting working instantly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ashok kumar		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-158</link>
+
+		<dc:creator><![CDATA[Ashok kumar]]></dc:creator>
+		<pubDate>Thu, 29 Nov 2018 11:46:55 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-158</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-137&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Hi Will
+
+Good day
+
+I followed the same process like above and i am success in updating the firmware and now i am able to make calls to national and international numbers but i am facing an issue when i am trying to reach operator toll free numbers i am getting an error as reorder i guess the issue is with codec and i even tried below codec but nothing didnt work out can you please suggest me the solution for this 
+
+codec: 
+g711alaw
+g711ulaw]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-137">Will Cooke</a>.</p>
+<p>Hi Will</p>
+<p>Good day</p>
+<p>I followed the same process like above and i am success in updating the firmware and now i am able to make calls to national and international numbers but i am facing an issue when i am trying to reach operator toll free numbers i am getting an error as reorder i guess the issue is with codec and i even tried below codec but nothing didnt work out can you please suggest me the solution for this </p>
+<p>codec:<br />
+g711alaw<br />
+g711ulaw</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: rolakron		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-157</link>
+
+		<dc:creator><![CDATA[rolakron]]></dc:creator>
+		<pubDate>Mon, 05 Nov 2018 20:03:55 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-157</guid>
+
+					<description><![CDATA[Hello.
+I have set up a phone server with FreePBX and Asterisk on a Raspberry PI3+ (i&#039;m using raspbx distro, a complete system) and I have my phones to work with SCCP. I have also set up a phone directory made with PHP. It fetches all phone numbers from the systems MySQL-database, so I don&#039;t need to add entries manually. So, if I create a new extension, then it will show up in the phonedirectory.]]></description>
+			<content:encoded><![CDATA[<p>Hello.<br />
+I have set up a phone server with FreePBX and Asterisk on a Raspberry PI3+ (i&#8217;m using raspbx distro, a complete system) and I have my phones to work with SCCP. I have also set up a phone directory made with PHP. It fetches all phone numbers from the systems MySQL-database, so I don&#8217;t need to add entries manually. So, if I create a new extension, then it will show up in the phonedirectory.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michele Giambra		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-156</link>
+
+		<dc:creator><![CDATA[Michele Giambra]]></dc:creator>
+		<pubDate>Sat, 13 Oct 2018 07:49:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-156</guid>
+
+					<description><![CDATA[Hi everyone,
+It&#039;s since July that I try to register my Cisco 7961G on Asterisk, but I can not.
+I&#039;ve read the post so many times, but I can not.
+I have the sip firmware 9.4.2sr3.1s and asterisk 15.4.0 FreePBX 14.0.3.19.
+I&#039;m using sepmac.cnf.xml of the copied from this post.
+
+Who managed to run the cisco 7961g, can send me the configuration.
+Thank you!]]></description>
+			<content:encoded><![CDATA[<p>Hi everyone,<br />
+It&#8217;s since July that I try to register my Cisco 7961G on Asterisk, but I can not.<br />
+I&#8217;ve read the post so many times, but I can not.<br />
+I have the sip firmware 9.4.2sr3.1s and asterisk 15.4.0 FreePBX 14.0.3.19.<br />
+I&#8217;m using sepmac.cnf.xml of the copied from this post.</p>
+<p>Who managed to run the cisco 7961g, can send me the configuration.<br />
+Thank you!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jonathan		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-155</link>
+
+		<dc:creator><![CDATA[Jonathan]]></dc:creator>
+		<pubDate>Thu, 02 Aug 2018 01:43:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-155</guid>
+
+					<description><![CDATA[Thank you for this!!
+
+Finally got my Cisco 7941G working with my freePBX. 
+
+I was wondering if it supports a login feature like example. 
+
+User can go to any phone and login to their ext? 
+
+-
+
+Thank you again!!!]]></description>
+			<content:encoded><![CDATA[<p>Thank you for this!!</p>
+<p>Finally got my Cisco 7941G working with my freePBX. </p>
+<p>I was wondering if it supports a login feature like example. </p>
+<p>User can go to any phone and login to their ext? </p>
+<p>&#8211;</p>
+<p>Thank you again!!!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Steve Manley		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-154</link>
+
+		<dc:creator><![CDATA[Steve Manley]]></dc:creator>
+		<pubDate>Tue, 05 Jun 2018 00:29:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-154</guid>
+
+					<description><![CDATA[THANK YOU SO MUCH FOR THIS!
+
+Post up a LTC or BTC address so I can buy you a beer. You saved me hours.
+
+Some things that tripped me up:
+
+I needed to use CHAN_SIP, not PJSIP.
+
+If you are making a Cisco 7961G work, if you don&#039;t include a dialplan.xml, all of your outgoing calls will fail, as the inter-digit delay will become 0 or something close to it; it tries to dial the first digit you hit. Incoming calls will work fine. Adding the dialplan.xml file (I used a basically empty one) will prevent this from happening. Not sure if tags will post, but below:
+
+
+
+
+-
+
+&lt;!-- Anything else --&gt;
+
+
+Thanks so much!]]></description>
+			<content:encoded><![CDATA[<p>THANK YOU SO MUCH FOR THIS!</p>
+<p>Post up a LTC or BTC address so I can buy you a beer. You saved me hours.</p>
+<p>Some things that tripped me up:</p>
+<p>I needed to use CHAN_SIP, not PJSIP.</p>
+<p>If you are making a Cisco 7961G work, if you don&#8217;t include a dialplan.xml, all of your outgoing calls will fail, as the inter-digit delay will become 0 or something close to it; it tries to dial the first digit you hit. Incoming calls will work fine. Adding the dialplan.xml file (I used a basically empty one) will prevent this from happening. Not sure if tags will post, but below:</p>
+<p>&#8211;</p>
+<p><!-- Anything else --></p>
+<p>Thanks so much!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: AM		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-153</link>
+
+		<dc:creator><![CDATA[AM]]></dc:creator>
+		<pubDate>Sun, 13 May 2018 17:43:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-153</guid>
+
+					<description><![CDATA[Thanks for this post, it helped me after countless hours of trying to get 7961G running.
+
+Weird thing though, the phone registered to a VoIP provider only when I set the transport protocol to TCP. UDP just didn&#039;t work. I spoke with the provider and they told me I&#039;m rejecting the UDP packets coming back from them.
+
+So I&#039;ve tried to forward ports, even putting the phone to DMZ, no luck. Maybe there are more settings related to using UDP?]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this post, it helped me after countless hours of trying to get 7961G running.</p>
+<p>Weird thing though, the phone registered to a VoIP provider only when I set the transport protocol to TCP. UDP just didn&#8217;t work. I spoke with the provider and they told me I&#8217;m rejecting the UDP packets coming back from them.</p>
+<p>So I&#8217;ve tried to forward ports, even putting the phone to DMZ, no luck. Maybe there are more settings related to using UDP?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bladimir Sampayo		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-152</link>
+
+		<dc:creator><![CDATA[Bladimir Sampayo]]></dc:creator>
+		<pubDate>Fri, 27 Apr 2018 20:15:20 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-152</guid>
+
+					<description><![CDATA[Hi good day
+I thank you very much for your contribution to make this tutorial I followed it at the foot
+and the firmware went up without problems but when making the configuration of the sip file
+As you mention, I have these errors that I post when sending the files to the phone and I do not know what it could be, could you please help me by giving me some indication that I should correct
+
+Connection received from 192.168.3.2 on port 52076 [27/04 14:40:40.172]
+Read request for file . Mode octet [27/04 14:40:40.172]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:40:40.172]
+Connection received from 192.168.3.2 on port 51644 [27/04 14:41:11.072]
+Read request for file . Mode octet [27/04 14:41:11.072]
+Using local port 57768 [27/04 14:41:11.072]
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:41:11.103]
+Connection received from 192.168.3.2 on port 51366 [27/04 14:42:14.778]
+Read request for file . Mode octet [27/04 14:42:14.778]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:14.778]
+Connection received from 192.168.3.2 on port 49532 [27/04 14:42:45.468]
+Read request for file . Mode octet [27/04 14:42:45.468]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:45.468]
+Connection received from 192.168.3.2 on port 51186 [27/04 14:43:16.168]
+Read request for file . Mode octet [27/04 14:43:16.168]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:43:16.168]
+Connection received from 192.168.3.2 on port 52421 [27/04 14:43:46.984]
+Read request for file . Mode octet [27/04 14:43:46.984]
+Using local port 62389 [27/04 14:43:46.984]
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:43:46.999]
+Connection received from 192.168.3.2 on port 52761 [27/04 14:44:49.282]
+Read request for file . Mode octet [27/04 14:44:49.282]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:44:49.282]
+Connection received from 192.168.3.2 on port 51344 [27/04 14:45:19.984]
+Read request for file . Mode octet [27/04 14:45:19.984]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:45:19.984]]]></description>
+			<content:encoded><![CDATA[<p>Hi good day<br />
+I thank you very much for your contribution to make this tutorial I followed it at the foot<br />
+and the firmware went up without problems but when making the configuration of the sip file<br />
+As you mention, I have these errors that I post when sending the files to the phone and I do not know what it could be, could you please help me by giving me some indication that I should correct</p>
+<p>Connection received from 192.168.3.2 on port 52076 [27/04 14:40:40.172]<br />
+Read request for file . Mode octet [27/04 14:40:40.172]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:40:40.172]<br />
+Connection received from 192.168.3.2 on port 51644 [27/04 14:41:11.072]<br />
+Read request for file . Mode octet [27/04 14:41:11.072]<br />
+Using local port 57768 [27/04 14:41:11.072]<br />
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:41:11.103]<br />
+Connection received from 192.168.3.2 on port 51366 [27/04 14:42:14.778]<br />
+Read request for file . Mode octet [27/04 14:42:14.778]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:14.778]<br />
+Connection received from 192.168.3.2 on port 49532 [27/04 14:42:45.468]<br />
+Read request for file . Mode octet [27/04 14:42:45.468]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:45.468]<br />
+Connection received from 192.168.3.2 on port 51186 [27/04 14:43:16.168]<br />
+Read request for file . Mode octet [27/04 14:43:16.168]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:43:16.168]<br />
+Connection received from 192.168.3.2 on port 52421 [27/04 14:43:46.984]<br />
+Read request for file . Mode octet [27/04 14:43:46.984]<br />
+Using local port 62389 [27/04 14:43:46.984]<br />
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:43:46.999]<br />
+Connection received from 192.168.3.2 on port 52761 [27/04 14:44:49.282]<br />
+Read request for file . Mode octet [27/04 14:44:49.282]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:44:49.282]<br />
+Connection received from 192.168.3.2 on port 51344 [27/04 14:45:19.984]<br />
+Read request for file . Mode octet [27/04 14:45:19.984]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:45:19.984]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Muayad		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-151</link>
+
+		<dc:creator><![CDATA[Muayad]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2018 09:00:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-151</guid>
+
+					<description><![CDATA[Mr. WILL COOKE   please i need your help i have Cisco Phone and its firmware SIP and i want to change it to SCCP can you help me please ?]]></description>
+			<content:encoded><![CDATA[<p>Mr. WILL COOKE   please i need your help i have Cisco Phone and its firmware SIP and i want to change it to SCCP can you help me please ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-150</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Fri, 08 Dec 2017 20:06:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-150</guid>
+
+					<description><![CDATA[Hey, whenever I add a second sip line, the phone keeps restarting.
+
+This is what I&#039;m seeing in my log
+
+NOT 15:03:16.252056 JVM: Startup Module Loader&#124;cip.sipcc.SipCcAdapter:  - cmname=192.168.0.150 cmIp=192.168.0.150 port=5063 isValid=true
+NOT 15:03:16.253352 JVM: Startup Module Loader&#124;cip.sipcc.d:  - initializeLinePlane(): Mgmt Interface is in Service now..
+ERR 15:03:16.254597 JVM: Startup Module Loader&#124;cip.sipcc.d:  - regAllFailed(): mgmtState=5
+WRN 15:03:16.255820 JVM: Startup Module Loader&#124;JPlatUi:  - platformResetReq: resetRequest type=2
+
+One key thing is that each sip account is different and they both use different ports 5063 and 5062 but the server is the same, matching the settings on the server for each line.  I did try and put them both on the same port, but that didn&#039;t work either.
+
+Everything works if I just use one or the other.  Any ideas?]]></description>
+			<content:encoded><![CDATA[<p>Hey, whenever I add a second sip line, the phone keeps restarting.</p>
+<p>This is what I&#8217;m seeing in my log</p>
+<p>NOT 15:03:16.252056 JVM: Startup Module Loader|cip.sipcc.SipCcAdapter:  &#8211; cmname=192.168.0.150 cmIp=192.168.0.150 port=5063 isValid=true<br />
+NOT 15:03:16.253352 JVM: Startup Module Loader|cip.sipcc.d:  &#8211; initializeLinePlane(): Mgmt Interface is in Service now..<br />
+ERR 15:03:16.254597 JVM: Startup Module Loader|cip.sipcc.d:  &#8211; regAllFailed(): mgmtState=5<br />
+WRN 15:03:16.255820 JVM: Startup Module Loader|JPlatUi:  &#8211; platformResetReq: resetRequest type=2</p>
+<p>One key thing is that each sip account is different and they both use different ports 5063 and 5062 but the server is the same, matching the settings on the server for each line.  I did try and put them both on the same port, but that didn&#8217;t work either.</p>
+<p>Everything works if I just use one or the other.  Any ideas?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: amar		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-149</link>
+
+		<dc:creator><![CDATA[amar]]></dc:creator>
+		<pubDate>Sat, 02 Dec 2017 21:53:56 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-149</guid>
+
+					<description><![CDATA[Hello will, 
+Thank you for great the guide. Following  I managed to get a 7961g working with freepbx.  I am in Toronto,Canada. I can make and receive local (10 digits) only remaining issue is that I can&#039;t make any international calls (I am able to make the same international calls from other extentions  connected to my freepbx) . I suspect that it&#039;s an issue with the dialplan.xml.  
+Any suggestions would be greatly appreciated.  Thanks .]]></description>
+			<content:encoded><![CDATA[<p>Hello will,<br />
+Thank you for great the guide. Following  I managed to get a 7961g working with freepbx.  I am in Toronto,Canada. I can make and receive local (10 digits) only remaining issue is that I can&#8217;t make any international calls (I am able to make the same international calls from other extentions  connected to my freepbx) . I suspect that it&#8217;s an issue with the dialplan.xml.<br />
+Any suggestions would be greatly appreciated.  Thanks .</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-148</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Thu, 30 Nov 2017 09:41:17 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-148</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-147&quot;&gt;Has&lt;/a&gt;.
+
+Hi, thanks for the comment.
+
+The little X indicates (I think) that the phone hasn&#039;t correctly registered with Asterisk.  The dial tone is being generated from the phone itself, not Asterisk, so that could well be a red herring.  I&#039;d suggest turning up the logging on Asterisk to the max and switching on SIP debugging.  This could be something as simple as a port number or password.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-147">Has</a>.</p>
+<p>Hi, thanks for the comment.</p>
+<p>The little X indicates (I think) that the phone hasn&#8217;t correctly registered with Asterisk.  The dial tone is being generated from the phone itself, not Asterisk, so that could well be a red herring.  I&#8217;d suggest turning up the logging on Asterisk to the max and switching on SIP debugging.  This could be something as simple as a port number or password.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Has		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-147</link>
+
+		<dc:creator><![CDATA[Has]]></dc:creator>
+		<pubDate>Wed, 01 Nov 2017 15:52:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-147</guid>
+
+					<description><![CDATA[Hi Will,
+
+i&#039;ve Cisco 7960 IP Phone setup, I managed to get phone registered and got a dial tone but whenever I try to place an outgoing call it just wouldn&#039;t call out. In addition to that, I&#039;ve that little X next to the extension on line 1, could this be cause of my issue?
+
+
+&quot;If everything has worked you should see your extension listed on the right hand side of the screen near the buttons, and the name of the phone should appear at the top of the screen.  If the icon next to the line buttons is that of a phone without an x through it, then you’re probably good to go!  Press the line button and see if you get a dial tone.  If not, then check the&quot;]]></description>
+			<content:encoded><![CDATA[<p>Hi Will,</p>
+<p>i&#8217;ve Cisco 7960 IP Phone setup, I managed to get phone registered and got a dial tone but whenever I try to place an outgoing call it just wouldn&#8217;t call out. In addition to that, I&#8217;ve that little X next to the extension on line 1, could this be cause of my issue?</p>
+<p>&#8220;If everything has worked you should see your extension listed on the right hand side of the screen near the buttons, and the name of the phone should appear at the top of the screen.  If the icon next to the line buttons is that of a phone without an x through it, then you’re probably good to go!  Press the line button and see if you get a dial tone.  If not, then check the&#8221;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ricardo Díaz		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-146</link>
+
+		<dc:creator><![CDATA[Ricardo Díaz]]></dc:creator>
+		<pubDate>Wed, 23 Aug 2017 22:58:36 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-146</guid>
+
+					<description><![CDATA[Hello will
+
+I am trying to register a cisco IP 7941G phone with an asterisk server and then upload the firmware version .8-5-4 phone work. Now I can take calls but I can not route incoming calls to the IP phone because the attachment is not registered on the plant.
+
+Do you have to modify any additional parameters in the SEP  .cnf.xml file to make the IP phone register with the plant to be able to assign calls?]]></description>
+			<content:encoded><![CDATA[<p>Hello will</p>
+<p>I am trying to register a cisco IP 7941G phone with an asterisk server and then upload the firmware version .8-5-4 phone work. Now I can take calls but I can not route incoming calls to the IP phone because the attachment is not registered on the plant.</p>
+<p>Do you have to modify any additional parameters in the SEP  .cnf.xml file to make the IP phone register with the plant to be able to assign calls?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kimo		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-145</link>
+
+		<dc:creator><![CDATA[Kimo]]></dc:creator>
+		<pubDate>Mon, 14 Aug 2017 02:41:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-145</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-143&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Hi All,
+We bought CISCO7941 phones from ebay and I migrated couple of phones to our network with factory reset. Phones are migrated to our network.
+Phone is loading SEPMAC.cnf.xml and shows the configured users and phone show registering or &quot;Enregistration&quot; . Phone is sending SIP registration request to our server frequenetly though SIP server respondes with 200 OK. Phone also sending Reason header in SIP register request. Below are the traces. Can you please review and suggest how to solve the issue from phone?
+
+REGISTER sip:SIP_PROXY SIP/2.0.
+Via: SIP/2.0/UDP 192.168.0.8:5060;branch=z9hG4bK145170f7.
+From: ;tag=002155043e14000c6e300d74-f82d1759.
+To: .
+Call-ID: 00215504-3e14000a-88ce24a2-232a3b6b@192.168.0.8.
+Max-Forwards: 70.
+Date: Mon, 16 Jan 2017 09:07:00 GMT.
+CSeq: 105 REGISTER.
+User-Agent: Cisco-CP7941G/9.4.2.
+Contact: ;+sip.instance=&quot;&quot;;+u.sip!devicename.ccm.cisco.com=&quot;SEP002155043E14&quot;;+u.sip!model.ccm.cisco.com=&quot;115&quot;.
+Supported: replaces,join,sdp-anat,norefersub,resource-priority,extended-refer,X-cisco-callinfo,X-cisco-serviceuri,X-cisco-escapecodes,X-cisco-service-control,X-cisco-srtp-fallback,X-cisco-monrec,X-cisco-config,X-cisco-sis-6.0.0,X-cisco-xsi-8.5.1.
+Content-Length: 0.
+Reason: SIP;cause=200;text=&quot;cisco-alarm:14 Name=SEP002155043E14 Load=SIP41.9-4-2SR3-1S Last=cm-closed-tcp&quot;.
+Expires: 3600.
+.
+
+
+SIP/2.0 200 OK.
+Via: SIP/2.0/UDP 192.168.0.8:5060;branch=z9hG4bK145170f7;rport=50509;received=73.213.191.57.
+From: ;tag=002155043e14000c6e300d74-f82d1759.
+To: ;tag=9b61c4013306e65e16fef2a53c4669e3.6550.
+Call-ID: 00215504-3e14000a-88ce24a2-232a3b6b@192.168.0.8.
+CSeq: 105 REGISTER.
+Contact: ;expires=300;received=&quot;sip:73.213.191.57:50509&quot;;+sip.instance=&quot;&quot;.
+Server: kamailio (4.3.4 (x86_64/linux)).
+Content-Length: 0.
+.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-143">Will Cooke</a>.</p>
+<p>Hi All,<br />
+We bought CISCO7941 phones from ebay and I migrated couple of phones to our network with factory reset. Phones are migrated to our network.<br />
+Phone is loading SEPMAC.cnf.xml and shows the configured users and phone show registering or &#8220;Enregistration&#8221; . Phone is sending SIP registration request to our server frequenetly though SIP server respondes with 200 OK. Phone also sending Reason header in SIP register request. Below are the traces. Can you please review and suggest how to solve the issue from phone?</p>
+<p>REGISTER sip:SIP_PROXY SIP/2.0.<br />
+Via: SIP/2.0/UDP 192.168.0.8:5060;branch=z9hG4bK145170f7.<br />
+From: ;tag=002155043e14000c6e300d74-f82d1759.<br />
+To: .<br />
+Call-ID: <a href="mailto:00215504-3e14000a-88ce24a2-232a3b6b@192.168">00215504-3e14000a-88ce24a2-232a3b6b@192.168</a>.0.8.<br />
+Max-Forwards: 70.<br />
+Date: Mon, 16 Jan 2017 09:07:00 GMT.<br />
+CSeq: 105 REGISTER.<br />
+User-Agent: Cisco-CP7941G/9.4.2.<br />
+Contact: ;+sip.instance=&#8221;&#8221;;+u.sip!devicename.ccm.cisco.com=&#8221;SEP002155043E14&#8243;;+u.sip!model.ccm.cisco.com=&#8221;115&#8243;.<br />
+Supported: replaces,join,sdp-anat,norefersub,resource-priority,extended-refer,X-cisco-callinfo,X-cisco-serviceuri,X-cisco-escapecodes,X-cisco-service-control,X-cisco-srtp-fallback,X-cisco-monrec,X-cisco-config,X-cisco-sis-6.0.0,X-cisco-xsi-8.5.1.<br />
+Content-Length: 0.<br />
+Reason: SIP;cause=200;text=&#8221;cisco-alarm:14 Name=SEP002155043E14 Load=SIP41.9-4-2SR3-1S Last=cm-closed-tcp&#8221;.<br />
+Expires: 3600.<br />
+.</p>
+<p>SIP/2.0 200 OK.<br />
+Via: SIP/2.0/UDP 192.168.0.8:5060;branch=z9hG4bK145170f7;rport=50509;received=73.213.191.57.<br />
+From: ;tag=002155043e14000c6e300d74-f82d1759.<br />
+To: ;tag=9b61c4013306e65e16fef2a53c4669e3.6550.<br />
+Call-ID: <a href="mailto:00215504-3e14000a-88ce24a2-232a3b6b@192.168">00215504-3e14000a-88ce24a2-232a3b6b@192.168</a>.0.8.<br />
+CSeq: 105 REGISTER.<br />
+Contact: ;expires=300;received=&#8221;sip:73.213.191.57:50509&#8243;;+sip.instance=&#8221;&#8221;.<br />
+Server: kamailio (4.3.4 (x86_64/linux)).<br />
+Content-Length: 0.<br />
+.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: John		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-144</link>
+
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Sat, 22 Jul 2017 09:53:17 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-144</guid>
+
+					<description><![CDATA[Hi guys,
+
+Just got one from ebay about 12 pounds.
+Updated to latest firware from Cisco and tried every configuration found here or other blogs and site.
+
+I have installed asterisk local and TFTP server success.
+All the time i got unprocisioned :(
+
+I am one step to give it away for recycling.
+Is there anyone who can help me to configure it to my Asterisk local server?
+I can give you some Teamviewer access  to work directly.]]></description>
+			<content:encoded><![CDATA[<p>Hi guys,</p>
+<p>Just got one from ebay about 12 pounds.<br />
+Updated to latest firware from Cisco and tried every configuration found here or other blogs and site.</p>
+<p>I have installed asterisk local and TFTP server success.<br />
+All the time i got unprocisioned 🙁</p>
+<p>I am one step to give it away for recycling.<br />
+Is there anyone who can help me to configure it to my Asterisk local server?<br />
+I can give you some Teamviewer access  to work directly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-143</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Tue, 27 Jun 2017 07:30:19 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-143</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-142&quot;&gt;CB&lt;/a&gt;.
+
+This site should give you some hints:
+
+https://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-142">CB</a>.</p>
+<p>This site should give you some hints:</p>
+<p><a href="https://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP" rel="nofollow ugc">https://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79&#215;1+xml+configuration+files+for+SIP</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: CB		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-142</link>
+
+		<dc:creator><![CDATA[CB]]></dc:creator>
+		<pubDate>Tue, 20 Jun 2017 14:32:06 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-142</guid>
+
+					<description><![CDATA[Do you know of any major differences between the 79x1 models and 79x2 models? I am trying to get a 7942 and 7962 working with Switchvox, and having problems at the SIP OPTIONS stage.]]></description>
+			<content:encoded><![CDATA[<p>Do you know of any major differences between the 79&#215;1 models and 79&#215;2 models? I am trying to get a 7942 and 7962 working with Switchvox, and having problems at the SIP OPTIONS stage.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-141</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Thu, 27 Apr 2017 10:30:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-141</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-140&quot;&gt;IVG&lt;/a&gt;.
+
+I dont think you need a specific version.  I&#039;d say use whatever is packaged for your distro, or the latest upstream version.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-140">IVG</a>.</p>
+<p>I dont think you need a specific version.  I&#8217;d say use whatever is packaged for your distro, or the latest upstream version.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: IVG		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-140</link>
+
+		<dc:creator><![CDATA[IVG]]></dc:creator>
+		<pubDate>Sun, 23 Apr 2017 00:53:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-140</guid>
+
+					<description><![CDATA[Hey Will, 
+What version of Asterisk or FreePBX is recommended?
+Kind regards, IVG]]></description>
+			<content:encoded><![CDATA[<p>Hey Will,<br />
+What version of Asterisk or FreePBX is recommended?<br />
+Kind regards, IVG</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-139</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Sat, 25 Mar 2017 14:05:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-139</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-138&quot;&gt;Ralf&lt;/a&gt;.
+
+Excellent!  Glad to hear you got it working.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-138">Ralf</a>.</p>
+<p>Excellent!  Glad to hear you got it working.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ralf		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-138</link>
+
+		<dc:creator><![CDATA[Ralf]]></dc:creator>
+		<pubDate>Fri, 17 Mar 2017 20:52:04 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-138</guid>
+
+					<description><![CDATA[Hey Will, thank you so much for this article. I am working now for almost one year (time to time) to get my CIsco 7961 working. I tried almost all configurations you can find on the internet. I got to a point where I could receive calls but not place them. Thanks to you it is now working. So I can confirm that it works for Cisco 7961, too.
+Kind regards,
+Ralf]]></description>
+			<content:encoded><![CDATA[<p>Hey Will, thank you so much for this article. I am working now for almost one year (time to time) to get my CIsco 7961 working. I tried almost all configurations you can find on the internet. I got to a point where I could receive calls but not place them. Thanks to you it is now working. So I can confirm that it works for Cisco 7961, too.<br />
+Kind regards,<br />
+Ralf</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-137</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Mon, 27 Feb 2017 20:30:41 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-137</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-136&quot;&gt;Adan&lt;/a&gt;.
+
+Hi Adan!
+
+I read somewhere that the 7941 always tries to connect to the highest numbered SIP port regardless of what you tell it.  So my guess (and it is only a guess) is that it&#039;s trying to connect using encryption when there is none.  Hence why you&#039;re not seeing any attempts to connect, because the encryption handshake is failing.
+
+I&#039;m using the plain SIP module.  Here&#039;s some config extracts which might give you a clue:
+
+From sip_additional.conf for the 7941 extension:
+
+[1005]
+deny=0.0.0.0/0.0.0.0
+secret=password
+dtmfmode=rfc2833
+canreinvite=no
+context=from-internal
+host=dynamic
+trustrpid=yes
+sendrpid=no
+type=friend
+nat=no
+port=5060
+qualify=yes
+qualifyfreq=60
+transport=udp,tcp,tls
+avpf=no
+icesupport=no
+encryption=no
+callgroup=
+pickupgroup=
+dial=SIP/1005
+mailbox=1001@default
+permit=0.0.0.0/0.0.0.0
+callerid=Study &lt;1005&gt;
+callcounter=yes
+faxdetect=no
+
+
+
+Let me know if that helps.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-136">Adan</a>.</p>
+<p>Hi Adan!</p>
+<p>I read somewhere that the 7941 always tries to connect to the highest numbered SIP port regardless of what you tell it.  So my guess (and it is only a guess) is that it&#8217;s trying to connect using encryption when there is none.  Hence why you&#8217;re not seeing any attempts to connect, because the encryption handshake is failing.</p>
+<p>I&#8217;m using the plain SIP module.  Here&#8217;s some config extracts which might give you a clue:</p>
+<p>From sip_additional.conf for the 7941 extension:</p>
+<p>[1005]<br />
+deny=0.0.0.0/0.0.0.0<br />
+secret=password<br />
+dtmfmode=rfc2833<br />
+canreinvite=no<br />
+context=from-internal<br />
+host=dynamic<br />
+trustrpid=yes<br />
+sendrpid=no<br />
+type=friend<br />
+nat=no<br />
+port=5060<br />
+qualify=yes<br />
+qualifyfreq=60<br />
+transport=udp,tcp,tls<br />
+avpf=no<br />
+icesupport=no<br />
+encryption=no<br />
+callgroup=<br />
+pickupgroup=<br />
+dial=SIP/1005<br />
+mailbox=1001@default<br />
+permit=0.0.0.0/0.0.0.0<br />
+callerid=Study &lt;1005><br />
+callcounter=yes<br />
+faxdetect=no</p>
+<p>Let me know if that helps.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Adan		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-136</link>
+
+		<dc:creator><![CDATA[Adan]]></dc:creator>
+		<pubDate>Sun, 26 Feb 2017 16:48:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-136</guid>
+
+					<description><![CDATA[Hey, wondering if you can help me, also have a 7941 and am trying to hook it up to asterisk which I have done in the past but has been in storage for a while due to server issues and now I find that latest asterisk (PIAF) seems to be well, crap for using with the 7941
+
+Are you using SIP or PJSIP, not sure what difference is but my LG SIP phone wont work on SIP as port is different (5061) PJSIP uses 5060 and works... somewhat on the LG, by that I mean incoming is great outgoing is silent for a random amount of time then it works great.
+
+so hence digging up the cisco (looks nicer imo too) but my current problem is no matter if I make an extension PJSIP or SIP it still gets stuck at registering on the phone.
+
+not sure if the ports are taking affect in config as in the menus on the deivce the proxy port is blank so I bet its trying to use 5060 when it should be using 5061
+
+would you mind sharing you asterisk extension configs as I swear down that my XML files are right tried so many even the one I had working on a test server with this very phone about 5 months ago and I belive I used SIP on 5061 with that server so pretty sure a recent PIAF update has changed some asterisk extension thing
+
+also if I have sip debug on I see no attempt by mr cisco to connect, not even an auth fail, its like the phone just dont care, both server and phone on same subnet on same switch port as the working LG phone so cant be network related]]></description>
+			<content:encoded><![CDATA[<p>Hey, wondering if you can help me, also have a 7941 and am trying to hook it up to asterisk which I have done in the past but has been in storage for a while due to server issues and now I find that latest asterisk (PIAF) seems to be well, crap for using with the 7941</p>
+<p>Are you using SIP or PJSIP, not sure what difference is but my LG SIP phone wont work on SIP as port is different (5061) PJSIP uses 5060 and works&#8230; somewhat on the LG, by that I mean incoming is great outgoing is silent for a random amount of time then it works great.</p>
+<p>so hence digging up the cisco (looks nicer imo too) but my current problem is no matter if I make an extension PJSIP or SIP it still gets stuck at registering on the phone.</p>
+<p>not sure if the ports are taking affect in config as in the menus on the deivce the proxy port is blank so I bet its trying to use 5060 when it should be using 5061</p>
+<p>would you mind sharing you asterisk extension configs as I swear down that my XML files are right tried so many even the one I had working on a test server with this very phone about 5 months ago and I belive I used SIP on 5061 with that server so pretty sure a recent PIAF update has changed some asterisk extension thing</p>
+<p>also if I have sip debug on I see no attempt by mr cisco to connect, not even an auth fail, its like the phone just dont care, both server and phone on same subnet on same switch port as the working LG phone so cant be network related</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

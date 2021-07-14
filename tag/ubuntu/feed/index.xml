@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ubuntu &#8211; whizzy.org</title>
+	<atom:link href="/tag/ubuntu/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 22 Jun 2009 10:34:33 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>Aspire Revo as a MythTV frontend</title>
+		<link>/2009/06/22/aspire-revo-as-a-mythtv-frontend/</link>
+					<comments>/2009/06/22/aspire-revo-as-a-mythtv-frontend/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 22 Jun 2009 10:34:33 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[tv]]></category>
+		<category><![CDATA[mythtv]]></category>
+		<category><![CDATA[nettop]]></category>
+		<category><![CDATA[revo]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">/?p=184</guid>
+
+					<description><![CDATA[Yes - you should buy that Acer Revo.]]></description>
+										<content:encoded><![CDATA[<p><strong>It&#8217;s brilliant!</strong></p>
+<p>If you&#8217;re reading this then I will assume you already know about MythTV and you&#8217;ve searched Google to find out if the Aspire Revo box will make a decent MythTV frontend.  In short, yes &#8211; it works fantastically well.</p>
+<p>I bought the 8GB SSD Linux version from Play for about 150 quid (get a Play credit card and you can knock off about another 15 quid in vouchers and get 9 months interest free credit, for what it&#8217;s worth), and I also bought 2 x 2GB SODIMM.</p>
+<p>The first thing I did was take the lid off to have a look inside.  This wasn&#8217;t as easy as I thought.  There&#8217;s one little screw under a sticker that says something about a warranty and then you just have to prise the lid off.  It&#8217;s pretty stiff, to the extent that I was convinced there was another screw somewhere, but it comes off in the end.   I removed the WiFi card since I won&#8217;t use it and it might reduce the heat/power.   The RAM swap presented no surprises, but the appearance of a 160GB HDD did.</p>
+<p>I had sort of decided that the SSD was the better option for me for two reasons; less heat and less noise.  But, seeing as I&#8217;ve been gifted 160GB of disk space and under use the HDD makes no noise, I&#8217;m very happy!</p>
+<p>I decided on XUbuntu over the normal version partly because of the reduced overheads and software bloat, I really don&#8217;t need Open Office and The Gimp installed on this box and I can&#8217;t be bothered with manually selecting packages at install, so I downloaded the XUbuntu ISO and stuck it on a USB pen drive with <a href="http://unetbootin.sourceforge.net/">Unetbootin</a>.  I had a few problems booting from the pen drive, it kept complaining that the initrd was corrupt, so in the end I had to use the alternative version and run through the install on the command line.   I blew away all the partitions on the disk, I won&#8217;t need any of the Acer software &#8211; there&#8217;s nothing much of use on there anyway.</p>
+<p>Once XUbuntu was installed I downloaded and compiled the latest NVIDIA drivers:</p>
+<p><a href="http://www.nvidia.com/object/linux_display_ia32_185.18.14.html">http://www.nvidia.com/object/linux_display_ia32_185.18.14.html</a></p>
+<p>(this is the latest version at I write this, check if there is a newer one)</p>
+<p>and then I downloaded the SVN version of Myth and enabled VDPAU.  If you&#8217;re looking for help setting up Myth and VDPAU check the MythTV wiki, there&#8217;s more information there than I can recreate here.  Read the <a href="http://www.mythtv.org/wiki/Installing_MythTV_SVN_on_Ubuntu_Breezy">&#8220;Installing SVN on Breezy&#8221;</a> document to give you a hand getting all the bits and bobs installed to allow you to compile Myth. Note: some libraries have changed name, e.g. liblame is now libmp3lame.</p>
+<p>Then it&#8217;s a case of enabling VDPAU at compile time using the configure script and then creating a playback profile to use VDPAU from within the frontend.</p>
+<p>My old frontend had a dual core 2GHz processor in and would sit at about 80 to 90 percent usage on both cores while watching 1080p video and sucked somewhere in the region of 80 to 100 watts.  The Revo&#8217;s Atom processor sits at about 10% usage (obviously the graphics card is doing the work) and sucks less than 20watts, while also being nearly silent.</p>
+<p>Sound was a bit of a faff &#8211; the Revo has an HDMI connector with the audio path built in.  To hear anything I needed to enable and unmute the IEC958 (spdif) channel and then tell Myth to use ALSA:hdmi for audio.   Ubuntu detected the sound card perfectly well, so trust me when I say you do not need to download a later version of ALSA, you just need to get the settings right.   You might also need to tell your telly to pick up digital audio, not analogue.   I haven&#8217;t got system sounds going down the HDMI just yet , but I don&#8217;t think this will be a problem.</p>
+<p>Summary then;  very very good choice for a small, quiet and cheap frontend that can also double as an Internet browser.</p>
+<p>I think I might buy another one.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/22/aspire-revo-as-a-mythtv-frontend/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Acer Aspire One &#038; Ubuntu Jaunty 9.04</title>
+		<link>/2009/06/18/acer-aspire-one-ubuntu-jaunty-904/</link>
+					<comments>/2009/06/18/acer-aspire-one-ubuntu-jaunty-904/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 18 Jun 2009 12:30:12 +0000</pubDate>
+				<category><![CDATA[linux]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">/?p=174</guid>
+
+					<description><![CDATA[I&#8217;m really happy with my new Aspire One.  I was a bit late [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m really happy with my new Aspire One.  I was a bit late coming to the whole netbook party.    In the last few months I&#8217;ve been looking at the various options and the Aspire One was still the best deal in my opinion.</p>
+<p>I&#8217;ve upgraded the RAM by adding another 1GB (you can&#8217;t add any more than this, it doesn&#8217;t pass POST if you do) and given it a custom paint job (pictures coming soon).</p>
+<p>While I was playing around with various OS options I was caught by a bug which corrupts the SD card (left hand side) if you&#8217;ve opted to put /home on there and suspended.   See this page for more info:</p>
+<p><a href="http://blog3.robertalks.com/index.php/2009/06/17/revision-3-for-kernel-2630-final-released/">https://bugs.launchpad.net/ubuntu/+source/pm-utils/+bug/342096</a></p>
+<p>The fix is to recompile the kernel and change a few options from the Ubuntu defaults.  While I was waiting for the source to download I had a quick poke around on Google and found that Robert had already built a custom kernel for the Aspire complete with all the Aspire One specific changes needed to make the WiFi LEDs work, and fan control and what have you.   I posted a comment on Robert&#8217;s site asking if he had also included the fix from the Ubuntu bug as detailed above, he hadn&#8217;t but about 30 mins later a new release was ready to roll.   It fixes the corrupt SD problem and saved me a lot of menuconfig work.  Thanks Robert!</p>
+<p>You can get more details from here:</p>
+<p><a href="http://blog3.robertalks.com/index.php/2009/06/17/revision-3-for-kernel-2630-final-released/">http://blog3.robertalks.com/index.php/2009/06/17/revision-3-for-kernel-2630-final-released/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/18/acer-aspire-one-ubuntu-jaunty-904/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

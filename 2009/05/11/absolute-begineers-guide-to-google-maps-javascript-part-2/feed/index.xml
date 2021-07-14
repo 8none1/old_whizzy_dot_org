@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Absolute beginners guide to Google Maps Javascript Part 2	</title>
+	<atom:link href="/2009/05/11/absolute-begineers-guide-to-google-maps-javascript-part-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/05/11/absolute-begineers-guide-to-google-maps-javascript-part-2/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Tue, 17 Dec 2013 15:03:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Absolute beginners guide to Google Maps JavaScript v3 &#8212; whizzy.org		</title>
+		<link>/2009/05/11/absolute-begineers-guide-to-google-maps-javascript-part-2/#comment-17</link>
+
+		<dc:creator><![CDATA[Absolute beginners guide to Google Maps JavaScript v3 &#8212; whizzy.org]]></dc:creator>
+		<pubDate>Tue, 17 Dec 2013 15:03:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=146#comment-17</guid>
+
+					<description><![CDATA[[&#8230;] I first published my HowTo and the subsequent follow up for novices to get a Google Map on a web page it&#8217;s been the most popular post on my [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] I first published my HowTo and the subsequent follow up for novices to get a Google Map on a web page it&#8217;s been the most popular post on my [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: will		</title>
+		<link>/2009/05/11/absolute-begineers-guide-to-google-maps-javascript-part-2/#comment-16</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 31 May 2012 13:14:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=146#comment-16</guid>
+
+					<description><![CDATA[If it&#039;s telling you that &quot;map&quot; is not defined it&#039;s likely that you have declared it as a local variable to a specific function.  Worth making sure that you haven&#039;t got &quot;var map = blahblah&quot; but instead &quot;map = blahblah&quot;.]]></description>
+			<content:encoded><![CDATA[<p>If it&#8217;s telling you that &#8220;map&#8221; is not defined it&#8217;s likely that you have declared it as a local variable to a specific function.  Worth making sure that you haven&#8217;t got &#8220;var map = blahblah&#8221; but instead &#8220;map = blahblah&#8221;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jarrod		</title>
+		<link>/2009/05/11/absolute-begineers-guide-to-google-maps-javascript-part-2/#comment-15</link>
+
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+		<pubDate>Thu, 31 May 2012 10:36:36 +0000</pubDate>
+		<guid isPermaLink="false">/?p=146#comment-15</guid>
+
+					<description><![CDATA[Thanks for this tutorial, it has really helped me to get started with JS and google maps. 
+
+I&#039;m and running into problems when I try and call the &#039;addMarker&#039; function from outside of the , I want to call this from within the page body as I loop through a list of address. When I try this I get the following error (using FireFox and Firebug)...
+
+map is not defined
+[Break On This Error] map.addOverlay(myMarker); 
+
+Any ideas?]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this tutorial, it has really helped me to get started with JS and google maps. </p>
+<p>I&#8217;m and running into problems when I try and call the &#8216;addMarker&#8217; function from outside of the , I want to call this from within the page body as I loop through a list of address. When I try this I get the following error (using FireFox and Firebug)&#8230;</p>
+<p>map is not defined<br />
+[Break On This Error] map.addOverlay(myMarker); </p>
+<p>Any ideas?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

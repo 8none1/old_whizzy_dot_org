@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>tv &#8211; whizzy.org</title>
+	<atom:link href="/tag/tv/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Fri, 12 Jun 2009 15:38:36 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>Krod Mandoon and The Flaming Sword of Fire</title>
+		<link>/2009/06/12/krod-mandoon-and-the-flaming-sword-of-fire/</link>
+					<comments>/2009/06/12/krod-mandoon-and-the-flaming-sword-of-fire/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 12 Jun 2009 15:38:36 +0000</pubDate>
+				<category><![CDATA[tv]]></category>
+		<guid isPermaLink="false">/2009/06/krod-mandoon-and-the-flaming-sword-of-fire/</guid>
+
+					<description><![CDATA[Shit. Apart from Matt Lucas.]]></description>
+										<content:encoded><![CDATA[<p>Shit.</p>
+<p>Apart from Matt Lucas.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/12/krod-mandoon-and-the-flaming-sword-of-fire/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

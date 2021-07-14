@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: HOWTO:  Add OAUTH to your Alexa Smart Home skill in 10 minutes	</title>
+	<atom:link href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/feed/" rel="self" type="application/rss+xml" />
+	<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Wed, 13 Jun 2018 13:27:57 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Smart Home Skill entwicklen &#124; Authentifizierung und Device Discovery &#124; Smart Home Sri Lanka		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-135</link>
+
+		<dc:creator><![CDATA[Smart Home Skill entwicklen &#124; Authentifizierung und Device Discovery &#124; Smart Home Sri Lanka]]></dc:creator>
+		<pubDate>Wed, 13 Jun 2018 13:27:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-135</guid>
+
+					<description><![CDATA[[&#8230;] HOWTO: Add OAUTH to your Alexa Smart Home skill in 10 minutes [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] HOWTO: Add OAUTH to your Alexa Smart Home skill in 10 minutes [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Amit Joshi		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-134</link>
+
+		<dc:creator><![CDATA[Amit Joshi]]></dc:creator>
+		<pubDate>Sat, 10 Feb 2018 05:54:56 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-134</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-131&quot;&gt;P.V.B.Raju&lt;/a&gt;.
+
+Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-131">P.V.B.Raju</a>.</p>
+<p>Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Amit Joshi		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-133</link>
+
+		<dc:creator><![CDATA[Amit Joshi]]></dc:creator>
+		<pubDate>Sat, 10 Feb 2018 05:54:40 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-133</guid>
+
+					<description><![CDATA[Very good information. I was stuck at account linking step. I could complete the authorization process. Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.]]></description>
+			<content:encoded><![CDATA[<p>Very good information. I was stuck at account linking step. I could complete the authorization process. Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-132</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Thu, 30 Nov 2017 09:41:54 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-132</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-129&quot;&gt;bennett&lt;/a&gt;.
+
+Ah, interesting, thanks!  I will take a look at updating this over Christmas.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-129">bennett</a>.</p>
+<p>Ah, interesting, thanks!  I will take a look at updating this over Christmas.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: P.V.B.Raju		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-131</link>
+
+		<dc:creator><![CDATA[P.V.B.Raju]]></dc:creator>
+		<pubDate>Tue, 31 Oct 2017 14:49:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-131</guid>
+
+					<description><![CDATA[Hi,
+I followed your post and I tried to link with my smart home skill but I am getting following error
+
+
+An Error Occurred While attempting to link Alexa with SmartHomeLightSkill.Please try again later.]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+I followed your post and I tried to link with my smart home skill but I am getting following error</p>
+<p>An Error Occurred While attempting to link Alexa with SmartHomeLightSkill.Please try again later.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bennett		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-130</link>
+
+		<dc:creator><![CDATA[bennett]]></dc:creator>
+		<pubDate>Thu, 19 Oct 2017 08:38:07 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-130</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-129&quot;&gt;bennett&lt;/a&gt;.
+
+currently, actually,
+no need to add redirect_uri or redirect_url, it works too.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-129">bennett</a>.</p>
+<p>currently, actually,<br />
+no need to add redirect_uri or redirect_url, it works too.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bennett		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-129</link>
+
+		<dc:creator><![CDATA[bennett]]></dc:creator>
+		<pubDate>Thu, 19 Oct 2017 06:45:03 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-129</guid>
+
+					<description><![CDATA[according to https://tools.ietf.org/html/rfc6749
+it should be redirect_uri, not redirect_url.
+but dont know why, redirect_url seems work too.]]></description>
+			<content:encoded><![CDATA[<p>according to <a href="https://tools.ietf.org/html/rfc6749" rel="nofollow ugc">https://tools.ietf.org/html/rfc6749</a><br />
+it should be redirect_uri, not redirect_url.<br />
+but dont know why, redirect_url seems work too.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andy		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-128</link>
+
+		<dc:creator><![CDATA[Andy]]></dc:creator>
+		<pubDate>Tue, 10 Oct 2017 20:10:55 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-128</guid>
+
+					<description><![CDATA[Very useful, thanks for the post]]></description>
+			<content:encoded><![CDATA[<p>Very useful, thanks for the post</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Prem Kumar		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-127</link>
+
+		<dc:creator><![CDATA[Prem Kumar]]></dc:creator>
+		<pubDate>Sat, 15 Jul 2017 08:58:03 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-127</guid>
+
+					<description><![CDATA[My requirement is our website have allows to book appointment but does not have login option. 
+
+We have developed to Alexa skill, which will have account linking to store user preference since we cannot ask same set of question every time when they want to use our Alexa skill. We do not have plans to implemented OAuth server. I would like to know what are options available. Does Amazon provide  OAuth service which I can use?
+The user preference that I mentioned will be stored in AWS Dynamo DB, and not in our website. I assumed we can using Amazon login to authenticate the user and store the information but is not working for me.
+
+Please provide as much as details possible since our skill needs to go-alive in next week.]]></description>
+			<content:encoded><![CDATA[<p>My requirement is our website have allows to book appointment but does not have login option. </p>
+<p>We have developed to Alexa skill, which will have account linking to store user preference since we cannot ask same set of question every time when they want to use our Alexa skill. We do not have plans to implemented OAuth server. I would like to know what are options available. Does Amazon provide  OAuth service which I can use?<br />
+The user preference that I mentioned will be stored in AWS Dynamo DB, and not in our website. I assumed we can using Amazon login to authenticate the user and store the information but is not working for me.</p>
+<p>Please provide as much as details possible since our skill needs to go-alive in next week.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-126</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Mon, 27 Mar 2017 20:23:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-126</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-123&quot;&gt;jonas&lt;/a&gt;.
+
+I&#039;ve written this up:
+
+/2017/03/retrieving-user-profile-data-from-login-with-amazon-on-alexa/]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-123">jonas</a>.</p>
+<p>I&#8217;ve written this up:</p>
+<p><a href="/2017/03/retrieving-user-profile-data-from-login-with-amazon-on-alexa/" rel="nofollow ugc">/2017/03/retrieving-user-profile-data-from-login-with-amazon-on-alexa/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-125</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Sat, 25 Mar 2017 14:48:31 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-125</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-124&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Futher:
+
+This guide only allows your scripts to retrieve the USER_ID from Amazon.  You would need to make sure that you use the correct SCOPE so that you can get the information you need.  See section 2 above.  Once you use a scope which can get the users name etc then you need to use this:
+
+https://api.amazon.com/user/profile?access_token=&lt;access token passed to you here&gt;
+
+That will then return JSON from Login With Amazon including the users name etc.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-124">Will Cooke</a>.</p>
+<p>Futher:</p>
+<p>This guide only allows your scripts to retrieve the USER_ID from Amazon.  You would need to make sure that you use the correct SCOPE so that you can get the information you need.  See section 2 above.  Once you use a scope which can get the users name etc then you need to use this:</p>
+<p><a href="https://api.amazon.com/user/profile?access_token=" rel="nofollow ugc">https://api.amazon.com/user/profile?access_token=</a><access token passed to you here></p>
+<p>That will then return JSON from Login With Amazon including the users name etc.</access></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-124</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Sat, 25 Mar 2017 14:17:26 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-124</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-123&quot;&gt;jonas&lt;/a&gt;.
+
+Have a look at this page:  https://developer.amazon.com/blogs/post/Tx3CX1ETRZZ2NPC/Alexa-Account-Linking-5-Steps-to-Seamlessly-Link-Your-Alexa-Skill-with-Login-wit
+
+Step 5 shows you what the JSON that is passed to your Lambda script might look like.  From that JSON you can access user information including the Amazon User ID.
+
+With that Amazon User ID you can then query Login With Amazon to fetch the users name etc.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-123">jonas</a>.</p>
+<p>Have a look at this page:  <a href="https://developer.amazon.com/blogs/post/Tx3CX1ETRZZ2NPC/Alexa-Account-Linking-5-Steps-to-Seamlessly-Link-Your-Alexa-Skill-with-Login-wit" rel="nofollow ugc">https://developer.amazon.com/blogs/post/Tx3CX1ETRZZ2NPC/Alexa-Account-Linking-5-Steps-to-Seamlessly-Link-Your-Alexa-Skill-with-Login-wit</a></p>
+<p>Step 5 shows you what the JSON that is passed to your Lambda script might look like.  From that JSON you can access user information including the Amazon User ID.</p>
+<p>With that Amazon User ID you can then query Login With Amazon to fetch the users name etc.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: jonas		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-123</link>
+
+		<dc:creator><![CDATA[jonas]]></dc:creator>
+		<pubDate>Tue, 21 Mar 2017 10:08:50 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-123</guid>
+
+					<description><![CDATA[Is there any way to get the actual user information (mail or user_id) within the lambda function?]]></description>
+			<content:encoded><![CDATA[<p>Is there any way to get the actual user information (mail or user_id) within the lambda function?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

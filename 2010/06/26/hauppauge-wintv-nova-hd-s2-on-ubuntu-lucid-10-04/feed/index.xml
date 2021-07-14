@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Hauppauge WinTV-NOVA-HD-S2 on Ubuntu Lucid 10.04	</title>
+	<atom:link href="/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Wed, 22 Feb 2012 09:49:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: will		</title>
+		<link>/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/#comment-33</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2012 09:49:43 +0000</pubDate>
+		<guid isPermaLink="false">/?p=282#comment-33</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/#comment-32&quot;&gt;Rico&lt;/a&gt;.
+
+This refers to the PCI version of the card.
+
+However, I think the USB version uses the same firmware, so first of all I&#039;d try installing the &quot;linux-firmware-nonfree&quot; packages.
+
+Something like &quot;sudo apt-get install linux-firmware-nonfree&quot; should sort you out.
+
+Otherwise, check this page:
+
+http://linuxtv.org/wiki/index.php/DVB-S2_USB_Devices
+
+See if you can find a device which uses the same chipset and follow the instructions from there to download the right firmware.
+
+Cheers, Will]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/#comment-32">Rico</a>.</p>
+<p>This refers to the PCI version of the card.</p>
+<p>However, I think the USB version uses the same firmware, so first of all I&#8217;d try installing the &#8220;linux-firmware-nonfree&#8221; packages.</p>
+<p>Something like &#8220;sudo apt-get install linux-firmware-nonfree&#8221; should sort you out.</p>
+<p>Otherwise, check this page:</p>
+<p><a href="http://linuxtv.org/wiki/index.php/DVB-S2_USB_Devices" rel="nofollow ugc">http://linuxtv.org/wiki/index.php/DVB-S2_USB_Devices</a></p>
+<p>See if you can find a device which uses the same chipset and follow the instructions from there to download the right firmware.</p>
+<p>Cheers, Will</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rico		</title>
+		<link>/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/#comment-32</link>
+
+		<dc:creator><![CDATA[Rico]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2012 05:19:54 +0000</pubDate>
+		<guid isPermaLink="false">/?p=282#comment-32</guid>
+
+					<description><![CDATA[Hi, 
+
+Is it the USB version of the nova card ord pci, becasue I can&#039;t get my usb to work under Ubuntu?]]></description>
+			<content:encoded><![CDATA[<p>Hi, </p>
+<p>Is it the USB version of the nova card ord pci, becasue I can&#8217;t get my usb to work under Ubuntu?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

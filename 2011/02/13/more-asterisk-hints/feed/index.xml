@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: More Asterisk hints	</title>
+	<atom:link href="/2011/02/13/more-asterisk-hints/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/02/13/more-asterisk-hints/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 05 Sep 2011 19:03:26 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Overriding Outbound Dial Command Options &#8212; whizzy.org		</title>
+		<link>/2011/02/13/more-asterisk-hints/#comment-40</link>
+
+		<dc:creator><![CDATA[Overriding Outbound Dial Command Options &#8212; whizzy.org]]></dc:creator>
+		<pubDate>Mon, 05 Sep 2011 19:03:26 +0000</pubDate>
+		<guid isPermaLink="false">/?p=322#comment-40</guid>
+
+					<description><![CDATA[[...] /2011/02/more-asterisk-hints/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="/2011/02/more-asterisk-hints/" rel="nofollow ugc">/2011/02/more-asterisk-hints/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

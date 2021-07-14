@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Hauppauge WinTV Nova-S Plus on Linux	</title>
+	<atom:link href="/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 06 Aug 2012 23:30:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Hauppauge Nova-S-Plus and the 22KHz tone &#124; Write it down before you forget it		</title>
+		<link>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/#comment-37</link>
+
+		<dc:creator><![CDATA[Hauppauge Nova-S-Plus and the 22KHz tone &#124; Write it down before you forget it]]></dc:creator>
+		<pubDate>Mon, 06 Aug 2012 23:30:27 +0000</pubDate>
+		<guid isPermaLink="false">/?p=291#comment-37</guid>
+
+					<description><![CDATA[[...] /2010/08/hauppauge-wintv-nova-s-plus-on-linux/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="/2010/08/hauppauge-wintv-nova-s-plus-on-linux/" rel="nofollow ugc">/2010/08/hauppauge-wintv-nova-s-plus-on-linux/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Francis		</title>
+		<link>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/#comment-36</link>
+
+		<dc:creator><![CDATA[Francis]]></dc:creator>
+		<pubDate>Sat, 26 Feb 2011 01:06:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=291#comment-36</guid>
+
+					<description><![CDATA[Thanks for the info.  
+
+Confirmed working on 2.6.35 Linux Mint 10 32-bit.  Patch applied cleanly.  A software fix for a hardware problem, I wish it were in the main kernel (haven&#039;t had to roll my own for years :) and some note of the very common hardware fault at linuxtv dvb-s hardware list.  My setup required the 22khz to be on &#038; the nova-s plus would find but not lock TPs, working great now.
+
+Thanks again]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the info.  </p>
+<p>Confirmed working on 2.6.35 Linux Mint 10 32-bit.  Patch applied cleanly.  A software fix for a hardware problem, I wish it were in the main kernel (haven&#8217;t had to roll my own for years 🙂 and some note of the very common hardware fault at linuxtv dvb-s hardware list.  My setup required the 22khz to be on &amp; the nova-s plus would find but not lock TPs, working great now.</p>
+<p>Thanks again</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: will		</title>
+		<link>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/#comment-35</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 14 Sep 2010 10:56:54 +0000</pubDate>
+		<guid isPermaLink="false">/?p=291#comment-35</guid>
+
+					<description><![CDATA[Hi Chris,
+
+Good questions.  As I recall I tried the patch attached to the ticket:
+
+https://bugzilla.kernel.org/attachment.cgi?id=21905
+
+and it&#039;d wouldn&#039;t apply cleanly any more so I just edited the source directly.
+
+Here is my isl16421.c:  http://pastebin.ca/1940439
+Here is my isl6421.h  http://pastebin.ca/1940440
+
+Try those in place of the default ones in linuxtv/v4l-dvb/v4l]]></description>
+			<content:encoded><![CDATA[<p>Hi Chris,</p>
+<p>Good questions.  As I recall I tried the patch attached to the ticket:</p>
+<p><a href="https://bugzilla.kernel.org/attachment.cgi?id=21905" rel="nofollow ugc">https://bugzilla.kernel.org/attachment.cgi?id=21905</a></p>
+<p>and it&#8217;d wouldn&#8217;t apply cleanly any more so I just edited the source directly.</p>
+<p>Here is my isl16421.c:  <a href="http://pastebin.ca/1940439" rel="nofollow ugc">http://pastebin.ca/1940439</a><br />
+Here is my isl6421.h  <a href="http://pastebin.ca/1940440" rel="nofollow ugc">http://pastebin.ca/1940440</a></p>
+<p>Try those in place of the default ones in linuxtv/v4l-dvb/v4l</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris		</title>
+		<link>/2010/08/04/hauppauge-wintv-nova-s-plus-on-linux/#comment-34</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Mon, 13 Sep 2010 15:10:09 +0000</pubDate>
+		<guid isPermaLink="false">/?p=291#comment-34</guid>
+
+					<description><![CDATA[Thanks for the information about the Nova-S Plus and 22KHz tones.
+
+Can you provide a link to the version of the isl6421 patch that you used?  I&#039;d like to try compiling for my kernel.  I&#039;ve looked around on the web, and found much discussion on the patch, but I can&#039;t find a &#039;final&#039; version of the source code.
+
+cheers
+
+Chris]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the information about the Nova-S Plus and 22KHz tones.</p>
+<p>Can you provide a link to the version of the isl6421 patch that you used?  I&#8217;d like to try compiling for my kernel.  I&#8217;ve looked around on the web, and found much discussion on the patch, but I can&#8217;t find a &#8216;final&#8217; version of the source code.</p>
+<p>cheers</p>
+<p>Chris</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

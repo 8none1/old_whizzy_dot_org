@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Double helping of Pi Hole	</title>
+	<atom:link href="/2021/01/02/double-helping-of-pi-hole/feed/" rel="self" type="application/rss+xml" />
+	<link>/2021/01/02/double-helping-of-pi-hole/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Fri, 29 Jan 2021 16:56:07 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: will		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-4016</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2021 16:56:07 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-4016</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2021/01/02/double-helping-of-pi-hole/#comment-3920&quot;&gt;Marian&lt;/a&gt;.
+
+Sure, if you bring your computer on to my LAN and it&#039;s configured with DNS over HTTPS then you will successfully bypass my ad blocking and also be able to access YouTube.  Congrats.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2021/01/02/double-helping-of-pi-hole/#comment-3920">Marian</a>.</p>
+<p>Sure, if you bring your computer on to my LAN and it&#8217;s configured with DNS over HTTPS then you will successfully bypass my ad blocking and also be able to access YouTube.  Congrats.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Marian		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-3920</link>
+
+		<dc:creator><![CDATA[Marian]]></dc:creator>
+		<pubDate>Tue, 26 Jan 2021 07:17:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-3920</guid>
+
+					<description><![CDATA[And all that will be bypassed by DNS over Https.]]></description>
+			<content:encoded><![CDATA[<p>And all that will be bypassed by DNS over Https.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Late Night Linux – Episode 109 &#8211; Late Night Linux		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-3897</link>
+
+		<dc:creator><![CDATA[Late Night Linux – Episode 109 &#8211; Late Night Linux]]></dc:creator>
+		<pubDate>Mon, 25 Jan 2021 21:56:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-3897</guid>
+
+					<description><![CDATA[[&#8230;] Double helping of Pi Hole [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Double helping of Pi Hole [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Links 3/1/2021: Septor 2021, Whisker Menu 2.5.1, Bleachbit 4.2.0, Wine 6.0-RC5 and Wine-Staging 6.0-RC5 &#124; Techrights		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-3035</link>
+
+		<dc:creator><![CDATA[Links 3/1/2021: Septor 2021, Whisker Menu 2.5.1, Bleachbit 4.2.0, Wine 6.0-RC5 and Wine-Staging 6.0-RC5 &#124; Techrights]]></dc:creator>
+		<pubDate>Sun, 03 Jan 2021 17:19:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-3035</guid>
+
+					<description><![CDATA[[&#8230;] Double helping of Pi Hole [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Double helping of Pi Hole [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

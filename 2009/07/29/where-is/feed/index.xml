@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Where is&#8230;	</title>
+	<atom:link href="/2009/07/29/where-is/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/07/29/where-is/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Thu, 30 Jul 2009 08:50:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: will		</title>
+		<link>/2009/07/29/where-is/#comment-28</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 30 Jul 2009 08:50:58 +0000</pubDate>
+		<guid isPermaLink="false">/2009/07/where-is/#comment-28</guid>
+
+					<description><![CDATA[Looks like I&#039;ll be going down the G2 route as well.]]></description>
+			<content:encoded><![CDATA[<p>Looks like I&#8217;ll be going down the G2 route as well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: sil		</title>
+		<link>/2009/07/29/where-is/#comment-27</link>
+
+		<dc:creator><![CDATA[sil]]></dc:creator>
+		<pubDate>Wed, 29 Jul 2009 15:24:10 +0000</pubDate>
+		<guid isPermaLink="false">/2009/07/where-is/#comment-27</guid>
+
+					<description><![CDATA[http://blogs.arm.com/smart-mobile-devices/first-taste-of-an-arm-powered-netbook-and-its-good/
+
+Not that it&#039;s actually fuckin&#039; *on sale* or anything yet.]]></description>
+			<content:encoded><![CDATA[<p><a href="http://blogs.arm.com/smart-mobile-devices/first-taste-of-an-arm-powered-netbook-and-its-good/" rel="nofollow ugc">http://blogs.arm.com/smart-mobile-devices/first-taste-of-an-arm-powered-netbook-and-its-good/</a></p>
+<p>Not that it&#8217;s actually fuckin&#8217; *on sale* or anything yet.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

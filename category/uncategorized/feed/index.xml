@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; whizzy.org</title>
+	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Sat, 02 Jan 2021 15:56:14 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>DNS over HTTPS in a snap</title>
+		<link>/2019/07/16/dns-over-https-in-a-snap/</link>
+					<comments>/2019/07/16/dns-over-https-in-a-snap/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 16 Jul 2019 20:07:44 +0000</pubDate>
+				<category><![CDATA[IoT]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=970</guid>
+
+					<description><![CDATA[Background Story With the recent news about the ISP UK association proposing Mozilla [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2>Background Story</h2>
+
+
+
+<p>With the recent news about the ISP UK association proposing Mozilla as &#8220;<a href="https://www.ispa.org.uk/ispa-announces-finalists-for-2019-internet-heroes-and-villains-trump-and-mozilla-lead-the-way-as-villain-nominees/">Internet villain of the year</a>&#8221; for enabling DNS over HTTPS (and subsequently changing their mind and dropping the whole category of villain of the year.  Good move I think.) I figured it was probably about time that I looked at enabling DoH at home.</p>
+
+
+
+<p>Cloudflare have a suite of open source tools called <a href="https://github.com/cloudflare/cloudflared/">cloudflared</a> which has, among other things, a DNS over HTTPS proxy.  By default it points at their 1.1.1.1 service, but you can change that if you want to.  Note, at the time of writing there is a <a href="https://github.com/cloudflare/cloudflared/issues/113">bug</a> which seems to stop Google&#8217;s DNS service working.  If you&#8217;re looking to stop people seeing your DNS traffic then Google probably isn&#8217;t the right DNS service to use anyway.</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="353" height="469" src="/wp-content/uploads/2019/07/proxy-dns.jpg" alt="" class="wp-image-972" srcset="/wp-content/uploads/2019/07/proxy-dns.jpg 353w, /wp-content/uploads/2019/07/proxy-dns-226x300.jpg 226w" sizes="(max-width: 353px) 100vw, 353px" /></figure>
+
+
+
+<p>I already have dnsmasq running as my DNS server and I have quite a lot of config which I wanted to keep (e.g. adblocking) so I figured I would add cloudflared&#8217;s proxy-dns alongside dnsmasq and have dnsmasq use proxy-dns as it&#8217;s upstream server, which would in turn pass the DNS lookups to 1.1.1.1 over HTTPS.  dnsmasq would then cache the results locally.</p>
+
+
+
+<p>So far, so good.  I&#8217;d built cloudflared on my desktop to test it, now I wanted to move it on to the Raspberry Pi, run it as a service, and ideally have a package so that I didn&#8217;t have to mess around rebuilding it in loads of places if I wanted to move to a different box.</p>
+
+
+
+<h2>Make a snap</h2>
+
+
+
+<p>Making a snap of proxy-dns would give the the package I wanted, and could allow me to run proxy-dns as a daemon with two words in the YAML.  Snapcraft&#8217;s <a href="https://snapcraft.io/build">build service</a> would build me an ARM binary, as well as loads of others, for free.</p>
+
+
+
+<p>I downloaded the source for <a href="https://github.com/cloudflare/cloudflared">cloudflared</a> and added three files:</p>
+
+
+
+<ol><li>A <a href="https://github.com/8none1/cloudflaredohsnap/blob/master/snapcraft.yaml">snapcraft.yaml</a> which describes how to build cloudflared and sets it to be run as a daemon</li><li>A <a href="https://github.com/8none1/cloudflaredohsnap/blob/master/snap/hooks/configure">configure hook</a> which lets me set some config options</li><li>A <a href="https://github.com/8none1/cloudflaredohsnap/blob/master/launcher/launcher">launcher script</a> which sets the config at run time</li></ol>
+
+
+
+<p>None of these are very complicated, as you can see.  Hat-tip to <a href="https://twitter.com/popey">Popey</a> for help with the snapcraft.yaml.</p>
+
+
+
+<p>The I pushed these back to my project on <a href="https://github.com/8none1/cloudflaredohsnap">GitHub</a> and added that project to the <a href="https://snapcraft.io/build">Snapcraft.io build service</a>.  Now, whenever I push a new change back to GitHub the snap will get rebuilt <strong>automatically</strong> and uploaded to the store! All I would need to do is a snap refresh and I&#8217;d be upgraded to the latest version. All my requirements solved in one place.</p>
+
+
+
+<h2>How to use the snap</h2>
+
+
+
+<p>If your Pi is running snapd, it&#8217;s dead easy (e.g. Ubuntu MATE or Ubuntu Core):</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap install cloudflaredoh --edge</pre>
+
+
+
+<p>The snap is currently in the edge channel, meaning it&#8217;s not ready for the main stage just yet.  Once I&#8217;ve spent a bit more time on it, I will move it to stable.</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap set cloudflaredoh address=127.0.0.1<br>sudo snap set cloudflaredoh port=5053</pre>
+
+
+
+<p>Configure proxy-dns to listen on 127.0.0.1.  If you want it to answer DNS queries from other computers on your network try either the IP address of the box, or just 0.0.0.0 to listen on all interfaces.  It will also configure proxy-dns to listen on port 5053.  If you want it to answer DNS queries from other computers on your network, use the default DNS port of 53.</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap get cloudflaredoh</pre>
+
+
+
+<p>This will show you the currently set config options.</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap restart cloudflaredoh</pre>
+
+
+
+<p>Restart proxy-dns and use the new config.</p>
+
+
+
+<p>Now you can use something like nslookup to query the DNS server and make sure it&#8217;s doing what you expected.</p>
+
+
+
+<h2>10 Steps To DNS-over-HTTPS</h2>
+
+
+
+<ol><li>Get a Raspberry Pi</li><li>Download Ubuntu Core and write it to an SD card</li><li>Put the SD card in your Pi and boot it</li><li>Set up the network on Ubuntu Core (tip: register for an <a href="https://login.ubuntu.com/+login">Ubuntu One</a> account first)</li><li>sudo snap install cloudflaredoh</li><li>sudo snap set cloudflaredoh address=0.0.0.0</li><li>sudo snap set cloudflaredoh port=53</li><li>sudo snap restart cloudflaredoh</li><li>Configure your client&#8217;s DNS server as the IP address of your Pi</li><li>Have a cup of tea</li></ol>
+
+
+
+<h2>Update 2019-08-01</h2>
+
+
+
+<p>I&#8217;ve got a new Github repo set up with an improved snapcraft.yaml which pulls directly from the upstream project.  I&#8217;m aiming to get this hooked up to the Snapcraft build service so that we can package the latest version automatically.  More on this later.  In the meantime, you can clone this and build the latest version yourself:</p>
+
+
+
+<p><a href="https://github.com/8none1/cloudflarednsproxy">https://github.com/8none1/cloudflarednsproxy</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/07/16/dns-over-https-in-a-snap/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ubuntu Desktop goings on.  Friday 19th May 2017</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/</link>
+					<comments>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 19 May 2017 14:45:55 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=943</guid>
+
+					<description><![CDATA[Ubuntu Desktop Newsletter I&#8217;m going to start a weekly newsletter style update to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<h1>Ubuntu Desktop Newsletter</h1>
+<p>I&#8217;m going to start a weekly newsletter style update to keep people abreast of what&#8217;s been going on with Ubuntu Desktop as we move to GNOME Shell and build the foundations for 18.04 LTS.  Here&#8217;s the first instalment:</p>
+<h2>Friday 19th May 2017</h2>
+<h3>GNOME</h3>
+<p>We’re on to the last few MIR (<a href="https://wiki.ubuntu.com/MainInclusionProcess">https://wiki.ubuntu.com/MainInclusionProcess</a>) reviews for the packages needed to update the seeds in order to deliver the GNOME desktop by default.<br />
+We still have some security questions to answer about how we deal with updates to mozjs/gjs in an LTS release (where mozjs has a support period of 12 months but we need to offer support for a full five years). This is being looked at now, but for 17.10 we are set.<br />
+We are aiming to have the seeds updated next week, and this will be the first milestone on the road to a fantastic GNOME experience in 17.10 Artful.</p>
+<p>We’ve been fixing bugs in the Ambiance &amp; Radiance themes to make them look crisp on GNOME Shell.<br />
+<a href="http://www.omgubuntu.co.uk/2017/05/install-improved-ambiance-gnome-theme">http://www.omgubuntu.co.uk/2017/05/install-improved-ambiance-gnome-theme</a></p>
+<p>We’ve also triaged over 400 GNOME Shell bugs in Launchpad to allow us to more easily focus on the important issues.</p>
+<p>We have been working on removing Ubuntu’s custom “aptdaemon” plugin in GNOME Software in favour of the upstream solution which uses PackageKit. This allows us to share more code with other distributions.</p>
+<h3>LivePatch</h3>
+<p><a href="https://www.ubuntu.com/server/livepatch">https://www.ubuntu.com/server/livepatch</a></p>
+<p>LivePatch delivers essential kernel security updates to Ubuntu machines without having to reboot to apply them. As an Ubuntu user you can sign up for a free account.<br />
+We’re working on integrating LivePatch in to the supported LTS desktops to provide a friendly way to setup and configure the service.<br />
+This week we started to investigate the APIs provided by the LivePatch services so we can report LivePatch activity to the user, obtain an API key on behalf of the user &amp; set up the service. Work has also started on the software-properties-gtk dialogs (aka Software &amp; Updates in System Settings) to add the options required for LivePatch.</p>
+<h3>QA</h3>
+<p>Added upgrade tests from Zesty to Artful for Ubuntu and flavours. Working on making all these tests pass now so that everyone will have a solid and reliable upgrade path.<br />
+Work is being done on the installer tests. This will extend the current installer tests to check that not only has the install completed successfully but that all desktop environment is working as expected, this had previously been covered with manual tests.</p>
+<h3>Package Updates</h3>
+<ul>
+<li>GStreamer is now at 1.12 final in 17.10.</li>
+<li>Chromium: stable 58.0.3029.110, beta 59.0.3071.47, dev 60.0.3095.5</li>
+<li>LibreOffice 5.3.3 is being tested.</li>
+<li>CUPS-filters: 1.14.0</li>
+<li>Snapd-glib: 1.12</li>
+</ul>
+<h3>Snaps</h3>
+<p>More GNOME applications are being packaged as Snaps. There is still some work to do to get them fully confined and fully integrated into the desktop. We’re working on adding Snap support to Gtk’s Portals to allow desktop Snaps to access resources outside their sandbox.<br />
+We will start tracking the Snaps here:<br />
+<a href="https://wiki.ubuntu.com/DesktopTeam/GNOME/Snaps">https://wiki.ubuntu.com/DesktopTeam/GNOME/Snaps</a></p>
+<h3>In the news</h3>
+<p>Interview with Ken VanDine on the GNOME Desktop in Ubuntu:  <a href="http://www.omgubuntu.co.uk/2017/05/ubuntu-switch-to-gnome-questions-answered">http://www.omgubuntu.co.uk/2017/05/ubuntu-switch-to-gnome-questions-answered<br />
+</a></p>
+<p>There&#8217;s also a survey running to get feedback on some extensions which could be shipped with Ubuntu Desktop: <a href="http://www.omgubuntu.co.uk/2017/05/ubuntu-desktop-gnome-extensions-survey-1710">http://www.omgubuntu.co.uk/2017/05/ubuntu-desktop-gnome-extensions-survey-1710</a></p>
+<p>This was picked up by the Linux Unplugged podcast as their headline story: <a href="http://www.jupiterbroadcasting.com/114701/that-new-user-smell-lup-197/">http://www.jupiterbroadcasting.com/114701/that-new-user-smell-lup-197/</a></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Raspberry Pi powered heating controller (Part 2)</title>
+		<link>/2014/01/11/raspberry-pi-powered-heating-controller-part-2/</link>
+					<comments>/2014/01/11/raspberry-pi-powered-heating-controller-part-2/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sat, 11 Jan 2014 21:57:25 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=547</guid>
+
+					<description><![CDATA[In which one Raspberry Pi is seen. In part one of this series [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><span style="color: #888888;"><em>In which one Raspberry Pi is seen.</em></span></p>
+<p>In <a title="Raspberry Pi powered heating controller (Part 1)" href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">part one of this series</a> I explained how the central heating system was wired up and what electrical connections you needed to make to switch your heating and hot water on and off.</p>
+<p style="text-align: center;"><a href="http://whizzy.org/wp-content/uploads/2014/01/photo.jpg"><img class="size-medium wp-image-554 aligncenter" alt="Heating Controller - breadboard" src="/wp-content/uploads/2014/01/photo-300x225.jpg" width="300" height="225" srcset="/wp-content/uploads/2014/01/photo-300x225.jpg 300w, /wp-content/uploads/2014/01/photo-1024x768.jpg 1024w, /wp-content/uploads/2014/01/photo-768x576.jpg 768w, /wp-content/uploads/2014/01/photo-1536x1152.jpg 1536w, /wp-content/uploads/2014/01/photo-2048x1536.jpg 2048w, /wp-content/uploads/2014/01/photo-1200x900.jpg 1200w, /wp-content/uploads/2014/01/photo-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>I ordered all the parts and now I&#8217;ve plugged them all together.  Here&#8217;s a quick video demonstrating how it will all work.</p>
+<p><iframe width="770" height="433" src="https://www.youtube.com/embed/5pGTKUu8E4Q?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<h2>Further Updates</h2>
+<ul>
+<li><a title="Raspberry Pi powered heating controller (Part 1)" href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">Part 1</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 3)" href="/2014/01/raspberry-pi-powered-heating-controller-part-3/">Part 3</a></li>
+<li><a title="Raspberry Pi powered heating controller (Part 4)" href="/2014/02/raspberry-pi-powered-heating-controller-part-4/">Part 4</a></li>
+</ul>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2014/01/11/raspberry-pi-powered-heating-controller-part-2/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>And we&#8217;re back&#8230;</title>
+		<link>/2013/11/22/and-were-back/</link>
+					<comments>/2013/11/22/and-were-back/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 22 Nov 2013 19:51:24 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=450</guid>
+
+					<description><![CDATA[I&#8217;ve moved to another server, and in the process I&#8217;ve had a whole [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;ve moved to another server, and in the process I&#8217;ve had a whole lot of problems.  For anyone that&#8217;s read any of my blog before that won&#8217;t come as a surprise.</p>
+<p>Once I&#8217;ve got all the kinks worked out, I&#8217;ll tell you how I fixed it.  For now, this is just a test&#8230;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2013/11/22/and-were-back/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fixing &#8220;warning: Please check that your locale settings&#8221;</title>
+		<link>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/</link>
+					<comments>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 16 Aug 2012 17:01:58 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=415</guid>
+
+					<description><![CDATA[I took an Amazon AWS t1.micro instance for a spin the other day. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I took an Amazon AWS t1.micro instance for a spin the other day. A free server is not to be sniffed at. Of course I installed Ubuntu 12.04 on it.</p>
+<p>I was getting a lot of locale errors, things like this:</p>
+<pre>perl: warning: Setting locale failed.
+ perl: warning: Please check that your locale settings:
+ LANGUAGE = (unset),
+ LC_ALL = (unset),
+ LC_MESSAGES = "en_GB.UTF-8",
+ LC_COLLATE = "en_GB.UTF-8",
+ LC_CTYPE = "en_GB.UTF-8",
+ LANG = "en_US.UTF-8"
+ are supported and installed on your system.</pre>
+<p>I thought this would just go away by itself, but it didn&#8217;t &#8211; so I had to fix it. Note: I&#8217;m in the UK, so I&#8217;m using en_GB as my locale, change yours to en_US or whatever.</p>
+<p>Type:</p>
+<pre>export LANGUAGE=en_GB.UTF-8
+sudo locale-gen en_GB.UTF-8
+sudo dpkg-reconfigure locales</pre>
+<p>And you should be all set.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Off to pastures new</title>
+		<link>/2011/07/22/off-to-pastures-new/</link>
+					<comments>/2011/07/22/off-to-pastures-new/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 22 Jul 2011 15:33:27 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=352</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400.jpg"><img class="alignnone size-medium wp-image-355" title="tumblr_l56x4xU4ct1qzpwi0o1_400" src="/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400-207x300.jpg" alt="" width="207" height="300" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/07/22/off-to-pastures-new/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Maggy Scraggle Loves The Beautiful Ice-cream Man</title>
+		<link>/2011/04/17/maggy-scraggle-loves-the-beautiful-ice-cream-man/</link>
+					<comments>/2011/04/17/maggy-scraggle-loves-the-beautiful-ice-cream-man/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sun, 17 Apr 2011 09:07:21 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=334</guid>
+
+					<description><![CDATA[&#160; I was fortunate enough to be introduced to this book by my [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/04/11.jpg"><img class="alignnone size-medium wp-image-332" title="1" src="/wp-content/uploads/2011/04/11-300x235.jpg" alt="" width="300" height="235" /></a></p>
+<p>&nbsp;</p>
+<p>I was fortunate enough to be introduced to this book by my wife reading it to our son.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/04/17/maggy-scraggle-loves-the-beautiful-ice-cream-man/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>More Asterisk hints</title>
+		<link>/2011/02/13/more-asterisk-hints/</link>
+					<comments>/2011/02/13/more-asterisk-hints/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sun, 13 Feb 2011 19:21:08 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=322</guid>
+
+					<description><![CDATA[Wow &#8211; a day of fixing loads of niggling little Asterisk problems! Max [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Wow &#8211; a day of fixing loads of niggling little Asterisk problems!</p>
+<ul>
+<li>Max duration</li>
+</ul>
+<p>My calling plan gives me unlimited free calls as long as those calls are under an hour in duration.  Pretty standard BT stuff.  If you do make a call over an hour you don&#8217;t just get charged for that bit of the call over the hour, oh no, you get charged for the whole call.<br />
+Anyway &#8211; we have the technology to defeat them!</p>
+<p>In FreePBX under General Settings change your Asterisk Outbound Dial command options to include:</p>
+<pre>L(3360000,3240000,10000)</pre>
+<p>which will drop the call after 3360000ms (56 minutes) and should alert you at 3240000ms.</p>
+<ul>
+<li>Courtesy Tone</li>
+</ul>
+<p>The above works very well and drops the calls, but without a bit of extra magic you don&#8217;t get the warning in your ear &#8211; it just drops the call.  To enable the warning tones etc edit this:</p>
+<pre>/etc/asterisk/features_general_custom.conf</pre>
+<p>and add</p>
+<pre>courtesytone=beep</pre>
+<p>substituting &#8220;beep&#8221; for what ever noise you want to hear.</p>
+<ul>
+<li>Call Recording</li>
+</ul>
+<p>By also adding:</p>
+<pre>Ww</pre>
+<p>to the Dial command options in #1 you can press *1 when you&#8217;re in a call to start recording.  It plays the courtesy tone to both parties though.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/13/more-asterisk-hints/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Meridian Mail</title>
+		<link>/2011/02/13/meridian-mail/</link>
+					<comments>/2011/02/13/meridian-mail/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sun, 13 Feb 2011 17:34:26 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=320</guid>
+
+					<description><![CDATA[Has anyone got a WAV or similar of the lady from Nortel saying [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Has anyone got a WAV or similar of the lady from Nortel saying &#8220;Meridian Mail.  Mailbox?&#8221;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2011/02/13/meridian-mail/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Asterisk VoIP calls causing PPP to drop on ADSL modems</title>
+		<link>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/</link>
+					<comments>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 18 Oct 2010 15:02:28 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=311</guid>
+
+					<description><![CDATA[The internet FTW. I&#8217;ve been having this odd problem since I got my [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The internet FTW.</p>
+<p>I&#8217;ve been having this odd problem since I got my Asterisk box back up and running in that whenever a call came in and hung up I&#8217;d lose internet connectivity for a few seconds.</p>
+<p>I tracked it down to the router dropping the PPP connection, which initially made me think that the polarity reversal indicating the call had hung up was causing the modem to b0rk, perhaps due to the distance between the phone socket and the modem, or my dodgy cat5 cabling, or something.</p>
+<p>Turns out it was none of the above.  EDIT:  Bit hasty there.  Hasn&#8217;t fixed it al all.</p>
+<p>This post:</p>
+<p>http://forums.contribs.org/index.php/topic,43733.msg209081.html#msg209081</p>
+<p>points to exactly my problem.  I disabled the DDoS protection and no more dropped internet connections.  I don&#8217;t worry about DDoS attacks too much, so for now I&#8217;m going to leave it off.</p>
+<p>UPDATE:  None of the above actually worked.  In the end it turned out the modem had simply broken.  The NV RAM wasn&#8217;t remembering the config after a proper reboot and it was generally broken.  So I replaced the whole thing with a new DrayTek modem.  The old one did pretty well, it worked perfectly for about 3 years non-stop.</p>
+<p>Search hints:</p>
+<p>DrayTek VoIP Asterisk dropping ADSL PPP drop DDoS SIP</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SMSq No call scheduled as already sending</title>
+		<link>/2010/10/15/smsq-no-call-scheduled-as-already-sending/</link>
+					<comments>/2010/10/15/smsq-no-call-scheduled-as-already-sending/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 15 Oct 2010 10:06:13 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=303</guid>
+
+					<description><![CDATA[In order to remind myself: I kept getting this error when trying to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In order to remind myself:</p>
+<p>I kept getting this error when trying to send an SMS;</p>
+<p>No call scheduled as already sending</p>
+<p>It seems SMSq or Asterisk is quite picky about who sends the SMS.  If I tired to send an SMS as myself it would fail, and then clog up /var/spool/asterisk/sms/motx with undead SMSes.</p>
+<p>If I run smsq as the same user as Asterisk is running as it works (once you&#8217;ve deleted all the crap out of motx directory.</p>
+<p>Just need to work out why now.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/10/15/smsq-no-call-scheduled-as-already-sending/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hauppauge WinTV-NOVA-HD-S2 on Ubuntu Lucid 10.04</title>
+		<link>/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/</link>
+					<comments>/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sat, 26 Jun 2010 21:01:47 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=282</guid>
+
+					<description><![CDATA[Ubuntu 10.04 doesn&#8217;t include the required firmware to get this card to work.  [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ubuntu 10.04 doesn&#8217;t include the required firmware to get this card to work.  Probably due to some licensing issues.</p>
+<p>Although the card gets detected and you get the frontend device and the demod device a scan will fail to detect any channels.</p>
+<p>The reason is that the firmware isn&#8217;t there.</p>
+<p>Solution, <span style="text-decoration: line-through;">copy this file to /lib/firmware/ and reboot</span></p>
+<p><span style="text-decoration: line-through;"><a href="/wp-content/uploads/2010/06/dvb-fe-cx24116.fw" target="_blank" rel="noopener noreferrer">dvb-fe-cx24116.fw</a></span></p>
+<p>Tsch.  What a bell end.  Instead, install the package:</p>
+<h1><em><em>linux-firmware-nonfree</em></em></h1>
+<p>They don&#8217;t go out of their way to draw much attention to it, like telling anybody or anything.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/06/26/hauppauge-wintv-nova-hd-s2-on-ubuntu-lucid-10-04/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Can&#8217;t use online photo printers from Picasa in Linux?</title>
+		<link>/2010/01/31/cant-use-online-photo-printers-from-picasa-in-linux/</link>
+					<comments>/2010/01/31/cant-use-online-photo-printers-from-picasa-in-linux/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sun, 31 Jan 2010 10:54:17 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=253</guid>
+
+					<description><![CDATA[Easy fix: http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e]]></description>
+										<content:encoded><![CDATA[<p>Easy fix:<br />
+<a href="http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e"><br />
+http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e<br />
+</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2010/01/31/cant-use-online-photo-printers-from-picasa-in-linux/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Same</title>
+		<link>/2009/10/26/the-same-2/</link>
+					<comments>/2009/10/26/the-same-2/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 26 Oct 2009 17:54:26 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=245</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-243" title="Toad" src="/wp-content/uploads/2009/10/toad-300x225.jpg" alt="Toad" width="300" height="225" /><img class="alignnone size-full wp-image-244" title="Griffin" src="/wp-content/uploads/2009/10/thatcunt.jpg" alt="Griffin" width="298" height="298" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/10/26/the-same-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tesco web API</title>
+		<link>/2009/08/25/tesco-web-api/</link>
+					<comments>/2009/08/25/tesco-web-api/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 25 Aug 2009 09:19:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=207</guid>
+
+					<description><![CDATA[Woo! I&#8217;ve just found out about the Tesco web API. http://blog.programmableweb.com/2009/07/14/eggs-milk-bread-the-worlds-first-grocery-api/ I consider [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Woo! I&#8217;ve just found out about the Tesco web API.</p>
+<p><a href="http://blog.programmableweb.com/2009/07/14/eggs-milk-bread-the-worlds-first-grocery-api/">http://blog.programmableweb.com/2009/07/14/eggs-milk-bread-the-worlds-first-grocery-api/</a></p>
+<p>I consider this to be pretty revolutionary.  For years I&#8217;ve been thinking up cool ways to order my groceries (generally involving barcode scanners on the bin/fridge) and now I can start putting them in to practice.</p>
+<p>It looks like a RESTful API is still in the works, but I&#8217;m going to start playing with it and see what I can do.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/08/25/tesco-web-api/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Where is&#8230;</title>
+		<link>/2009/07/29/where-is/</link>
+					<comments>/2009/07/29/where-is/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 29 Jul 2009 13:25:41 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[moan]]></category>
+		<guid isPermaLink="false">/2009/07/where-is/</guid>
+
+					<description><![CDATA[Where is my Palm Pre and where is my ARM based netbook. Damn [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Where is my Palm Pre and where is my ARM based netbook.</p>
+<p>Damn it.  I&#8217;m tired of waiting.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/07/29/where-is/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>BES 5 Folder Redirection</title>
+		<link>/2009/07/22/bes-5-folder-redirection/</link>
+					<comments>/2009/07/22/bes-5-folder-redirection/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 22 Jul 2009 11:42:21 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[bes]]></category>
+		<guid isPermaLink="false">/?p=202</guid>
+
+					<description><![CDATA[Can&#8217;t find it in the new web based config tool then? In the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Can&#8217;t find it in the new web based config tool then?</p>
+<p>In the user:</p>
+<p>Message Configuration  -&gt;  Default Configuration -&gt; Email tab</p>
+<p>et voilà.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/07/22/bes-5-folder-redirection/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Custom Paint Job</title>
+		<link>/2009/06/27/custom-paint-job/</link>
+					<comments>/2009/06/27/custom-paint-job/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Sat, 27 Jun 2009 12:48:40 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=189</guid>
+
+					<description><![CDATA[Here&#8217;s the result of my custom paint job on my Acer Aspire One.  [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Here&#8217;s the result of my custom paint job on my Acer Aspire One.  Thanks to Tommy @ <a href="http://www.losthoughts.com/">http://www.losthoughts.com/</a> for the stencil.</p>
+<p><a title="Click for full size" href="/wp-content/uploads/2009/06/aspire_paintjob.jpg" target="_self" rel="noopener noreferrer"><img class="alignnone size-medium wp-image-190" title="aspire_paintjob" src="/wp-content/uploads/2009/06/aspire_paintjob-300x200.jpg" alt="aspire_paintjob" width="300" height="200" /></a></p>
+<p>I took the whole laptop to pieces and removed the lid from the screen so I was just left with the plastic.  Then I sanded it back to bare plastic with wet&amp;dry then smoothed it off with finer grades of wet&amp;dry.  Then when it was smooth I washed off all the plastic dust and let it dry before applying 3 coats of primer and about 4 coats of white paint, then one coat of black and about 4 coats of lacquer on top.  It took an entire weekend.  I also painted the bezel around the screen inside white.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/27/custom-paint-job/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Film &#038; Spotify</title>
+		<link>/2009/06/05/film-spotify/</link>
+					<comments>/2009/06/05/film-spotify/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 05 Jun 2009 20:09:14 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/2009/06/film-spotify/</guid>
+
+					<description><![CDATA[So, me &#38; Stu are making a film. It&#8217;s going to be along [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>So, me &amp; Stu are making a film.  It&#8217;s going to be along the same sort of lines as <a href="http://www.bbsdocumentary.com/">http://www.bbsdocumentary.com/</a> The plan at the moment is to document how we came to be interested in all things Internet and computers in general, and then move on to document our momentous trip to <a href="http://www.har2009.nl/">http://www.har2009.nl/</a></p>
+<p>I&#8217;ve been using Spotify to research the sound track and it&#8217;s brilliant, shame there&#8217;s no Linux version but you can get it to run under Wine if you really want to.  My advice is enjoy Spotify now, because as they get more and more popular their hosting costs are going to shoot up, requiring more money, requiring more advertising and/or the server speed will decrease.  Enjoy it while it lasts folks.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/05/film-spotify/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ginger Beer</title>
+		<link>/2009/06/05/ginger-beer/</link>
+					<comments>/2009/06/05/ginger-beer/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 05 Jun 2009 19:50:04 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[gingerbeer]]></category>
+		<category><![CDATA[sneezing]]></category>
+		<guid isPermaLink="false">/2009/06/ginger-beer/</guid>
+
+					<description><![CDATA[Sainsbury&#8217;s Ginger Beer has more sneezes in it than Tesco&#8217;s. That can only [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Sainsbury&#8217;s Ginger Beer has more sneezes in it than Tesco&#8217;s.  That can only be a good thing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/05/ginger-beer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

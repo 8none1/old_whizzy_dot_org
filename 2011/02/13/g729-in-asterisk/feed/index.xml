@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: g729 in Asterisk	</title>
+	<atom:link href="/2011/02/13/g729-in-asterisk/feed/" rel="self" type="application/rss+xml" />
+	<link>/2011/02/13/g729-in-asterisk/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Wed, 12 Oct 2011 11:42:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Jeremy		</title>
+		<link>/2011/02/13/g729-in-asterisk/#comment-39</link>
+
+		<dc:creator><![CDATA[Jeremy]]></dc:creator>
+		<pubDate>Wed, 12 Oct 2011 11:42:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=317#comment-39</guid>
+
+					<description><![CDATA[Very useful!  Thanks]]></description>
+			<content:encoded><![CDATA[<p>Very useful!  Thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ken		</title>
+		<link>/2011/02/13/g729-in-asterisk/#comment-38</link>
+
+		<dc:creator><![CDATA[Ken]]></dc:creator>
+		<pubDate>Wed, 14 Sep 2011 12:25:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=317#comment-38</guid>
+
+					<description><![CDATA[This was helpful.  Sometime in the past I tried using the codec you mentioned.  Did not work for me. ended up buying codecs from Digium.]]></description>
+			<content:encoded><![CDATA[<p>This was helpful.  Sometime in the past I tried using the codec you mentioned.  Did not work for me. ended up buying codecs from Digium.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

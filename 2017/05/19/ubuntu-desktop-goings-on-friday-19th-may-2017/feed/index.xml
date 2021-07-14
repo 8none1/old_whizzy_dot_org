@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Ubuntu Desktop goings on.  Friday 19th May 2017	</title>
+	<atom:link href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/feed/" rel="self" type="application/rss+xml" />
+	<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Sun, 30 Jul 2017 09:55:39 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Isaac		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-186</link>
+
+		<dc:creator><![CDATA[Isaac]]></dc:creator>
+		<pubDate>Sun, 30 Jul 2017 09:55:39 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-186</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-183&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Sorry for the double post.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-183">Will Cooke</a>.</p>
+<p>Sorry for the double post.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Isaac		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-185</link>
+
+		<dc:creator><![CDATA[Isaac]]></dc:creator>
+		<pubDate>Sun, 23 Jul 2017 08:16:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-185</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-183&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Not persistent user data. :)
+
+I meant persistent customization of the hardware and software setup
+across the guest sessions as you can&#039;t expect guests to correctly setup
+mouse sensitivity or layout and text size of FireFox for the older
+members of the family and such.
+
+Example: Customize the frozen Guest session (guest account) to your liking
+https://sites.google.com/site/easylinuxtipsproject/2
+
+But that uses LightDM so it would be nice if computer owner could do the
+same by default with Ubuntu&#039;s new GDM login.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-183">Will Cooke</a>.</p>
+<p>Not persistent user data. 🙂</p>
+<p>I meant persistent customization of the hardware and software setup<br />
+across the guest sessions as you can&#8217;t expect guests to correctly setup<br />
+mouse sensitivity or layout and text size of FireFox for the older<br />
+members of the family and such.</p>
+<p>Example: Customize the frozen Guest session (guest account) to your liking<br />
+<a href="https://sites.google.com/site/easylinuxtipsproject/2" rel="nofollow ugc">https://sites.google.com/site/easylinuxtipsproject/2</a></p>
+<p>But that uses LightDM so it would be nice if computer owner could do the<br />
+same by default with Ubuntu&#8217;s new GDM login.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ISAAC		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-184</link>
+
+		<dc:creator><![CDATA[ISAAC]]></dc:creator>
+		<pubDate>Fri, 07 Jul 2017 23:16:21 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-184</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-183&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Not persistent user data. :)
+
+I meant persistent customization of the hardware and software setup across the guest sessions as you can&#039;t expect guests to correctly setup mouse sensitivity or layout and text size of FireFox for the older members of the family and such.
+
+Example: Customize the frozen Guest session (guest account) to your liking
+https://sites.google.com/site/easylinuxtipsproject/2
+
+But that uses LightDM so it would be nice if computer owner could do the same by default with Ubuntu&#039;s new GDM login.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-183">Will Cooke</a>.</p>
+<p>Not persistent user data. 🙂</p>
+<p>I meant persistent customization of the hardware and software setup across the guest sessions as you can&#8217;t expect guests to correctly setup mouse sensitivity or layout and text size of FireFox for the older members of the family and such.</p>
+<p>Example: Customize the frozen Guest session (guest account) to your liking<br />
+<a href="https://sites.google.com/site/easylinuxtipsproject/2" rel="nofollow ugc">https://sites.google.com/site/easylinuxtipsproject/2</a></p>
+<p>But that uses LightDM so it would be nice if computer owner could do the same by default with Ubuntu&#8217;s new GDM login.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-183</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Fri, 07 Jul 2017 15:03:29 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-183</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-181&quot;&gt;Isaac&lt;/a&gt;.
+
+#1 That&#039;s not really what the guest session is for.  There shouldn&#039;t be any persistent data at all between guest sessions, which renders #2 unnecessary.  Once you log out of the guest session everything is gone.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-181">Isaac</a>.</p>
+<p>#1 That&#8217;s not really what the guest session is for.  There shouldn&#8217;t be any persistent data at all between guest sessions, which renders #2 unnecessary.  Once you log out of the guest session everything is gone.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Isaac		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-182</link>
+
+		<dc:creator><![CDATA[Isaac]]></dc:creator>
+		<pubDate>Sat, 24 Jun 2017 08:42:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-182</guid>
+
+					<description><![CDATA[Will ?]]></description>
+			<content:encoded><![CDATA[<p>Will ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Isaac		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-181</link>
+
+		<dc:creator><![CDATA[Isaac]]></dc:creator>
+		<pubDate>Tue, 20 Jun 2017 05:47:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-181</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-180&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Thanks Will
+
+May i put my suggestions to you first to see if you think it is worth me posting them on the mailing list as apart from i&#039;ve always found Mailing lists confusing i&#039;ve also found that trying to suggest anything to the Dev&#039;s just gets ignored so you are left wondering.
+
+I&#039;ve always felt that the guest account have a few shortcomings so as Ubuntu are starting from scratch i think the following would be an improvement and set ubuntu apart from the others.
+
+1) Add an option for customization to the guest account so you can have persistent changes to the applications and the desktop that survive reboots but once configured it is then set back to temporary for all other usage as before.
+
+2) Add an option to the Guest account for AES encryption that uses a new temporary randomly generated key/password at every boot for each Guest session so any previous usage is kept private , There is then no concern of any of the Guests Bank details or passwords being recovered with standard undelete tools should a laptop be stolen for example.
+
+Not sure if above makes any sense as i&#039;m not always very good at articulating myself which is another concern for a mailing list.
+
+Thanks]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-180">Will Cooke</a>.</p>
+<p>Thanks Will</p>
+<p>May i put my suggestions to you first to see if you think it is worth me posting them on the mailing list as apart from i&#8217;ve always found Mailing lists confusing i&#8217;ve also found that trying to suggest anything to the Dev&#8217;s just gets ignored so you are left wondering.</p>
+<p>I&#8217;ve always felt that the guest account have a few shortcomings so as Ubuntu are starting from scratch i think the following would be an improvement and set ubuntu apart from the others.</p>
+<p>1) Add an option for customization to the guest account so you can have persistent changes to the applications and the desktop that survive reboots but once configured it is then set back to temporary for all other usage as before.</p>
+<p>2) Add an option to the Guest account for AES encryption that uses a new temporary randomly generated key/password at every boot for each Guest session so any previous usage is kept private , There is then no concern of any of the Guests Bank details or passwords being recovered with standard undelete tools should a laptop be stolen for example.</p>
+<p>Not sure if above makes any sense as i&#8217;m not always very good at articulating myself which is another concern for a mailing list.</p>
+<p>Thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-180</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Mon, 19 Jun 2017 15:31:40 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-180</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-179&quot;&gt;Isaac&lt;/a&gt;.
+
+Best place to talk to everyone is the Desktop mailing list here:
+
+https://lists.ubuntu.com/mailman/listinfo/ubuntu-desktop]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-179">Isaac</a>.</p>
+<p>Best place to talk to everyone is the Desktop mailing list here:</p>
+<p><a href="https://lists.ubuntu.com/mailman/listinfo/ubuntu-desktop" rel="nofollow ugc">https://lists.ubuntu.com/mailman/listinfo/ubuntu-desktop</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Isaac		</title>
+		<link>/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/#comment-179</link>
+
+		<dc:creator><![CDATA[Isaac]]></dc:creator>
+		<pubDate>Sun, 18 Jun 2017 08:47:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=943#comment-179</guid>
+
+					<description><![CDATA[Quote &quot; We will be working on adding guest session support to GDM &quot;
+
+Hi Will
+
+Do you read user comments as i have a suggestion if it will work with GDM and couldn&#039;t find an obvious way to contact you?
+
+Thanks]]></description>
+			<content:encoded><![CDATA[<p>Quote &#8221; We will be working on adding guest session support to GDM &#8221;</p>
+<p>Hi Will</p>
+<p>Do you read user comments as i have a suggestion if it will work with GDM and couldn&#8217;t find an obvious way to contact you?</p>
+<p>Thanks</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

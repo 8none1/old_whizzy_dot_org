@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone)	</title>
+	<atom:link href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/feed/" rel="self" type="application/rss+xml" />
+	<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 05 Oct 2020 02:40:35 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Mr-detail		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-77</link>
+
+		<dc:creator><![CDATA[Mr-detail]]></dc:creator>
+		<pubDate>Mon, 05 Oct 2020 02:40:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-77</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-69&quot;&gt;Arduino power consumption and management &#124; Raspberries and other fruits&lt;/a&gt;.
+
+Nice article man. Just in case anyone is reading this and did what I did first. My arduino came as the 5v version with the 5v tab soldered. I removed the power led and the regulator, used the rocket scream low power library only to find it dropped to 2.7mA ~ 2.8mA range. Do what this guy says, its way easier to un-solder the 3.3v/5v adjustment solder tab. If you don&#039;t, you lose about 2.7mA to the resistor network that was used by the regulator!
+
+Thanks for saving me from banging my head against the wall for a couple more hours!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-69">Arduino power consumption and management | Raspberries and other fruits</a>.</p>
+<p>Nice article man. Just in case anyone is reading this and did what I did first. My arduino came as the 5v version with the 5v tab soldered. I removed the power led and the regulator, used the rocket scream low power library only to find it dropped to 2.7mA ~ 2.8mA range. Do what this guy says, its way easier to un-solder the 3.3v/5v adjustment solder tab. If you don&#8217;t, you lose about 2.7mA to the resistor network that was used by the regulator!</p>
+<p>Thanks for saving me from banging my head against the wall for a couple more hours!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-76</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Fri, 03 Aug 2018 15:00:29 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-76</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-75&quot;&gt;Haakon&lt;/a&gt;.
+
+If you drop the clock speed down to 8Mhz these boards will run okish down to about 2v.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-75">Haakon</a>.</p>
+<p>If you drop the clock speed down to 8Mhz these boards will run okish down to about 2v.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Haakon		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-75</link>
+
+		<dc:creator><![CDATA[Haakon]]></dc:creator>
+		<pubDate>Mon, 25 Jun 2018 09:17:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-75</guid>
+
+					<description><![CDATA[Hi, great post. Will the board run ok with power directly from the batteries, even when the voltage starts to drop? A pair of alkaline batteries will start at 3v and then drop over time, I guess. Do you think rechargeable batteries will work too? Two rechargeable AAs would start at 2,4 volts ...
+
+And: Do you adjust the clock speed on these boards?]]></description>
+			<content:encoded><![CDATA[<p>Hi, great post. Will the board run ok with power directly from the batteries, even when the voltage starts to drop? A pair of alkaline batteries will start at 3v and then drop over time, I guess. Do you think rechargeable batteries will work too? Two rechargeable AAs would start at 2,4 volts &#8230;</p>
+<p>And: Do you adjust the clock speed on these boards?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-74</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Tue, 05 Jun 2018 09:35:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-74</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-73&quot;&gt;Mariusz Klinikowski&lt;/a&gt;.
+
+They’re still running! I haven’t had time to work on this project recently.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-73">Mariusz Klinikowski</a>.</p>
+<p>They’re still running! I haven’t had time to work on this project recently.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mariusz Klinikowski		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-73</link>
+
+		<dc:creator><![CDATA[Mariusz Klinikowski]]></dc:creator>
+		<pubDate>Sun, 07 Jan 2018 20:37:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-73</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-71&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Waiting for update too! I assume you just waited for batteries to lose Their charge? :) Please update me when comming soon part will come and if it&#039;s close, meybe i can ask for partial data from your experiment?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-71">Will Cooke</a>.</p>
+<p>Waiting for update too! I assume you just waited for batteries to lose Their charge? 🙂 Please update me when comming soon part will come and if it&#8217;s close, meybe i can ask for partial data from your experiment?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Stergios		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-72</link>
+
+		<dc:creator><![CDATA[Stergios]]></dc:creator>
+		<pubDate>Mon, 12 Jun 2017 19:15:42 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-72</guid>
+
+					<description><![CDATA[I found better way to stop the led to light.
+As we know, led can&#039;t be powered directly from battery...because... are burned....
+That&#039;s it!
+
+Place very carefully the wires of a battery (3v) on led corners. Don&#039;t expect to see anything.
+Power the arduino pro mini to check if you have done.
+Led never lights again!!]]></description>
+			<content:encoded><![CDATA[<p>I found better way to stop the led to light.<br />
+As we know, led can&#8217;t be powered directly from battery&#8230;because&#8230; are burned&#8230;.<br />
+That&#8217;s it!</p>
+<p>Place very carefully the wires of a battery (3v) on led corners. Don&#8217;t expect to see anything.<br />
+Power the arduino pro mini to check if you have done.<br />
+Led never lights again!!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-71</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Sat, 13 May 2017 13:23:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-71</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-70&quot;&gt;preactive&lt;/a&gt;.
+
+It&#039;s in drafts and not quite finished yet.  Sorry for the delay :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-70">preactive</a>.</p>
+<p>It&#8217;s in drafts and not quite finished yet.  Sorry for the delay 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: preactive		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-70</link>
+
+		<dc:creator><![CDATA[preactive]]></dc:creator>
+		<pubDate>Fri, 05 May 2017 05:57:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-70</guid>
+
+					<description><![CDATA[Did you ever get to the &quot;Coming Soon… A write up of my cheapo IoT sensor network.....&quot; article?]]></description>
+			<content:encoded><![CDATA[<p>Did you ever get to the &#8220;Coming Soon… A write up of my cheapo IoT sensor network&#8230;..&#8221; article?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Arduino power consumption and management &#124; Raspberries and other fruits		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-69</link>
+
+		<dc:creator><![CDATA[Arduino power consumption and management &#124; Raspberries and other fruits]]></dc:creator>
+		<pubDate>Fri, 08 Jan 2016 18:23:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-69</guid>
+
+					<description><![CDATA[[&#8230;] How to modify an Arduino Pro Mini for low power usage [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] How to modify an Arduino Pro Mini for low power usage [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Apache &#8211; 20 second lag before serving pages	</title>
+	<atom:link href="/2016/10/13/apache-20-second-lag-before-serving-pages/feed/" rel="self" type="application/rss+xml" />
+	<link>/2016/10/13/apache-20-second-lag-before-serving-pages/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Thu, 11 Apr 2019 19:15:23 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Pascal		</title>
+		<link>/2016/10/13/apache-20-second-lag-before-serving-pages/#comment-121</link>
+
+		<dc:creator><![CDATA[Pascal]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2019 19:15:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=780#comment-121</guid>
+
+					<description><![CDATA[Hi there, 
+
+I encounter exactly the same issue.
+
+Is this resolved ? (I see this post is from 2016)
+
+Cheers.
+
+Pascal]]></description>
+			<content:encoded><![CDATA[<p>Hi there, </p>
+<p>I encounter exactly the same issue.</p>
+<p>Is this resolved ? (I see this post is from 2016)</p>
+<p>Cheers.</p>
+<p>Pascal</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

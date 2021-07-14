@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Raspberry Pi powered heating controller (Part 4)	</title>
+	<atom:link href="/2014/02/04/raspberry-pi-powered-heating-controller-part-4/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Tue, 10 Mar 2020 09:59:13 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-61</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Tue, 10 Mar 2020 09:59:13 +0000</pubDate>
+		<guid isPermaLink="false">/?p=571#comment-61</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-60&quot;&gt;Les&lt;/a&gt;.
+
+Hi Les,
+
+Yes!  I have integrated it with Alexa - and it was pretty easy actually.  I needed a proxy on my home network that was exposed to the Internet so that Alexa can make REST calls to the heating controller.
+
+I&#039;m at the point now where I don&#039;t even have the heating on a timer anymore - I just command Alexa to switch it on and off as I need it.  The hot water is still on a timer though.
+
+I&#039;ve also hooked it up to Apple Homekit so that I can switch the heating on when I&#039;m away from home.  This is useful when we&#039;re out for the day and can come home to a nice warm house.
+
+I&#039;ve posted a bit about Alexa integrations on here.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-60">Les</a>.</p>
+<p>Hi Les,</p>
+<p>Yes!  I have integrated it with Alexa &#8211; and it was pretty easy actually.  I needed a proxy on my home network that was exposed to the Internet so that Alexa can make REST calls to the heating controller.</p>
+<p>I&#8217;m at the point now where I don&#8217;t even have the heating on a timer anymore &#8211; I just command Alexa to switch it on and off as I need it.  The hot water is still on a timer though.</p>
+<p>I&#8217;ve also hooked it up to Apple Homekit so that I can switch the heating on when I&#8217;m away from home.  This is useful when we&#8217;re out for the day and can come home to a nice warm house.</p>
+<p>I&#8217;ve posted a bit about Alexa integrations on here.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Les		</title>
+		<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-60</link>
+
+		<dc:creator><![CDATA[Les]]></dc:creator>
+		<pubDate>Thu, 16 Jan 2020 20:20:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=571#comment-60</guid>
+
+					<description><![CDATA[Have you considered going to the next step and turning the Pi controller into a &#039;smart device&#039; by controlling the GPIO by voice from Amazon Alexa?]]></description>
+			<content:encoded><![CDATA[<p>Have you considered going to the next step and turning the Pi controller into a &#8216;smart device&#8217; by controlling the GPIO by voice from Amazon Alexa?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-59</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Thu, 02 Jun 2016 18:10:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=571#comment-59</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-58&quot;&gt;James Tulloch&lt;/a&gt;.
+
+The outside temperature ones are easy.  I went up in to the loft and poked a waterproof sensor out of the bottom of the roof, where the guttering would be.  For the tank sensors; my tank has a solid foam jacket, so I used a pencil to &quot;drill&quot; a whole through it until I got to the tank itself, then I used a bit of thermal compound that you use to attach heatsinks to CPUs, squirted in in to the bottom of the hole and pushed a temp. sensor in to it.  It&#039;s a hack, but it works fine!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-58">James Tulloch</a>.</p>
+<p>The outside temperature ones are easy.  I went up in to the loft and poked a waterproof sensor out of the bottom of the roof, where the guttering would be.  For the tank sensors; my tank has a solid foam jacket, so I used a pencil to &#8220;drill&#8221; a whole through it until I got to the tank itself, then I used a bit of thermal compound that you use to attach heatsinks to CPUs, squirted in in to the bottom of the hole and pushed a temp. sensor in to it.  It&#8217;s a hack, but it works fine!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: James Tulloch		</title>
+		<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-58</link>
+
+		<dc:creator><![CDATA[James Tulloch]]></dc:creator>
+		<pubDate>Sun, 22 May 2016 09:08:21 +0000</pubDate>
+		<guid isPermaLink="false">/?p=571#comment-58</guid>
+
+					<description><![CDATA[Hi Will,
+
+How did you attach the temperature sensors to the sources? Just taped to the outside of the tank? What about outside?
+
+Thanks
+
+James]]></description>
+			<content:encoded><![CDATA[<p>Hi Will,</p>
+<p>How did you attach the temperature sensors to the sources? Just taped to the outside of the tank? What about outside?</p>
+<p>Thanks</p>
+<p>James</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

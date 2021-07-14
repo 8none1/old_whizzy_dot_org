@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gingerbeer &#8211; whizzy.org</title>
+	<atom:link href="/tag/gingerbeer/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Fri, 05 Jun 2009 19:50:04 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>Ginger Beer</title>
+		<link>/2009/06/05/ginger-beer/</link>
+					<comments>/2009/06/05/ginger-beer/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 05 Jun 2009 19:50:04 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[gingerbeer]]></category>
+		<category><![CDATA[sneezing]]></category>
+		<guid isPermaLink="false">/2009/06/ginger-beer/</guid>
+
+					<description><![CDATA[Sainsbury&#8217;s Ginger Beer has more sneezes in it than Tesco&#8217;s. That can only [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Sainsbury&#8217;s Ginger Beer has more sneezes in it than Tesco&#8217;s.  That can only be a good thing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2009/06/05/ginger-beer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

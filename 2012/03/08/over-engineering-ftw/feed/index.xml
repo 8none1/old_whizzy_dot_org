@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Over engineering FTW	</title>
+	<atom:link href="/2012/03/08/over-engineering-ftw/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/03/08/over-engineering-ftw/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 23 Mar 2020 11:02:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Ira		</title>
+		<link>/2012/03/08/over-engineering-ftw/#comment-45</link>
+
+		<dc:creator><![CDATA[Ira]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2020 11:02:11 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-45</guid>
+
+					<description><![CDATA[So, I finally got this working with two client VPN tun devices and its balancing nicely with all the traffic...until one of the remote VPN servers goes down. Then it just grinds to a halt. 
+I thought it would just pass all the packets to other one that was still up. But it wasn&#039;t. Nothing going out or coming in.
+I realize its been years since you wrote this, but hoping you might have some idea what to look for.
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>So, I finally got this working with two client VPN tun devices and its balancing nicely with all the traffic&#8230;until one of the remote VPN servers goes down. Then it just grinds to a halt.<br />
+I thought it would just pass all the packets to other one that was still up. But it wasn&#8217;t. Nothing going out or coming in.<br />
+I realize its been years since you wrote this, but hoping you might have some idea what to look for.<br />
+Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2012/03/08/over-engineering-ftw/#comment-44</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Fri, 14 Dec 2018 18:34:18 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-44</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/03/08/over-engineering-ftw/#comment-43&quot;&gt;Ira&lt;/a&gt;.
+
+What kernel is your device running?  It could still be caching the routes.  Also have a ip route show, and see what the default is.  If it&#039;s not shown check ip rule and then check those tables too.
+
+Sorry, not got much of a clue at the moment.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/03/08/over-engineering-ftw/#comment-43">Ira</a>.</p>
+<p>What kernel is your device running?  It could still be caching the routes.  Also have a ip route show, and see what the default is.  If it&#8217;s not shown check ip rule and then check those tables too.</p>
+<p>Sorry, not got much of a clue at the moment.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ira		</title>
+		<link>/2012/03/08/over-engineering-ftw/#comment-43</link>
+
+		<dc:creator><![CDATA[Ira]]></dc:creator>
+		<pubDate>Sun, 09 Dec 2018 03:39:46 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-43</guid>
+
+					<description><![CDATA[Up for a challenge?
+I set this up in OpenVPN client using Tun(s) instead of physical eth ports. I have tun0, tun1, tun2 for three simultaneous connections to three different VPN servers. And everything connects and works - except the weighted routing. 
+My Pings out the different interfaces work:
+ping -I tun0 8.8.8.8
+ping -I tun1 8.8.8.8
+ping -I tun2 8.8.8.8
+And ifconfig shows packets sent and received over each of the tuns, but tun1 is always being used as the default even though I&#039;ve give tun0 a weight of 3, tun1 weight 2, and tun3 weight1.
+I think this is because of either router caching or tun1 always connects first. 
+But if I try to look at the router cache, it shows nothing (ip route show cache).
+It will, on very rare occasions, switch to another tun, but it often switches to tun2 (with the lowest weight) even though tun0 is up, working, and has the heighest weight.
+Any ideas what I might be doing wrong? Where I can look for clues?
+Thanks! And great article! I&#039;m like 90% there with this!!]]></description>
+			<content:encoded><![CDATA[<p>Up for a challenge?<br />
+I set this up in OpenVPN client using Tun(s) instead of physical eth ports. I have tun0, tun1, tun2 for three simultaneous connections to three different VPN servers. And everything connects and works &#8211; except the weighted routing.<br />
+My Pings out the different interfaces work:<br />
+ping -I tun0 8.8.8.8<br />
+ping -I tun1 8.8.8.8<br />
+ping -I tun2 8.8.8.8<br />
+And ifconfig shows packets sent and received over each of the tuns, but tun1 is always being used as the default even though I&#8217;ve give tun0 a weight of 3, tun1 weight 2, and tun3 weight1.<br />
+I think this is because of either router caching or tun1 always connects first.<br />
+But if I try to look at the router cache, it shows nothing (ip route show cache).<br />
+It will, on very rare occasions, switch to another tun, but it often switches to tun2 (with the lowest weight) even though tun0 is up, working, and has the heighest weight.<br />
+Any ideas what I might be doing wrong? Where I can look for clues?<br />
+Thanks! And great article! I&#8217;m like 90% there with this!!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Multipath routing on a Raspberry Pi 2 &#124; Teknoids News		</title>
+		<link>/2012/03/08/over-engineering-ftw/#comment-42</link>
+
+		<dc:creator><![CDATA[Multipath routing on a Raspberry Pi 2 &#124; Teknoids News]]></dc:creator>
+		<pubDate>Tue, 26 May 2015 02:26:34 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-42</guid>
+
+					<description><![CDATA[[&#8230;] A few years ago, when I started working at home, I had a second ADSL line installed so that I could still get online if my ISP had an outage.  As well as fault tolerance I wanted to try and use all the available bandwidth rather than just have it sitting there “just in case”.  I achieved this using multi path routing and documented the solution here:  Over Engineering FTW. [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] A few years ago, when I started working at home, I had a second ADSL line installed so that I could still get online if my ISP had an outage.  As well as fault tolerance I wanted to try and use all the available bandwidth rather than just have it sitting there “just in case”.  I achieved this using multi path routing and documented the solution here:  Over Engineering FTW. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

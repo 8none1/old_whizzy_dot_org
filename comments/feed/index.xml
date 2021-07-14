@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments for whizzy.org	</title>
+	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Wed, 19 May 2021 18:49:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Ricardo		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-7480</link>
+
+		<dc:creator><![CDATA[Ricardo]]></dc:creator>
+		<pubDate>Wed, 19 May 2021 18:49:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-7480</guid>
+
+					<description><![CDATA[Hi there,
+
+I downloaded the provided firmware here at the current date, but it wouldn&#039;t upgrade. I searched in the web, found several firmwares, I upgraded to 8.4.2 first, then 8.5.4, then 9.2.1, but whenever I would try to upgrade to the provided 9.4.2RS3 it would fail.
+In the meanwhile I found this link: https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares
+Which has 9.4.2-1 which worked as well. In the meanwhile I believe that this firmware 9.4.2RS3 here is for another phone model and someone just changed the name of the files, as all other firmwares worked fine on my 7941 phone.
+
+Thank you for the tutorial, its super and was super helpful nonetheless.]]></description>
+			<content:encoded><![CDATA[<p>Hi there,</p>
+<p>I downloaded the provided firmware here at the current date, but it wouldn&#8217;t upgrade. I searched in the web, found several firmwares, I upgraded to 8.4.2 first, then 8.5.4, then 9.2.1, but whenever I would try to upgrade to the provided 9.4.2RS3 it would fail.<br />
+In the meanwhile I found this link: <a href="https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares" rel="nofollow ugc">https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares</a><br />
+Which has 9.4.2-1 which worked as well. In the meanwhile I believe that this firmware 9.4.2RS3 here is for another phone model and someone just changed the name of the files, as all other firmwares worked fine on my 7941 phone.</p>
+<p>Thank you for the tutorial, its super and was super helpful nonetheless.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Dan Keizer		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-6648</link>
+
+		<dc:creator><![CDATA[Dan Keizer]]></dc:creator>
+		<pubDate>Thu, 22 Apr 2021 16:11:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-6648</guid>
+
+					<description><![CDATA[Just found this post/thread.  Looks like excellent work.  I note that the link to the firmware update files is not responding (tinyupload.com site) - if someone has a different link (or can make one to offer) that would be appreciated.   we have a number of these phones to integrate into our asterisk server.]]></description>
+			<content:encoded><![CDATA[<p>Just found this post/thread.  Looks like excellent work.  I note that the link to the firmware update files is not responding (tinyupload.com site) &#8211; if someone has a different link (or can make one to offer) that would be appreciated.   we have a number of these phones to integrate into our asterisk server.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Double helping of Pi Hole by will		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-4016</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Fri, 29 Jan 2021 16:56:07 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-4016</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2021/01/02/double-helping-of-pi-hole/#comment-3920&quot;&gt;Marian&lt;/a&gt;.
+
+Sure, if you bring your computer on to my LAN and it&#039;s configured with DNS over HTTPS then you will successfully bypass my ad blocking and also be able to access YouTube.  Congrats.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2021/01/02/double-helping-of-pi-hole/#comment-3920">Marian</a>.</p>
+<p>Sure, if you bring your computer on to my LAN and it&#8217;s configured with DNS over HTTPS then you will successfully bypass my ad blocking and also be able to access YouTube.  Congrats.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Double helping of Pi Hole by Marian		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-3920</link>
+
+		<dc:creator><![CDATA[Marian]]></dc:creator>
+		<pubDate>Tue, 26 Jan 2021 07:17:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-3920</guid>
+
+					<description><![CDATA[And all that will be bypassed by DNS over Https.]]></description>
+			<content:encoded><![CDATA[<p>And all that will be bypassed by DNS over Https.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Double helping of Pi Hole by Late Night Linux – Episode 109 &#8211; Late Night Linux		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-3897</link>
+
+		<dc:creator><![CDATA[Late Night Linux – Episode 109 &#8211; Late Night Linux]]></dc:creator>
+		<pubDate>Mon, 25 Jan 2021 21:56:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-3897</guid>
+
+					<description><![CDATA[[&#8230;] Double helping of Pi Hole [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Double helping of Pi Hole [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Raspberry Pi powered heating controller (Part 1) by Late Night Linux – Episode 107 &#8211; Late Night Linux		</title>
+		<link>/2014/01/04/raspberry-pi-powered-heating-controller-part-1/#comment-3391</link>
+
+		<dc:creator><![CDATA[Late Night Linux – Episode 107 &#8211; Late Night Linux]]></dc:creator>
+		<pubDate>Mon, 11 Jan 2021 21:56:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=509#comment-3391</guid>
+
+					<description><![CDATA[[&#8230;] Raspberry Pi Heating Controller [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Raspberry Pi Heating Controller [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Double helping of Pi Hole by Links 3/1/2021: Septor 2021, Whisker Menu 2.5.1, Bleachbit 4.2.0, Wine 6.0-RC5 and Wine-Staging 6.0-RC5 &#124; Techrights		</title>
+		<link>/2021/01/02/double-helping-of-pi-hole/#comment-3035</link>
+
+		<dc:creator><![CDATA[Links 3/1/2021: Septor 2021, Whisker Menu 2.5.1, Bleachbit 4.2.0, Wine 6.0-RC5 and Wine-Staging 6.0-RC5 &#124; Techrights]]></dc:creator>
+		<pubDate>Sun, 03 Jan 2021 17:19:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1020#comment-3035</guid>
+
+					<description><![CDATA[[&#8230;] Double helping of Pi Hole [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Double helping of Pi Hole [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-171</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2020 18:21:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-171</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-170&quot;&gt;Gareth&lt;/a&gt;.
+
+Someone seems to have uploaded the files here:  http://s000.tinyupload.com/index.php?file_id=44134296078826321023]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-170">Gareth</a>.</p>
+<p>Someone seems to have uploaded the files here:  <a href="http://s000.tinyupload.com/index.php?file_id=44134296078826321023" rel="nofollow ugc">http://s000.tinyupload.com/index.php?file_id=44134296078826321023</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Gareth		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-170</link>
+
+		<dc:creator><![CDATA[Gareth]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2020 14:34:09 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-170</guid>
+
+					<description><![CDATA[Cisco seem to have removed the 7941/7961 firmware from their support section.
+
+
+Any chance I could get a copy of the version you are using since it is later than mine?]]></description>
+			<content:encoded><![CDATA[<p>Cisco seem to have removed the 7941/7961 firmware from their support section.</p>
+<p>Any chance I could get a copy of the version you are using since it is later than mine?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) by Mr-detail		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-77</link>
+
+		<dc:creator><![CDATA[Mr-detail]]></dc:creator>
+		<pubDate>Mon, 05 Oct 2020 02:40:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-77</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-69&quot;&gt;Arduino power consumption and management &#124; Raspberries and other fruits&lt;/a&gt;.
+
+Nice article man. Just in case anyone is reading this and did what I did first. My arduino came as the 5v version with the 5v tab soldered. I removed the power led and the regulator, used the rocket scream low power library only to find it dropped to 2.7mA ~ 2.8mA range. Do what this guy says, its way easier to un-solder the 3.3v/5v adjustment solder tab. If you don&#039;t, you lose about 2.7mA to the resistor network that was used by the regulator!
+
+Thanks for saving me from banging my head against the wall for a couple more hours!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-69">Arduino power consumption and management | Raspberries and other fruits</a>.</p>
+<p>Nice article man. Just in case anyone is reading this and did what I did first. My arduino came as the 5v version with the 5v tab soldered. I removed the power led and the regulator, used the rocket scream low power library only to find it dropped to 2.7mA ~ 2.8mA range. Do what this guy says, its way easier to un-solder the 3.3v/5v adjustment solder tab. If you don&#8217;t, you lose about 2.7mA to the resistor network that was used by the regulator!</p>
+<p>Thanks for saving me from banging my head against the wall for a couple more hours!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Taha Siddiqi		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-169</link>
+
+		<dc:creator><![CDATA[Taha Siddiqi]]></dc:creator>
+		<pubDate>Tue, 25 Aug 2020 15:46:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-169</guid>
+
+					<description><![CDATA[Hi 
+
+i need help i am using 7941 and 7942 SIP phone but i am unable to load Telephone Directory and Wallpaper as per the above given procedure through TFTP32 application, please be so kind to let me know how can i upload. 
+
+i am using below mention firmware : 
+
+7941 &#124; 7941-7961-sip.8-4-2S
+7942 &#124; 7942-7962-sip.8-4-2S]]></description>
+			<content:encoded><![CDATA[<p>Hi </p>
+<p>i need help i am using 7941 and 7942 SIP phone but i am unable to load Telephone Directory and Wallpaper as per the above given procedure through TFTP32 application, please be so kind to let me know how can i upload. </p>
+<p>i am using below mention firmware : </p>
+<p>7941 | 7941-7961-sip.8-4-2S<br />
+7942 | 7942-7962-sip.8-4-2S</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Graham Galea		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-168</link>
+
+		<dc:creator><![CDATA[Graham Galea]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2020 02:18:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-168</guid>
+
+					<description><![CDATA[Hi. The Mitel PBX I am connecting the 7941 phones to has System Speed Calls. Example 829 is a speed dial for 430829. The Mitel phone recognise the speed dial but the cisco 7941 doesn&#039;t. Is there a way to configure the phone to recognise system speed calls?]]></description>
+			<content:encoded><![CDATA[<p>Hi. The Mitel PBX I am connecting the 7941 phones to has System Speed Calls. Example 829 is a speed dial for 430829. The Mitel phone recognise the speed dial but the cisco 7941 doesn&#8217;t. Is there a way to configure the phone to recognise system speed calls?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Rich Pavlovsky		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-167</link>
+
+		<dc:creator><![CDATA[Rich Pavlovsky]]></dc:creator>
+		<pubDate>Thu, 04 Jun 2020 02:47:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-167</guid>
+
+					<description><![CDATA[Worked like a champ for me.  Asterisk 16 running on FreeNAS (in a jail).  Got several Cisco IP 7941&#039;s from Goodwill for a few bucks.  Flashed firmware to the SIP firmware you mentioned (it is still the latest on this old model).  Carefully crafted the SEPMAC.cnf.xml file and spent several nights troubleshooting (and being very frustrated). I relied a lot on the Cisco web interface to carefully review the logs.  I think if any addition to your very well done post would be to walk people thru that cause it does give line numbers etc on the XML file parsing errors.  Anyways, thank you again for creating this.  A fun little technical project to keep me occupied in these troubling times.]]></description>
+			<content:encoded><![CDATA[<p>Worked like a champ for me.  Asterisk 16 running on FreeNAS (in a jail).  Got several Cisco IP 7941&#8217;s from Goodwill for a few bucks.  Flashed firmware to the SIP firmware you mentioned (it is still the latest on this old model).  Carefully crafted the SEPMAC.cnf.xml file and spent several nights troubleshooting (and being very frustrated). I relied a lot on the Cisco web interface to carefully review the logs.  I think if any addition to your very well done post would be to walk people thru that cause it does give line numbers etc on the XML file parsing errors.  Anyways, thank you again for creating this.  A fun little technical project to keep me occupied in these troubling times.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by JD		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-166</link>
+
+		<dc:creator><![CDATA[JD]]></dc:creator>
+		<pubDate>Sat, 09 May 2020 13:51:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-166</guid>
+
+					<description><![CDATA[Thank you for your SEPxxx.cnf.xml work for my 7945G SIP45.9-3-1SR4-1S after stuck at registering.]]></description>
+			<content:encoded><![CDATA[<p>Thank you for your SEPxxx.cnf.xml work for my 7945G SIP45.9-3-1SR4-1S after stuck at registering.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Will Cooke		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-165</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Tue, 24 Mar 2020 10:37:18 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-165</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-164&quot;&gt;Dominikk&lt;/a&gt;.
+
+Thanks Dominikk, that&#039;s good to know]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-164">Dominikk</a>.</p>
+<p>Thanks Dominikk, that&#8217;s good to know</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Over engineering FTW by Ira		</title>
+		<link>/2012/03/08/over-engineering-ftw/#comment-45</link>
+
+		<dc:creator><![CDATA[Ira]]></dc:creator>
+		<pubDate>Mon, 23 Mar 2020 11:02:11 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-45</guid>
+
+					<description><![CDATA[So, I finally got this working with two client VPN tun devices and its balancing nicely with all the traffic...until one of the remote VPN servers goes down. Then it just grinds to a halt. 
+I thought it would just pass all the packets to other one that was still up. But it wasn&#039;t. Nothing going out or coming in.
+I realize its been years since you wrote this, but hoping you might have some idea what to look for.
+Thanks!]]></description>
+			<content:encoded><![CDATA[<p>So, I finally got this working with two client VPN tun devices and its balancing nicely with all the traffic&#8230;until one of the remote VPN servers goes down. Then it just grinds to a halt.<br />
+I thought it would just pass all the packets to other one that was still up. But it wasn&#8217;t. Nothing going out or coming in.<br />
+I realize its been years since you wrote this, but hoping you might have some idea what to look for.<br />
+Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Dominikk		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-164</link>
+
+		<dc:creator><![CDATA[Dominikk]]></dc:creator>
+		<pubDate>Fri, 13 Mar 2020 20:53:04 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-164</guid>
+
+					<description><![CDATA[I can confirm Asterisk newest version (as of March 2020) andCisco 7941G with newest SIP Cisco FW (as of March 2020) only works via TCP. The problem is that the phone is NOT answering UDP &quot;ChallengeSent&quot; packets sent from Asterisk to Cisco Phone. See the FreePBX fail2ban log for details.
+
+Solution is very easy:
+Enable TCP in FreePBX at Settings =&#062; Asterisk SIP Settings =&#062; SIP Leacy Settings tab =&#062; Activate TCP =&#062; Yes
+
+Change the config file from above from
+ 2
+to
+ 1
+for TCP.
+
+Done the phone works instantly.]]></description>
+			<content:encoded><![CDATA[<p>I can confirm Asterisk newest version (as of March 2020) andCisco 7941G with newest SIP Cisco FW (as of March 2020) only works via TCP. The problem is that the phone is NOT answering UDP &#8220;ChallengeSent&#8221; packets sent from Asterisk to Cisco Phone. See the FreePBX fail2ban log for details.</p>
+<p>Solution is very easy:<br />
+Enable TCP in FreePBX at Settings =&gt; Asterisk SIP Settings =&gt; SIP Leacy Settings tab =&gt; Activate TCP =&gt; Yes</p>
+<p>Change the config file from above from<br />
+ 2<br />
+to<br />
+ 1<br />
+for TCP.</p>
+<p>Done the phone works instantly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Raspberry Pi powered heating controller (Part 4) by Will Cooke		</title>
+		<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-61</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Tue, 10 Mar 2020 09:59:13 +0000</pubDate>
+		<guid isPermaLink="false">/?p=571#comment-61</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-60&quot;&gt;Les&lt;/a&gt;.
+
+Hi Les,
+
+Yes!  I have integrated it with Alexa - and it was pretty easy actually.  I needed a proxy on my home network that was exposed to the Internet so that Alexa can make REST calls to the heating controller.
+
+I&#039;m at the point now where I don&#039;t even have the heating on a timer anymore - I just command Alexa to switch it on and off as I need it.  The hot water is still on a timer though.
+
+I&#039;ve also hooked it up to Apple Homekit so that I can switch the heating on when I&#039;m away from home.  This is useful when we&#039;re out for the day and can come home to a nice warm house.
+
+I&#039;ve posted a bit about Alexa integrations on here.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-60">Les</a>.</p>
+<p>Hi Les,</p>
+<p>Yes!  I have integrated it with Alexa &#8211; and it was pretty easy actually.  I needed a proxy on my home network that was exposed to the Internet so that Alexa can make REST calls to the heating controller.</p>
+<p>I&#8217;m at the point now where I don&#8217;t even have the heating on a timer anymore &#8211; I just command Alexa to switch it on and off as I need it.  The hot water is still on a timer though.</p>
+<p>I&#8217;ve also hooked it up to Apple Homekit so that I can switch the heating on when I&#8217;m away from home.  This is useful when we&#8217;re out for the day and can come home to a nice warm house.</p>
+<p>I&#8217;ve posted a bit about Alexa integrations on here.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Raspberry Pi powered heating controller (Part 4) by Les		</title>
+		<link>/2014/02/04/raspberry-pi-powered-heating-controller-part-4/#comment-60</link>
+
+		<dc:creator><![CDATA[Les]]></dc:creator>
+		<pubDate>Thu, 16 Jan 2020 20:20:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=571#comment-60</guid>
+
+					<description><![CDATA[Have you considered going to the next step and turning the Pi controller into a &#039;smart device&#039; by controlling the GPIO by voice from Amazon Alexa?]]></description>
+			<content:encoded><![CDATA[<p>Have you considered going to the next step and turning the Pi controller into a &#8216;smart device&#8217; by controlling the GPIO by voice from Amazon Alexa?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Multipath routing on a Raspberry Pi 2 by Richard Greville		</title>
+		<link>/2015/05/23/multipathrouting-rasppi2/#comment-68</link>
+
+		<dc:creator><![CDATA[Richard Greville]]></dc:creator>
+		<pubDate>Thu, 14 Nov 2019 06:58:19 +0000</pubDate>
+		<guid isPermaLink="false">/?p=627#comment-68</guid>
+
+					<description><![CDATA[Good article, thank you!]]></description>
+			<content:encoded><![CDATA[<p>Good article, thank you!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Angus Mackenzie		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-163</link>
+
+		<dc:creator><![CDATA[Angus Mackenzie]]></dc:creator>
+		<pubDate>Sun, 29 Sep 2019 11:44:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-163</guid>
+
+					<description><![CDATA[Thank you so much for this comprehensive how-to. I&#039;ve got things working between the Cyber Attic and the kitchen after a couple of days wrestling with dhcpd, tftpd etc.
+
+Current freePBX on raspberry pi uses port 5160 for CHAN_SIP and 5060 for CHAN_PJSP, which I spotted for the SEP[MAC].cnf.xml files. For a while I got error tones when trying to dial, but changing that port number in the FreePBX gui -&#062; Settings -&#062; Asterisk SIP settings seemed to help, or maybe it was the reboot.]]></description>
+			<content:encoded><![CDATA[<p>Thank you so much for this comprehensive how-to. I&#8217;ve got things working between the Cyber Attic and the kitchen after a couple of days wrestling with dhcpd, tftpd etc.</p>
+<p>Current freePBX on raspberry pi uses port 5160 for CHAN_SIP and 5060 for CHAN_PJSP, which I spotted for the SEP[MAC].cnf.xml files. For a while I got error tones when trying to dial, but changing that port number in the FreePBX gui -&gt; Settings -&gt; Asterisk SIP settings seemed to help, or maybe it was the reboot.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by John		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-162</link>
+
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Thu, 13 Jun 2019 21:55:49 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-162</guid>
+
+					<description><![CDATA[I just purchased 25 x 7941 PLUS other Cisco stuff for 99p from eBay and made a local pick up - bargain?
+
+The phones are/were set up for SCCP.
+
+I managed to upgrade the firmware of one of the phones to SIP, SIP41.9-2-1S.
+
+ The cnf.xml file appears to upload, : sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980], from the TFTP server but the phone still displays &quot;Unprovisioned&quot;
+
+The editor used was the Micosoft XML notepad that seems to be do the job.
+
+This is my first attempt at this and my first impression was that it looked straight forward but this does not appear to be the case!!
+
+Any tips and samples of working files would be most welcome.
+
+Cheers - John
+
+
+A fuller sample of the log from the TFTP server is listed below -
+
+Connection received from 192.168.1.82 on port 50869 [13/06 22:42:10.439]
+Read request for file . Mode octet [13/06 22:42:10.439]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.439]
+Connection received from 192.168.1.82 on port 52770 [13/06 22:42:10.533]
+Read request for file . Mode octet [13/06 22:42:10.533]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.533]
+Connection received from 192.168.1.82 on port 49583 [13/06 22:42:10.658]
+Read request for file . Mode octet [13/06 22:42:10.658]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.658]
+Connection received from 192.168.1.82 on port 52363 [13/06 22:42:10.956]
+Read request for file . Mode octet [13/06 22:42:10.956]
+Using local port 60547 [13/06 22:42:10.957]
+: sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980]]]></description>
+			<content:encoded><![CDATA[<p>I just purchased 25 x 7941 PLUS other Cisco stuff for 99p from eBay and made a local pick up &#8211; bargain?</p>
+<p>The phones are/were set up for SCCP.</p>
+<p>I managed to upgrade the firmware of one of the phones to SIP, SIP41.9-2-1S.</p>
+<p> The cnf.xml file appears to upload, : sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980], from the TFTP server but the phone still displays &#8220;Unprovisioned&#8221;</p>
+<p>The editor used was the Micosoft XML notepad that seems to be do the job.</p>
+<p>This is my first attempt at this and my first impression was that it looked straight forward but this does not appear to be the case!!</p>
+<p>Any tips and samples of working files would be most welcome.</p>
+<p>Cheers &#8211; John</p>
+<p>A fuller sample of the log from the TFTP server is listed below &#8211;</p>
+<p>Connection received from 192.168.1.82 on port 50869 [13/06 22:42:10.439]<br />
+Read request for file . Mode octet [13/06 22:42:10.439]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.439]<br />
+Connection received from 192.168.1.82 on port 52770 [13/06 22:42:10.533]<br />
+Read request for file . Mode octet [13/06 22:42:10.533]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.533]<br />
+Connection received from 192.168.1.82 on port 49583 [13/06 22:42:10.658]<br />
+Read request for file . Mode octet [13/06 22:42:10.658]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.658]<br />
+Connection received from 192.168.1.82 on port 52363 [13/06 22:42:10.956]<br />
+Read request for file . Mode octet [13/06 22:42:10.956]<br />
+Using local port 60547 [13/06 22:42:10.957]<br />
+: sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Retrieving user profile data from Login With Amazon on Alexa by Andrey		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-178</link>
+
+		<dc:creator><![CDATA[Andrey]]></dc:creator>
+		<pubDate>Mon, 15 Apr 2019 09:43:39 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-178</guid>
+
+					<description><![CDATA[Great post. Usually, when setting up Account Linking we follow these 4 simple steps:
+
+1. Set up Security Profile for Login with Amazon
+2. Enable Account Linking in Amazon Developer Console
+3. Add Redirect URLs to Security Profile
+4. Make an API call to Amazon Profile API with BotTalk (no node.js needed)
+
+We put out a nice tutorial summing it all up with lots of pictures =) https://docs.bottalk.de/tutorials/alexa-login-with-amazon-email]]></description>
+			<content:encoded><![CDATA[<p>Great post. Usually, when setting up Account Linking we follow these 4 simple steps:</p>
+<p>1. Set up Security Profile for Login with Amazon<br />
+2. Enable Account Linking in Amazon Developer Console<br />
+3. Add Redirect URLs to Security Profile<br />
+4. Make an API call to Amazon Profile API with BotTalk (no node.js needed)</p>
+<p>We put out a nice tutorial summing it all up with lots of pictures =) <a href="https://docs.bottalk.de/tutorials/alexa-login-with-amazon-email" rel="nofollow ugc">https://docs.bottalk.de/tutorials/alexa-login-with-amazon-email</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Apache &#8211; 20 second lag before serving pages by Pascal		</title>
+		<link>/2016/10/13/apache-20-second-lag-before-serving-pages/#comment-121</link>
+
+		<dc:creator><![CDATA[Pascal]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2019 19:15:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=780#comment-121</guid>
+
+					<description><![CDATA[Hi there, 
+
+I encounter exactly the same issue.
+
+Is this resolved ? (I see this post is from 2016)
+
+Cheers.
+
+Pascal]]></description>
+			<content:encoded><![CDATA[<p>Hi there, </p>
+<p>I encounter exactly the same issue.</p>
+<p>Is this resolved ? (I see this post is from 2016)</p>
+<p>Cheers.</p>
+<p>Pascal</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Arsenio		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-161</link>
+
+		<dc:creator><![CDATA[Arsenio]]></dc:creator>
+		<pubDate>Sun, 07 Apr 2019 12:02:01 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-161</guid>
+
+					<description><![CDATA[This piece of work is awesome!!
+I managed to migrate the all the phones in one single day!!
+You, sir, make my day!!!
+Thanks!
+Just a note: there is a chance the the &quot;Wallpaper&quot; section is missing some infos?
+I followed the instructions, but I was not able to set my custom wallpaper :(
+In any case, great work!]]></description>
+			<content:encoded><![CDATA[<p>This piece of work is awesome!!<br />
+I managed to migrate the all the phones in one single day!!<br />
+You, sir, make my day!!!<br />
+Thanks!<br />
+Just a note: there is a chance the the &#8220;Wallpaper&#8221; section is missing some infos?<br />
+I followed the instructions, but I was not able to set my custom wallpaper 🙁<br />
+In any case, great work!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by bobmclane		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-160</link>
+
+		<dc:creator><![CDATA[bobmclane]]></dc:creator>
+		<pubDate>Sun, 24 Mar 2019 16:56:22 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-160</guid>
+
+					<description><![CDATA[Hi Guys,
+Great article am getting there however my 7961 sets most things up but gets to local then fails with the following and gets stuck in a restarting loop - 
+
+4:50:44p SEP00070E576A29.cnf.xml(TFTP)
+4:51:28p Error Updating Locale
+
+TFTP shows mk-sip.jat error where do I get this file from, I presume its missing this which is the main cause of the locale issue???
+Connection received from 192.168.1.51 on port 50544 [24/03 16:50:44.621]
+Read request for file . Mode octet [24/03 16:50:44.621]
+Using local port 49705 [24/03 16:50:44.621]
+: sent 15 blks, 7534 bytes in 0 s. 0 blk resent [24/03 16:50:44.822]
+Connection received from 192.168.1.51 on port 50769 [24/03 16:51:27.410]
+Read request for file . Mode octet [24/03 16:51:27.410]
+File  : error 2 in system call CreateFile The system cannot find the file specified. [24/03 16:51:27.410]
+Connection received from 192.168.1.51 on port 52626 [24/03 16:52:00.026]
+Read request for file . Mode octet [24/03 16:52:00.026]
+Using local port 55186 [24/03 16:52:00.026]
+: sent 2 blks, 953 bytes in 0 s. 0 blk resent [24/03 16:52:00.048]
+
+Any help appreciated!
+
+Thanks
+BOB]]></description>
+			<content:encoded><![CDATA[<p>Hi Guys,<br />
+Great article am getting there however my 7961 sets most things up but gets to local then fails with the following and gets stuck in a restarting loop &#8211; </p>
+<p>4:50:44p SEP00070E576A29.cnf.xml(TFTP)<br />
+4:51:28p Error Updating Locale</p>
+<p>TFTP shows mk-sip.jat error where do I get this file from, I presume its missing this which is the main cause of the locale issue???<br />
+Connection received from 192.168.1.51 on port 50544 [24/03 16:50:44.621]<br />
+Read request for file . Mode octet [24/03 16:50:44.621]<br />
+Using local port 49705 [24/03 16:50:44.621]<br />
+: sent 15 blks, 7534 bytes in 0 s. 0 blk resent [24/03 16:50:44.822]<br />
+Connection received from 192.168.1.51 on port 50769 [24/03 16:51:27.410]<br />
+Read request for file . Mode octet [24/03 16:51:27.410]<br />
+File  : error 2 in system call CreateFile The system cannot find the file specified. [24/03 16:51:27.410]<br />
+Connection received from 192.168.1.51 on port 52626 [24/03 16:52:00.026]<br />
+Read request for file . Mode octet [24/03 16:52:00.026]<br />
+Using local port 55186 [24/03 16:52:00.026]<br />
+: sent 2 blks, 953 bytes in 0 s. 0 blk resent [24/03 16:52:00.048]</p>
+<p>Any help appreciated!</p>
+<p>Thanks<br />
+BOB</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Retrieving user profile data from Login With Amazon on Alexa by Yesha Krishna		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-177</link>
+
+		<dc:creator><![CDATA[Yesha Krishna]]></dc:creator>
+		<pubDate>Mon, 18 Mar 2019 14:45:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-177</guid>
+
+					<description><![CDATA[Hi Will, I want to retrieve the user&#039;s required attribute from the data stored in dynamodb using python for my lambda function.]]></description>
+			<content:encoded><![CDATA[<p>Hi Will, I want to retrieve the user&#8217;s required attribute from the data stored in dynamodb using python for my lambda function.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Nick D		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-159</link>
+
+		<dc:creator><![CDATA[Nick D]]></dc:creator>
+		<pubDate>Sun, 03 Mar 2019 15:32:39 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-159</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-153&quot;&gt;AM&lt;/a&gt;.
+
+I had this exact same problem using FreePBX and pjSIP.  Tried for hours to get the phone to work with the default FreePBX setting of UDP only but then finally tried to enable TCP on the FreePBX side and it starting working instantly.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-153">AM</a>.</p>
+<p>I had this exact same problem using FreePBX and pjSIP.  Tried for hours to get the phone to work with the default FreePBX setting of UDP only but then finally tried to enable TCP on the FreePBX side and it starting working instantly.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Over engineering FTW by Will Cooke		</title>
+		<link>/2012/03/08/over-engineering-ftw/#comment-44</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Fri, 14 Dec 2018 18:34:18 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-44</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2012/03/08/over-engineering-ftw/#comment-43&quot;&gt;Ira&lt;/a&gt;.
+
+What kernel is your device running?  It could still be caching the routes.  Also have a ip route show, and see what the default is.  If it&#039;s not shown check ip rule and then check those tables too.
+
+Sorry, not got much of a clue at the moment.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2012/03/08/over-engineering-ftw/#comment-43">Ira</a>.</p>
+<p>What kernel is your device running?  It could still be caching the routes.  Also have a ip route show, and see what the default is.  If it&#8217;s not shown check ip rule and then check those tables too.</p>
+<p>Sorry, not got much of a clue at the moment.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Over engineering FTW by Ira		</title>
+		<link>/2012/03/08/over-engineering-ftw/#comment-43</link>
+
+		<dc:creator><![CDATA[Ira]]></dc:creator>
+		<pubDate>Sun, 09 Dec 2018 03:39:46 +0000</pubDate>
+		<guid isPermaLink="false">/?p=383#comment-43</guid>
+
+					<description><![CDATA[Up for a challenge?
+I set this up in OpenVPN client using Tun(s) instead of physical eth ports. I have tun0, tun1, tun2 for three simultaneous connections to three different VPN servers. And everything connects and works - except the weighted routing. 
+My Pings out the different interfaces work:
+ping -I tun0 8.8.8.8
+ping -I tun1 8.8.8.8
+ping -I tun2 8.8.8.8
+And ifconfig shows packets sent and received over each of the tuns, but tun1 is always being used as the default even though I&#039;ve give tun0 a weight of 3, tun1 weight 2, and tun3 weight1.
+I think this is because of either router caching or tun1 always connects first. 
+But if I try to look at the router cache, it shows nothing (ip route show cache).
+It will, on very rare occasions, switch to another tun, but it often switches to tun2 (with the lowest weight) even though tun0 is up, working, and has the heighest weight.
+Any ideas what I might be doing wrong? Where I can look for clues?
+Thanks! And great article! I&#039;m like 90% there with this!!]]></description>
+			<content:encoded><![CDATA[<p>Up for a challenge?<br />
+I set this up in OpenVPN client using Tun(s) instead of physical eth ports. I have tun0, tun1, tun2 for three simultaneous connections to three different VPN servers. And everything connects and works &#8211; except the weighted routing.<br />
+My Pings out the different interfaces work:<br />
+ping -I tun0 8.8.8.8<br />
+ping -I tun1 8.8.8.8<br />
+ping -I tun2 8.8.8.8<br />
+And ifconfig shows packets sent and received over each of the tuns, but tun1 is always being used as the default even though I&#8217;ve give tun0 a weight of 3, tun1 weight 2, and tun3 weight1.<br />
+I think this is because of either router caching or tun1 always connects first.<br />
+But if I try to look at the router cache, it shows nothing (ip route show cache).<br />
+It will, on very rare occasions, switch to another tun, but it often switches to tun2 (with the lowest weight) even though tun0 is up, working, and has the heighest weight.<br />
+Any ideas what I might be doing wrong? Where I can look for clues?<br />
+Thanks! And great article! I&#8217;m like 90% there with this!!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Ashok kumar		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-158</link>
+
+		<dc:creator><![CDATA[Ashok kumar]]></dc:creator>
+		<pubDate>Thu, 29 Nov 2018 11:46:55 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-158</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/02/23/cisco-7941-asterisk-and-sip/#comment-137&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Hi Will
+
+Good day
+
+I followed the same process like above and i am success in updating the firmware and now i am able to make calls to national and international numbers but i am facing an issue when i am trying to reach operator toll free numbers i am getting an error as reorder i guess the issue is with codec and i even tried below codec but nothing didnt work out can you please suggest me the solution for this 
+
+codec: 
+g711alaw
+g711ulaw]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/02/23/cisco-7941-asterisk-and-sip/#comment-137">Will Cooke</a>.</p>
+<p>Hi Will</p>
+<p>Good day</p>
+<p>I followed the same process like above and i am success in updating the firmware and now i am able to make calls to national and international numbers but i am facing an issue when i am trying to reach operator toll free numbers i am getting an error as reorder i guess the issue is with codec and i even tried below codec but nothing didnt work out can you please suggest me the solution for this </p>
+<p>codec:<br />
+g711alaw<br />
+g711ulaw</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by rolakron		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-157</link>
+
+		<dc:creator><![CDATA[rolakron]]></dc:creator>
+		<pubDate>Mon, 05 Nov 2018 20:03:55 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-157</guid>
+
+					<description><![CDATA[Hello.
+I have set up a phone server with FreePBX and Asterisk on a Raspberry PI3+ (i&#039;m using raspbx distro, a complete system) and I have my phones to work with SCCP. I have also set up a phone directory made with PHP. It fetches all phone numbers from the systems MySQL-database, so I don&#039;t need to add entries manually. So, if I create a new extension, then it will show up in the phonedirectory.]]></description>
+			<content:encoded><![CDATA[<p>Hello.<br />
+I have set up a phone server with FreePBX and Asterisk on a Raspberry PI3+ (i&#8217;m using raspbx distro, a complete system) and I have my phones to work with SCCP. I have also set up a phone directory made with PHP. It fetches all phone numbers from the systems MySQL-database, so I don&#8217;t need to add entries manually. So, if I create a new extension, then it will show up in the phonedirectory.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Michele Giambra		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-156</link>
+
+		<dc:creator><![CDATA[Michele Giambra]]></dc:creator>
+		<pubDate>Sat, 13 Oct 2018 07:49:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-156</guid>
+
+					<description><![CDATA[Hi everyone,
+It&#039;s since July that I try to register my Cisco 7961G on Asterisk, but I can not.
+I&#039;ve read the post so many times, but I can not.
+I have the sip firmware 9.4.2sr3.1s and asterisk 15.4.0 FreePBX 14.0.3.19.
+I&#039;m using sepmac.cnf.xml of the copied from this post.
+
+Who managed to run the cisco 7961g, can send me the configuration.
+Thank you!]]></description>
+			<content:encoded><![CDATA[<p>Hi everyone,<br />
+It&#8217;s since July that I try to register my Cisco 7961G on Asterisk, but I can not.<br />
+I&#8217;ve read the post so many times, but I can not.<br />
+I have the sip firmware 9.4.2sr3.1s and asterisk 15.4.0 FreePBX 14.0.3.19.<br />
+I&#8217;m using sepmac.cnf.xml of the copied from this post.</p>
+<p>Who managed to run the cisco 7961g, can send me the configuration.<br />
+Thank you!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) by Will Cooke		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-76</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Fri, 03 Aug 2018 15:00:29 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-76</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-75&quot;&gt;Haakon&lt;/a&gt;.
+
+If you drop the clock speed down to 8Mhz these boards will run okish down to about 2v.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-75">Haakon</a>.</p>
+<p>If you drop the clock speed down to 8Mhz these boards will run okish down to about 2v.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Jonathan		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-155</link>
+
+		<dc:creator><![CDATA[Jonathan]]></dc:creator>
+		<pubDate>Thu, 02 Aug 2018 01:43:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-155</guid>
+
+					<description><![CDATA[Thank you for this!!
+
+Finally got my Cisco 7941G working with my freePBX. 
+
+I was wondering if it supports a login feature like example. 
+
+User can go to any phone and login to their ext? 
+
+-
+
+Thank you again!!!]]></description>
+			<content:encoded><![CDATA[<p>Thank you for this!!</p>
+<p>Finally got my Cisco 7941G working with my freePBX. </p>
+<p>I was wondering if it supports a login feature like example. </p>
+<p>User can go to any phone and login to their ext? </p>
+<p>&#8211;</p>
+<p>Thank you again!!!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) by Haakon		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-75</link>
+
+		<dc:creator><![CDATA[Haakon]]></dc:creator>
+		<pubDate>Mon, 25 Jun 2018 09:17:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-75</guid>
+
+					<description><![CDATA[Hi, great post. Will the board run ok with power directly from the batteries, even when the voltage starts to drop? A pair of alkaline batteries will start at 3v and then drop over time, I guess. Do you think rechargeable batteries will work too? Two rechargeable AAs would start at 2,4 volts ...
+
+And: Do you adjust the clock speed on these boards?]]></description>
+			<content:encoded><![CDATA[<p>Hi, great post. Will the board run ok with power directly from the batteries, even when the voltage starts to drop? A pair of alkaline batteries will start at 3v and then drop over time, I guess. Do you think rechargeable batteries will work too? Two rechargeable AAs would start at 2,4 volts &#8230;</p>
+<p>And: Do you adjust the clock speed on these boards?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Add OAUTH to your Alexa Smart Home skill in 10 minutes by Smart Home Skill entwicklen &#124; Authentifizierung und Device Discovery &#124; Smart Home Sri Lanka		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-135</link>
+
+		<dc:creator><![CDATA[Smart Home Skill entwicklen &#124; Authentifizierung und Device Discovery &#124; Smart Home Sri Lanka]]></dc:creator>
+		<pubDate>Wed, 13 Jun 2018 13:27:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-135</guid>
+
+					<description><![CDATA[[&#8230;] HOWTO: Add OAUTH to your Alexa Smart Home skill in 10 minutes [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] HOWTO: Add OAUTH to your Alexa Smart Home skill in 10 minutes [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) by Will Cooke		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-74</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Tue, 05 Jun 2018 09:35:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-74</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-73&quot;&gt;Mariusz Klinikowski&lt;/a&gt;.
+
+They’re still running! I haven’t had time to work on this project recently.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-73">Mariusz Klinikowski</a>.</p>
+<p>They’re still running! I haven’t had time to work on this project recently.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Steve Manley		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-154</link>
+
+		<dc:creator><![CDATA[Steve Manley]]></dc:creator>
+		<pubDate>Tue, 05 Jun 2018 00:29:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-154</guid>
+
+					<description><![CDATA[THANK YOU SO MUCH FOR THIS!
+
+Post up a LTC or BTC address so I can buy you a beer. You saved me hours.
+
+Some things that tripped me up:
+
+I needed to use CHAN_SIP, not PJSIP.
+
+If you are making a Cisco 7961G work, if you don&#039;t include a dialplan.xml, all of your outgoing calls will fail, as the inter-digit delay will become 0 or something close to it; it tries to dial the first digit you hit. Incoming calls will work fine. Adding the dialplan.xml file (I used a basically empty one) will prevent this from happening. Not sure if tags will post, but below:
+
+
+
+
+-
+
+&lt;!-- Anything else --&gt;
+
+
+Thanks so much!]]></description>
+			<content:encoded><![CDATA[<p>THANK YOU SO MUCH FOR THIS!</p>
+<p>Post up a LTC or BTC address so I can buy you a beer. You saved me hours.</p>
+<p>Some things that tripped me up:</p>
+<p>I needed to use CHAN_SIP, not PJSIP.</p>
+<p>If you are making a Cisco 7961G work, if you don&#8217;t include a dialplan.xml, all of your outgoing calls will fail, as the inter-digit delay will become 0 or something close to it; it tries to dial the first digit you hit. Incoming calls will work fine. Adding the dialplan.xml file (I used a basically empty one) will prevent this from happening. Not sure if tags will post, but below:</p>
+<p>&#8211;</p>
+<p><!-- Anything else --></p>
+<p>Thanks so much!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by AM		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-153</link>
+
+		<dc:creator><![CDATA[AM]]></dc:creator>
+		<pubDate>Sun, 13 May 2018 17:43:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-153</guid>
+
+					<description><![CDATA[Thanks for this post, it helped me after countless hours of trying to get 7961G running.
+
+Weird thing though, the phone registered to a VoIP provider only when I set the transport protocol to TCP. UDP just didn&#039;t work. I spoke with the provider and they told me I&#039;m rejecting the UDP packets coming back from them.
+
+So I&#039;ve tried to forward ports, even putting the phone to DMZ, no luck. Maybe there are more settings related to using UDP?]]></description>
+			<content:encoded><![CDATA[<p>Thanks for this post, it helped me after countless hours of trying to get 7961G running.</p>
+<p>Weird thing though, the phone registered to a VoIP provider only when I set the transport protocol to TCP. UDP just didn&#8217;t work. I spoke with the provider and they told me I&#8217;m rejecting the UDP packets coming back from them.</p>
+<p>So I&#8217;ve tried to forward ports, even putting the phone to DMZ, no luck. Maybe there are more settings related to using UDP?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Bladimir Sampayo		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-152</link>
+
+		<dc:creator><![CDATA[Bladimir Sampayo]]></dc:creator>
+		<pubDate>Fri, 27 Apr 2018 20:15:20 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-152</guid>
+
+					<description><![CDATA[Hi good day
+I thank you very much for your contribution to make this tutorial I followed it at the foot
+and the firmware went up without problems but when making the configuration of the sip file
+As you mention, I have these errors that I post when sending the files to the phone and I do not know what it could be, could you please help me by giving me some indication that I should correct
+
+Connection received from 192.168.3.2 on port 52076 [27/04 14:40:40.172]
+Read request for file . Mode octet [27/04 14:40:40.172]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:40:40.172]
+Connection received from 192.168.3.2 on port 51644 [27/04 14:41:11.072]
+Read request for file . Mode octet [27/04 14:41:11.072]
+Using local port 57768 [27/04 14:41:11.072]
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:41:11.103]
+Connection received from 192.168.3.2 on port 51366 [27/04 14:42:14.778]
+Read request for file . Mode octet [27/04 14:42:14.778]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:14.778]
+Connection received from 192.168.3.2 on port 49532 [27/04 14:42:45.468]
+Read request for file . Mode octet [27/04 14:42:45.468]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:45.468]
+Connection received from 192.168.3.2 on port 51186 [27/04 14:43:16.168]
+Read request for file . Mode octet [27/04 14:43:16.168]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:43:16.168]
+Connection received from 192.168.3.2 on port 52421 [27/04 14:43:46.984]
+Read request for file . Mode octet [27/04 14:43:46.984]
+Using local port 62389 [27/04 14:43:46.984]
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:43:46.999]
+Connection received from 192.168.3.2 on port 52761 [27/04 14:44:49.282]
+Read request for file . Mode octet [27/04 14:44:49.282]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:44:49.282]
+Connection received from 192.168.3.2 on port 51344 [27/04 14:45:19.984]
+Read request for file . Mode octet [27/04 14:45:19.984]
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:45:19.984]]]></description>
+			<content:encoded><![CDATA[<p>Hi good day<br />
+I thank you very much for your contribution to make this tutorial I followed it at the foot<br />
+and the firmware went up without problems but when making the configuration of the sip file<br />
+As you mention, I have these errors that I post when sending the files to the phone and I do not know what it could be, could you please help me by giving me some indication that I should correct</p>
+<p>Connection received from 192.168.3.2 on port 52076 [27/04 14:40:40.172]<br />
+Read request for file . Mode octet [27/04 14:40:40.172]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:40:40.172]<br />
+Connection received from 192.168.3.2 on port 51644 [27/04 14:41:11.072]<br />
+Read request for file . Mode octet [27/04 14:41:11.072]<br />
+Using local port 57768 [27/04 14:41:11.072]<br />
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:41:11.103]<br />
+Connection received from 192.168.3.2 on port 51366 [27/04 14:42:14.778]<br />
+Read request for file . Mode octet [27/04 14:42:14.778]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:14.778]<br />
+Connection received from 192.168.3.2 on port 49532 [27/04 14:42:45.468]<br />
+Read request for file . Mode octet [27/04 14:42:45.468]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:45.468]<br />
+Connection received from 192.168.3.2 on port 51186 [27/04 14:43:16.168]<br />
+Read request for file . Mode octet [27/04 14:43:16.168]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:43:16.168]<br />
+Connection received from 192.168.3.2 on port 52421 [27/04 14:43:46.984]<br />
+Read request for file . Mode octet [27/04 14:43:46.984]<br />
+Using local port 62389 [27/04 14:43:46.984]<br />
+: sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:43:46.999]<br />
+Connection received from 192.168.3.2 on port 52761 [27/04 14:44:49.282]<br />
+Read request for file . Mode octet [27/04 14:44:49.282]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:44:49.282]<br />
+Connection received from 192.168.3.2 on port 51344 [27/04 14:45:19.984]<br />
+Read request for file . Mode octet [27/04 14:45:19.984]<br />
+File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:45:19.984]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Muayad		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-151</link>
+
+		<dc:creator><![CDATA[Muayad]]></dc:creator>
+		<pubDate>Wed, 18 Apr 2018 09:00:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-151</guid>
+
+					<description><![CDATA[Mr. WILL COOKE   please i need your help i have Cisco Phone and its firmware SIP and i want to change it to SCCP can you help me please ?]]></description>
+			<content:encoded><![CDATA[<p>Mr. WILL COOKE   please i need your help i have Cisco Phone and its firmware SIP and i want to change it to SCCP can you help me please ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Add OAUTH to your Alexa Smart Home skill in 10 minutes by Amit Joshi		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-134</link>
+
+		<dc:creator><![CDATA[Amit Joshi]]></dc:creator>
+		<pubDate>Sat, 10 Feb 2018 05:54:56 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-134</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-131&quot;&gt;P.V.B.Raju&lt;/a&gt;.
+
+Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-131">P.V.B.Raju</a>.</p>
+<p>Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Add OAUTH to your Alexa Smart Home skill in 10 minutes by Amit Joshi		</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comment-133</link>
+
+		<dc:creator><![CDATA[Amit Joshi]]></dc:creator>
+		<pubDate>Sat, 10 Feb 2018 05:54:40 +0000</pubDate>
+		<guid isPermaLink="false">/?p=819#comment-133</guid>
+
+					<description><![CDATA[Very good information. I was stuck at account linking step. I could complete the authorization process. Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.]]></description>
+			<content:encoded><![CDATA[<p>Very good information. I was stuck at account linking step. I could complete the authorization process. Initially, I saw the error similar to P.V.B.RAJU, but then I changed redirect URL to Pitangui and then it worked.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Retrieving user profile data from Login With Amazon on Alexa by bipin		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-176</link>
+
+		<dc:creator><![CDATA[bipin]]></dc:creator>
+		<pubDate>Wed, 17 Jan 2018 11:47:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-176</guid>
+
+					<description><![CDATA[can you share this code in node.js lambda function format]]></description>
+			<content:encoded><![CDATA[<p>can you share this code in node.js lambda function format</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) by Mariusz Klinikowski		</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-73</link>
+
+		<dc:creator><![CDATA[Mariusz Klinikowski]]></dc:creator>
+		<pubDate>Sun, 07 Jan 2018 20:37:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=655#comment-73</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-71&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Waiting for update too! I assume you just waited for batteries to lose Their charge? :) Please update me when comming soon part will come and if it&#039;s close, meybe i can ask for partial data from your experiment?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comment-71">Will Cooke</a>.</p>
+<p>Waiting for update too! I assume you just waited for batteries to lose Their charge? 🙂 Please update me when comming soon part will come and if it&#8217;s close, meybe i can ask for partial data from your experiment?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by Chris		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-150</link>
+
+		<dc:creator><![CDATA[Chris]]></dc:creator>
+		<pubDate>Fri, 08 Dec 2017 20:06:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-150</guid>
+
+					<description><![CDATA[Hey, whenever I add a second sip line, the phone keeps restarting.
+
+This is what I&#039;m seeing in my log
+
+NOT 15:03:16.252056 JVM: Startup Module Loader&#124;cip.sipcc.SipCcAdapter:  - cmname=192.168.0.150 cmIp=192.168.0.150 port=5063 isValid=true
+NOT 15:03:16.253352 JVM: Startup Module Loader&#124;cip.sipcc.d:  - initializeLinePlane(): Mgmt Interface is in Service now..
+ERR 15:03:16.254597 JVM: Startup Module Loader&#124;cip.sipcc.d:  - regAllFailed(): mgmtState=5
+WRN 15:03:16.255820 JVM: Startup Module Loader&#124;JPlatUi:  - platformResetReq: resetRequest type=2
+
+One key thing is that each sip account is different and they both use different ports 5063 and 5062 but the server is the same, matching the settings on the server for each line.  I did try and put them both on the same port, but that didn&#039;t work either.
+
+Everything works if I just use one or the other.  Any ideas?]]></description>
+			<content:encoded><![CDATA[<p>Hey, whenever I add a second sip line, the phone keeps restarting.</p>
+<p>This is what I&#8217;m seeing in my log</p>
+<p>NOT 15:03:16.252056 JVM: Startup Module Loader|cip.sipcc.SipCcAdapter:  &#8211; cmname=192.168.0.150 cmIp=192.168.0.150 port=5063 isValid=true<br />
+NOT 15:03:16.253352 JVM: Startup Module Loader|cip.sipcc.d:  &#8211; initializeLinePlane(): Mgmt Interface is in Service now..<br />
+ERR 15:03:16.254597 JVM: Startup Module Loader|cip.sipcc.d:  &#8211; regAllFailed(): mgmtState=5<br />
+WRN 15:03:16.255820 JVM: Startup Module Loader|JPlatUi:  &#8211; platformResetReq: resetRequest type=2</p>
+<p>One key thing is that each sip account is different and they both use different ports 5063 and 5062 but the server is the same, matching the settings on the server for each line.  I did try and put them both on the same port, but that didn&#8217;t work either.</p>
+<p>Everything works if I just use one or the other.  Any ideas?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Retrieving user profile data from Login With Amazon on Alexa by manjunath		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-175</link>
+
+		<dc:creator><![CDATA[manjunath]]></dc:creator>
+		<pubDate>Thu, 07 Dec 2017 10:21:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-175</guid>
+
+					<description><![CDATA[can you share the above code in java format]]></description>
+			<content:encoded><![CDATA[<p>can you share the above code in java format</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Retrieving user profile data from Login With Amazon on Alexa by Virginia		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-174</link>
+
+		<dc:creator><![CDATA[Virginia]]></dc:creator>
+		<pubDate>Wed, 06 Dec 2017 13:03:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-174</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-173&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Thank you for your reply! it worked :)
+
+do you think its possible to retrieve the phone number the user has in the account too?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-173">Will Cooke</a>.</p>
+<p>Thank you for your reply! it worked 🙂</p>
+<p>do you think its possible to retrieve the phone number the user has in the account too?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Cisco 7941, Asterisk and SIP by amar		</title>
+		<link>/2017/02/23/cisco-7941-asterisk-and-sip/#comment-149</link>
+
+		<dc:creator><![CDATA[amar]]></dc:creator>
+		<pubDate>Sat, 02 Dec 2017 21:53:56 +0000</pubDate>
+		<guid isPermaLink="false">/?p=882#comment-149</guid>
+
+					<description><![CDATA[Hello will, 
+Thank you for great the guide. Following  I managed to get a 7961g working with freepbx.  I am in Toronto,Canada. I can make and receive local (10 digits) only remaining issue is that I can&#039;t make any international calls (I am able to make the same international calls from other extentions  connected to my freepbx) . I suspect that it&#039;s an issue with the dialplan.xml.  
+Any suggestions would be greatly appreciated.  Thanks .]]></description>
+			<content:encoded><![CDATA[<p>Hello will,<br />
+Thank you for great the guide. Following  I managed to get a 7961g working with freepbx.  I am in Toronto,Canada. I can make and receive local (10 digits) only remaining issue is that I can&#8217;t make any international calls (I am able to make the same international calls from other extentions  connected to my freepbx) . I suspect that it&#8217;s an issue with the dialplan.xml.<br />
+Any suggestions would be greatly appreciated.  Thanks .</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

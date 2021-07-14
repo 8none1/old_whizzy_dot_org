@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Absolute beginners guide to Google Maps Javascript	</title>
+	<atom:link href="/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Tue, 17 Dec 2013 14:58:57 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Absolute beginners guide to Google Maps JavaScript v3 &#8212; whizzy.org		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-14</link>
+
+		<dc:creator><![CDATA[Absolute beginners guide to Google Maps JavaScript v3 &#8212; whizzy.org]]></dc:creator>
+		<pubDate>Tue, 17 Dec 2013 14:58:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-14</guid>
+
+					<description><![CDATA[[&#8230;] I first published my HowTo and the subsequent follow up for novices to get a Google Map on a web page it&#8217;s been the [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] I first published my HowTo and the subsequent follow up for novices to get a Google Map on a web page it&#8217;s been the [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: will		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-13</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 02 Apr 2013 08:37:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-13</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-12&quot;&gt;Travis&lt;/a&gt;.
+
+Hi Travis.  I feel your pain, I really do.  I try and find some time to re-work the examples over the coming weeks.  No promises though!  It looks like winter might finally be over and I&#039;ve got some golf to play.  :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-12">Travis</a>.</p>
+<p>Hi Travis.  I feel your pain, I really do.  I try and find some time to re-work the examples over the coming weeks.  No promises though!  It looks like winter might finally be over and I&#8217;ve got some golf to play.  🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Travis		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-12</link>
+
+		<dc:creator><![CDATA[Travis]]></dc:creator>
+		<pubDate>Tue, 02 Apr 2013 01:33:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-12</guid>
+
+					<description><![CDATA[Can you update this code for Google Maps API V3? When I use the above, the map appears on my page momentarily and then disappears after a message pops up telling me something about the javascript being rejected by the browser because it&#039;s not V3. Any updates are immensely appreciated.]]></description>
+			<content:encoded><![CDATA[<p>Can you update this code for Google Maps API V3? When I use the above, the map appears on my page momentarily and then disappears after a message pops up telling me something about the javascript being rejected by the browser because it&#8217;s not V3. Any updates are immensely appreciated.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Steve		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-11</link>
+
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+		<pubDate>Wed, 14 Nov 2012 00:54:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-11</guid>
+
+					<description><![CDATA[In the google map example site. when I click this link, it shows map
+
+https://developers.google.com/maps/documentation/javascript/examples/map-simple-async
+
+But when I save that html file into my HDD and double click the file, nothing shows up in the chrome browser.
+
+This seems very strange to me.
+I am new to Javascript.]]></description>
+			<content:encoded><![CDATA[<p>In the google map example site. when I click this link, it shows map</p>
+<p><a href="https://developers.google.com/maps/documentation/javascript/examples/map-simple-async" rel="nofollow ugc">https://developers.google.com/maps/documentation/javascript/examples/map-simple-async</a></p>
+<p>But when I save that html file into my HDD and double click the file, nothing shows up in the chrome browser.</p>
+<p>This seems very strange to me.<br />
+I am new to Javascript.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Monetizing my feeds &#8212; whizzy.org		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-10</link>
+
+		<dc:creator><![CDATA[Monetizing my feeds &#8212; whizzy.org]]></dc:creator>
+		<pubDate>Sat, 04 Aug 2012 16:52:52 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-10</guid>
+
+					<description><![CDATA[[...] or so (Hello! I bet I know exactly who you all are), but I do get a few hundred hits a month on my Beginners Guide To Google Maps tutorial. So adding adverts to the feed shouldn&#8217;t really hurt anyone, and as a bonus the bandwidth [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] or so (Hello! I bet I know exactly who you all are), but I do get a few hundred hits a month on my Beginners Guide To Google Maps tutorial. So adding adverts to the feed shouldn&#8217;t really hurt anyone, and as a bonus the bandwidth [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: haris		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-9</link>
+
+		<dc:creator><![CDATA[haris]]></dc:creator>
+		<pubDate>Thu, 19 Jan 2012 16:36:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-9</guid>
+
+					<description><![CDATA[can we embed this on c sharp or can we use in visual studio 2008 for c sharp?]]></description>
+			<content:encoded><![CDATA[<p>can we embed this on c sharp or can we use in visual studio 2008 for c sharp?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: will		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-8</link>
+
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 11 May 2009 20:23:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-8</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-7&quot;&gt;TM&lt;/a&gt;.
+
+Epic fail.
+
+Duly fixed!   &lt;del datetime=&quot;2009-05-11T21:07:54+00:00&quot;&gt;Perma-links still wrong though, but they will have to say broken.&lt;/del&gt;
+
+Perma link fixed as well.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-7">TM</a>.</p>
+<p>Epic fail.</p>
+<p>Duly fixed!   <del datetime="2009-05-11T21:07:54+00:00">Perma-links still wrong though, but they will have to say broken.</del></p>
+<p>Perma link fixed as well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: TM		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-7</link>
+
+		<dc:creator><![CDATA[TM]]></dc:creator>
+		<pubDate>Mon, 11 May 2009 17:14:52 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-7</guid>
+
+					<description><![CDATA[Please correct the title!
+
+It doesn&#039;t give you give you legitimacy. . .when you misspell it.]]></description>
+			<content:encoded><![CDATA[<p>Please correct the title!</p>
+<p>It doesn&#8217;t give you give you legitimacy. . .when you misspell it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Stuart Langridge: Absolute beginners guide to Google Maps JavaScript		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-6</link>
+
+		<dc:creator><![CDATA[Stuart Langridge: Absolute beginners guide to Google Maps JavaScript]]></dc:creator>
+		<pubDate>Mon, 11 May 2009 13:10:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-6</guid>
+
+					<description><![CDATA[[...] A mate of mine has been building a relatively complex website for Potton, the town he lives in. In six months he’s gone from knowing nothing about Django or JavaScript to building something pretty cool with lots of Google maps and so on, and he’s started a series writing up what he’s learned for other people in the same position. First essay, an Absolute beginners guide to Google Maps JavaScript. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] A mate of mine has been building a relatively complex website for Potton, the town he lives in. In six months he’s gone from knowing nothing about Django or JavaScript to building something pretty cool with lots of Google maps and so on, and he’s started a series writing up what he’s learned for other people in the same position. First essay, an Absolute beginners guide to Google Maps JavaScript. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: acteon29		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-5</link>
+
+		<dc:creator><![CDATA[acteon29]]></dc:creator>
+		<pubDate>Sun, 10 May 2009 23:43:07 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-5</guid>
+
+					<description><![CDATA[thanks a lot, it&#039;s a good work]]></description>
+			<content:encoded><![CDATA[<p>thanks a lot, it&#8217;s a good work</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: steve		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-4</link>
+
+		<dc:creator><![CDATA[steve]]></dc:creator>
+		<pubDate>Sun, 10 May 2009 21:02:41 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-4</guid>
+
+					<description><![CDATA[wooowweeee!!
+I cant wait! :)]]></description>
+			<content:encoded><![CDATA[<p>wooowweeee!!<br />
+I cant wait! 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: GeekStream Linux &#187; Absolute beginners guide to Google Maps JavaScript		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-3</link>
+
+		<dc:creator><![CDATA[GeekStream Linux &#187; Absolute beginners guide to Google Maps JavaScript]]></dc:creator>
+		<pubDate>Sun, 10 May 2009 21:00:04 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-3</guid>
+
+					<description><![CDATA[[...] a series writing up what he&#8217;s learned for other people in the same position. First essay, an Absolute beginners guide to Google Maps JavaScript. Read the whole story on  as days pass by, by Stuart Langridge    No Related Post      Loading...   [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] a series writing up what he&#8217;s learned for other people in the same position. First essay, an Absolute beginners guide to Google Maps JavaScript. Read the whole story on  as days pass by, by Stuart Langridge    No Related Post      Loading&#8230;   [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: as days pass by, by Stuart Langridge &#8212; Absolute beginners guide to Google Maps JavaScript		</title>
+		<link>/2009/05/08/absolute-beginners-guide-to-google-maps-javascript/#comment-2</link>
+
+		<dc:creator><![CDATA[as days pass by, by Stuart Langridge &#8212; Absolute beginners guide to Google Maps JavaScript]]></dc:creator>
+		<pubDate>Sun, 10 May 2009 20:35:25 +0000</pubDate>
+		<guid isPermaLink="false">/?p=6#comment-2</guid>
+
+					<description><![CDATA[[...] A mate of mine has been building a relatively complex website for Potton, the town he lives in. In six months he&#8217;s gone from knowing nothing about Django or JavaScript to building something pretty cool with lots of Google maps and so on, and he&#8217;s started a series writing up what he&#8217;s learned for other people in the same position. First essay, an Absolute beginners guide to Google Maps JavaScript. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] A mate of mine has been building a relatively complex website for Potton, the town he lives in. In six months he&#8217;s gone from knowing nothing about Django or JavaScript to building something pretty cool with lots of Google maps and so on, and he&#8217;s started a series writing up what he&#8217;s learned for other people in the same position. First essay, an Absolute beginners guide to Google Maps JavaScript. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

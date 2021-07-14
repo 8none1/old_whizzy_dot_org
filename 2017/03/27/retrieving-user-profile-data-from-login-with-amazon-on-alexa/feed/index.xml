@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Retrieving user profile data from Login With Amazon on Alexa	</title>
+	<atom:link href="/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/feed/" rel="self" type="application/rss+xml" />
+	<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 15 Apr 2019 09:43:39 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Andrey		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-178</link>
+
+		<dc:creator><![CDATA[Andrey]]></dc:creator>
+		<pubDate>Mon, 15 Apr 2019 09:43:39 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-178</guid>
+
+					<description><![CDATA[Great post. Usually, when setting up Account Linking we follow these 4 simple steps:
+
+1. Set up Security Profile for Login with Amazon
+2. Enable Account Linking in Amazon Developer Console
+3. Add Redirect URLs to Security Profile
+4. Make an API call to Amazon Profile API with BotTalk (no node.js needed)
+
+We put out a nice tutorial summing it all up with lots of pictures =) https://docs.bottalk.de/tutorials/alexa-login-with-amazon-email]]></description>
+			<content:encoded><![CDATA[<p>Great post. Usually, when setting up Account Linking we follow these 4 simple steps:</p>
+<p>1. Set up Security Profile for Login with Amazon<br />
+2. Enable Account Linking in Amazon Developer Console<br />
+3. Add Redirect URLs to Security Profile<br />
+4. Make an API call to Amazon Profile API with BotTalk (no node.js needed)</p>
+<p>We put out a nice tutorial summing it all up with lots of pictures =) <a href="https://docs.bottalk.de/tutorials/alexa-login-with-amazon-email" rel="nofollow ugc">https://docs.bottalk.de/tutorials/alexa-login-with-amazon-email</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Yesha Krishna		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-177</link>
+
+		<dc:creator><![CDATA[Yesha Krishna]]></dc:creator>
+		<pubDate>Mon, 18 Mar 2019 14:45:57 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-177</guid>
+
+					<description><![CDATA[Hi Will, I want to retrieve the user&#039;s required attribute from the data stored in dynamodb using python for my lambda function.]]></description>
+			<content:encoded><![CDATA[<p>Hi Will, I want to retrieve the user&#8217;s required attribute from the data stored in dynamodb using python for my lambda function.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bipin		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-176</link>
+
+		<dc:creator><![CDATA[bipin]]></dc:creator>
+		<pubDate>Wed, 17 Jan 2018 11:47:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-176</guid>
+
+					<description><![CDATA[can you share this code in node.js lambda function format]]></description>
+			<content:encoded><![CDATA[<p>can you share this code in node.js lambda function format</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: manjunath		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-175</link>
+
+		<dc:creator><![CDATA[manjunath]]></dc:creator>
+		<pubDate>Thu, 07 Dec 2017 10:21:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-175</guid>
+
+					<description><![CDATA[can you share the above code in java format]]></description>
+			<content:encoded><![CDATA[<p>can you share the above code in java format</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Virginia		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-174</link>
+
+		<dc:creator><![CDATA[Virginia]]></dc:creator>
+		<pubDate>Wed, 06 Dec 2017 13:03:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-174</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-173&quot;&gt;Will Cooke&lt;/a&gt;.
+
+Thank you for your reply! it worked :)
+
+do you think its possible to retrieve the phone number the user has in the account too?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-173">Will Cooke</a>.</p>
+<p>Thank you for your reply! it worked 🙂</p>
+<p>do you think its possible to retrieve the phone number the user has in the account too?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Will Cooke		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-173</link>
+
+		<dc:creator><![CDATA[Will Cooke]]></dc:creator>
+		<pubDate>Thu, 30 Nov 2017 09:39:44 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-173</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-172&quot;&gt;Virginia&lt;/a&gt;.
+
+Hi Virginia,
+
+In order to include external Python packages in your Lambda code you need to create a Python Deployment Package with requests included and then upload that with your code to Lambda.  If that&#039;s something lots of people are struggling with I could write up how to do it, but I learned if from here:
+
+http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html
+
+Hope that helps.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-172">Virginia</a>.</p>
+<p>Hi Virginia,</p>
+<p>In order to include external Python packages in your Lambda code you need to create a Python Deployment Package with requests included and then upload that with your code to Lambda.  If that&#8217;s something lots of people are struggling with I could write up how to do it, but I learned if from here:</p>
+<p><a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html" rel="nofollow ugc">http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html</a></p>
+<p>Hope that helps.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Virginia		</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comment-172</link>
+
+		<dc:creator><![CDATA[Virginia]]></dc:creator>
+		<pubDate>Wed, 22 Nov 2017 12:42:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=921#comment-172</guid>
+
+					<description><![CDATA[Hello Will, 
+you posted this a while back but i hope you can still answer my question.
+I can follow your code ok but im not sure how to import the &quot;requests&quot; in order for my skill to read the information inside the user&#039;s amazon account.  
+user_details[&#039;name&#039;], user_details[&#039;email&#039;]...
+
+I hope you can help me on that one!
+
+Thank you :)]]></description>
+			<content:encoded><![CDATA[<p>Hello Will,<br />
+you posted this a while back but i hope you can still answer my question.<br />
+I can follow your code ok but im not sure how to import the &#8220;requests&#8221; in order for my skill to read the information inside the user&#8217;s amazon account.<br />
+user_details[&#8216;name&#8217;], user_details[&#8217;email&#8217;]&#8230;</p>
+<p>I hope you can help me on that one!</p>
+<p>Thank you 🙂</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

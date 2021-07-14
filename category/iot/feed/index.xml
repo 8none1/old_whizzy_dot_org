@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IoT &#8211; whizzy.org</title>
+	<atom:link href="/category/iot/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Sat, 02 Jan 2021 15:56:14 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>DNS over HTTPS in a snap</title>
+		<link>/2019/07/16/dns-over-https-in-a-snap/</link>
+					<comments>/2019/07/16/dns-over-https-in-a-snap/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 16 Jul 2019 20:07:44 +0000</pubDate>
+				<category><![CDATA[IoT]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=970</guid>
+
+					<description><![CDATA[Background Story With the recent news about the ISP UK association proposing Mozilla [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2>Background Story</h2>
+
+
+
+<p>With the recent news about the ISP UK association proposing Mozilla as &#8220;<a href="https://www.ispa.org.uk/ispa-announces-finalists-for-2019-internet-heroes-and-villains-trump-and-mozilla-lead-the-way-as-villain-nominees/">Internet villain of the year</a>&#8221; for enabling DNS over HTTPS (and subsequently changing their mind and dropping the whole category of villain of the year.  Good move I think.) I figured it was probably about time that I looked at enabling DoH at home.</p>
+
+
+
+<p>Cloudflare have a suite of open source tools called <a href="https://github.com/cloudflare/cloudflared/">cloudflared</a> which has, among other things, a DNS over HTTPS proxy.  By default it points at their 1.1.1.1 service, but you can change that if you want to.  Note, at the time of writing there is a <a href="https://github.com/cloudflare/cloudflared/issues/113">bug</a> which seems to stop Google&#8217;s DNS service working.  If you&#8217;re looking to stop people seeing your DNS traffic then Google probably isn&#8217;t the right DNS service to use anyway.</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="353" height="469" src="/wp-content/uploads/2019/07/proxy-dns.jpg" alt="" class="wp-image-972" srcset="/wp-content/uploads/2019/07/proxy-dns.jpg 353w, /wp-content/uploads/2019/07/proxy-dns-226x300.jpg 226w" sizes="(max-width: 353px) 100vw, 353px" /></figure>
+
+
+
+<p>I already have dnsmasq running as my DNS server and I have quite a lot of config which I wanted to keep (e.g. adblocking) so I figured I would add cloudflared&#8217;s proxy-dns alongside dnsmasq and have dnsmasq use proxy-dns as it&#8217;s upstream server, which would in turn pass the DNS lookups to 1.1.1.1 over HTTPS.  dnsmasq would then cache the results locally.</p>
+
+
+
+<p>So far, so good.  I&#8217;d built cloudflared on my desktop to test it, now I wanted to move it on to the Raspberry Pi, run it as a service, and ideally have a package so that I didn&#8217;t have to mess around rebuilding it in loads of places if I wanted to move to a different box.</p>
+
+
+
+<h2>Make a snap</h2>
+
+
+
+<p>Making a snap of proxy-dns would give the the package I wanted, and could allow me to run proxy-dns as a daemon with two words in the YAML.  Snapcraft&#8217;s <a href="https://snapcraft.io/build">build service</a> would build me an ARM binary, as well as loads of others, for free.</p>
+
+
+
+<p>I downloaded the source for <a href="https://github.com/cloudflare/cloudflared">cloudflared</a> and added three files:</p>
+
+
+
+<ol><li>A <a href="https://github.com/8none1/cloudflaredohsnap/blob/master/snapcraft.yaml">snapcraft.yaml</a> which describes how to build cloudflared and sets it to be run as a daemon</li><li>A <a href="https://github.com/8none1/cloudflaredohsnap/blob/master/snap/hooks/configure">configure hook</a> which lets me set some config options</li><li>A <a href="https://github.com/8none1/cloudflaredohsnap/blob/master/launcher/launcher">launcher script</a> which sets the config at run time</li></ol>
+
+
+
+<p>None of these are very complicated, as you can see.  Hat-tip to <a href="https://twitter.com/popey">Popey</a> for help with the snapcraft.yaml.</p>
+
+
+
+<p>The I pushed these back to my project on <a href="https://github.com/8none1/cloudflaredohsnap">GitHub</a> and added that project to the <a href="https://snapcraft.io/build">Snapcraft.io build service</a>.  Now, whenever I push a new change back to GitHub the snap will get rebuilt <strong>automatically</strong> and uploaded to the store! All I would need to do is a snap refresh and I&#8217;d be upgraded to the latest version. All my requirements solved in one place.</p>
+
+
+
+<h2>How to use the snap</h2>
+
+
+
+<p>If your Pi is running snapd, it&#8217;s dead easy (e.g. Ubuntu MATE or Ubuntu Core):</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap install cloudflaredoh --edge</pre>
+
+
+
+<p>The snap is currently in the edge channel, meaning it&#8217;s not ready for the main stage just yet.  Once I&#8217;ve spent a bit more time on it, I will move it to stable.</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap set cloudflaredoh address=127.0.0.1<br>sudo snap set cloudflaredoh port=5053</pre>
+
+
+
+<p>Configure proxy-dns to listen on 127.0.0.1.  If you want it to answer DNS queries from other computers on your network try either the IP address of the box, or just 0.0.0.0 to listen on all interfaces.  It will also configure proxy-dns to listen on port 5053.  If you want it to answer DNS queries from other computers on your network, use the default DNS port of 53.</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap get cloudflaredoh</pre>
+
+
+
+<p>This will show you the currently set config options.</p>
+
+
+
+<pre class="wp-block-preformatted">sudo snap restart cloudflaredoh</pre>
+
+
+
+<p>Restart proxy-dns and use the new config.</p>
+
+
+
+<p>Now you can use something like nslookup to query the DNS server and make sure it&#8217;s doing what you expected.</p>
+
+
+
+<h2>10 Steps To DNS-over-HTTPS</h2>
+
+
+
+<ol><li>Get a Raspberry Pi</li><li>Download Ubuntu Core and write it to an SD card</li><li>Put the SD card in your Pi and boot it</li><li>Set up the network on Ubuntu Core (tip: register for an <a href="https://login.ubuntu.com/+login">Ubuntu One</a> account first)</li><li>sudo snap install cloudflaredoh</li><li>sudo snap set cloudflaredoh address=0.0.0.0</li><li>sudo snap set cloudflaredoh port=53</li><li>sudo snap restart cloudflaredoh</li><li>Configure your client&#8217;s DNS server as the IP address of your Pi</li><li>Have a cup of tea</li></ol>
+
+
+
+<h2>Update 2019-08-01</h2>
+
+
+
+<p>I&#8217;ve got a new Github repo set up with an improved snapcraft.yaml which pulls directly from the upstream project.  I&#8217;m aiming to get this hooked up to the Snapcraft build service so that we can package the latest version automatically.  More on this later.  In the meantime, you can clone this and build the latest version yourself:</p>
+
+
+
+<p><a href="https://github.com/8none1/cloudflarednsproxy">https://github.com/8none1/cloudflarednsproxy</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/07/16/dns-over-https-in-a-snap/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Whizzy Labs Wireless Sensor</title>
+		<link>/2019/06/11/whizzy-labs-wireless-sensor/</link>
+					<comments>/2019/06/11/whizzy-labs-wireless-sensor/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2019 15:36:26 +0000</pubDate>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[IoT]]></category>
+		<guid isPermaLink="false">/?p=878</guid>
+
+					<description><![CDATA[Sheesh! Making a wireless sensor has proven to be a lot harder than [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Sheesh! Making a wireless sensor has proven to be a lot harder than I had expected.</p>
+<p>Like a lot of weekend hardware hackers I thought it would be fun to build a wireless temperature sensor. I could use it as a feedback mechanism for my <a href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">Raspberry Pi heating controller</a>, I could create graphs of temperatures in different rooms (everyone loves a graph right?), and with a little bit of forward planning I could make a fairly useful Arduino breakout board which could be used for lots of other fun wireless projects.</p>
+<p>I&#8217;ve been through four iterations of the design before I finally found something that worked. I could have avoided some of this if I&#8217;d have spent more time testing on breadboard, but then I wouldn&#8217;t get to order colourful PCBs!</p>
+<p><img class="alignnone size-large wp-image-949" src="/wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-1024x327.jpg" alt="" width="770" height="246" srcset="/wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-1024x327.jpg 1024w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-300x96.jpg 300w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-768x246.jpg 768w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12-1200x384.jpg 1200w, /wp-content/uploads/2017/03/photo_2017-06-19_16-39-12.jpg 1276w" sizes="(max-width: 770px) 100vw, 770px" /></p>
+<h2>The Brief</h2>
+<h3>Cheap</h3>
+<p>In common with a lot of my other weekend projects, this is very likely to be a white elephant, so it needs to be cheap to start with.  There are lots of excellent wireless sensors already available, the <a href="https://lowpowerlab.com/shop/">Moteino</a> is well regarded.  Using that as a baseline, could I build something similar for less than £5 per unit?  The answer is &#8220;nearly&#8221;, see the Bill Of Materials below.</p>
+<h3>Use a ready made microcontroller board</h3>
+<p>I didn&#8217;t want to have to design a board which I would then have to solder an ATmega328/P to myself. Laying out that board would be hard, plus I would have to spec and solder all the supporting components. I could have done that with through-hole components I suppose, but then the board would have been massive, and I very much doubt it would have actually worked out any cheaper.  Instead, I decided that a better idea was to solder on a ready-made Arduino clone, specifically the <a href="https://www.arduino.cc/en/Main/ArduinoBoardProMini">Pro Mini</a>. I buy them from <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=321413432145&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg">this supplier on eBay</a> and I&#8217;ve never had any problems. They are 3v / 5v switchable, very reliable and turn up quickly.  Power consumption was going to be an important metric and running them off of a 3V supply would be essential.</p>
+<h3>Use a ready made radio module</h3>
+<p>As with the MCU, I don&#8217;t want to be laying out a radio board or soldering surface mount components.  I needed a ready-made radio module which was cheap, readily available and had low power requirements.  I started off with the NRF24L01.  It had a small footprint, cost around 99p a unit, had a built in antenna and was supported by the <a href="http://www.airspayce.com/mikem/arduino/RadioHead/">RadioHead library</a>.  Initial testing on breadboard showed that the range of these devices would be sufficient for my house.  I designed the first two revisions of the sensor board around this radio (and a CR2032, see the battery section below).  Initial current draw was a bit too high for the CR2032, but I could have worked around that by using AAA batteries instead &#8211; but more annoying was that the range of the radios was not at all reliable.  The 2.4GHz spectrum is very noisy and the addition of two baby monitors since the original breadboard test hasn&#8217;t helped, but in testing on the PCB I found these radios to be pretty much useless.  I also tried using the version with the power amp as the central transceiver, this helped a little bit but they were still failing to get at least 50% of their transmissions to the other end, even over a couple of meters.  Other people have reported really good range with these boards, but crucially those range tests were done outside.  It&#8217;s my considered opinion that these radios and Wifi in the house do not co-exist.</p>
+<p>So I gave up with those, and tried the <strong>XL4432-SMT</strong>.  This is based on the Si443x chipset from <a href="http://www.silabs.com/products/wireless/proprietary/ezradiopro-ism-band-transmitters-recievers-transceivers">Silicon Labs</a>.  They&#8217;re <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=142189527394&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg">readily available on eBay</a> for around £.170 each, so nearly twice the price of the NRF24L01.  They&#8217;re well supported by the <a href="http://www.airspayce.com/mikem/arduino/RadioHead/">RadioHead</a> library, can run down to 1.8V, have low current draw when on (virtually nothing when in stand-by), support a wide frequency range around the 433MHz ISM band and in range testing they out-performed the NRF24L01 by a long way.  The downside is that these pre-made boards use 1.27mm pitch / castellated connections.  I had to design an Eagle part to interface with them, but that wasn&#8217;t really too hard.  See below for links to the parts I made.  Another drawback was the antenna; being a much lower frequency means they need a much longer antenna so I would need to find a project box which could hold them.<br />
+The Si443x also has a temperature sensor and a wake up timer on board.  However, reading the errata from Silicon Labs it seems that the WUT is actually broken and the temperature sensor was returning very strange results.  The datasheet says that you need to calibrate the temperature sensor so I tried doing this but go nowhere fast, and so I opted to use a 1wire sensor instead.</p>
+<p>The other option for a radio would have been an ESP8266.  You can get ready made boards cheap on eBay, and I could have done away with a separate MCU altogether but the power consumption of these devices is just too great for a project which needs to run of a couple of batteries for a year.</p>
+<h3>Run for a long time on batteries</h3>
+<p>What&#8217;s the point in a wireless sensor if you have to plug it in to the mains.  This project must run from batteries, and those batteries need to last a long time &#8211; having to change the batteries every few months would quickly get boring and the sensors would be left doing nothing.  Obviously having the MCU go in to a sleep state between runs is going to be necessary, plus a radio which has modest power requirements when running.  We can further reduce the power needs by making sure that the &#8220;work&#8221; that the sensor has to do is done as quickly as possible.  The default 1wire temperature sensor code you find will typically takes around 2700msec to read.  That&#8217;s a very long time.  I changed the code a bit by hard-coding the hardware address of the sensor on the board and by only reading two bytes of temperature data (good for 0.5 degree accuracy).  More information can be found below.</p>
+<p>From a size perspective a CR2032 battery looks very appealing.  Some early testing made me think that they would work fine but in real life I had a lot of problems.  In hindsight I think I can put most of the problems down the Brown Out Detector on the Pro Mini being set to 2.8V, more on that in a moment.</p>
+<p>UPDATE:  Whoops.  This post has been sat in drafts for nearly 2 years.  Guess it&#8217;s not getting finished then.  I&#8217;m posting this in case the above is interesting.  Topics that I wanted to cover but haven&#8217;t are:</p>
+<ul>
+<li>Fit neatly in a box</li>
+<li>Read the temperature</li>
+<li>Be extensible</li>
+<li>Reading 1wire temperature sensors quickly</li>
+<li>Lower the BOD to 1.8V</li>
+<li>Bill Of Materials</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2019/06/11/whizzy-labs-wireless-sensor/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Retrieving user profile data from Login With Amazon on Alexa</title>
+		<link>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/</link>
+					<comments>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 27 Mar 2017 20:21:54 +0000</pubDate>
+				<category><![CDATA[Alexa]]></category>
+		<category><![CDATA[IoT]]></category>
+		<guid isPermaLink="false">/?p=921</guid>
+
+					<description><![CDATA[In my previous post about How To Add OAUTH to your Alexa app [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>In my previous post about <a href="/2016/12/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/">How To Add OAUTH to your Alexa app in 10 minutes</a> a couple of people commented that they couldn&#8217;t actually access the users information once they had linked their account.  I didn&#8217;t actually try and access any of the user information because the only user of my skill is me, and I already know my name and email address.  Nevertheless, I had a quick play with it over the weekend and here&#8217;s a simple skill to show you how to access the user&#8217;s profile information from a Python skill running in AWS Lambda.</p>
+<p>First of all you need to make sure your skill is set up to use Login With Amazon.  I&#8217;ve covered this for Smart Home skills <a href="/2016/12/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/">here</a> but it works just the same for normal skills.</p>
+<p>You also need to make sure your skill is configured to use the scopes &#8220;<strong>profile</strong>&#8221; and &#8220;<strong>postal_code</strong>&#8220;.  This is done in the Configuration tab in the developer console for your skill:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/03/scopes.png"><img class="aligncenter size-full wp-image-922" src="http://whizzy.org/wp-content/uploads/2017/03/scopes.png" alt="" width="891" height="632" srcset="/wp-content/uploads/2017/03/scopes.png 891w, /wp-content/uploads/2017/03/scopes-300x213.png 300w, /wp-content/uploads/2017/03/scopes-768x545.png 768w" sizes="(max-width: 891px) 100vw, 891px" /></a></p>
+<p>The Interaction Model for this skill is as follows:</p>
+<pre>{
+  "intents": [
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Options",
+          "type": "Options"
+        }
+      ],
+      "intent": "GreetIntent"
+    }
+  ]
+}
+</pre>
+<p>The Custom Slot type &#8220;Options&#8221; is:</p>
+<pre>First name
+Last name
+Post code
+email address
+user id</pre>
+<p>And the Sample Utterances are:</p>
+<pre>GreetIntent Tell me my {Options}
+GreetIntent What is my {Options}</pre>
+<p>And here&#8217;s the code (also on <a href="https://github.com/8none1/AlexaGreeter/blob/master/lambda_function.py">GitHub here</a>):</p>
+<pre>#!/usr/bin/python
+
+import requests
+
+def build_speechlet_response(title, output, reprompt_text, should_end_session):
+    return {
+        'outputSpeech': {
+            'type': 'PlainText',
+            'text': output
+        },
+        'card': {
+            'type': 'Simple',
+            'title': "Greeter",
+            'content': output
+        },
+        'reprompt': {
+            'outputSpeech': {
+                'type': 'PlainText',
+                'text': reprompt_text
+            }
+        },
+        'shouldEndSession': should_end_session
+    }
+
+
+def build_response(session_attributes, speechlet_response):
+    return {
+        'version': '1.0',
+        'sessionAttributes': session_attributes,
+        'response': speechlet_response
+    }
+    
+
+def get_user_info(access_token):
+    #print access_token
+    amazonProfileURL = 'https://api.amazon.com/user/profile?access_token='
+    r = requests.get(url=amazonProfileURL+access_token)
+    if r.status_code == 200:
+        return r.json()
+    else:
+        return False
+
+def handle_end():
+    return build_response({}, build_speechlet_response("Session ended", "Goodbye!", "", True))
+
+def launch_request(access_token):
+    session_attributes = {}
+    card_title = "Welcome"
+    if access_token is None:
+        speech_output = "Your user details are not available at this time.  Have you completed account linking via the Alexa app?"
+        reprompt_text = ""
+        should_end_session = True
+    else:
+        user_details = get_user_info(access_token)
+        if user_details is None:
+            speech_output = "There was a problem getting your user details."
+            should_end_sesion = True
+        else:
+            print user_details
+            speech_output = "Hello "+user_details['name'].split(" ")[0]+"!  I know all about you now.  We can be friends!"
+            reprompt_text = "What can I tell you about your user information?  First name, last name, email address or postcode?"
+            should_end_session = False
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
+
+def intent_request(intent_request, access_token):
+    intent = intent_request['intent']
+    intent_name = intent['name']
+    
+    if intent_name == "GreetIntent":           
+        if access_token is not None:
+            user_details = get_user_info(access_token)
+            if user_details is None:
+                query_type = False
+            else:
+                query_type = intent['slots']['Options']['value']
+        else:
+            return handle_end()
+        
+        if query_type == "post code":
+            speech_output = "Your post code is "+user_details['postal_code']+"."
+        elif query_type == "first name":
+            speech_output = "Your first name is "+user_details['name'].split(" ")[0]+"."
+        elif query_type == "last name":
+            speech_output = "Your last name is "+user_details['name'].split(" ")[1]+"."
+        elif query_type == "email address":
+            speech_output = "Your email address is "+user_details['email']+"."
+        elif query_type == "user id":
+            speech_output = "Your user id is "+user_details['user_id']+"."
+        else:
+            speech_output = "Something went wrong.  Goodbye."
+        card_title = "What I know about you"
+        return build_response({}, build_speechlet_response(card_title, speech_output, None, True))
+        
+    if intent_name == "AMAZON.HelpIntent":
+        print "Help intent"
+        card_title = "No help available!"
+        speech_output = "Sorry, I can't help you."
+        return build_response({}, build_speechlet_response(card_title, speech_output, None, True))
+        
+    if intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
+        card_title = "Session Ended"
+        speech_output = "Good bye!"
+        return build_response({}, build_speechlet_response(card_title, speech_output, None, True))
+    
+
+
+def lambda_handler(event, context):
+    print event
+    try:
+        access_token = event['context']['System']['user']['accessToken']
+    except:
+        access_token = None
+    if event['request']['type'] == "LaunchRequest":
+        return launch_request(access_token)
+    elif event['request']['type'] == "IntentRequest":
+        return intent_request(event['request'],access_token)
+</pre>
+<p>The important part is:</p>
+<pre>event['context']['System']['user']['accessToken']</pre>
+<p>Once that is available to your Lambda script then you know that the user has done the OAUTH account linking, and then you can query the Amazon APIs for the user&#8217;s info.</p>
+<p>I&#8217;m not proud of this code, so I will tidy it up in to a better demo at some point and update this post accordingly.</p>
+<p>Here&#8217;s a quick video of what it does:</p>
+<p><iframe width="770" height="433" src="https://www.youtube.com/embed/ll7XEvzdetY?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/feed/</wfw:commentRss>
+			<slash:comments>7</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HOWTO:  Add OAUTH to your Alexa Smart Home skill in 10 minutes</title>
+		<link>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/</link>
+					<comments>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Mon, 05 Dec 2016 19:07:19 +0000</pubDate>
+				<category><![CDATA[IoT]]></category>
+		<guid isPermaLink="false">/?p=819</guid>
+
+					<description><![CDATA[Alexa smart home skills require you to provide OAUTH2 so that users can [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Alexa smart home skills require you to provide <a href="https://oauth.net/2/">OAUTH2</a> so that users can authorise a skill to access the assumed cloud service powering their lightbulbs or any number of other pointlessly connected devices.  This makes sense since OAUTH2 is a standard and secure way to grant access for users from one system to the resources of another.  However, with this come a few caveats which are potential blockers for casual skill developers like me.  If you&#8217;re writing a skill for your own personal use, with no intention of adding it to the store, you still have to have a valid and recognised SSL certificate and a whole OAUTH2 server set up somewhere.</p>
+<p>The SSL certificate is easy enough to implement, but it&#8217;s a bit of a faff (renewing Let&#8217;s Encrypt certs, or paying for cert which needs you to deal with the certificate authorities, send in scans of your passport and other tedious red tape) but &#8211; in my opinion anyway &#8211; setting up an OAUTH server is even more of a faff.  If only there was some way to avoid having to do either of these things&#8230;.</p>
+<h2>Using &#8220;Login With Amazon&#8221; as your OAUTH provider</h2>
+<p>Since you already have an Amazon account you can use &#8220;Login With Amazon&#8221; as your skill&#8217;s OAUTH server and your normal everyday Amazon account as your credentials.  You&#8217;re only sharing your Amazon account data with yourself, and even then we can restrict it to just your login ID.  You don&#8217;t actually need to do anything with the OAUTH token once it&#8217;s returned since you&#8217;re the only user.  I mean, you could if you wanted to, but this HOWTO assumes that you&#8217;re the only user and that you don&#8217;t care about that sort of thing.  We are also going to assume that you have already created the Lambda function and the smart home skill or are familiar with how to do that.  This is a bit tricky because you can&#8217;t test your smart home skill on a real device until you&#8217;ve implemented OAUTH, and you can&#8217;t complete the OAUTH set-up until you&#8217;ve got the IDs from your Lambda function and skill.  If you haven&#8217;t written your skill yet, just create a placeholder Lambda function and smart home skill to be going on with.</p>
+<p>Much of this information is available from the official Amazon instructions available here:<a href="https://developer.amazon.com/public/community/post/Tx3CX1ETRZZ2NPC/Alexa-Account-Linking-5-Steps-to-Seamlessly-Link-Your-Alexa-Skill-with-Login-wit"> https://developer.amazon.com/public/community/post/Tx3CX1ETRZZ2NPC/Alexa-Account-Linking-5-Steps-to-Seamlessly-Link-Your-Alexa-Skill-with-Login-wit</a>. What follows is a rehash and slight reorganisation of that doc which is hopefully a bit easier to follow.</p>
+<h3>1. Create a new Login With Amazon Security Profile</h3>
+<p>From the Amazon Developer Site, go to Apps &amp; Services -&gt; Login With Amazon.  Or click <a href="https://developer.amazon.com/lwa/sp/overview.html">https://developer.amazon.com/lwa/sp/overview.html</a></p>
+<p>Click &#8220;Create a New Security Profile&#8221;.  Fill out the form along these lines:</p>
+<p><a href="wp-content/uploads/2016/12/Screenshot-from-2016-11-30-13-40-23.png"><img class="aligncenter wp-image-823 size-large" src="wp-content/uploads/2016/12/Screenshot-from-2016-11-30-13-40-23-1024x468.png" alt="screenshot-from-2016-11-30-13-40-23" width="770" height="352" srcset="/wp-content/uploads/2016/12/Screenshot-from-2016-11-30-13-40-23-1024x468.png 1024w, /wp-content/uploads/2016/12/Screenshot-from-2016-11-30-13-40-23-300x137.png 300w, /wp-content/uploads/2016/12/Screenshot-from-2016-11-30-13-40-23-768x351.png 768w, /wp-content/uploads/2016/12/Screenshot-from-2016-11-30-13-40-23.png 1150w" sizes="(max-width: 770px) 100vw, 770px" /></a></p>
+<p>and hit Save.</p>
+<p>You should see a message along the lines of &#8220;Login with Amazon successfully enabled for Security Profile.&#8221;</p>
+<p>Hover the mouse over the cog icon to the right of your new security profile and choose &#8220;Security Profile&#8221;.</p>
+<p>Copy your &#8220;Client ID&#8221;  and &#8220;Client Secret&#8221; and paste it in to a notepad.  You&#8217;ll need this again shortly.</p>
+<p><a href="wp-content/uploads/2016/12/clientid2.png"><img class="aligncenter wp-image-825 size-large" src="wp-content/uploads/2016/12/clientid2-1024x526.png" alt="clientid2" width="770" height="396" srcset="/wp-content/uploads/2016/12/clientid2-1024x526.png 1024w, /wp-content/uploads/2016/12/clientid2-300x154.png 300w, /wp-content/uploads/2016/12/clientid2-768x395.png 768w, /wp-content/uploads/2016/12/clientid2.png 1158w" sizes="(max-width: 770px) 100vw, 770px" /></a></p>
+<h3>2. Configure your skill to use Login With Amazon</h3>
+<p>Back in the <a href="https://developer.amazon.com/edw/home.html#/">Developer Console</a>, navigate to the Configuration page for your skill.  (Click on your skill, then click on Configuration).  You need to enable &#8220;<strong>Account Linking</strong>&#8221; and this will then show the extra boxes discussed below.</p>
+<p>In to the &#8220;<strong>Authorization URL</strong>&#8221; box you should put:</p>
+<pre>https://www.amazon.com/ap/oa/?redirect_url=</pre>
+<p>and then copy the Redirect URL from further down the page and append it to the end of the Authorization URL.  For example:</p>
+<pre>https://www.amazon.com/ap/oa/?redirect_url=https://layla.amazon.com/api/skill/link/1234ABCD1234AB</pre>
+<p><a href="wp-content/uploads/2016/12/authurl.png"><img class="aligncenter wp-image-827 size-full" src="wp-content/uploads/2016/12/authurl.png" alt="authurl" width="801" height="775" srcset="/wp-content/uploads/2016/12/authurl.png 801w, /wp-content/uploads/2016/12/authurl-300x290.png 300w, /wp-content/uploads/2016/12/authurl-768x743.png 768w" sizes="(max-width: 801px) 100vw, 801px" /></a></p>
+<p>As far as I can tell Layla is for UK/Europe and Pitangui is for the US.  Use the appropriate one for you.  Also, keep a <span style="text-decoration: underline;">note of the redirect URL</span> in your notepad, you will need this again later.</p>
+<p>In to the &#8220;<strong>Client Id</strong>&#8221; box paste your client id from step 1.</p>
+<p>You can leave &#8220;<strong>Domain List</strong>&#8221; blank for now.</p>
+<p>For &#8220;<strong>Scope</strong>&#8221; I suggest you use:</p>
+<pre>profile:user_id</pre>
+<p>This will give your Alexa Skill access to a minimal amount of information about you from Amazon, in this case just a user_id.  That user ID is unique to your app so can&#8217;t be used by other apps or to identify that user elsewhere.  Since you don&#8217;t really have any customers for your skill, only you, there is no reason to provide access to any other information.</p>
+<p>Further down the page you need to configure the <strong>Grant Type</strong>:</p>
+<p><a href="wp-content/uploads/2016/12/granttype.png"><img class="aligncenter wp-image-828 size-full" src="wp-content/uploads/2016/12/granttype.png" alt="granttype" width="842" height="534" srcset="/wp-content/uploads/2016/12/granttype.png 842w, /wp-content/uploads/2016/12/granttype-300x190.png 300w, /wp-content/uploads/2016/12/granttype-768x487.png 768w" sizes="(max-width: 842px) 100vw, 842px" /></a></p>
+<p>Select an &#8220;<strong>Auth Code Grant</strong>&#8221;</p>
+<p>Set the &#8220;<strong>Access Token URI</strong>&#8221; to:</p>
+<pre>https://api.amazon.com/auth/o2/token</pre>
+<p>and in to &#8220;<strong>Client Secret</strong>&#8221; paste your secret from step 1.</p>
+<p>You must include a link to your &#8220;<strong>Privacy Policy URL</strong>&#8220;.  Since you are the only person who cares you could host a blank file somewhere, or maybe link to a Rick Astley video on YouTube?</p>
+<p>Finally hit <strong>Save</strong>.</p>
+<h3>3. Link Login With Amazon back to your Skill</h3>
+<p>Head back to the Login With Amazon page: <a href="https://developer.amazon.com/lwa/sp/overview.html">https://developer.amazon.com/lwa/sp/overview.html</a></p>
+<p>Hover over the cog of your Security Profile and choose<strong> Web Settings</strong>:</p>
+<p><a href="wp-content/uploads/2016/12/returnurl.png"><img class="aligncenter wp-image-830 size-full" src="wp-content/uploads/2016/12/returnurl.png" alt="returnurl" width="920" height="358" srcset="/wp-content/uploads/2016/12/returnurl.png 920w, /wp-content/uploads/2016/12/returnurl-300x117.png 300w, /wp-content/uploads/2016/12/returnurl-768x299.png 768w" sizes="(max-width: 920px) 100vw, 920px" /></a></p>
+<p>In to the &#8220;<strong>Allowed Return URLs</strong>&#8221; box paste your Redirect URL from step 2 and hit save.</p>
+<h3>4.  Login to Amazon from your skill and do the OAUTH dance</h3>
+<p>From the Alexa app on your phone navigate to your new Smart Home Skill and you see that it says &#8220;<strong>Account Linking Required</strong>&#8220;.</p>
+<p><a href="wp-content/uploads/2016/12/IMG_0473.png"><img class="aligncenter size-medium wp-image-831" src="wp-content/uploads/2016/12/IMG_0473-197x300.png" alt="img_0473" width="197" height="300" srcset="/wp-content/uploads/2016/12/IMG_0473-197x300.png 197w, /wp-content/uploads/2016/12/IMG_0473.png 638w" sizes="(max-width: 197px) 100vw, 197px" /></a></p>
+<p>Click &#8220;<strong>Enable Skill</strong>&#8221; and you&#8217;ll be asked to login with your Amazon credentials:</p>
+<p><a href="wp-content/uploads/2016/12/IMG_0474.png"><img class="aligncenter size-medium wp-image-832" src="wp-content/uploads/2016/12/IMG_0474-175x300.png" alt="img_0474" width="175" height="300" srcset="/wp-content/uploads/2016/12/IMG_0474-175x300.png 175w, /wp-content/uploads/2016/12/IMG_0474-599x1024.png 599w, /wp-content/uploads/2016/12/IMG_0474.png 640w" sizes="(max-width: 175px) 100vw, 175px" /></a></p>
+<p>Once you log in you should see a success message:</p>
+<p><a href="wp-content/uploads/2016/12/IMG_0475.png"><img class="aligncenter size-medium wp-image-833" src="wp-content/uploads/2016/12/IMG_0475-176x300.png" alt="img_0475" width="176" height="300" srcset="/wp-content/uploads/2016/12/IMG_0475-176x300.png 176w, /wp-content/uploads/2016/12/IMG_0475-600x1024.png 600w, /wp-content/uploads/2016/12/IMG_0475.png 640w" sizes="(max-width: 176px) 100vw, 176px" /></a></p>
+<p>And you&#8217;re done.</p>
+<p>&nbsp;</p>
+<p>Additional:  Here&#8217;s a post on how to read the users details from Amazon once they are linked:  <a href="/2017/03/retrieving-user-profile-data-from-login-with-amazon-on-alexa/">/2017/03/retrieving-user-profile-data-from-login-with-amazon-on-alexa/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/12/05/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/feed/</wfw:commentRss>
+			<slash:comments>13</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>bravialib &#8211; a Python library to abstract the Bravia web API</title>
+		<link>/2016/11/30/bravialib-a-python-library-to-abstract-the-bravia-web-api/</link>
+					<comments>/2016/11/30/bravialib-a-python-library-to-abstract-the-bravia-web-api/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 30 Nov 2016 20:17:01 +0000</pubDate>
+				<category><![CDATA[IoT]]></category>
+		<guid isPermaLink="false">/?p=817</guid>
+
+					<description><![CDATA[I posted this to Github, but thought I would mirror it here too. [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I posted this to Github, but thought I would mirror it here too. You can download the code from here:</p>
+<p><a href="https://github.com/8none1/bravialib">https://github.com/8none1/bravialib</a></p>
+<p>&nbsp;</p>
+<h1>bravialib</h1>
+<p>A Python library for talking to some Sony Bravia TVs, and an accompanying Alexa Skill to let you control the TV by voice. If you like that sort of thing.</p>
+<p>These scripts make use of the excellent Requests module. You&#8217;ll need to install that first.</p>
+<h2><a id="user-content-bravialib-itself" class="anchor" href="https://github.com/8none1/bravialib/blob/master/README.md#bravialib-itself"></a>bravialib itself</h2>
+<p>This is a fairly simple library which allows you to &#8220;pair&#8221; the script with the TV and will then send cookie-authenticated requests to the TVs own web API to control pretty much everything. You can:</p>
+<ul>
+<li>Set up the initial pairing between the script and the TV</li>
+<li>Retrieve system information from the TV (serial, model, mac addr etc)</li>
+<li>Enumerate the available TV inputs (HDMI1,2,3,4 etc)</li>
+<li>Switch to a given input</li>
+<li>Enumerate the remote control buttons</li>
+<li>Virtually press those buttons</li>
+<li>Find out what Smart TV apps are available</li>
+<li>Start those apps</li>
+<li>Enumerate the available DVB-T channels</li>
+<li>Switch to those channels</li>
+<li>Send Wake On Lan packets to switch the TV on from cold (assuming you&#8217;ve enabled that)</li>
+<li>A couple of convenience functions</li>
+</ul>
+<p>The library tries to hide the complexity and pre-requisites and give you an easy to use API.</p>
+<p>I built this for a couple of reasons: 1. Because the TV had an undocumented API, and that tickles me 2. I quite fancied hooking it up to Alexa for lols</p>
+<p>Most of the information about how to talk to the TV&#8217;s API came from looking at packet captures from the iPhone app &#8220;TV Sideview&#8221;.</p>
+<p>There is a script called <code>testit.py</code> that will give you a few clues about how to use it, but it&#8217;s a bit of a mess. I&#8217;ve left a lot of comments in the code for the library which should help you.</p>
+<p>Really, I think that this library should be imported in to a long-running process rather than be called every time you want to press a remote control button. On a Raspberry Pi, Requests can take a while (a couple of seconds) to import, and then <code>bravialib</code> pre-populates a few data sources, and all of that takes time, like about 20 seconds &#8211; so you really don&#8217;t want to use this library if you just want to fire a few remote control commands. Also &#8211; be aware that the TV takes a long time to boot and accept commands. From cold you&#8217;re talking about a minute maybe two, it&#8217;s really annoying.</p>
+<h2><a id="user-content-the-aforementioned-long-running-process---bravia_restpy" class="anchor" href="https://github.com/8none1/bravialib/blob/master/README.md#the-aforementioned-long-running-process---bravia_restpy"></a>The aforementioned long running process &#8211; <code>bravia_rest.py</code></h2>
+<p>As the main library takes a while to start and needs a certain amount of data from the TV to work properly it really makes sense to start it up once and then leave it running as long as you can. The <code>bravia_rest.py</code> script does exactly that, and also exposes some of the functionality as a very crude REST interface that you can easily hook it in to various home automation systems.</p>
+<p>First you need to add the IP address and MAC address (needed to turn on the TV the first time the script is run, it can be discovered automatically if you just power the TV on for a few minutes before you run the script).</p>
+<p>Then run <code>bravia_rest.py</code>.</p>
+<p>If this is the first time you have run it you will need to pair with the TV. You will be told to point your browser at the IP address of the machine where the script is running on port 8090 (by default). Doing this will make the script attempt to pair with the TV. If it works you will see a PIN number on the TV screen, you will need to enter this in to the box in your browser. After a few seconds, and with a bit of luck, pairing will now complete. This shouldn&#8217;t take too long.</p>
+<p>If you are now paired, in your browser go to /dumpinfo for a view in to what the script knows about the TV.</p>
+<p>Once everything is running you can <code>POST</code> to these URLs for things to happen (no body is required):</p>
+<ul>
+<li><code>/set/power/[on|off]</code> &#8211; turns the telly on and off</li>
+<li><code>/set/send/&lt;button&gt;</code> &#8211; e.g. mute, play, pause, up, down. See dumpinfo for all the key names.</li>
+<li><code>/set/volumeup/3</code> &#8211; turn the volume up 3 notches. You MUST pass a number, even it it&#8217;s just 1.</li>
+<li><code>/set/volumedown/1</code> &#8211; as above.</li>
+<li><code>/set/loadapp/&lt;app name&gt;</code> &#8211; e.g. Netflix, iplayer. Again /dumpinfo will show you what apps are available.</li>
+<li><code>/set/channel/&lt;channel&gt;</code> &#8211; e.g. BBC ONE, BBC TWO</li>
+<li><code>/set/input/&lt;input label&gt;</code> &#8211; You need to have given your inputs labels on the TV, then pass the label here.</li>
+</ul>
+<h2><a id="user-content-hooking-it-up-to-alexa" class="anchor" href="https://github.com/8none1/bravialib/blob/master/README.md#hooking-it-up-to-alexa"></a>Hooking it up to Alexa</h2>
+<p>Now we can poke the TV through a simplified REST interface, it&#8217;s much easier to hook in to other things, like Alexa for example. Setting up a custom skill in AWS/Lambda is beyond the scope of what I can write up at lunchtime, I&#8217;m sure there are lots of other people who have done it better than I could. You&#8217;ll need to create a custom app and upload a <strong>Python Deployment Package</strong> to Lambda including my <code>lambda_function.py</code> script (see inside the <code>Alexa</code> directory), a <code>secrets.py</code> file with your info in it, a copy of the Requests library (you need to create a Python <strong>Virtual Environment</strong> &#8211; it&#8217;s quite easy) and possibly a copy of your PEM for a self signed HTTPS certificate. I&#8217;ve also included the skills data such as the utterances that I&#8217;m using. These will need to be adjusted for your locale.</p>
+<p>You can read more about Python deployment packages and AWS here:<a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html">http://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html</a><a href="http://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-deployment-pkg.html#with-s3-example-deployment-pkg-python">http://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-deployment-pkg.html#with-s3-example-deployment-pkg-python</a></p>
+<p>Here&#8217;s how it works:</p>
+<p><a href="https://raw.githubusercontent.com/8none1/bravialib/master/docs/Alexa%20Bravia%20Block%20Diagram.png" target="_blank" rel="noopener noreferrer"><img title="Alexa Block Diagram" src="https://raw.githubusercontent.com/8none1/bravialib/master/docs/Alexa%20Bravia%20Block%20Diagram.png" alt="block diagram" /></a></p>
+<ol>
+<li>You issue the command to Alexa: <code>Alexa tell The TV to change to channel BBC ONE</code>.</li>
+<li>Your voice is sent to AWS (the green lines) decoded and the utterances and intents etc are sent to the Lambda script.</li>
+<li>The Lambda script works out what the requested actions are and sends them back out (the orange lines) to a web server running in your home (in my case a Raspberry Pi running Apache and the <code>bravia_proxy.py</code> script). You need to make that Apache server accessible to the outside world so that AWS can POST data to it. I would recommend that you configure Apache to use SSL and you put at least BASIC Auth in front of the proxy script.</li>
+<li>The <code>bravia_proxy.py</code> script receives the POSTed form from AWS and in turn POSTs to the <code>bravia_rest.py</code> script having done a quick bit of sanity checking and normalisation. The proxy and the rest scripts could live on different hosts (and probably should, there are no security considerations in either script &#8211; so ya know, don&#8217;t use them.)</li>
+<li><code>bravia_rest.py</code> uses <code>bravialib</code> to poke the TV in the right way and returns back a yes or a no which then flows back (the blue lines) to AWS and your Lambda function.</li>
+<li>If everything worked you should hear &#8220;OK&#8221; from Alexa and your TV should do what you told it.</li>
+</ol>
+<p>I could have put <code>bravia_rest.py</code> straight on the web an implemented some basic auth and SSL there &#8211; but I think this is something better handled by Apache (or whichever server you prefer), not some hacked up script that I wrote.</p>
+<h3>Caveats:</h3>
+<ul>
+<li>It doesn&#8217;t deal with the TV being off at all well at the moment.</li>
+<li>I don&#8217;t know what happens when the cookies expire.</li>
+<li>I haven&#8217;t done much testing.</li>
+<li>I have no idea what I&#8217;m doing.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/11/30/bravialib-a-python-library-to-abstract-the-bravia-web-api/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DHCP clients not registering hostnames in DNS automatically</title>
+		<link>/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/</link>
+					<comments>/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 17 Feb 2016 20:43:59 +0000</pubDate>
+				<category><![CDATA[IoT]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[RaspberryPi]]></category>
+		<guid isPermaLink="false">/?p=730</guid>
+
+					<description><![CDATA[To remind myself as much as anything: I run a dnsmasq server on [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>To remind myself as much as anything:</p>
+<p>I run a dnsmasq server on my router (which is a <a href="/2015/05/multipathrouting-rasppi2/">Raspberry Pi 2</a>) to handle local DNS, DNS proxying and DHCP. For some reason one of the hosts stopped registering its hostname with the DHCP server, and so I couldn&#8217;t resolve its name to an IP address from other clients on my network.</p>
+<p>I&#8217;m pretty sure it used to work, and I&#8217;m also pretty sure I didn&#8217;t change anything &#8211; so why did it suddenly stop? My theory is that the disk on the client became corrupt and a fsck fix removed some files.</p>
+<p>Anyway, the cause is that the DHCP client didn&#8217;t know to send it&#8217;s hostname along with the DHCP request.</p>
+<p>This is fixed by creating (or editing) <code>/etc/dhcp/dhclient.conf</code> and adding this line:</p>
+<p><code>send host-name = gethostname();</code></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hacking 433Mhz support into a cheap Carbon Monoxide detector</title>
+		<link>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/</link>
+					<comments>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/#respond</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2015 20:37:27 +0000</pubDate>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[IoT]]></category>
+		<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=684</guid>
+
+					<description><![CDATA[Skill level:  Easy My home automation systems use two mechanisms for communication:  Ethernet (both [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Skill level:  Easy</strong></p>
+<p>My home automation systems use two mechanisms for communication:  Ethernet (both wired and wireless) and 433MHz OOK radio.</p>
+<p>433MHz transmitters are readily available and are cheap but unreliable.  Wifi enabled MCUs such as the ESP8266 are also cheap (coming in at around the same cost as an Arduino clone, a 433MHz transmitter and a bag of bits to connect them together), they are reliable enough but extremely power hungry.  If I can plug a project into the mains then I&#8217;ll use an ESP8266 and a mobile phone charger for power, if the project needs to run off batteries then a 433MHz equipped Arduino is the way I&#8217;ve gone.</p>
+<p>Like most people playing with 433MHz radio I found reliability and range of the radio link to be super flaky.  I&#8217;ve finally got a more-or-less reliable set-up:</p>
+<ul>
+<li>A full wave dipole antenna at the receiver</li>
+<li>A high quality receiver from RF Solutions in place of the cheap ones which are bundled with transmitters. <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=231721857012&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">A decent receiver on eBay</a></li>
+<li>A big capacitor on the transmitter.  I saw the frequency and amplitude drifting massively during transmission.  Adding a 470µF cap helps.  Allow time for the cap to charge and the oscillator to stabilise, a few seconds delay seemed to do the trick.</li>
+<li>Using the RCSwitch library on the transmitter:
+<ul>
+<li>
+<pre>RCSwitch mySwitch = RCSwitch();</pre>
+</li>
+<li>
+<pre>mySwitch.setProtocol(2); // Much longer pulse lengths = much better range?</pre>
+</li>
+<li>
+<pre>mySwitch.setRepeatTransmit(20); // Just brute-force it!</pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>With this setup I can get receive a 24bit number from an Arduino running off 2 AA batteries and a coiled 1/2 wave antenna from about 5 meters indoors through walls.  That&#8217;s still poor, but it does the job.  Increasing the voltage to the transmitter would probably help.</p>
+<p>Once you have a reliable 433MHz receiver setup then you can also buy off the shelf 433MHz enabled home automation gizmos like <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=181665729292&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this smoke alarm</a> or <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281405424486&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">these door sensors</a>.  They have a set of jumpers inside where you can set an ID, which is essentially the same 24bit number that RCSwitch lets you transmit.  For what it&#8217;s worth I also have <a href="https://en.wikipedia.org/wiki/British_Standards" target="_blank" rel="noopener noreferrer">kite-marked</a> smoke detectors in my house, but from the testing I&#8217;ve done with a bit of smoldering paper the cheap imports work just fine.</p>
+<p>I couldn&#8217;t find a cheap Carbon Monoxide which also has 433MHz support so I thought I&#8217;d quickly hack one together out of <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281723682194&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this Carbon Monoxide detector</a> and an Arduino clone and 433MHz radio:</p>
+<p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1237.jpg"><img class="alignleft size-medium wp-image-703" src="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg" alt="CO Alarm inside" width="225" height="300" srcset="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg 225w, /wp-content/uploads/2015/10/IMG_1237-768x1024.jpg 768w, /wp-content/uploads/2015/10/IMG_1237-1152x1536.jpg 1152w, /wp-content/uploads/2015/10/IMG_1237-1536x2048.jpg 1536w, /wp-content/uploads/2015/10/IMG_1237-1200x1600.jpg 1200w, /wp-content/uploads/2015/10/IMG_1237-1980x2640.jpg 1980w, /wp-content/uploads/2015/10/IMG_1237-scaled.jpg 1920w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><div id="attachment_706" style="width: 310px" class="wp-caption alignleft"><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1238.jpg"><img aria-describedby="caption-attachment-706" class="wp-image-706 size-medium" src="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg" alt="IMG_1238" width="300" height="225" srcset="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg 300w, /wp-content/uploads/2015/10/IMG_1238-1024x768.jpg 1024w, /wp-content/uploads/2015/10/IMG_1238-768x576.jpg 768w, /wp-content/uploads/2015/10/IMG_1238-1536x1152.jpg 1536w, /wp-content/uploads/2015/10/IMG_1238-2048x1536.jpg 2048w, /wp-content/uploads/2015/10/IMG_1238-1200x900.jpg 1200w, /wp-content/uploads/2015/10/IMG_1238-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-706" class="wp-caption-text">You can barely notice it!</p></div></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>It&#8217;s certainly untidy, but it does the job.  If I had PCB facilities at home I&#8217;m fairly sure it could be made to fit inside the alarm, along with some more holes in the case for ventilation.</p>
+<p>The premise is simple enough.  The Arduino is powered by the 3v3 regulator on the CO alarm PCB.  The cathode of the red alarm LED is connected to pin 2 of the Arduino as an external interrupt.  When the pin goes low the Arduino wakes up and sends it&#8217;s 24bit ID number over the radio which is picked up by the receiver which sends an SMS alert, switches the boiler off, etc.  I&#8217;ve connected the radio transmitter to directly to the 3 x AA batteries (4.5 volts) via a transistor which is switched by a pin on the Arduino.  In standy-by mode the additional equipment draws a fraction of a milliamp and so I&#8217;m not worried about draining the batteries faster.</p>
+<p>As with the smoke alarms, this is not my only source of Carbon Monoxide detection.  I&#8217;ve yet to test it&#8217;s sensitivity.  This is considered to be a &#8220;well, if it works, and it turns the boiler off automatically then it&#8217;s certainly worth a go, but I&#8217;m not relying on it&#8221; project.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone)</title>
+		<link>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/</link>
+					<comments>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/#comments</comments>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2015 19:39:24 +0000</pubDate>
+				<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[IoT]]></category>
+		<guid isPermaLink="false">/?p=655</guid>
+
+					<description><![CDATA[Skill level:  Easy enough if you&#8217;ve got a soldering iron. Introduction The Pro [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Skill level:</strong>  <em>Easy enough if you&#8217;ve got a soldering iron.</em></p>
+<h2>Introduction</h2>
+<p>The Pro Mini V2 is an <a href="http://www.arduino.cc/en/Main/ArduinoBoardProMini">Arduino Pro Mini</a> clone available on eBay for, typically, £1.50.  The version I buy is adjustable between 5v and 3.3v and has an ATmega 328 clocked at 8 MHz.  It&#8217;s an ideal board for development of IoT remote sensors and great for playing with and learning about the <a href="http://www.arduino.cc/">Arduino</a> development environment.</p>
+<p>Here&#8217;s a link to the version I buy and know works: <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;icep_item=321413432145&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">3V Pro Mini 2 Arduino Clone</a><img style="text-decoration: none; border: 0; padding: 0; margin: 0;" src="http://rover.ebay.com/roverimp/1/710-53481-19255-0/1?ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;item=321413432145&amp;mpt=[CACHEBUSTER]" alt="" /></p>
+<p>When you want to put a sensor in a remote location the last thing you want to do is have to run a power cable to it. I&#8217;ve experimented with solar with generally poor results so battery operation is the obvious solution.  While Li-ion batteries offer higher energy density the sweet spot still seems to be the good ol&#8217; alkaline battery.  They&#8217;re cheap, safe, recyclable and readily available.</p>
+<p>For what it&#8217;s worth the Ikea alkaline batteries offer good value:  <a href="http://www.batteryshowdown.com/results-lo.html">http://www.batteryshowdown.com/results-lo.html</a> (I suggest buying as many packets as you can carry, so that you never ever have to go back there.  Unless you like arguing with your wife of course.)</p>
+<h2>Power Usage</h2>
+<p>The ATmega 328 has various power saving functions which involve putting it to sleep when not doing anything.  I use the <a href="http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/">Rocket Scream Low Power library</a> to take care of putting the processor into a low power state, but I wasn&#8217;t seeing anything like the low power savings they detail on their site.</p>
+<p>Some quick calculations:  Let&#8217;s assume a AA battery provides 2000 mAh.  I measured my Pro Mini V2 as drawing 6.7mA when powered up and doing things and 2.8mA when in sleep mode.  As a conservative estimate, let&#8217;s say it&#8217;s running for 1 hour in every 24 hour period and asleep the rest of the time.  That averages out to about 3mAh of draw.</p>
+<p>For a 2000 mAh battery, that would give about 667 hours of runtime, or 28 days. <strong>So a standard Pro Mini V2 could run for about a month on a pair of AA batteries.  </strong>Not bad, but I think changing the batteries every month is still going to be a bit of a drag. Besides, Rocket Scream are seeing power usages in the <strong><em>micro</em></strong>-amps range when asleep.  There is clearly work to do.</p>
+<h2>How to dramatically reduce the power consumption</h2>
+<p>In this photo you can see I&#8217;ve identified some sections which are related to the power usage of the Pro Mini.</p>
+<p><a href="/wp-content/uploads/2015/06/arduino_highlights.jpg"><img class="alignleft size-medium wp-image-658" src="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg" alt="arduino_highlights" width="225" height="300" srcset="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg 225w, /wp-content/uploads/2015/06/arduino_highlights.jpg 640w" sizes="(max-width: 225px) 100vw, 225px" /></a>The red section is the power LED.  This is always on when power is applied and sucks about 0.2mA when lit. If you don&#8217;t need this to be lit all the time then you can easily remove it to save some juice.  I found the easiest way was to use a pair of cutters to snip/crush the middle of the LED and then use a soldering iron to remove the bits left over.</p>
+<p>The green section is the on-board regulator.  If you are going to be supplying power to the board via a couple of AA batteries (each battery being 1.5v, so two is 3v) then you don&#8217;t need the regulator.  You can cut this off too if you like, but.. keep reading, there&#8217;s no need to hack it off.</p>
+<p>Saving the best until last, the yellow section is the power-selection jumper to switch between 3.3v and 5v.  It passes the power supplied by the RAW pin through the regulator and on to the board.  The regulator is inherently inefficient.  You might think that you could bypass the on-board regulator by powering the board by apply power to the Vcc pin instead, but it still seems to power the regulator.  By simply unsoldering this jumper you can disable the on-board regulator and save loads of power.  <span style="text-decoration: underline;">Once removed you will need to apply power to the Vcc pin at ~ 3.3V</span>.  I used some solder-wick to clean up but you could just scrape it off with a soldering iron if you need to.</p>
+<p>Here&#8217;s one I prepared earlier.</p>
+<p><div id="attachment_662" style="width: 235px" class="wp-caption alignleft"><a href="/wp-content/uploads/2015/06/IMG_1029.jpg"><img aria-describedby="caption-attachment-662" class="wp-image-662 size-medium" src="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg" alt="IMG_1029" width="225" height="300" srcset="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg 225w, /wp-content/uploads/2015/06/IMG_1029.jpg 640w" sizes="(max-width: 225px) 100vw, 225px" /></a><p id="caption-attachment-662" class="wp-caption-text">With the jumper and LED removed. (Red and yellow boxes from previous image)</p></div></p>
+<p>&nbsp;</p>
+<p>With the LED and solder jumper removed I measured the power usage again.  Running current is now down to 3.8mA, pretty much half of what it was.  But, most impressively the power used when asleep is down to 0.004mA.  <em><strong>4 microamps! Yay!</strong></em></p>
+<p>Some more quick calculations based on the same usage as before:  average power consumption drops to 0.17mA.  That gives us 490 days, <strong>1.3 years run time off a pair of AA batteries.  </strong>That should allow for 2.5 minutes &#8220;work&#8221; an hour.  Waking up, taking some readings and sending them off via a radio should take well under 1 minute, which should allow for more power usage by a radio.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Conclusion</h2>
+<p>Unless you&#8217;re going to run your Arduino off a permanently attached serial connector, then just do this.  Get yourself a couple of AA batteries &amp; a battery holder.  Apply the +ve side of the batteries to Vcc and the -ve to ground.  Stick your multi-meter in between the battery and Vcc pin to measure the lovely low current usage.  You can read the battery power being provided with the <a href="http://provideyourown.com/2012/secret-arduino-voltmeter-measure-battery-voltage/">Secret Arduino Volt-meter</a> trick.</p>
+<p>I&#8217;ve got quite a few sensors around the house running with this set-up so I will monitor battery usage over the next few weeks or months and report back.</p>
+<p>&nbsp;</p>
+<h2>Coming Soon&#8230;</h2>
+<p>A write up of my cheapo IoT sensor network, including smoke detectors, door contact sensors, movement sensors, house-plant watering monitors, room temperature sensors and a weather station.  Plus, build an IoT sensor <em><strong>and</strong></em> buy a sausage roll for less than a fiver.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Raspberry Pi powered heating controller (Part 2)	</title>
+	<atom:link href="/2014/01/11/raspberry-pi-powered-heating-controller-part-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/01/11/raspberry-pi-powered-heating-controller-part-2/</link>
+	<description>On code and gadgets.</description>
+	<lastBuildDate>Mon, 07 Dec 2015 15:47:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Nahuel		</title>
+		<link>/2014/01/11/raspberry-pi-powered-heating-controller-part-2/#comment-55</link>
+
+		<dc:creator><![CDATA[Nahuel]]></dc:creator>
+		<pubDate>Mon, 07 Dec 2015 15:47:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=547#comment-55</guid>
+
+					<description><![CDATA[Contact form seems to ahve swallowed a cog, but we&#039;ve just statred a project using Raspberry Pis with 16-17 Traineeship learners are, as the Powers That Be put it  Vocationally Unfocussed!   Would be really motivational from them, starting from complete beginnings to see a working end project.]]></description>
+			<content:encoded><![CDATA[<p>Contact form seems to ahve swallowed a cog, but we&#8217;ve just statred a project using Raspberry Pis with 16-17 Traineeship learners are, as the Powers That Be put it  Vocationally Unfocussed!   Would be really motivational from them, starting from complete beginnings to see a working end project.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Raspberry Pi powered heating controller (Part 1) &#8212; whizzy.org		</title>
+		<link>/2014/01/11/raspberry-pi-powered-heating-controller-part-2/#comment-54</link>
+
+		<dc:creator><![CDATA[Raspberry Pi powered heating controller (Part 1) &#8212; whizzy.org]]></dc:creator>
+		<pubDate>Fri, 17 Jan 2014 15:43:26 +0000</pubDate>
+		<guid isPermaLink="false">/?p=547#comment-54</guid>
+
+					<description><![CDATA[[&#8230;] Raspberry Pi powered heating controller (Part 2) [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Raspberry Pi powered heating controller (Part 2) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
