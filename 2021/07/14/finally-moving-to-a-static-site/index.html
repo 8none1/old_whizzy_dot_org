@@ -28,13 +28,13 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }</style>
-	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="googleOpenSans-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic&#038;subset=latin%2Ccyrillic&#038;ver=5.7.2" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-css" href="/wp-content/themes/emmet-lite/css/bootstrap.min.css?ver=3.3.5" type="text/css" media="all">
-<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/emmet-lite/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="flexslider-css" href="/wp-content/themes/emmet-lite/css/flexslider.min.css?ver=2.5.0" type="text/css" media="all">
-<link rel="stylesheet" id="emmet-main-css" href="/wp-content/themes/emmet-lite/css/emmet-style.min.css?ver=1.7.5" type="text/css" media="all">
-<link rel="stylesheet" id="emmet-style-css" href="/wp-content/themes/emmet-lite/style.css?ver=1.7.5" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="/wp-content/themes/emmet-lite/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/emmet-lite/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="/wp-content/themes/emmet-lite/css/flexslider.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="emmet-main-css" href="/wp-content/themes/emmet-lite/css/emmet-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="emmet-style-css" href="/wp-content/themes/emmet-lite/style.css" type="text/css" media="all">
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/">
@@ -166,6 +166,7 @@ img.emoji {
 <ul>
 <li>Disable comments on all your posts. This is a faff as you have to do it on each existing post. In the end I followed this guide: <a href="https://themeisle.com/blog/disable-comments-in-wordpress/" target="_blank" rel="noreferrer noopener">https://themeisle.com/blog/disable-comments-in-wordpress/</a><br>See section 3 on how to remove the ability to comment on existing posts.</li>
 <li>Remove all the meta links etc from the footer and sidebar.  I did this through the WordPress &#8220;Appearance&#8221; -> &#8220;Customise&#8221; menu to remove widgets and links as required.</li>
+<li>You might need to strip the cache busting query strings from CSS urls.  Use a sed script like: <code>find . -type f -name '*.html' -print0 | xargs -0 sed -i '' -r -e  's/\?ver.*\" t/\" t/g' </code></li>
 </ul>
 
 
