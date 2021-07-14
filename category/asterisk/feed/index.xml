@@ -36,7 +36,7 @@
 <p>Edit 2: Looks like the tinyupload file has gone missing too.  Try this one:<br />
 <a href="https://drive.google.com/file/d/1EBJ-s9TIMKM0JVmZFWRk2bKeGxR9srFv">https://drive.google.com/file/d/1EBJ-s9TIMKM0JVmZFWRk2bKeGxR9srFv</a></p>
 <p>I got a Cisco 7941 off eBay.  This is a phone which was £400 when new (some time around 2004) but can now be picked up for about £10.  These phones went End Of Sale in January 2010, so even if mine was one of the last phones to roll off the production line it&#8217;s still about 7 years old but it&#8217;s still working perfectly.  A testament to the good build quality of these phones, and perhaps the previous owner&#8217;s careful handling.</p>
-<p><img class="alignnone wp-image-959 size-full" src="/wp-content/uploads/2018/08/7941.jpg" alt="" width="440" height="391" srcset="/wp-content/uploads/2018/08/7941.jpg 440w, /wp-content/uploads/2018/08/7941-300x267.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></p>
+<p><img loading="lazy" class="alignnone wp-image-959 size-full" src="/wp-content/uploads/2018/08/7941.jpg" alt="" width="440" height="391" srcset="/wp-content/uploads/2018/08/7941.jpg 440w, /wp-content/uploads/2018/08/7941-300x267.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></p>
 <p>Since these devices are no longer supported many companies will be getting rid of them (or probably already have) so there should be some bargains to be had for phone geeks.</p>
 <p><em><strong>Q</strong></em>: Does the Cisco 7941 work with Asterisk?<br />
 <em><strong>A</strong></em>: Yes.  You need to load the SIP firmware (the focus of this post) or chan-sccp (out of scope for this post but I&#8217;ll check it out at some point).</p>
@@ -109,7 +109,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <li>The phone will reboot once download is complete and present you with an &#8220;Unprovisioned&#8221; message on the screen.  This is good news!  The phone firmware has now been updated.</li>
 </ol>
 <p>I put together a video showing this process.  It&#8217;s not very interesting but it will give you an idea of what to expect.  The actual downloading of the firmware section has been sped up 3X.</p>
-<p><iframe title="How to start firmware download mode on your Cisco 7941" width="770" height="433" src="https://www.youtube.com/embed/oN63nfnC-sA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" title="How to start firmware download mode on your Cisco 7941" width="770" height="433" src="https://www.youtube.com/embed/oN63nfnC-sA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <h2 id="asterisk">Configure the SIP extension in Asterisk</h2>
 <p>Now you need to configure the SIP extension in Asterisk.  Do this as per any other SIP extension, but bear this important piece of information in mind:  The Cisco 7941 can only deal with 8 character passwords, so keep your SIP authentication secret to 8 characters.</p>
 <p>While you&#8217;re in Asterisk configuration mode, take a moment to note down these bits of information as well (in Advanced SIP settings in FreePBX):</p>
@@ -397,8 +397,8 @@ SIP41.9-4-2SR3-1S.loads</pre>
        URL="TFTP:Desktops/320x196x4/ubuntu.png"/&gt;
 &lt;/CiscoIPPhoneImageList&gt;</pre>
 <p>The &#8220;<strong>-tn</strong>&#8221; in the file is a smaller thumbnail version of the larger image.  The PNGs need to be sized exactly 320&#215;196 for the large and 80&#215;49 for the thumbnail.  Here&#8217;s something to get you started:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png"><img class="aligncenter size-full wp-image-890" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png" alt="" width="80" height="49" /></a></p>
-<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png"><img class="size-full wp-image-889 aligncenter" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png" alt="" width="320" height="196" srcset="/wp-content/uploads/2017/02/Ubuntu-Logo.png 320w, /wp-content/uploads/2017/02/Ubuntu-Logo-300x184.png 300w" sizes="(max-width: 320px) 100vw, 320px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png"><img loading="lazy" class="aligncenter size-full wp-image-890" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png" alt="" width="80" height="49" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png"><img loading="lazy" class="size-full wp-image-889 aligncenter" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png" alt="" width="320" height="196" srcset="/wp-content/uploads/2017/02/Ubuntu-Logo.png 320w, /wp-content/uploads/2017/02/Ubuntu-Logo-300x184.png 300w" sizes="(max-width: 320px) 100vw, 320px" /></a></p>
 <h3 id="directory">Telephone Directory</h3>
 <p>You will have noticed that the phone has a &#8220;Directories&#8221; button and a &#8220;Services&#8221; button.  I haven&#8217;t managed to add an extra phone book to the Directories button yet although I think it&#8217;s certainly possible, just that the XML file refuses to do anything.  However, I have got a phone directory working on the Services button.</p>
 <p>In the main phone config file there is a tag for &#8220;servicesURL&#8221;.  Point this to a web server on your local network which will serve up an XML file.  For example:</p>
@@ -424,7 +424,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <h2 id="tip">Final Tip</h2>
 <p>Watch /var/log/syslog on the machine running the TFTP server.  You&#8217;ll be able to see exactly what files the phone is asking for.  Bear in mind that it does ask for files it doesn&#8217;t strictly need, so don&#8217;t worry too much about file not found errors unless it&#8217;s one of the above.</p>
 <p>Here&#8217;s a final video showing the boot up for a fully configured phone</p>
-<p><iframe title="Fully configured Cisco 7941 connecting to Asterisk via SIP" width="770" height="433" src="https://www.youtube.com/embed/QlLLzbD7pHM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" title="Fully configured Cisco 7941 connecting to Asterisk via SIP" width="770" height="433" src="https://www.youtube.com/embed/QlLLzbD7pHM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/2017/02/23/cisco-7941-asterisk-and-sip/feed/</wfw:commentRss>
@@ -446,7 +446,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 					<description><![CDATA[I&#8217;ve had this idea for a while and with the discovery of the [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I&#8217;ve had this idea for a while and with the discovery of the Google Text-to-speech and Voice Recognition AGI scripts from Zaf (<a href="http://zaf.github.io/asterisk-googletts/">http://zaf.github.io/asterisk-googletts/</a> &amp; <a href="http://zaf.github.io/asterisk-speech-recog/">http://zaf.github.io/asterisk-speech-recog/</a>) I&#8217;ve implemented a quick proof-of-concept.</p>
 <p>You can see the results in this YouTube video:</p>
-<p><iframe width="770" height="433" src="https://www.youtube.com/embed/7DMeRVU9hik?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" width="770" height="433" src="https://www.youtube.com/embed/7DMeRVU9hik?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
 <p>Over the next few days I&#8217;ll tidy up the code and write up a blog post about how to do it.  It&#8217;s pretty straight forward though, using APIs provided by Google, MythTV and Asterisk and then just glueing them together.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>

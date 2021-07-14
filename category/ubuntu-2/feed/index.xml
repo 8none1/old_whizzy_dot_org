@@ -49,7 +49,7 @@
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-large"><img width="341" height="581" src="/wp-content/uploads/2021/01/Double-Pi-Hole.png" alt="" class="wp-image-1021" srcset="/wp-content/uploads/2021/01/Double-Pi-Hole.png 341w, /wp-content/uploads/2021/01/Double-Pi-Hole-176x300.png 176w" sizes="(max-width: 341px) 100vw, 341px" /></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="341" height="581" src="/wp-content/uploads/2021/01/Double-Pi-Hole.png" alt="" class="wp-image-1021" srcset="/wp-content/uploads/2021/01/Double-Pi-Hole.png 341w, /wp-content/uploads/2021/01/Double-Pi-Hole-176x300.png 176w" sizes="(max-width: 341px) 100vw, 341px" /></figure></div>
 
 
 
@@ -65,7 +65,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img width="484" height="627" src="/wp-content/uploads/2021/01/image-2.png" alt="" class="wp-image-1024" srcset="/wp-content/uploads/2021/01/image-2.png 484w, /wp-content/uploads/2021/01/image-2-232x300.png 232w" sizes="(max-width: 484px) 100vw, 484px" /><figcaption>Pi Hole running in AWS configured with Cloudflare as its upstream DNS</figcaption></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="484" height="627" src="/wp-content/uploads/2021/01/image-2.png" alt="" class="wp-image-1024" srcset="/wp-content/uploads/2021/01/image-2.png 484w, /wp-content/uploads/2021/01/image-2-232x300.png 232w" sizes="(max-width: 484px) 100vw, 484px" /><figcaption>Pi Hole running in AWS configured with Cloudflare as its upstream DNS</figcaption></figure>
 
 
 
@@ -77,7 +77,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img width="1000" height="389" src="/wp-content/uploads/2021/01/image-1.png" alt="" class="wp-image-1023" srcset="/wp-content/uploads/2021/01/image-1.png 1000w, /wp-content/uploads/2021/01/image-1-300x117.png 300w, /wp-content/uploads/2021/01/image-1-768x299.png 768w, /wp-content/uploads/2021/01/image-1-720x280.png 720w" sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1000" height="389" src="/wp-content/uploads/2021/01/image-1.png" alt="" class="wp-image-1023" srcset="/wp-content/uploads/2021/01/image-1.png 1000w, /wp-content/uploads/2021/01/image-1-300x117.png 300w, /wp-content/uploads/2021/01/image-1-768x299.png 768w, /wp-content/uploads/2021/01/image-1-720x280.png 720w" sizes="(max-width: 1000px) 100vw, 1000px" /></figure>
 
 
 
@@ -89,7 +89,7 @@
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-large"><img width="1000" height="389" src="/wp-content/uploads/2021/01/image.png" alt="" class="wp-image-1022" srcset="/wp-content/uploads/2021/01/image.png 1000w, /wp-content/uploads/2021/01/image-300x117.png 300w, /wp-content/uploads/2021/01/image-768x299.png 768w, /wp-content/uploads/2021/01/image-720x280.png 720w" sizes="(max-width: 1000px) 100vw, 1000px" /></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="1000" height="389" src="/wp-content/uploads/2021/01/image.png" alt="" class="wp-image-1022" srcset="/wp-content/uploads/2021/01/image.png 1000w, /wp-content/uploads/2021/01/image-300x117.png 300w, /wp-content/uploads/2021/01/image-768x299.png 768w, /wp-content/uploads/2021/01/image-720x280.png 720w" sizes="(max-width: 1000px) 100vw, 1000px" /></figure></div>
 
 
 
@@ -148,7 +148,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img width="353" height="469" src="/wp-content/uploads/2019/07/proxy-dns.jpg" alt="" class="wp-image-972" srcset="/wp-content/uploads/2019/07/proxy-dns.jpg 353w, /wp-content/uploads/2019/07/proxy-dns-226x300.jpg 226w" sizes="(max-width: 353px) 100vw, 353px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="353" height="469" src="/wp-content/uploads/2019/07/proxy-dns.jpg" alt="" class="wp-image-972" srcset="/wp-content/uploads/2019/07/proxy-dns.jpg 353w, /wp-content/uploads/2019/07/proxy-dns-226x300.jpg 226w" sizes="(max-width: 353px) 100vw, 353px" /></figure>
 
 
 
@@ -371,7 +371,7 @@ end script</pre>
 <p>If you want to stop using low graphics comment out the initctl line by placing a &#8216;#&#8217; at the start of the line.</p>
 <p>This hack won&#8217;t work in 16.10 Yakkety because we&#8217;re moving to systemd for the user session.  I&#8217;ll write up some instructions for 16.10 once it&#8217;s available.</p>
 <p>Here&#8217;s a quick video of some of the effects in low graphics mode:</p>
-<p><iframe src="//www.youtube.com/embed/gWUyP-oTRVg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><iframe loading="lazy" src="//www.youtube.com/embed/gWUyP-oTRVg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
@@ -431,7 +431,7 @@ end script</pre>
 		<guid isPermaLink="false">/?p=685</guid>
 
 					<description><![CDATA[Today I have had a Launchpad account for ten years! I got started [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg"><img class="alignleft wp-image-691" src="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg" alt="IMG_1220" width="799" height="132" srcset="/wp-content/uploads/2015/10/IMG_1220.jpg 1005w, /wp-content/uploads/2015/10/IMG_1220-300x50.jpg 300w, /wp-content/uploads/2015/10/IMG_1220-768x127.jpg 768w" sizes="(max-width: 799px) 100vw, 799px" /></a></p>
+										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg"><img loading="lazy" class="alignleft wp-image-691" src="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg" alt="IMG_1220" width="799" height="132" srcset="/wp-content/uploads/2015/10/IMG_1220.jpg 1005w, /wp-content/uploads/2015/10/IMG_1220-300x50.jpg 300w, /wp-content/uploads/2015/10/IMG_1220-768x127.jpg 768w" sizes="(max-width: 799px) 100vw, 799px" /></a></p>
 <p>Today I have had a <a href="https://launchpad.net/~willcooke">Launchpad account</a> for ten years!</p>
 <p>I got started out on this road around 1992.  I remember the day <a href="http://www.kryogenix.org/">Stuart</a> got a PC and installed Minix on it.  That box was biege, naturally, was about 3 feet square and constructed from inch thick iron plate.  Minix was totally alien when compared to the Acorn <a href="https://en.wikipedia.org/wiki/Acorn_MOS">MOS</a> and <a href="https://en.wikipedia.org/wiki/RISC_OS">RISCOS</a> powered machines I&#8217;d used until then, and absolutely intriguing.</p>
 <p>A few years later at university I encountered VAX/VMS and Sun SPARCstations and The Internet and <a href="https://en.wikipedia.org/wiki/Surfers_(talker)">Surfers</a> and Mozilla and a Gopher connected Coke machine.</p>

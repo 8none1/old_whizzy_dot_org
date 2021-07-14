@@ -33,7 +33,7 @@
 					<description><![CDATA[I&#8217;ve had this idea for a while and with the discovery of the [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I&#8217;ve had this idea for a while and with the discovery of the Google Text-to-speech and Voice Recognition AGI scripts from Zaf (<a href="http://zaf.github.io/asterisk-googletts/">http://zaf.github.io/asterisk-googletts/</a> &amp; <a href="http://zaf.github.io/asterisk-speech-recog/">http://zaf.github.io/asterisk-speech-recog/</a>) I&#8217;ve implemented a quick proof-of-concept.</p>
 <p>You can see the results in this YouTube video:</p>
-<p><iframe width="770" height="433" src="https://www.youtube.com/embed/7DMeRVU9hik?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" width="770" height="433" src="https://www.youtube.com/embed/7DMeRVU9hik?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
 <p>Over the next few days I&#8217;ll tidy up the code and write up a blog post about how to do it.  It&#8217;s pretty straight forward though, using APIs provided by Google, MythTV and Asterisk and then just glueing them together.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>

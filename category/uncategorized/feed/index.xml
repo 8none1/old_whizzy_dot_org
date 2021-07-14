@@ -46,7 +46,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img width="353" height="469" src="/wp-content/uploads/2019/07/proxy-dns.jpg" alt="" class="wp-image-972" srcset="/wp-content/uploads/2019/07/proxy-dns.jpg 353w, /wp-content/uploads/2019/07/proxy-dns-226x300.jpg 226w" sizes="(max-width: 353px) 100vw, 353px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="353" height="469" src="/wp-content/uploads/2019/07/proxy-dns.jpg" alt="" class="wp-image-972" srcset="/wp-content/uploads/2019/07/proxy-dns.jpg 353w, /wp-content/uploads/2019/07/proxy-dns-226x300.jpg 226w" sizes="(max-width: 353px) 100vw, 353px" /></figure>
 
 
 
@@ -216,9 +216,9 @@ We will start tracking the Snaps here:<br />
 					<description><![CDATA[In which one Raspberry Pi is seen. In part one of this series [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p><span style="color: #888888;"><em>In which one Raspberry Pi is seen.</em></span></p>
 <p>In <a title="Raspberry Pi powered heating controller (Part 1)" href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">part one of this series</a> I explained how the central heating system was wired up and what electrical connections you needed to make to switch your heating and hot water on and off.</p>
-<p style="text-align: center;"><a href="http://whizzy.org/wp-content/uploads/2014/01/photo.jpg"><img class="size-medium wp-image-554 aligncenter" alt="Heating Controller - breadboard" src="/wp-content/uploads/2014/01/photo-300x225.jpg" width="300" height="225" srcset="/wp-content/uploads/2014/01/photo-300x225.jpg 300w, /wp-content/uploads/2014/01/photo-1024x768.jpg 1024w, /wp-content/uploads/2014/01/photo-768x576.jpg 768w, /wp-content/uploads/2014/01/photo-1536x1152.jpg 1536w, /wp-content/uploads/2014/01/photo-2048x1536.jpg 2048w, /wp-content/uploads/2014/01/photo-1200x900.jpg 1200w, /wp-content/uploads/2014/01/photo-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p style="text-align: center;"><a href="http://whizzy.org/wp-content/uploads/2014/01/photo.jpg"><img loading="lazy" class="size-medium wp-image-554 aligncenter" alt="Heating Controller - breadboard" src="/wp-content/uploads/2014/01/photo-300x225.jpg" width="300" height="225" srcset="/wp-content/uploads/2014/01/photo-300x225.jpg 300w, /wp-content/uploads/2014/01/photo-1024x768.jpg 1024w, /wp-content/uploads/2014/01/photo-768x576.jpg 768w, /wp-content/uploads/2014/01/photo-1536x1152.jpg 1536w, /wp-content/uploads/2014/01/photo-2048x1536.jpg 2048w, /wp-content/uploads/2014/01/photo-1200x900.jpg 1200w, /wp-content/uploads/2014/01/photo-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>I ordered all the parts and now I&#8217;ve plugged them all together.  Here&#8217;s a quick video demonstrating how it will all work.</p>
-<p><iframe width="770" height="433" src="https://www.youtube.com/embed/5pGTKUu8E4Q?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" width="770" height="433" src="https://www.youtube.com/embed/5pGTKUu8E4Q?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
 <h2>Further Updates</h2>
 <ul>
 <li><a title="Raspberry Pi powered heating controller (Part 1)" href="/2014/01/raspberry-pi-powered-heating-controller-part-1/">Part 1</a></li>
@@ -295,7 +295,7 @@ sudo dpkg-reconfigure locales</pre>
 		<guid isPermaLink="false">/?p=352</guid>
 
 					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400.jpg"><img class="alignnone size-medium wp-image-355" title="tumblr_l56x4xU4ct1qzpwi0o1_400" src="/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400-207x300.jpg" alt="" width="207" height="300" /></a></p>
+										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400.jpg"><img loading="lazy" class="alignnone size-medium wp-image-355" title="tumblr_l56x4xU4ct1qzpwi0o1_400" src="/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400-207x300.jpg" alt="" width="207" height="300" /></a></p>
 ]]></content:encoded>
 					
 		
@@ -312,7 +312,7 @@ sudo dpkg-reconfigure locales</pre>
 		<guid isPermaLink="false">/?p=334</guid>
 
 					<description><![CDATA[&#160; I was fortunate enough to be introduced to this book by my [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/04/11.jpg"><img class="alignnone size-medium wp-image-332" title="1" src="/wp-content/uploads/2011/04/11-300x235.jpg" alt="" width="300" height="235" /></a></p>
+										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/04/11.jpg"><img loading="lazy" class="alignnone size-medium wp-image-332" title="1" src="/wp-content/uploads/2011/04/11-300x235.jpg" alt="" width="300" height="235" /></a></p>
 <p>&nbsp;</p>
 <p>I was fortunate enough to be introduced to this book by my wife reading it to our son.</p>
 ]]></content:encoded>
@@ -480,7 +480,7 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 		<guid isPermaLink="false">/?p=245</guid>
 
 					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-243" title="Toad" src="/wp-content/uploads/2009/10/toad-300x225.jpg" alt="Toad" width="300" height="225" /><img class="alignnone size-full wp-image-244" title="Griffin" src="/wp-content/uploads/2009/10/thatcunt.jpg" alt="Griffin" width="298" height="298" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" class="alignnone size-medium wp-image-243" title="Toad" src="/wp-content/uploads/2009/10/toad-300x225.jpg" alt="Toad" width="300" height="225" /><img loading="lazy" class="alignnone size-full wp-image-244" title="Griffin" src="/wp-content/uploads/2009/10/thatcunt.jpg" alt="Griffin" width="298" height="298" /></p>
 ]]></content:encoded>
 					
 		
@@ -558,7 +558,7 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 
 					<description><![CDATA[Here&#8217;s the result of my custom paint job on my Acer Aspire One.  [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Here&#8217;s the result of my custom paint job on my Acer Aspire One.  Thanks to Tommy @ <a href="http://www.losthoughts.com/">http://www.losthoughts.com/</a> for the stencil.</p>
-<p><a title="Click for full size" href="/wp-content/uploads/2009/06/aspire_paintjob.jpg" target="_self" rel="noopener noreferrer"><img class="alignnone size-medium wp-image-190" title="aspire_paintjob" src="/wp-content/uploads/2009/06/aspire_paintjob-300x200.jpg" alt="aspire_paintjob" width="300" height="200" /></a></p>
+<p><a title="Click for full size" href="/wp-content/uploads/2009/06/aspire_paintjob.jpg" target="_self" rel="noopener noreferrer"><img loading="lazy" class="alignnone size-medium wp-image-190" title="aspire_paintjob" src="/wp-content/uploads/2009/06/aspire_paintjob-300x200.jpg" alt="aspire_paintjob" width="300" height="200" /></a></p>
 <p>I took the whole laptop to pieces and removed the lid from the screen so I was just left with the plastic.  Then I sanded it back to bare plastic with wet&amp;dry then smoothed it off with finer grades of wet&amp;dry.  Then when it was smooth I washed off all the plastic dust and let it dry before applying 3 coats of primer and about 4 coats of white paint, then one coat of black and about 4 coats of lacquer on top.  It took an entire weekend.  I also painted the bezel around the screen inside white.</p>
 ]]></content:encoded>
 					

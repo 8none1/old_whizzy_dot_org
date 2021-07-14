@@ -34,7 +34,7 @@
 										<content:encoded><![CDATA[<p>In my previous post about <a href="/2016/12/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/">How To Add OAUTH to your Alexa app in 10 minutes</a> a couple of people commented that they couldn&#8217;t actually access the users information once they had linked their account.  I didn&#8217;t actually try and access any of the user information because the only user of my skill is me, and I already know my name and email address.  Nevertheless, I had a quick play with it over the weekend and here&#8217;s a simple skill to show you how to access the user&#8217;s profile information from a Python skill running in AWS Lambda.</p>
 <p>First of all you need to make sure your skill is set up to use Login With Amazon.  I&#8217;ve covered this for Smart Home skills <a href="/2016/12/howto-add-oauth-to-your-alexa-smart-home-skill-in-10-minutes/">here</a> but it works just the same for normal skills.</p>
 <p>You also need to make sure your skill is configured to use the scopes &#8220;<strong>profile</strong>&#8221; and &#8220;<strong>postal_code</strong>&#8220;.  This is done in the Configuration tab in the developer console for your skill:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2017/03/scopes.png"><img class="aligncenter size-full wp-image-922" src="http://whizzy.org/wp-content/uploads/2017/03/scopes.png" alt="" width="891" height="632" srcset="/wp-content/uploads/2017/03/scopes.png 891w, /wp-content/uploads/2017/03/scopes-300x213.png 300w, /wp-content/uploads/2017/03/scopes-768x545.png 768w" sizes="(max-width: 891px) 100vw, 891px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/03/scopes.png"><img loading="lazy" class="aligncenter size-full wp-image-922" src="http://whizzy.org/wp-content/uploads/2017/03/scopes.png" alt="" width="891" height="632" srcset="/wp-content/uploads/2017/03/scopes.png 891w, /wp-content/uploads/2017/03/scopes-300x213.png 300w, /wp-content/uploads/2017/03/scopes-768x545.png 768w" sizes="(max-width: 891px) 100vw, 891px" /></a></p>
 <p>The Interaction Model for this skill is as follows:</p>
 <pre>{
   "intents": [
@@ -192,7 +192,7 @@ def lambda_handler(event, context):
 <p>Once that is available to your Lambda script then you know that the user has done the OAUTH account linking, and then you can query the Amazon APIs for the user&#8217;s info.</p>
 <p>I&#8217;m not proud of this code, so I will tidy it up in to a better demo at some point and update this post accordingly.</p>
 <p>Here&#8217;s a quick video of what it does:</p>
-<p><iframe width="770" height="433" src="https://www.youtube.com/embed/ll7XEvzdetY?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" width="770" height="433" src="https://www.youtube.com/embed/ll7XEvzdetY?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/2017/03/27/retrieving-user-profile-data-from-login-with-amazon-on-alexa/feed/</wfw:commentRss>

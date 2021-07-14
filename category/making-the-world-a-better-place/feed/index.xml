@@ -12,7 +12,7 @@
 	<atom:link href="/category/making-the-world-a-better-place/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Wed, 14 Jul 2021 11:40:22 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 13:46:20 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,79 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.7.2</generator>
 	<item>
+		<title>Finally moving to a static site</title>
+		<link>/2021/07/14/finally-moving-to-a-static-site/</link>
+		
+		<dc:creator><![CDATA[will]]></dc:creator>
+		<pubDate>Wed, 14 Jul 2021 13:46:20 +0000</pubDate>
+				<category><![CDATA[Making the world a better place]]></category>
+		<guid isPermaLink="false">/?p=1110</guid>
+
+					<description><![CDATA[Amazon have made some changes to the (admittedly generous) Alexa AWS credits programme [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Amazon have made some changes to the (admittedly generous) Alexa AWS credits programme which made me think about the services that I run there and how to reduce my bill a bit.  This WP blog was hosted on a t2.micro instance running Apache, MySQL, PHP, and WordPress.  You need to add a bit of swap in order to keep MySQL happy but generally speaking it will tick along at very low load.  So low in fact that I thought about merging the blog hosting instance with another instance which runs various home automation services, but decided that was too risky.</p>
+
+
+
+<p>Rather than a security bug in WordPress exposing my internal network to the world I&#8217;ve decided to move everything to static pages.  I don&#8217;t really post here any more, so it&#8217;s not like I need everything that WordPress offers and there are lots of places which will host static pages for either free or very cheap, so why not try it out?  Here&#8217;s what I decided on and how I did it.</p>
+
+
+
+<h2>Hosting</h2>
+
+
+
+<p>I considered the following:</p>
+
+
+
+<ol><li>Creating a virtualhost in an already existing Apache set up</li><li>Uploading a static copy of these pages to S3</li><li>Uploading a static copy of these pages to Github Pages</li><li>Moving to a cheaper cloud provider</li></ol>
+
+
+
+<p>I ruled out 1, I don&#8217;t want any public facing services on my otherwise private servers.  I know enough to know that I don&#8217;t know anything about securing web servers.</p>
+
+
+
+<p>I think #2 and #3 are largely the same in the end.  As you have probably worked out by now, I decided that Github was the one I would try.  This was decided entirely on cost.  S3 would have cost me a couple of pennies a month, Github was free.</p>
+
+
+
+<p>I also considered spinning up a new instance in <a rel="noreferrer noopener" href="http://do.co/lnl" data-type="URL" data-id="do.co/lnl" target="_blank">Digital Ocean</a> or <a rel="noreferrer noopener" href="https://linode.com/latenightlinux" target="_blank">Linode</a> (referral link, get $100 credit) which would have been about 20% cheaper for a t2.micro equivalent.  Github pages are free though, and get a decent CDN behind them.  WordPress on a small server is slow without doing work.</p>
+
+
+
+<h2>Getting the data out of WordPress</h2>
+
+
+
+<p>I used the <a href="https://patrickposner.dev/plugins/simply-static/">Simply Static</a> plugin for WordPress to export the pages and images to HTML.  It worked pretty well, and I would recommend it.  Simply Static produced a zip file with everything in.  I unzipped it and copied everything to the root of a new Github repo, committed it, pushed it, and it worked.</p>
+
+
+
+<p>Some tips for preparing your blog for export:</p>
+
+
+
+<ul><li>Disable comments on all your posts. This is a faff as you have to do it on each existing post. In the end I followed this guide: <a href="https://themeisle.com/blog/disable-comments-in-wordpress/" target="_blank" rel="noreferrer noopener">https://themeisle.com/blog/disable-comments-in-wordpress/</a><br>See section 3 on how to remove the ability to comment on existing posts.</li><li>Remove all the meta links etc from the footer and sidebar.  I did this through the WordPress &#8220;Appearance&#8221; -> &#8220;Customise&#8221; menu to remove widgets and links as required.</li></ul>
+
+
+
+<h2>Adding new content in the future</h2>
+
+
+
+<p>I have zero interest in learning some new static blogging platform or writing posts in HTML or Markdown or using some automated jiggery pokery.  I really like WordPress for it&#8217;s WYSIWYG writing interface.   I write about one post every two years.  I intend to switch off the instance hosting WordPress until such time as I need to write a new post, then I&#8217;ll switch it on, write the post and export it using Simply Static.  This will cost me a few cents for the disk storage, and zero effort.</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Ubuntu Developer Desktop Survey 2019</title>
 		<link>/2019/05/07/ubuntu-developer-desktop-survey-2019/</link>
 		
@@ -94,7 +167,7 @@
 <p>Edit 2: Looks like the tinyupload file has gone missing too.  Try this one:<br />
 <a href="https://drive.google.com/file/d/1EBJ-s9TIMKM0JVmZFWRk2bKeGxR9srFv">https://drive.google.com/file/d/1EBJ-s9TIMKM0JVmZFWRk2bKeGxR9srFv</a></p>
 <p>I got a Cisco 7941 off eBay.  This is a phone which was £400 when new (some time around 2004) but can now be picked up for about £10.  These phones went End Of Sale in January 2010, so even if mine was one of the last phones to roll off the production line it&#8217;s still about 7 years old but it&#8217;s still working perfectly.  A testament to the good build quality of these phones, and perhaps the previous owner&#8217;s careful handling.</p>
-<p><img class="alignnone wp-image-959 size-full" src="/wp-content/uploads/2018/08/7941.jpg" alt="" width="440" height="391" srcset="/wp-content/uploads/2018/08/7941.jpg 440w, /wp-content/uploads/2018/08/7941-300x267.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></p>
+<p><img loading="lazy" class="alignnone wp-image-959 size-full" src="/wp-content/uploads/2018/08/7941.jpg" alt="" width="440" height="391" srcset="/wp-content/uploads/2018/08/7941.jpg 440w, /wp-content/uploads/2018/08/7941-300x267.jpg 300w" sizes="(max-width: 440px) 100vw, 440px" /></p>
 <p>Since these devices are no longer supported many companies will be getting rid of them (or probably already have) so there should be some bargains to be had for phone geeks.</p>
 <p><em><strong>Q</strong></em>: Does the Cisco 7941 work with Asterisk?<br />
 <em><strong>A</strong></em>: Yes.  You need to load the SIP firmware (the focus of this post) or chan-sccp (out of scope for this post but I&#8217;ll check it out at some point).</p>
@@ -167,7 +240,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <li>The phone will reboot once download is complete and present you with an &#8220;Unprovisioned&#8221; message on the screen.  This is good news!  The phone firmware has now been updated.</li>
 </ol>
 <p>I put together a video showing this process.  It&#8217;s not very interesting but it will give you an idea of what to expect.  The actual downloading of the firmware section has been sped up 3X.</p>
-<p><iframe title="How to start firmware download mode on your Cisco 7941" width="770" height="433" src="https://www.youtube.com/embed/oN63nfnC-sA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" title="How to start firmware download mode on your Cisco 7941" width="770" height="433" src="https://www.youtube.com/embed/oN63nfnC-sA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <h2 id="asterisk">Configure the SIP extension in Asterisk</h2>
 <p>Now you need to configure the SIP extension in Asterisk.  Do this as per any other SIP extension, but bear this important piece of information in mind:  The Cisco 7941 can only deal with 8 character passwords, so keep your SIP authentication secret to 8 characters.</p>
 <p>While you&#8217;re in Asterisk configuration mode, take a moment to note down these bits of information as well (in Advanced SIP settings in FreePBX):</p>
@@ -455,8 +528,8 @@ SIP41.9-4-2SR3-1S.loads</pre>
        URL="TFTP:Desktops/320x196x4/ubuntu.png"/&gt;
 &lt;/CiscoIPPhoneImageList&gt;</pre>
 <p>The &#8220;<strong>-tn</strong>&#8221; in the file is a smaller thumbnail version of the larger image.  The PNGs need to be sized exactly 320&#215;196 for the large and 80&#215;49 for the thumbnail.  Here&#8217;s something to get you started:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png"><img class="aligncenter size-full wp-image-890" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png" alt="" width="80" height="49" /></a></p>
-<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png"><img class="size-full wp-image-889 aligncenter" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png" alt="" width="320" height="196" srcset="/wp-content/uploads/2017/02/Ubuntu-Logo.png 320w, /wp-content/uploads/2017/02/Ubuntu-Logo-300x184.png 300w" sizes="(max-width: 320px) 100vw, 320px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png"><img loading="lazy" class="aligncenter size-full wp-image-890" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo-tn.png" alt="" width="80" height="49" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png"><img loading="lazy" class="size-full wp-image-889 aligncenter" src="http://whizzy.org/wp-content/uploads/2017/02/Ubuntu-Logo.png" alt="" width="320" height="196" srcset="/wp-content/uploads/2017/02/Ubuntu-Logo.png 320w, /wp-content/uploads/2017/02/Ubuntu-Logo-300x184.png 300w" sizes="(max-width: 320px) 100vw, 320px" /></a></p>
 <h3 id="directory">Telephone Directory</h3>
 <p>You will have noticed that the phone has a &#8220;Directories&#8221; button and a &#8220;Services&#8221; button.  I haven&#8217;t managed to add an extra phone book to the Directories button yet although I think it&#8217;s certainly possible, just that the XML file refuses to do anything.  However, I have got a phone directory working on the Services button.</p>
 <p>In the main phone config file there is a tag for &#8220;servicesURL&#8221;.  Point this to a web server on your local network which will serve up an XML file.  For example:</p>
@@ -482,7 +555,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <h2 id="tip">Final Tip</h2>
 <p>Watch /var/log/syslog on the machine running the TFTP server.  You&#8217;ll be able to see exactly what files the phone is asking for.  Bear in mind that it does ask for files it doesn&#8217;t strictly need, so don&#8217;t worry too much about file not found errors unless it&#8217;s one of the above.</p>
 <p>Here&#8217;s a final video showing the boot up for a fully configured phone</p>
-<p><iframe title="Fully configured Cisco 7941 connecting to Asterisk via SIP" width="770" height="433" src="https://www.youtube.com/embed/QlLLzbD7pHM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe loading="lazy" title="Fully configured Cisco 7941 connecting to Asterisk via SIP" width="770" height="433" src="https://www.youtube.com/embed/QlLLzbD7pHM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 ]]></content:encoded>
 					
 					<wfw:commentRss>/2017/02/23/cisco-7941-asterisk-and-sip/feed/</wfw:commentRss>
@@ -595,7 +668,7 @@ The selection is ok. It feels like they&#8217;ve taken the time to make it just-
 <p>What the heck is going on here?</p>
 <p>I spent time trying to debug my CGI scripts and adding lots more logging and finally convinced myself that it was a problem with the Apache config and not something like MTUs or routing problems.</p>
 <p>But what was causing it?  It started to feel like like a DNS related issue since the machines where it ran fine where all known to me, and so had corresponding entries in my local DNS server.  But but but&#8230; I clearly had &#8220;HostnameLookups Off&#8221; in my apache2.conf file.  When I looked at the logs again, I noticed that indeed hostnames were being looked up, even though I told it not to.</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2016/10/966381.jpg"><img class="aligncenter size-medium wp-image-781" src="/wp-content/uploads/2016/10/966381-300x225.jpg" alt="966381" width="300" height="225" srcset="/wp-content/uploads/2016/10/966381-300x225.jpg 300w, /wp-content/uploads/2016/10/966381.jpg 640w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2016/10/966381.jpg"><img loading="lazy" class="aligncenter size-medium wp-image-781" src="/wp-content/uploads/2016/10/966381-300x225.jpg" alt="966381" width="300" height="225" srcset="/wp-content/uploads/2016/10/966381-300x225.jpg 300w, /wp-content/uploads/2016/10/966381.jpg 640w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>Why?  Because I don&#8217;t know how to configure Apache servers properly.  At some point in time I thought this was a good idea:</p>
 <pre style="padding-left: 90px;">Order deny, allow
 Deny from none
@@ -647,7 +720,7 @@ Allow from all</pre>
 <p>With this setup I can get receive a 24bit number from an Arduino running off 2 AA batteries and a coiled 1/2 wave antenna from about 5 meters indoors through walls.  That&#8217;s still poor, but it does the job.  Increasing the voltage to the transmitter would probably help.</p>
 <p>Once you have a reliable 433MHz receiver setup then you can also buy off the shelf 433MHz enabled home automation gizmos like <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=181665729292&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this smoke alarm</a> or <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281405424486&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">these door sensors</a>.  They have a set of jumpers inside where you can set an ID, which is essentially the same 24bit number that RCSwitch lets you transmit.  For what it&#8217;s worth I also have <a href="https://en.wikipedia.org/wiki/British_Standards" target="_blank" rel="noopener noreferrer">kite-marked</a> smoke detectors in my house, but from the testing I&#8217;ve done with a bit of smoldering paper the cheap imports work just fine.</p>
 <p>I couldn&#8217;t find a cheap Carbon Monoxide which also has 433MHz support so I thought I&#8217;d quickly hack one together out of <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=&amp;icep_item=281723682194&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">this Carbon Monoxide detector</a> and an Arduino clone and 433MHz radio:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1237.jpg"><img class="alignleft size-medium wp-image-703" src="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg" alt="CO Alarm inside" width="225" height="300" srcset="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg 225w, /wp-content/uploads/2015/10/IMG_1237-768x1024.jpg 768w, /wp-content/uploads/2015/10/IMG_1237-1152x1536.jpg 1152w, /wp-content/uploads/2015/10/IMG_1237-1536x2048.jpg 1536w, /wp-content/uploads/2015/10/IMG_1237-1200x1600.jpg 1200w, /wp-content/uploads/2015/10/IMG_1237-1980x2640.jpg 1980w, /wp-content/uploads/2015/10/IMG_1237-scaled.jpg 1920w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1237.jpg"><img loading="lazy" class="alignleft size-medium wp-image-703" src="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg" alt="CO Alarm inside" width="225" height="300" srcset="/wp-content/uploads/2015/10/IMG_1237-225x300.jpg 225w, /wp-content/uploads/2015/10/IMG_1237-768x1024.jpg 768w, /wp-content/uploads/2015/10/IMG_1237-1152x1536.jpg 1152w, /wp-content/uploads/2015/10/IMG_1237-1536x2048.jpg 1536w, /wp-content/uploads/2015/10/IMG_1237-1200x1600.jpg 1200w, /wp-content/uploads/2015/10/IMG_1237-1980x2640.jpg 1980w, /wp-content/uploads/2015/10/IMG_1237-scaled.jpg 1920w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -657,7 +730,7 @@ Allow from all</pre>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><div id="attachment_706" style="width: 310px" class="wp-caption alignleft"><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1238.jpg"><img aria-describedby="caption-attachment-706" class="wp-image-706 size-medium" src="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg" alt="IMG_1238" width="300" height="225" srcset="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg 300w, /wp-content/uploads/2015/10/IMG_1238-1024x768.jpg 1024w, /wp-content/uploads/2015/10/IMG_1238-768x576.jpg 768w, /wp-content/uploads/2015/10/IMG_1238-1536x1152.jpg 1536w, /wp-content/uploads/2015/10/IMG_1238-2048x1536.jpg 2048w, /wp-content/uploads/2015/10/IMG_1238-1200x900.jpg 1200w, /wp-content/uploads/2015/10/IMG_1238-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-706" class="wp-caption-text">You can barely notice it!</p></div></p>
+<p><div id="attachment_706" style="width: 310px" class="wp-caption alignleft"><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1238.jpg"><img aria-describedby="caption-attachment-706" loading="lazy" class="wp-image-706 size-medium" src="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg" alt="IMG_1238" width="300" height="225" srcset="/wp-content/uploads/2015/10/IMG_1238-300x225.jpg 300w, /wp-content/uploads/2015/10/IMG_1238-1024x768.jpg 1024w, /wp-content/uploads/2015/10/IMG_1238-768x576.jpg 768w, /wp-content/uploads/2015/10/IMG_1238-1536x1152.jpg 1536w, /wp-content/uploads/2015/10/IMG_1238-2048x1536.jpg 2048w, /wp-content/uploads/2015/10/IMG_1238-1200x900.jpg 1200w, /wp-content/uploads/2015/10/IMG_1238-1980x1485.jpg 1980w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-706" class="wp-caption-text">You can barely notice it!</p></div></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -914,16 +987,16 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 		<guid isPermaLink="false">/?p=571</guid>
 
 					<description><![CDATA[It&#8217;s really happening!  The breadboard prototype has been running the heating and hot [&#8230;]]]></description>
-										<content:encoded><![CDATA[<p><img class="size-medium wp-image-572 alignleft" style="background-color: black;" alt="Heating PCB" src="/wp-content/uploads/2014/02/heating5_pcb-254x300.png" width="254" height="300" srcset="/wp-content/uploads/2014/02/heating5_pcb-254x300.png 254w, /wp-content/uploads/2014/02/heating5_pcb-768x905.png 768w, /wp-content/uploads/2014/02/heating5_pcb.png 822w" sizes="(max-width: 254px) 100vw, 254px" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" class="size-medium wp-image-572 alignleft" style="background-color: black;" alt="Heating PCB" src="/wp-content/uploads/2014/02/heating5_pcb-254x300.png" width="254" height="300" srcset="/wp-content/uploads/2014/02/heating5_pcb-254x300.png 254w, /wp-content/uploads/2014/02/heating5_pcb-768x905.png 768w, /wp-content/uploads/2014/02/heating5_pcb.png 822w" sizes="(max-width: 254px) 100vw, 254px" /></p>
 <p>It&#8217;s really happening!  The breadboard prototype has been running the heating and hot water for a week or so now, and so far nothing has caught on fire.  The relays are happy, they&#8217;re not getting warm or anything, the Pi is turning things on and off when it&#8217;s supposed to, the REST API is working, and I&#8217;ve knocked up a quick Web interface to switch things remotely.  Last night for the first time I switched the heating on from the sofa, because I was a little bit cold.</p>
 <h2 style="text-align: center;">Great success!</h2>
-<p style="text-align: center;"><img class="wp-image-573 aligncenter" alt="Borat" src="http://whizzy.org/wp-content/uploads/2014/02/borat.jpg" width="297" height="297" srcset="/wp-content/uploads/2014/02/borat.jpg 297w, /wp-content/uploads/2014/02/borat-150x150.jpg 150w" sizes="(max-width: 297px) 100vw, 297px" /></p>
+<p style="text-align: center;"><img loading="lazy" class="wp-image-573 aligncenter" alt="Borat" src="http://whizzy.org/wp-content/uploads/2014/02/borat.jpg" width="297" height="297" srcset="/wp-content/uploads/2014/02/borat.jpg 297w, /wp-content/uploads/2014/02/borat-150x150.jpg 150w" sizes="(max-width: 297px) 100vw, 297px" /></p>
 <p><span style="font-size: 14px; line-height: 1.5em;">I&#8217;ve turned the breadboard layout in to a PCB design and today at 09:11 UTC it was sent off for manufacture, I should have it back in a week.  All the other components are on their way and so next weekend I should be able to put everything together and solder it to the board.  With a bit of luck it will work first time.</span></p>
 <p>I&#8217;m quite please with the board layout, it&#8217;s a fairly useful breakout board for the Raspberry Pi.  In the future I would like to re-work it with smaller traces so that it can fit directly on top of the Pi.</p>
 <p>The software to drive everything is rather basic, but I will make it available via Github anyway, it might come in handy.  I will be working on this over the coming months, so it should improve soon.  You&#8217;ll need a MySQL server set up.  The schema for the database is included in the repo.  The whole thing has grown organically and so the naming and structure is poor, but it works.</p>
 <p>Code:  <a href="https://github.com/8none1/heating">https://github.com/8none1/heating</a></p>
 <p><span style="font-size: 14px; line-height: 1.5em;">I&#8217;ve starting making some 1wire temperature sensors which I will place in various rooms and hook up back to the Pi via cat5.</span></p>
-<p><a href="http://whizzy.org/wp-content/uploads/2014/02/1wire_heat.jpg"><img class="alignleft size-medium wp-image-574" alt="1wire_heat" src="/wp-content/uploads/2014/02/1wire_heat-300x225.jpg" width="300" height="225" srcset="/wp-content/uploads/2014/02/1wire_heat-300x225.jpg 300w, /wp-content/uploads/2014/02/1wire_heat.jpg 764w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/02/1wire_heat.jpg"><img loading="lazy" class="alignleft size-medium wp-image-574" alt="1wire_heat" src="/wp-content/uploads/2014/02/1wire_heat-300x225.jpg" width="300" height="225" srcset="/wp-content/uploads/2014/02/1wire_heat-300x225.jpg 300w, /wp-content/uploads/2014/02/1wire_heat.jpg 764w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>I won&#8217;t be able to control individual radiators at the moment, but I can set a target temperature for a given room and rely on the TRVs to control the temperature in other rooms.</p>
 <p>I&#8217;ll also be adding outside temperature sensors and looking to replace the main room stat with another Pi in the future.</p>
 <p>In summary then, I should have the final thing built in the next couple of weeks.  More to follow when that happens.  I&#8217;m considering looking at moving the whole thing to a micro controller rather than a Pi, that would reduce the BOM quite considerably, and might even warrant a commercial product in the long run &#8211; a hackable heating controller.  Is this something people might be interested in?</p>
@@ -954,7 +1027,7 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 
 					<description><![CDATA[I&#8217;ve had all the parts hooked up on breadboard for a few weeks [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>I&#8217;ve had all the parts hooked up on breadboard for a few weeks now, and in theory everything works.  I haven&#8217;t actually tested the prototype with the real heating system yet as it&#8217;s been cold and I don&#8217;t want to risk blowing anything up and having to deal with a cold house and an angry family.  Sometime in the next month or so I will do that, but as far as I can tell it will Just Work (lolz).</p>
-<p><div id="attachment_562" style="width: 310px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/final_breadboard.jpg"><img aria-describedby="caption-attachment-562" class="size-medium wp-image-562 " alt="The final circuit design" src="/wp-content/uploads/2014/01/final_breadboard-300x225.jpg" width="300" height="225" /></a><p id="caption-attachment-562" class="wp-caption-text">The final circuit design</p></div></p>
+<p><div id="attachment_562" style="width: 310px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/final_breadboard.jpg"><img aria-describedby="caption-attachment-562" loading="lazy" class="size-medium wp-image-562 " alt="The final circuit design" src="/wp-content/uploads/2014/01/final_breadboard-300x225.jpg" width="300" height="225" /></a><p id="caption-attachment-562" class="wp-caption-text">The final circuit design</p></div></p>
 <p>In the meantime I&#8217;ve been thinking about the software to drive the thing.</p>
 <p>My programming skills are pretty basic so I have been trying to keep everything as simple as possible.  <span style="font-size: 14px; line-height: 1.5em;"> It became apparent that I was going to need some inter-process communication so that I could handle switching things on and off from outside the controller program (for web control etc).  This presented me with a problem as all the basic reading from files/FIFOs were blocking &#8211; in that they would sit and wait for a &#8220;command&#8221; to be received before continuing &#8211; and that was too limiting for my needs.  I was going to </span><span style="font-size: 14px; line-height: 1.5em;">have to deal with some kind of threading.  This troubled me deeply.  The good people of Google+ suggested a few options and in the end I decided a RESTful interface was the way to go as it should be accessible from the widest range of other languages I might have to use, and especially easy from a web browser.</span></p>
 <p>Originally I had imagined that I would have a single Python script to handle pretty much everything, including:</p>
@@ -968,7 +1041,7 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 </ul>
 <p>That way, I figured, I could just write one script and each function could interact with each other function very easily.  But following a conversation with Mark S. a few years ago, and then more recently with Stuart L. I was starting to think that the monolithic architecture was not the way to go and instead I should push the intelligence out to the edges and the main loop should just deal with the basic on/off functionality.  I was worried that if something went wrong with the electronics, for example the heating turned on but never off, then it would be difficult to spot from outside the main loop.  But, given that the heating system has a lot of built-in safety features like room stats, boiler stats and hot water stats which are all wired in series with the mains that won&#8217;t be a problem, and besides the current controller doesn&#8217;t do anything more intelligent than ON or OFF.</p>
 <p>To that end I decided that I&#8217;d go with this architecture:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2014/01/Heating-System-Architecture.jpg"><img class="size-medium wp-image-564 alignnone" alt="Heating System Architecture" src="/wp-content/uploads/2014/01/Heating-System-Architecture-300x250.jpg" width="300" height="250" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/Heating-System-Architecture.jpg"><img loading="lazy" class="size-medium wp-image-564 alignnone" alt="Heating System Architecture" src="/wp-content/uploads/2014/01/Heating-System-Architecture-300x250.jpg" width="300" height="250" /></a></p>
 <p>The Relay Controller would handle switching the power on and off in the right order to the right outputs, it would handle the switches for manual override, provide feedback via LEDs, and it would provide a REST interface for anything else to control the system or find out what the current state is.  This way I can write a much more simple script to manage the scheduler for example.  It can run independently and then simply poke the relay controller at the right time.  I also decided that the relay controller would only have the ability to switch <strong>off</strong> after a certain period of time.  The default will be 60 mins.  This further simplifies things and puts just the right amount of intelligence in the core.  The scheduler just says &#8220;switch on now, and off again in 90 minutes&#8221;.  If the scheduler crashes the correct state is maintained by the controller and things just pick up from where they were when the scheduler starts again.  If the controller crashes then the power is removed from the system and it &#8220;fails safe&#8221;.</p>
 <p>The REST API is simple:</p>
 <ul>
@@ -1013,7 +1086,7 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 <p>This thought, together with a Raspberry Pi that wasn&#8217;t doing much and a strong desire to make my home more connected, led me to think about how I might control my heating system from, say, a smart phone.  I&#8217;m far from being the first person to think of this idea, and there are loads of really good examples out there, but none of them did quite what I wanted in the way I wanted to do it.  So I&#8217;m going to start from first principals and walk through this project design to try and build a removable &amp; non-destructive add-on to an existing system.  I&#8217;m writing this at the very start of the project, so I&#8217;ve no idea if it will work, if I will break some expensive components on way to getting it working, or if I will just give up before I get to the end.  Let&#8217;s see.</p>
 <h2>Typical domestic hot water and heating systems</h2>
 <p>This may be UK specific.  Here is a very very crude diagram of a typical home set up:</p>
-<p><div id="attachment_514" style="width: 238px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/CH-HWC-2.png"><img aria-describedby="caption-attachment-514" class="size-medium wp-image-514" src="/wp-content/uploads/2014/01/CH-HWC-2-228x300.png" alt="A crude diagram of how the central heating system works in a typical UK home." width="228" height="300" /></a><p id="caption-attachment-514" class="wp-caption-text">A crude diagram of how the central heating system works in a typical UK home.</p></div></p>
+<p><div id="attachment_514" style="width: 238px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/CH-HWC-2.png"><img aria-describedby="caption-attachment-514" loading="lazy" class="size-medium wp-image-514" src="/wp-content/uploads/2014/01/CH-HWC-2-228x300.png" alt="A crude diagram of how the central heating system works in a typical UK home." width="228" height="300" /></a><p id="caption-attachment-514" class="wp-caption-text">A crude diagram of how the central heating system works in a typical UK home.</p></div></p>
 <p><span style="line-height: 1.5em;">The boiler burns gas and heats water.  That hot water is circulated around the system (called the primary circuit) by a pump and can do three jobs.  It can circulate through a heating element in a hot water cylinder and heat more water which is stored in the cylinder.  Note that the water which circulates through the element does not come in to contact with the actual water it is heating, the two are kept </span>separate for water quality reasons.  The second job it can do is circulate through radiators in the home and hear the air.  The third job is to do both.  The hot water from the boiler moves around the primary circuit losing it&#8217;s heat to either the hot water in the cylinder or the air and eventually passes through the boiler again, heats up, and goes round and round again.</p>
 <p>There are two &#8220;header&#8221; tanks of cold water in the loft.  One is for the cold water to the bathroom for flushing the loo, filling the bath, brushing your teeth, that kind of thing.  This tank also fills the hot water cylinder.  The other is the header tank for the primary system and ensures that it can&#8217;t boil dry.  Both use gravity and water pressure to make sure the water flows to where it is needed.</p>
 <p>The system in the diagram is an &#8220;open&#8221; system.  If the hot water in the cylinder gets too hot it can expand up the vent pipe and dump itself in to the cold water tank.  The cold water tank can over flow to outside.  If the hot water in the primary gets too hot it can expand up in to the header tank ready to be reused to fill the primary when the water cools.</p>
@@ -1033,7 +1106,7 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 </ol>
 <p><span style="line-height: 1.5em; font-size: 1.5em;">Typical electrical system to control hot water and heating</span></p>
 <p>Once we understand how the wet bits fit together we can take a look at the electrical components:</p>
-<p><div id="attachment_518" style="width: 310px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/Y-Plan-Wiring.gif"><img aria-describedby="caption-attachment-518" class="size-medium wp-image-518" src="/wp-content/uploads/2014/01/Y-Plan-Wiring-300x278.gif" alt="Y Plan electrical wiring plan for central heating and hot water." width="300" height="278" srcset="/wp-content/uploads/2014/01/Y-Plan-Wiring-300x278.gif 300w, /wp-content/uploads/2014/01/Y-Plan-Wiring-768x713.gif 768w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-518" class="wp-caption-text">Y Plan electrical wiring plan for central heating and hot water.</p></div></p>
+<p><div id="attachment_518" style="width: 310px" class="wp-caption alignnone"><a href="http://whizzy.org/wp-content/uploads/2014/01/Y-Plan-Wiring.gif"><img aria-describedby="caption-attachment-518" loading="lazy" class="size-medium wp-image-518" src="/wp-content/uploads/2014/01/Y-Plan-Wiring-300x278.gif" alt="Y Plan electrical wiring plan for central heating and hot water." width="300" height="278" srcset="/wp-content/uploads/2014/01/Y-Plan-Wiring-300x278.gif 300w, /wp-content/uploads/2014/01/Y-Plan-Wiring-768x713.gif 768w" sizes="(max-width: 300px) 100vw, 300px" /></a><p id="caption-attachment-518" class="wp-caption-text">Y Plan electrical wiring plan for central heating and hot water.</p></div></p>
 <p>There are multiple &#8220;standards&#8221; for wiring up a heating system.  You can find heaps of information on the excellent <a href="http://wiki.diyfaq.org.uk/index.php?title=Central_Heating_Controls_and_Zoning">DIY FAQ wiki</a>.</p>
 <p>My system has been wired in the &#8220;Y Plan&#8221; configuration and if you have a single 3-port valve in your airing cupboard and a couple of tanks in your loft &#8211; then there is a good chance you have too.  I will run through the wiring, and some of the inherent safety systems built in (which is why I&#8217;m keen to make sure my controller is a simple replacement for the existing controller, and is not a complete re-wire).  Before we start though, a further word of caution.  Mains electricity is lethal.  You need be comfortable playing with this stuff to consider attempting anything to do with the heating system.  It&#8217;s also probably illegal in UK due to some draconian restrictions on what a home owner can and can not do to the wiring in their own home.  Don&#8217;t try this at home kids.  A competent tradesman might be able to help you hook it all together.</p>
 <p>The incoming mains supply goes through a double pole switch which will disconnect live and neutral when switched off.  In this diagram, the live feed provides power to only the controller (sometimes you might see a parallel (switched and fused) connection to the boiler from that live).  So first and foremost, all power to the <span style="text-decoration: underline;">components</span> comes through the controller. Neutral is common to pump, boiler and valve and so is earth.</p>
@@ -1051,17 +1124,17 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 </ol>
 <h2>Confirming my deductions</h2>
 <p>I&#8217;ve looked at the plumbing, and I&#8217;ve looked at the wiring, and I&#8217;m pretty sure that I know what&#8217;s going on.  Next thing to do is apply the scientific method and gather the evidence to back up my assumptions.</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller1.jpg"><img class="alignnone size-medium wp-image-505" title="The horrors that lurk behind the heating controller" src="/wp-content/uploads/2014/01/controller1-300x225.jpg" alt="Behind the heating controller" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller1-300x225.jpg 300w, /wp-content/uploads/2014/01/controller1-1024x768.jpg 1024w, /wp-content/uploads/2014/01/controller1-768x576.jpg 768w, /wp-content/uploads/2014/01/controller1-1200x900.jpg 1200w, /wp-content/uploads/2014/01/controller1.jpg 1204w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller1.jpg"><img loading="lazy" class="alignnone size-medium wp-image-505" title="The horrors that lurk behind the heating controller" src="/wp-content/uploads/2014/01/controller1-300x225.jpg" alt="Behind the heating controller" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller1-300x225.jpg 300w, /wp-content/uploads/2014/01/controller1-1024x768.jpg 1024w, /wp-content/uploads/2014/01/controller1-768x576.jpg 768w, /wp-content/uploads/2014/01/controller1-1200x900.jpg 1200w, /wp-content/uploads/2014/01/controller1.jpg 1204w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>The first thing I did was to turn off the power to the heating system.  I&#8217;m paranoid, so I turned it off at the fused connection to the left of the controller and also at the fuse box.  I also wore rubber boots, and jumped in the air every time I touched a wire.  Better safe than sorry, eh?  And, rightly so it turns out.  The fused connection unit did actually cut all the power to the heating system, but look carefully at the third connection from the left and you&#8217;ll see an earth wire being used to carry live current.  This is against all the regulations.  Whoever installed this system originally was clearly a free spirit.  I was also quite impressed that they&#8217;d managed to squeeze all the connections in to a double gang back box.  What a mess.  Remember kids, only a competent person is allowed to fiddle with these things &#8211; they do a better quality job you see.</p>
 <p>Looking at the zoomed in image you can see 6 terminals:  N, L 1, 2, 3, 4.</p>
 <p>N &amp; L are self explanatory.  2 is not connected to anything, and so I don&#8217;t need to worry about it.  So that leaves three connections that do something (1, 3 and 4).  Exactly what I was expecting.  One will be CH ON, one HW ON, and one HW off.  Which is which?</p>
 <p>Looking at the back of the controller unit it&#8217;s self:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller_rear.jpg"><img class="alignnone size-medium wp-image-507" src="/wp-content/uploads/2014/01/controller_rear-300x225.jpg" alt="Rear of heating controller" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller_rear-300x225.jpg 300w, /wp-content/uploads/2014/01/controller_rear-768x576.jpg 768w, /wp-content/uploads/2014/01/controller_rear.jpg 897w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller_rear.jpg"><img loading="lazy" class="alignnone size-medium wp-image-507" src="/wp-content/uploads/2014/01/controller_rear-300x225.jpg" alt="Rear of heating controller" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller_rear-300x225.jpg 300w, /wp-content/uploads/2014/01/controller_rear-768x576.jpg 768w, /wp-content/uploads/2014/01/controller_rear.jpg 897w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>My theory is sound!  1 is <strong>HW OFF</strong>, 3 is <strong>HW ON</strong>, 4 is <strong>CH ON</strong>.</p>
 <p>It looks like everything is connected as I had expected, but better safe than sorry.  Let&#8217;s do a bit more testing:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller2.jpg"><img class="alignnone size-medium wp-image-506" src="/wp-content/uploads/2014/01/controller2-300x225.jpg" alt="Testing harness" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller2-300x225.jpg 300w, /wp-content/uploads/2014/01/controller2-1024x768.jpg 1024w, /wp-content/uploads/2014/01/controller2-768x576.jpg 768w, /wp-content/uploads/2014/01/controller2.jpg 1141w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller2.jpg"><img loading="lazy" class="alignnone size-medium wp-image-506" src="/wp-content/uploads/2014/01/controller2-300x225.jpg" alt="Testing harness" width="300" height="225" srcset="/wp-content/uploads/2014/01/controller2-300x225.jpg 300w, /wp-content/uploads/2014/01/controller2-1024x768.jpg 1024w, /wp-content/uploads/2014/01/controller2-768x576.jpg 768w, /wp-content/uploads/2014/01/controller2.jpg 1141w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>I wired in a few bits of cable and then (not shown) removed the connections to the rest of the system (labelling where they came from when I removed them!).  I left the L &amp; N connected.  To recap, I <strong>removed</strong> the existing wires from 1, 3 and 4 and replaced them with my cables which came down to some screw down connector blocks.  The reason I put connector blocks on the end was two fold.  Firstly, to make it easier to probe with my multimeter and secondly to stop me accidentally brushing against one of the cables and giving myself a shock.  I also labelled the permanent live with a bit of red heat-shrink, just so I don&#8217;t get confused.</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller.jpg"><img class="alignnone size-medium wp-image-508" src="/wp-content/uploads/2014/01/controller-225x300.jpg" alt="Test harness 2" width="225" height="300" srcset="/wp-content/uploads/2014/01/controller-225x300.jpg 225w, /wp-content/uploads/2014/01/controller.jpg 612w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/controller.jpg"><img loading="lazy" class="alignnone size-medium wp-image-508" src="/wp-content/uploads/2014/01/controller-225x300.jpg" alt="Test harness 2" width="225" height="300" srcset="/wp-content/uploads/2014/01/controller-225x300.jpg 225w, /wp-content/uploads/2014/01/controller.jpg 612w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
 <p>Putting the controlled back on, I hooked up my multimeter and switched through the options to see what happens when.  My findings are below:</p>
 <table class="wp-gallery" style="border: 2px solid #000000; height: 200px; width: 200px;" border="2" cellspacing="5" cellpadding="2" align="left">
 <tbody>
@@ -1104,7 +1177,7 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 <p>.</p>
 <p>Exactly what I expected.  Point 1 must, therefore be &#8220;HW OFF&#8221;, point 2 &#8220;HW ON&#8221; and point 3 &#8220;CH ON&#8221; &#8211; which they are, as we saw from the back of the controller.  I&#8217;m now confident enough with the set up to proceed with roughing out a block diagram for the controller and ordering the parts.</p>
 <p><span style="font-size: 1.5em; line-height: 1.5em;">The plan</span></p>
-<p><a href="http://whizzy.org/wp-content/uploads/2014/01/heating_controller_block.png"><img class="alignnone size-medium wp-image-532" src="/wp-content/uploads/2014/01/heating_controller_block-300x192.png" alt="heating_controller_block" width="300" height="192" /></a>  <a href="http://whizzy.org/wp-content/uploads/2014/01/Heating-Controller-1.png"><img class="alignnone size-medium wp-image-538" src="/wp-content/uploads/2014/01/Heating-Controller-1-300x222.png" alt="Heating Controller Crude" width="300" height="222" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2014/01/heating_controller_block.png"><img loading="lazy" class="alignnone size-medium wp-image-532" src="/wp-content/uploads/2014/01/heating_controller_block-300x192.png" alt="heating_controller_block" width="300" height="192" /></a>  <a href="http://whizzy.org/wp-content/uploads/2014/01/Heating-Controller-1.png"><img loading="lazy" class="alignnone size-medium wp-image-538" src="/wp-content/uploads/2014/01/Heating-Controller-1-300x222.png" alt="Heating Controller Crude" width="300" height="222" /></a></p>
 <p>This rather unclear breadboard layout (with the awesome <a href="http://fritzing.org/home/">http://fritzing.org/home/</a>) logically lays out what I intend to do.  I&#8217;ve also added a crude block diagram for good measure.</p>
 <p>First, I will add a real-time clock module.  They&#8217;re cheap and easy to fit.  This will provide the Pi with a source of time when it can&#8217;t talk to NTP servers, and so it will be able to turn things on and off at the right times, even when the network connection is down.</p>
 <p>Next I will add four relays.  I will take the main 240V incoming supply out of the existing controller and put it through relay 1.  This relay will pass the supply on to the existing controller via the &#8220;Normally Closed&#8221; relay output.  When I switch this relay, the supply to the existing controller will be dropped, and instead routed to the other three relays which will then be able to switch this current.  These three relays will be wired in parallel with the existing controller connections, much like in the image above showing the test harness connected in to the controller connections.  That is to say: one relay will go to point 1, one to point 3 and one to point 4.  The existing safety features (thermostats in series in the circuits) are un-changed and so still offer the same protection.  In order to activate heating or hot water we switch the relays as per the table above.  By adding my new system in parallel and being able to easily switch between the two I can bring the RasPi powered one online gradually.  A few hours here, a few hours there.  And once I&#8217;m happy that it&#8217;s not going to go crazy I can leave it unsupervised for longer and longer periods.  It also means that if I update the software and break something, we can still wash.</p>
@@ -1378,7 +1451,7 @@ Next we create another thing called mapOptions.  The format of this is as per t
 <p>When you&#8217;re as reliant on a connection as I am, that&#8217;s money well spent.  It also gives you a perfect opportunity to play with some new toys!</p>
 <p>Now, you could simply plug in another wifi router to the new line, and when the primary connection fails move your connections over to the secondary one.  But where&#8217;s the fun in that?  What you <em><strong>really</strong></em> want to do is some load-balancing and multi-path routing over both the lines.  You won&#8217;t see a sudden doubling in download speeds in normal browsing, but certain activities which open a lot of connections to different IP address should benefit, <em><strong>and</strong></em> you get to play with routing tables.</p>
 <p>Here&#8217;s what it looks like:</p>
-<p><a href="http://whizzy.org/wp-content/uploads/2012/03/Networksetup.png"><img class="alignnone size-medium wp-image-385" title="Networksetup" src="/wp-content/uploads/2012/03/Networksetup-300x88.png" alt="" width="300" height="88" srcset="/wp-content/uploads/2012/03/Networksetup-300x88.png 300w, /wp-content/uploads/2012/03/Networksetup-768x227.png 768w, /wp-content/uploads/2012/03/Networksetup.png 956w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://whizzy.org/wp-content/uploads/2012/03/Networksetup.png"><img loading="lazy" class="alignnone size-medium wp-image-385" title="Networksetup" src="/wp-content/uploads/2012/03/Networksetup-300x88.png" alt="" width="300" height="88" srcset="/wp-content/uploads/2012/03/Networksetup-300x88.png 300w, /wp-content/uploads/2012/03/Networksetup-768x227.png 768w, /wp-content/uploads/2012/03/Networksetup.png 956w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>&nbsp;</p>
 <p>We don&#8217;t really get much diversity until we get south of the exchange, and even then we&#8217;re probably going to live in the same fibre all the way to The Internet, but we do work round the much more common problem of ISP configuration errors.</p>
 <p>Here&#8217;s how it works:</p>

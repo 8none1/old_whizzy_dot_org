@@ -1,58 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="/xmlrpc.php">
-<link rel="stylesheet" media="print" href="/wp-content/cache/autoptimize/css/autoptimize_ad69f4871caf44872ba0f8df0a19d0dc.css" onload="this.onload=null;this.media='all';">
-<noscript id="aonoscrcss"><link media="all" href="/wp-content/cache/autoptimize/css/autoptimize_ad69f4871caf44872ba0f8df0a19d0dc.css" rel="stylesheet"></noscript>
-<title>HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) &#8211; whizzy.org</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) &#8211; whizzy.org</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="whizzy.org &raquo; Feed" href="/feed/">
 <link rel="alternate" type="application/rss+xml" title="whizzy.org &raquo; Comments Feed" href="/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="whizzy.org &raquo; HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) Comments Feed" href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/feed/"> <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.whizzy.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"}};
-			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);</script> <link rel="stylesheet" id="googleOpenSans-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic&#038;subset=latin%2Ccyrillic&#038;ver=5.7.2" type="text/css" media="all"> <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script> <link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/rss+xml" title="whizzy.org &raquo; HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone) Comments Feed" href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="googleOpenSans-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic&#038;subset=latin%2Ccyrillic&#038;ver=5.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="/wp-content/themes/emmet-lite/css/bootstrap.min.css?ver=3.3.5" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/emmet-lite/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+<link rel="stylesheet" id="flexslider-css" href="/wp-content/themes/emmet-lite/css/flexslider.min.css?ver=2.5.0" type="text/css" media="all">
+<link rel="stylesheet" id="emmet-main-css" href="/wp-content/themes/emmet-lite/css/emmet-style.min.css?ver=1.7.5" type="text/css" media="all">
+<link rel="stylesheet" id="emmet-style-css" href="/wp-content/themes/emmet-lite/style.css?ver=1.7.5" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
 <link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/655">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 5.7.2">
 <link rel="canonical" href="/2015/06/11/howto-very-low-power-usage-on-pro-mini-v2-arduino-clone/">
 <link rel="shortlink" href="/?p=655">
 <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2015%2F06%2F11%2Fhowto-very-low-power-usage-on-pro-mini-v2-arduino-clone%2F">
 <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2015%2F06%2F11%2Fhowto-very-low-power-usage-on-pro-mini-v2-arduino-clone%2F&#038;format=xml">
-</head>
-<body class="post-template-default single single-post postid-655 single-format-standard custom-background emmet pages-background"> <a class="skip-link screen-reader-text" href="#main"> Skip to content</a><div class="wrapper  ">
-<header id="header" class="main-header"><div class="top-header"><div class="container">
-<div class="top-menu">
-<ul id="menu-top-menu" class="menu"></ul>
-<div class="clearfix"></div>
+    <style type="text/css" id="theme-header-css">.welcome-right {
+            background: url("/wp-content/themes/emmet-lite/images/welcome-image.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+        }
+
+                        .third-left {
+            background: url("/wp-content/themes/emmet-lite/images/third-image.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+        }</style>
+    <style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/themes/emmet-lite/images/main-bg.jpg"); background-position: center top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; }</style>
+	</head>
+<body class="post-template-default single single-post postid-655 single-format-standard custom-background emmet pages-background">
+<a class="skip-link screen-reader-text" href="#main">
+	Skip to content</a>
+<div class="wrapper  ">
+				<header id="header" class="main-header">
+							<div class="top-header">
+					<div class="container">
+												<div class="top-menu">
+							<ul id="menu-top-menu" class="menu"></ul>							<div class="clearfix"></div>
+						</div>
+
+						<div class="social-profile type1 ">
+																						<a href="https://twitter.com/8none1" class="button-twitter" title="Twitter" target="_blank"><i class="fa fa-twitter-square"></i></a>
+																													<a href="https://github.com/8none1" class="button-google" title="Google +" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+																																											<a href="https://www.youtube.com/user/willcooke1" class="button-youtube" title="Youtube" target="_blank"><i class="fa fa-youtube-square"></i></a>
+																					                            						</div>
+						<div class="contact-info ">
+							<ul class=" info-list">
+																																																									</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+							<div class="site-header" data-sticky-menu="off">
+				<div class="container">
+					<div class="site-logo">
+													<a class="home-link" href="/" title="whizzy.org" rel="home">
+                                											<div class="site-description">
+									<p class="site-title ">whizzy.org</p>
+																			<p class="site-tagline">On code and gadgets.</p>
+																	</div>
+							</a>
+											</div>
+                    <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false"><span class="menu-show">Menu</span>
+                        <span class="menu-close">Close</span>
+                        
+                    </button>
+					<div id="navbar" class="navbar">
+						<nav id="site-navigation" class="main-navigation">
+							<ul class="sf-menu"></ul>						</nav>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<div id="main" class="site-main">
+<div class="header-image-wrapper">
+    <div class="header-image with-header-image " style="background-image: url(/wp-content/themes/emmet-lite/images/headers/bg.png);">
+        <div class="container">
+                            <h1 class="page-title">HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone)</h1>
+                    </div>
+    </div>
 </div>
-<div class="social-profile type1 "> <a href="https://twitter.com/8none1" class="button-twitter" title="Twitter" target="_blank"><i class="fa fa-twitter-square"></i></a> <a href="https://github.com/8none1" class="button-google" title="Google +" target="_blank"><i class="fa fa-google-plus-square"></i></a> <a href="https://www.youtube.com/user/willcooke1" class="button-youtube" title="Youtube" target="_blank"><i class="fa fa-youtube-square"></i></a>
-</div>
-<div class="contact-info ">
-<ul class=" info-list"></ul>
-<div class="clearfix"></div>
-</div>
-</div></div>
-<div class="site-header" data-sticky-menu="off"><div class="container">
-<div class="site-logo"> <a class="home-link" href="/" title="whizzy.org" rel="home"><div class="site-description">
-<p class="site-title ">whizzy.org</p>
-<p class="site-tagline">On code and gadgets.</p>
-</div> </a>
-</div> <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false"><span class="menu-show">Menu</span> <span class="menu-close">Close</span>  </button><div id="navbar" class="navbar"><nav id="site-navigation" class="main-navigation"><ul class="sf-menu"></ul></nav></div>
-<div class="clearfix"></div>
-</div></div></header><div id="main" class="site-main">
-<div class="header-image-wrapper"><div class="lazyload header-image with-header-image " data-bg="https://www.whizzy.org/wp-content/themes/emmet-lite/images/headers/bg.png" style="background-image: url(data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20500%20300%22%3E%3C/svg%3E);"><div class="container"><h1 class="page-title">HOWTO:  Very low power usage on Pro Mini V2 (Arduino clone)</h1></div></div></div>
-<div class="container main-container"><div class="row clearfix">
-<div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8">
-<article id="post-655" class="post-655 post type-post status-publish format-standard hentry category-arduino category-iot"><div class="entry-content">
-<p><strong>Skill level:</strong>  <em>Easy enough if you&#8217;ve got a soldering iron.</em></p>
+<div class="container main-container">
+    <div class="row clearfix">
+        <div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                            <article id="post-655" class="post-655 post type-post status-publish format-standard hentry category-arduino category-iot">
+    <div class="entry-content">
+                            <p><strong>Skill level:</strong>  <em>Easy enough if you&#8217;ve got a soldering iron.</em></p>
 <h2>Introduction</h2>
 <p>The Pro Mini V2 is an <a href="http://www.arduino.cc/en/Main/ArduinoBoardProMini">Arduino Pro Mini</a> clone available on eBay for, typically, £1.50.  The version I buy is adjustable between 5v and 3.3v and has an ATmega 328 clocked at 8 MHz.  It&#8217;s an ideal board for development of IoT remote sensors and great for playing with and learning about the <a href="http://www.arduino.cc/">Arduino</a> development environment.</p>
-<p>Here&#8217;s a link to the version I buy and know works: <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;icep_item=321413432145&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">3V Pro Mini 2 Arduino Clone</a><noscript><img style="text-decoration: none; border: 0; padding: 0; margin: 0;" src="http://rover.ebay.com/roverimp/1/710-53481-19255-0/1?ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;item=321413432145&amp;mpt=[CACHEBUSTER]" alt=""></noscript><img class="lazyload" style="text-decoration: none; border: 0; padding: 0; margin: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="http://rover.ebay.com/roverimp/1/710-53481-19255-0/1?ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;item=321413432145&amp;mpt=[CACHEBUSTER]" alt=""></p>
+<p>Here&#8217;s a link to the version I buy and know works: <a href="http://rover.ebay.com/rover/1/710-53481-19255-0/1?icep_ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;icep_item=321413432145&amp;ipn=psmain&amp;icep_vectorid=229508&amp;kwid=902099&amp;mtid=824&amp;kw=lg" target="_blank" rel="noopener noreferrer">3V Pro Mini 2 Arduino Clone</a><img style="text-decoration: none; border: 0; padding: 0; margin: 0;" src="http://rover.ebay.com/roverimp/1/710-53481-19255-0/1?ff3=2&amp;pub=5575128401&amp;toolid=10001&amp;campid=5337704861&amp;customid=lowpowerarduino&amp;item=321413432145&amp;mpt=[CACHEBUSTER]" alt=""></p>
 <p>When you want to put a sensor in a remote location the last thing you want to do is have to run a power cable to it. I&#8217;ve experimented with solar with generally poor results so battery operation is the obvious solution.  While Li-ion batteries offer higher energy density the sweet spot still seems to be the good ol&#8217; alkaline battery.  They&#8217;re cheap, safe, recyclable and readily available.</p>
 <p>For what it&#8217;s worth the Ikea alkaline batteries offer good value:  <a href="http://www.batteryshowdown.com/results-lo.html">http://www.batteryshowdown.com/results-lo.html</a> (I suggest buying as many packets as you can carry, so that you never ever have to go back there.  Unless you like arguing with your wife of course.)</p>
 <h2>Power Usage</h2>
@@ -61,14 +125,12 @@
 <p>For a 2000 mAh battery, that would give about 667 hours of runtime, or 28 days. <strong>So a standard Pro Mini V2 could run for about a month on a pair of AA batteries.  </strong>Not bad, but I think changing the batteries every month is still going to be a bit of a drag. Besides, Rocket Scream are seeing power usages in the <strong><em>micro</em></strong>-amps range when asleep.  There is clearly work to do.</p>
 <h2>How to dramatically reduce the power consumption</h2>
 <p>In this photo you can see I&#8217;ve identified some sections which are related to the power usage of the Pro Mini.</p>
-<p><a href="/wp-content/uploads/2015/06/arduino_highlights.jpg"><noscript><img class="alignleft size-medium wp-image-658" src="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg" alt="arduino_highlights" width="225" height="300" srcset="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg 225w, /wp-content/uploads/2015/06/arduino_highlights.jpg 640w" sizes="(max-width: 225px) 100vw, 225px"></noscript>
-<img class="lazyload alignleft size-medium wp-image-658" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20225%20300%22%3E%3C/svg%3E" data-src="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg" alt="arduino_highlights" width="225" height="300" data-srcset="https://www.whizzy.org/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg 225w, https://www.whizzy.org/wp-content/uploads/2015/06/arduino_highlights.jpg 640w" data-sizes="(max-width: 225px) 100vw, 225px"></a>The red section is the power LED.  This is always on when power is applied and sucks about 0.2mA when lit. If you don&#8217;t need this to be lit all the time then you can easily remove it to save some juice.  I found the easiest way was to use a pair of cutters to snip/crush the middle of the LED and then use a soldering iron to remove the bits left over.</p>
+<p><a href="/wp-content/uploads/2015/06/arduino_highlights.jpg"><img loading="lazy" class="alignleft size-medium wp-image-658" src="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg" alt="arduino_highlights" width="225" height="300" srcset="/wp-content/uploads/2015/06/arduino_highlights-225x300.jpg 225w, /wp-content/uploads/2015/06/arduino_highlights.jpg 640w" sizes="(max-width: 225px) 100vw, 225px"></a>The red section is the power LED.  This is always on when power is applied and sucks about 0.2mA when lit. If you don&#8217;t need this to be lit all the time then you can easily remove it to save some juice.  I found the easiest way was to use a pair of cutters to snip/crush the middle of the LED and then use a soldering iron to remove the bits left over.</p>
 <p>The green section is the on-board regulator.  If you are going to be supplying power to the board via a couple of AA batteries (each battery being 1.5v, so two is 3v) then you don&#8217;t need the regulator.  You can cut this off too if you like, but.. keep reading, there&#8217;s no need to hack it off.</p>
 <p>Saving the best until last, the yellow section is the power-selection jumper to switch between 3.3v and 5v.  It passes the power supplied by the RAW pin through the regulator and on to the board.  The regulator is inherently inefficient.  You might think that you could bypass the on-board regulator by powering the board by apply power to the Vcc pin instead, but it still seems to power the regulator.  By simply unsoldering this jumper you can disable the on-board regulator and save loads of power.  <span style="text-decoration: underline;">Once removed you will need to apply power to the Vcc pin at ~ 3.3V</span>.  I used some solder-wick to clean up but you could just scrape it off with a soldering iron if you need to.</p>
 <p>Here&#8217;s one I prepared earlier.</p>
 <div id="attachment_662" style="width: 235px" class="wp-caption alignleft">
-<a href="/wp-content/uploads/2015/06/IMG_1029.jpg"><noscript><img aria-describedby="caption-attachment-662" class="wp-image-662 size-medium" src="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg" alt="IMG_1029" width="225" height="300" srcset="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg 225w, /wp-content/uploads/2015/06/IMG_1029.jpg 640w" sizes="(max-width: 225px) 100vw, 225px"></noscript>
-<img aria-describedby="caption-attachment-662" class="lazyload wp-image-662 size-medium" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20225%20300%22%3E%3C/svg%3E" data-src="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg" alt="IMG_1029" width="225" height="300" data-srcset="https://www.whizzy.org/wp-content/uploads/2015/06/IMG_1029-225x300.jpg 225w, https://www.whizzy.org/wp-content/uploads/2015/06/IMG_1029.jpg 640w" data-sizes="(max-width: 225px) 100vw, 225px"></a><p id="caption-attachment-662" class="wp-caption-text">With the jumper and LED removed. (Red and yellow boxes from previous image)</p>
+<a href="/wp-content/uploads/2015/06/IMG_1029.jpg"><img aria-describedby="caption-attachment-662" loading="lazy" class="wp-image-662 size-medium" src="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg" alt="IMG_1029" width="225" height="300" srcset="/wp-content/uploads/2015/06/IMG_1029-225x300.jpg 225w, /wp-content/uploads/2015/06/IMG_1029.jpg 640w" sizes="(max-width: 225px) 100vw, 225px"></a><p id="caption-attachment-662" class="wp-caption-text">With the jumper and LED removed. (Red and yellow boxes from previous image)</p>
 </div>
 <p>&nbsp;</p>
 <p>With the LED and solder jumper removed I measured the power usage again.  Running current is now down to 3.8mA, pretty much half of what it was.  But, most impressively the power used when asleep is down to 0.004mA.  <em><strong>4 microamps! Yay!</strong></em></p>
@@ -83,294 +145,392 @@
 <h2>Coming Soon&#8230;</h2>
 <p>A write up of my cheapo IoT sensor network, including smoke detectors, door contact sensors, movement sensors, house-plant watering monitors, room temperature sensors and a weather station.  Plus, build an IoT sensor <em><strong>and</strong></em> buy a sausage roll for less than a fiver.</p>
 <p>&nbsp;</p>
-<div class="clearfix"></div>
-</div>
-<footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">June 11, 2015</span>
-</div>
-<div class="wrapper-post-categories">
-<h5>Posted in</h5> <a href="/category/arduino/" rel="category tag">Arduino</a><span>,</span> <a href="/category/iot/" rel="category tag">IoT</a><div class="clearfix"></div>
-</div></footer></article><div id="comments" class="comments-area">
-<h5 class="comments-title">9 Comments</h5>
-<ol class="comment-list"> <liclass even thread-even depth-1 parent id="comment-69"><div id="div-comment-69" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"></div>
-<div class="comment-content">
-<h4 class="fn"><a href="https://314raspberries.wordpress.com/2016/01/08/arduino-power-consumption-and-management/" rel="external nofollow ugc" class="url">Arduino power consumption and management | Raspberries and other fruits</a></h4>
-<div class="comment-meta commentmetadata date-post h6"> January 8, 2016 <span>at 6:23 pm</span>
-</div>
-<p>[&#8230;] How to modify an Arduino Pro Mini for low power usage [&#8230;]</p>
-<div class="reply"></div>
-</div>
-</div></div>
-<ol class="children"> <liclass odd alt depth-2 id="comment-77"><div id="div-comment-77" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/bc17b5a3367981f9843c4634a4e034b8?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/bc17b5a3367981f9843c4634a4e034b8?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/bc17b5a3367981f9843c4634a4e034b8?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/bc17b5a3367981f9843c4634a4e034b8?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn"><a href="http://N/A" rel="external nofollow ugc" class="url">Mr-detail</a></h4>
-<div class="comment-meta commentmetadata date-post h6"> October 5, 2020 <span>at 2:40 am</span>
-</div>
-<p>Nice article man. Just in case anyone is reading this and did what I did first. My arduino came as the 5v version with the 5v tab soldered. I removed the power led and the regulator, used the rocket scream low power library only to find it dropped to 2.7mA ~ 2.8mA range. Do what this guy says, its way easier to un-solder the 3.3v/5v adjustment solder tab. If you don&#8217;t, you lose about 2.7mA to the resistor network that was used by the regulator!</p>
+        
+        <div class="clearfix"></div>
+            </div>
+<!-- .entry-content -->
+    <footer class="entry-footer">
+                    <div class="meta">
+                <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a>                <span class="seporator">/</span>
+                <span class="date-post h6">June 11, 2015</span>
+                                            </div>        
+                             
+                                                        <div class="wrapper-post-categories">
+                    <h5>Posted in</h5>
+                    <a href="/category/arduino/" rel="category tag">Arduino</a><span>,</span> <a href="/category/iot/" rel="category tag">IoT</a>                    <div class="clearfix"></div>
+                </div>
+                                    
+    </footer><!-- .entry-meta -->
+</article><!-- #post -->                
+<div id="comments" class="comments-area">
+
+            <h5 class="comments-title">9 Comments</h5>
+        <ol class="comment-list">
+                <liclass even thread-even depth-1 parent id="comment-69">
+        <div id="div-comment-69" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+            </div>
+    <div class="comment-content">
+    <h4 class="fn"><a href="https://314raspberries.wordpress.com/2016/01/08/arduino-power-consumption-and-management/" rel="external nofollow ugc" class="url">Arduino power consumption and management | Raspberries and other fruits</a></h4>        <div class="comment-meta commentmetadata date-post h6">
+        January 8, 2016 <span>at 6:23 pm</span>            </div>
+    <p>[&#8230;] How to modify an Arduino Pro Mini for low power usage [&#8230;]</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <ol class="children">
+    <liclass odd alt depth-2 id="comment-77">
+        <div id="div-comment-77" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/bc17b5a3367981f9843c4634a4e034b8?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/bc17b5a3367981f9843c4634a4e034b8?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn"><a href="http://N/A" rel="external nofollow ugc" class="url">Mr-detail</a></h4>        <div class="comment-meta commentmetadata date-post h6">
+        October 5, 2020 <span>at 2:40 am</span>            </div>
+    <p>Nice article man. Just in case anyone is reading this and did what I did first. My arduino came as the 5v version with the 5v tab soldered. I removed the power led and the regulator, used the rocket scream low power library only to find it dropped to 2.7mA ~ 2.8mA range. Do what this guy says, its way easier to un-solder the 3.3v/5v adjustment solder tab. If you don&#8217;t, you lose about 2.7mA to the resistor network that was used by the regulator!</p>
 <p>Thanks for saving me from banging my head against the wall for a couple more hours!</p>
-<div class="reply"></div>
-</div>
-</div></div></liclass>
-</ol> <liclass even thread-odd thread-alt depth-1 parent id="comment-70"><div id="div-comment-70" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/bad17405d9e22b587b7875df60d8c1c6?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/bad17405d9e22b587b7875df60d8c1c6?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/bad17405d9e22b587b7875df60d8c1c6?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/bad17405d9e22b587b7875df60d8c1c6?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn">preactive</h4>
-<div class="comment-meta commentmetadata date-post h6"> May 5, 2017 <span>at 5:57 am</span>
-</div>
-<p>Did you ever get to the &#8220;Coming Soon… A write up of my cheapo IoT sensor network&#8230;..&#8221; article?</p>
-<div class="reply"></div>
-</div>
-</div></div>
-<ol class="children"> <liclass byuser comment-author-will bypostauthor odd alt depth-2 parent id="comment-71"><div id="div-comment-71" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn"><a href="/" rel="external nofollow ugc" class="url">Will Cooke</a></h4>
-<div class="comment-meta commentmetadata date-post h6"> May 13, 2017 <span>at 1:23 pm</span>
-</div>
-<p>It&#8217;s in drafts and not quite finished yet.  Sorry for the delay 🙂</p>
-<div class="reply"></div>
-</div>
-</div></div>
-<ol class="children"> <liclass even depth-3 parent id="comment-73"><div id="div-comment-73" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/160ab776c1fcf4a01844651b09947304?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/160ab776c1fcf4a01844651b09947304?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/160ab776c1fcf4a01844651b09947304?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/160ab776c1fcf4a01844651b09947304?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn">Mariusz Klinikowski</h4>
-<div class="comment-meta commentmetadata date-post h6"> January 7, 2018 <span>at 8:37 pm</span>
-</div>
-<p>Waiting for update too! I assume you just waited for batteries to lose Their charge? 🙂 Please update me when comming soon part will come and if it&#8217;s close, meybe i can ask for partial data from your experiment?</p>
-<div class="reply"></div>
-</div>
-</div></div>
-<ol class="children"> <liclass byuser comment-author-will bypostauthor odd alt depth-4 id="comment-74"><div id="div-comment-74" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn"><a href="/" rel="external nofollow ugc" class="url">Will Cooke</a></h4>
-<div class="comment-meta commentmetadata date-post h6"> June 5, 2018 <span>at 9:35 am</span>
-</div>
-<p>They’re still running! I haven’t had time to work on this project recently.</p>
-<div class="reply"></div>
-</div>
-</div></div></liclass>
-</ol></liclass>
-</ol></liclass>
-</ol> <liclass even thread-even depth-1 id="comment-72"><div id="div-comment-72" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/f2016551178349d73634379dfcb6c248?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/f2016551178349d73634379dfcb6c248?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/f2016551178349d73634379dfcb6c248?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/f2016551178349d73634379dfcb6c248?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn">Stergios</h4>
-<div class="comment-meta commentmetadata date-post h6"> June 12, 2017 <span>at 7:15 pm</span>
-</div>
-<p>I found better way to stop the led to light.<br> As we know, led can&#8217;t be powered directly from battery&#8230;because&#8230; are burned&#8230;.<br> That&#8217;s it!</p>
-<p>Place very carefully the wires of a battery (3v) on led corners. Don&#8217;t expect to see anything.<br> Power the arduino pro mini to check if you have done.<br> Led never lights again!!</p>
-<div class="reply"></div>
-</div>
-</div></div> <liclass odd alt thread-odd thread-alt depth-1 parent id="comment-75"><div id="div-comment-75" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/2d634d914da8f98f5b0be55de2e50c99?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/2d634d914da8f98f5b0be55de2e50c99?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/2d634d914da8f98f5b0be55de2e50c99?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/2d634d914da8f98f5b0be55de2e50c99?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn">Haakon</h4>
-<div class="comment-meta commentmetadata date-post h6"> June 25, 2018 <span>at 9:17 am</span>
-</div>
-<p>Hi, great post. Will the board run ok with power directly from the batteries, even when the voltage starts to drop? A pair of alkaline batteries will start at 3v and then drop over time, I guess. Do you think rechargeable batteries will work too? Two rechargeable AAs would start at 2,4 volts &#8230;</p>
-<p>And: Do you adjust the clock speed on these boards?</p>
-<div class="reply"></div>
-</div>
-</div></div>
-<ol class="children"> <liclass byuser comment-author-will bypostauthor even depth-2 id="comment-76"><div id="div-comment-76" class="comment-body"><div class="comment-description">
-<div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
-<img alt="" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2072%2072%22%3E%3C/svg%3E" data-src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" data-srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="lazyload avatar avatar-72 photo" height="72" width="72">
-</div>
-<div class="comment-content">
-<h4 class="fn"><a href="/" rel="external nofollow ugc" class="url">Will Cooke</a></h4>
-<div class="comment-meta commentmetadata date-post h6"> August 3, 2018 <span>at 3:00 pm</span>
-</div>
-<p>If you drop the clock speed down to 8Mhz these boards will run okish down to about 2v.</p>
-<div class="reply"></div>
-</div>
-</div></div></liclass>
-</ol></liclass></liclass></liclass></liclass>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- #comment-## -->
+</liclass>
 </ol>
-<p class="no-comments">Comments are closed.</p>
+<!-- .children -->
+<!-- #comment-## -->
+    <liclass even thread-odd thread-alt depth-1 parent id="comment-70">
+        <div id="div-comment-70" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/bad17405d9e22b587b7875df60d8c1c6?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/bad17405d9e22b587b7875df60d8c1c6?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn">preactive</h4>        <div class="comment-meta commentmetadata date-post h6">
+        May 5, 2017 <span>at 5:57 am</span>            </div>
+    <p>Did you ever get to the &#8220;Coming Soon… A write up of my cheapo IoT sensor network&#8230;..&#8221; article?</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <ol class="children">
+    <liclass byuser comment-author-will bypostauthor odd alt depth-2 parent id="comment-71">
+        <div id="div-comment-71" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn"><a href="/" rel="external nofollow ugc" class="url">Will Cooke</a></h4>        <div class="comment-meta commentmetadata date-post h6">
+        May 13, 2017 <span>at 1:23 pm</span>            </div>
+    <p>It&#8217;s in drafts and not quite finished yet.  Sorry for the delay 🙂</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <ol class="children">
+    <liclass even depth-3 parent id="comment-73">
+        <div id="div-comment-73" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/160ab776c1fcf4a01844651b09947304?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/160ab776c1fcf4a01844651b09947304?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn">Mariusz Klinikowski</h4>        <div class="comment-meta commentmetadata date-post h6">
+        January 7, 2018 <span>at 8:37 pm</span>            </div>
+    <p>Waiting for update too! I assume you just waited for batteries to lose Their charge? 🙂 Please update me when comming soon part will come and if it&#8217;s close, meybe i can ask for partial data from your experiment?</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <ol class="children">
+    <liclass byuser comment-author-will bypostauthor odd alt depth-4 id="comment-74">
+        <div id="div-comment-74" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn"><a href="/" rel="external nofollow ugc" class="url">Will Cooke</a></h4>        <div class="comment-meta commentmetadata date-post h6">
+        June 5, 2018 <span>at 9:35 am</span>            </div>
+    <p>They’re still running! I haven’t had time to work on this project recently.</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- #comment-## -->
+</liclass>
+</ol>
+<!-- .children -->
+<!-- #comment-## -->
+</liclass>
+</ol>
+<!-- .children -->
+<!-- #comment-## -->
+</liclass>
+</ol>
+<!-- .children -->
+<!-- #comment-## -->
+    <liclass even thread-even depth-1 id="comment-72">
+        <div id="div-comment-72" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/f2016551178349d73634379dfcb6c248?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/f2016551178349d73634379dfcb6c248?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn">Stergios</h4>        <div class="comment-meta commentmetadata date-post h6">
+        June 12, 2017 <span>at 7:15 pm</span>            </div>
+    <p>I found better way to stop the led to light.<br>
+As we know, led can&#8217;t be powered directly from battery&#8230;because&#8230; are burned&#8230;.<br>
+That&#8217;s it!</p>
+<p>Place very carefully the wires of a battery (3v) on led corners. Don&#8217;t expect to see anything.<br>
+Power the arduino pro mini to check if you have done.<br>
+Led never lights again!!</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- #comment-## -->
+    <liclass odd alt thread-odd thread-alt depth-1 parent id="comment-75">
+        <div id="div-comment-75" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/2d634d914da8f98f5b0be55de2e50c99?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/2d634d914da8f98f5b0be55de2e50c99?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn">Haakon</h4>        <div class="comment-meta commentmetadata date-post h6">
+        June 25, 2018 <span>at 9:17 am</span>            </div>
+    <p>Hi, great post. Will the board run ok with power directly from the batteries, even when the voltage starts to drop? A pair of alkaline batteries will start at 3v and then drop over time, I guess. Do you think rechargeable batteries will work too? Two rechargeable AAs would start at 2,4 volts &#8230;</p>
+<p>And: Do you adjust the clock speed on these boards?</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <ol class="children">
+    <liclass byuser comment-author-will bypostauthor even depth-2 id="comment-76">
+        <div id="div-comment-76" class="comment-body">
+    <div class="comment-description">
+    <div class="comment-author vcard">
+        <img alt="" src="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ad368ae612310967c8023a78d40bf35e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72" loading="lazy">    </div>
+    <div class="comment-content">
+    <h4 class="fn"><a href="/" rel="external nofollow ugc" class="url">Will Cooke</a></h4>        <div class="comment-meta commentmetadata date-post h6">
+        August 3, 2018 <span>at 3:00 pm</span>            </div>
+    <p>If you drop the clock speed down to 8Mhz these boards will run okish down to about 2v.</p>
+
+    <div class="reply">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- #comment-## -->
+</liclass>
+</ol>
+<!-- .children -->
+<!-- #comment-## -->
+        </liclass></liclass></liclass></liclass>
+</ol>
+<!-- .comment-list -->
+
+        
+                    <p class="no-comments">Comments are closed.</p>
+        
+        
 </div>
-</div>
-<div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
-<div id="archives-4" class="widget widget_archive">
+<!-- #comments -->                    </div>
+        <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <aside id="sidebar">
+    <div class="widget-area">
+                    <div id="archives-4" class="widget widget_archive">
 <h3 class="widget-title">Archives</h3>
-<ul>
-<li><a href="/2021/01/">January 2021</a></li>
-<li><a href="/2019/07/">July 2019</a></li>
-<li><a href="/2019/06/">June 2019</a></li>
-<li><a href="/2019/05/">May 2019</a></li>
-<li><a href="/2017/05/">May 2017</a></li>
-<li><a href="/2017/03/">March 2017</a></li>
-<li><a href="/2017/02/">February 2017</a></li>
-<li><a href="/2016/12/">December 2016</a></li>
-<li><a href="/2016/11/">November 2016</a></li>
-<li><a href="/2016/10/">October 2016</a></li>
-<li><a href="/2016/09/">September 2016</a></li>
-<li><a href="/2016/02/">February 2016</a></li>
-<li><a href="/2015/12/">December 2015</a></li>
-<li><a href="/2015/10/">October 2015</a></li>
-<li><a href="/2015/09/">September 2015</a></li>
-<li><a href="/2015/06/">June 2015</a></li>
-<li><a href="/2015/05/">May 2015</a></li>
-<li><a href="/2015/02/">February 2015</a></li>
-<li><a href="/2014/08/">August 2014</a></li>
-<li><a href="/2014/02/">February 2014</a></li>
-<li><a href="/2014/01/">January 2014</a></li>
-<li><a href="/2013/12/">December 2013</a></li>
-<li><a href="/2013/11/">November 2013</a></li>
-<li><a href="/2013/02/">February 2013</a></li>
-<li><a href="/2012/11/">November 2012</a></li>
-<li><a href="/2012/08/">August 2012</a></li>
-<li><a href="/2012/03/">March 2012</a></li>
-<li><a href="/2011/09/">September 2011</a></li>
-<li><a href="/2011/08/">August 2011</a></li>
-<li><a href="/2011/07/">July 2011</a></li>
-<li><a href="/2011/06/">June 2011</a></li>
-<li><a href="/2011/04/">April 2011</a></li>
-<li><a href="/2011/02/">February 2011</a></li>
-<li><a href="/2010/10/">October 2010</a></li>
-<li><a href="/2010/09/">September 2010</a></li>
-<li><a href="/2010/08/">August 2010</a></li>
-<li><a href="/2010/06/">June 2010</a></li>
-<li><a href="/2010/01/">January 2010</a></li>
-<li><a href="/2009/10/">October 2009</a></li>
-<li><a href="/2009/09/">September 2009</a></li>
-<li><a href="/2009/08/">August 2009</a></li>
-<li><a href="/2009/07/">July 2009</a></li>
-<li><a href="/2009/06/">June 2009</a></li>
-<li><a href="/2009/05/">May 2009</a></li>
-</ul>
-</div>
-<div id="recent-posts-2" class="widget widget_recent_entries">
-<h3 class="widget-title">Recent Posts</h3>
-<ul>
-<li> <a href="/2021/01/02/double-helping-of-pi-hole/">Double helping of Pi Hole</a>
-</li>
-<li> <a href="/2019/07/16/dns-over-https-in-a-snap/">DNS over HTTPS in a snap</a>
-</li>
-<li> <a href="/2019/06/11/whizzy-labs-wireless-sensor/">Whizzy Labs Wireless Sensor</a>
-</li>
-<li> <a href="/2019/05/07/ubuntu-developer-desktop-survey-2019/">Ubuntu Developer Desktop Survey 2019</a>
-</li>
-<li> <a href="/2017/05/19/ubuntu-desktop-goings-on-friday-19th-may-2017/">Ubuntu Desktop goings on.  Friday 19th May 2017</a>
-</li>
-</ul>
-</div>
+			<ul>
+					<li><a href="/2021/07/">July 2021</a></li>
+	<li><a href="/2021/01/">January 2021</a></li>
+	<li><a href="/2019/07/">July 2019</a></li>
+	<li><a href="/2019/06/">June 2019</a></li>
+	<li><a href="/2019/05/">May 2019</a></li>
+	<li><a href="/2017/05/">May 2017</a></li>
+	<li><a href="/2017/03/">March 2017</a></li>
+	<li><a href="/2017/02/">February 2017</a></li>
+	<li><a href="/2016/12/">December 2016</a></li>
+	<li><a href="/2016/11/">November 2016</a></li>
+	<li><a href="/2016/10/">October 2016</a></li>
+	<li><a href="/2016/09/">September 2016</a></li>
+	<li><a href="/2016/02/">February 2016</a></li>
+	<li><a href="/2015/12/">December 2015</a></li>
+	<li><a href="/2015/10/">October 2015</a></li>
+	<li><a href="/2015/09/">September 2015</a></li>
+	<li><a href="/2015/06/">June 2015</a></li>
+	<li><a href="/2015/05/">May 2015</a></li>
+	<li><a href="/2015/02/">February 2015</a></li>
+	<li><a href="/2014/08/">August 2014</a></li>
+	<li><a href="/2014/02/">February 2014</a></li>
+	<li><a href="/2014/01/">January 2014</a></li>
+	<li><a href="/2013/12/">December 2013</a></li>
+	<li><a href="/2013/11/">November 2013</a></li>
+	<li><a href="/2013/02/">February 2013</a></li>
+	<li><a href="/2012/11/">November 2012</a></li>
+	<li><a href="/2012/08/">August 2012</a></li>
+	<li><a href="/2012/03/">March 2012</a></li>
+	<li><a href="/2011/09/">September 2011</a></li>
+	<li><a href="/2011/08/">August 2011</a></li>
+	<li><a href="/2011/07/">July 2011</a></li>
+	<li><a href="/2011/06/">June 2011</a></li>
+	<li><a href="/2011/04/">April 2011</a></li>
+	<li><a href="/2011/02/">February 2011</a></li>
+	<li><a href="/2010/10/">October 2010</a></li>
+	<li><a href="/2010/09/">September 2010</a></li>
+	<li><a href="/2010/08/">August 2010</a></li>
+	<li><a href="/2010/06/">June 2010</a></li>
+	<li><a href="/2010/01/">January 2010</a></li>
+	<li><a href="/2009/10/">October 2009</a></li>
+	<li><a href="/2009/09/">September 2009</a></li>
+	<li><a href="/2009/08/">August 2009</a></li>
+	<li><a href="/2009/07/">July 2009</a></li>
+	<li><a href="/2009/06/">June 2009</a></li>
+	<li><a href="/2009/05/">May 2009</a></li>
+			</ul>
+
+			</div>
+		<div id="recent-posts-2" class="widget widget_recent_entries">
+		<h3 class="widget-title">Recent Posts</h3>
+		<ul>
+											<li>
+					<a href="/2021/07/14/finally-moving-to-a-static-site/">Finally moving to a static site</a>
+									</li>
+											<li>
+					<a href="/2021/01/02/double-helping-of-pi-hole/">Double helping of Pi Hole</a>
+									</li>
+											<li>
+					<a href="/2019/07/16/dns-over-https-in-a-snap/">DNS over HTTPS in a snap</a>
+									</li>
+											<li>
+					<a href="/2019/06/11/whizzy-labs-wireless-sensor/">Whizzy Labs Wireless Sensor</a>
+									</li>
+											<li>
+					<a href="/2019/05/07/ubuntu-developer-desktop-survey-2019/">Ubuntu Developer Desktop Survey 2019</a>
+									</li>
+					</ul>
+
+		</div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
-<ul>
-<li class="cat-item cat-item-2"><a href="/category/alexa/">Alexa</a></li>
-<li class="cat-item cat-item-3"><a href="/category/arduino/">Arduino</a></li>
-<li class="cat-item cat-item-4"><a href="/category/asterisk/">asterisk</a></li>
-<li class="cat-item cat-item-5"><a href="/category/google-maps/">Google Maps</a></li>
-<li class="cat-item cat-item-6"><a href="/category/iot/">IoT</a></li>
-<li class="cat-item cat-item-7"><a href="/category/javascript/">Javascript</a></li>
-<li class="cat-item cat-item-8"><a href="/category/linux/">linux</a></li>
-<li class="cat-item cat-item-9"><a href="/category/making-the-world-a-better-place/">Making the world a better place</a></li>
-<li class="cat-item cat-item-10"><a href="/category/raspberrypi/">RaspberryPi</a></li>
-<li class="cat-item cat-item-12"><a href="/category/so-called-humor/">So called humor</a></li>
-<li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
-<li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
-<li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
+			<ul>
+					<li class="cat-item cat-item-2">
+<a href="/category/alexa/">Alexa</a>
+</li>
+	<li class="cat-item cat-item-3">
+<a href="/category/arduino/">Arduino</a>
+</li>
+	<li class="cat-item cat-item-4">
+<a href="/category/asterisk/">asterisk</a>
+</li>
+	<li class="cat-item cat-item-5">
+<a href="/category/google-maps/">Google Maps</a>
+</li>
+	<li class="cat-item cat-item-6">
+<a href="/category/iot/">IoT</a>
+</li>
+	<li class="cat-item cat-item-7">
+<a href="/category/javascript/">Javascript</a>
+</li>
+	<li class="cat-item cat-item-8">
+<a href="/category/linux/">linux</a>
+</li>
+	<li class="cat-item cat-item-9">
+<a href="/category/making-the-world-a-better-place/">Making the world a better place</a>
+</li>
+	<li class="cat-item cat-item-10">
+<a href="/category/raspberrypi/">RaspberryPi</a>
+</li>
+	<li class="cat-item cat-item-12">
+<a href="/category/so-called-humor/">So called humor</a>
+</li>
+	<li class="cat-item cat-item-13">
+<a href="/category/tv/">tv</a>
+</li>
+	<li class="cat-item cat-item-14">
+<a href="/category/ubuntu-2/">Ubuntu</a>
+</li>
+	<li class="cat-item cat-item-15">
+<a href="/category/uncategorized/">Uncategorized</a>
+</li>
+			</ul>
+
+			</div>            </div>
+<!-- .widget-area -->
+</aside>
+        </div>
+    </div>
 </div>
-</div></aside></div>
-</div></div>
+
 </div>
-<footer id="footer" class="site-footer"> <a href="#" id="toTop" class="toTop"><i class="fa fa-angle-up"></i></a><div class="footer-sidebar"><div class="container"><div class="row">
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-<div id="archives-2" class="widget widget_archive">
-<h4 class="widget-title">Archives</h4>
-<ul>
-<li><a href="/2021/01/">January 2021</a></li>
-<li><a href="/2019/07/">July 2019</a></li>
-<li><a href="/2019/06/">June 2019</a></li>
-<li><a href="/2019/05/">May 2019</a></li>
-<li><a href="/2017/05/">May 2017</a></li>
-<li><a href="/2017/03/">March 2017</a></li>
-<li><a href="/2017/02/">February 2017</a></li>
-<li><a href="/2016/12/">December 2016</a></li>
-<li><a href="/2016/11/">November 2016</a></li>
-<li><a href="/2016/10/">October 2016</a></li>
-<li><a href="/2016/09/">September 2016</a></li>
-<li><a href="/2016/02/">February 2016</a></li>
-<li><a href="/2015/12/">December 2015</a></li>
-<li><a href="/2015/10/">October 2015</a></li>
-<li><a href="/2015/09/">September 2015</a></li>
-<li><a href="/2015/06/">June 2015</a></li>
-<li><a href="/2015/05/">May 2015</a></li>
-<li><a href="/2015/02/">February 2015</a></li>
-<li><a href="/2014/08/">August 2014</a></li>
-<li><a href="/2014/02/">February 2014</a></li>
-<li><a href="/2014/01/">January 2014</a></li>
-<li><a href="/2013/12/">December 2013</a></li>
-<li><a href="/2013/11/">November 2013</a></li>
-<li><a href="/2013/02/">February 2013</a></li>
-<li><a href="/2012/11/">November 2012</a></li>
-<li><a href="/2012/08/">August 2012</a></li>
-<li><a href="/2012/03/">March 2012</a></li>
-<li><a href="/2011/09/">September 2011</a></li>
-<li><a href="/2011/08/">August 2011</a></li>
-<li><a href="/2011/07/">July 2011</a></li>
-<li><a href="/2011/06/">June 2011</a></li>
-<li><a href="/2011/04/">April 2011</a></li>
-<li><a href="/2011/02/">February 2011</a></li>
-<li><a href="/2010/10/">October 2010</a></li>
-<li><a href="/2010/09/">September 2010</a></li>
-<li><a href="/2010/08/">August 2010</a></li>
-<li><a href="/2010/06/">June 2010</a></li>
-<li><a href="/2010/01/">January 2010</a></li>
-<li><a href="/2009/10/">October 2009</a></li>
-<li><a href="/2009/09/">September 2009</a></li>
-<li><a href="/2009/08/">August 2009</a></li>
-<li><a href="/2009/07/">July 2009</a></li>
-<li><a href="/2009/06/">June 2009</a></li>
-<li><a href="/2009/05/">May 2009</a></li>
-</ul>
+<!-- #main -->
+	<footer id="footer" class="site-footer">
+		<a href="#" id="toTop" class="toTop"><i class="fa fa-angle-up"></i></a>
+		<div class="footer-sidebar">
+    <div class="container">
+        <div class="row">            
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            </div>
+        </div>
+<!-- .widget-area -->
+    </div>
+</div>		<div class="footer-inner">
+			<div class="container">
+								<p class="social-profile type1 pull-right">
+																<a href="https://twitter.com/8none1" class="button-twitter" title="Twitter" target="_blank"><i class="fa fa-twitter-square"></i></a>
+																					<a href="https://github.com/8none1" class="button-google" title="Google +" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+																															<a href="https://www.youtube.com/user/willcooke1" class="button-youtube" title="Youtube" target="_blank"><i class="fa fa-youtube-square"></i></a>
+															                    
+				</p>
+				<p class="copyright"><span class="copyright-date">
+						&copy; Copyright 2021                    </span>
+										  <a href="/" title="whizzy.org" target="_blank">whizzy.org</a>
+					  &#8226; Designed by <a href="https://motopress.com/" rel="nofollow" title="Premium WordPress Plugins and Themes">MotoPress</a>
+					  &#8226; Proudly Powered by <a href="http://wordpress.org/" rel="nofollow" title="Semantic Personal Publishing Platform">WordPress</a>
+					  				</p>
+<!-- .copyright -->
+			</div>
+		</div>
+	</footer>
 </div>
-<div id="categories-2" class="widget widget_categories">
-<h4 class="widget-title">Categories</h4>
-<ul>
-<li class="cat-item cat-item-2"><a href="/category/alexa/">Alexa</a></li>
-<li class="cat-item cat-item-3"><a href="/category/arduino/">Arduino</a></li>
-<li class="cat-item cat-item-4"><a href="/category/asterisk/">asterisk</a></li>
-<li class="cat-item cat-item-5"><a href="/category/google-maps/">Google Maps</a></li>
-<li class="cat-item cat-item-6"><a href="/category/iot/">IoT</a></li>
-<li class="cat-item cat-item-7"><a href="/category/javascript/">Javascript</a></li>
-<li class="cat-item cat-item-8"><a href="/category/linux/">linux</a></li>
-<li class="cat-item cat-item-9"><a href="/category/making-the-world-a-better-place/">Making the world a better place</a></li>
-<li class="cat-item cat-item-10"><a href="/category/raspberrypi/">RaspberryPi</a></li>
-<li class="cat-item cat-item-12"><a href="/category/so-called-humor/">So called humor</a></li>
-<li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
-<li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
-<li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-</div>
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
-</div></div></div>
-<div class="footer-inner"><div class="container">
-<p class="social-profile type1 pull-right"> <a href="https://twitter.com/8none1" class="button-twitter" title="Twitter" target="_blank"><i class="fa fa-twitter-square"></i></a> <a href="https://github.com/8none1" class="button-google" title="Google +" target="_blank"><i class="fa fa-google-plus-square"></i></a> <a href="https://www.youtube.com/user/willcooke1" class="button-youtube" title="Youtube" target="_blank"><i class="fa fa-youtube-square"></i></a></p>
-<p class="copyright"><span class="copyright-date"> &copy; Copyright 2021 </span> <a href="/" title="whizzy.org" target="_blank">whizzy.org</a> &#8226; Designed by <a href="https://motopress.com/" rel="nofollow" title="Premium WordPress Plugins and Themes">MotoPress</a> &#8226; Proudly Powered by <a href="http://wordpress.org/" rel="nofollow" title="Semantic Personal Publishing Platform">WordPress</a></p>
-</div></div></footer>
-</div> <noscript><style>.lazyload{display:none;}</style></noscript>
-<script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src="/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=2.8.4"></script> <script type="text/javascript" id="emmet-script-js-extra">var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
-var template_directory_uri = {"url":"https:\/\/www.whizzy.org\/wp-content\/themes\/emmet-lite"};</script> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_78789ca997016d9e81ffd10b2fcdec4f.js"></script>
-</body>
+<script type="text/javascript" src="/wp-includes/js/hoverIntent.min.js?ver=1.8.1" id="hoverIntent-js"></script>
+<script type="text/javascript" src="/wp-content/themes/emmet-lite/js/superfish.min.js?ver=1.7.5" id="superfish.min-js"></script>
+<script type="text/javascript" src="/wp-content/themes/emmet-lite/js/jquery.flexslider-min.js?ver=2.5.0" id="flexslider-js"></script>
+<script type="text/javascript" src="/wp-content/themes/emmet-lite/js/jquery.appear.min.js?ver=0.3.6" id="jquery.appear-js"></script>
+<script type="text/javascript" id="emmet-script-js-extra">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+var template_directory_uri = {"url":"\/wp-content\/themes\/emmet-lite"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/emmet-lite/js/emmet.min.js?ver=1.7.5" id="emmet-script-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.7.2" id="wp-embed-js"></script>
+    <script>
+        /(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+    </script>
+	</body>
 </html>
