@@ -54,7 +54,7 @@
 <p>This is fixed by creating (or editing) <code>/etc/dhcp/dhclient.conf</code> and adding this line:</p>
 <p><code>send host-name = gethostname();</code></p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 17, 2016</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 17, 2016</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
 </div></footer></article><article id="post-685" class="post-in-blog post post-685 type-post status-publish format-standard hentry category-linux category-ubuntu-2"><header class="entry-header"><h2 class="entry-title"> <a href="/2015/10/14/10-years-with-ubuntu/" rel="bookmark">My first 10 years with Ubuntu</a>
 </h2></header><section class="entry entry-content"><p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg"><noscript><img class="alignleft wp-image-691" src="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg" alt="IMG_1220" width="799" height="132" srcset="/wp-content/uploads/2015/10/IMG_1220.jpg 1005w, /wp-content/uploads/2015/10/IMG_1220-300x50.jpg 300w, /wp-content/uploads/2015/10/IMG_1220-768x127.jpg 768w" sizes="(max-width: 799px) 100vw, 799px"></noscript>
 <img class="lazyload alignleft wp-image-691" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20799%20132%22%3E%3C/svg%3E" data-src="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg" alt="IMG_1220" width="799" height="132" data-srcset="https://www.whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg 1005w, https://www.whizzy.org/wp-content/uploads/2015/10/IMG_1220-300x50.jpg 300w, https://www.whizzy.org/wp-content/uploads/2015/10/IMG_1220-768x127.jpg 768w" data-sizes="(max-width: 799px) 100vw, 799px"></a></p>
@@ -74,7 +74,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 14, 2015</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2015/10/14/10-years-with-ubuntu/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 14, 2015</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
 </div></footer></article><article id="post-627" class="post-in-blog post post-627 type-post status-publish format-standard hentry category-linux category-raspberrypi"><header class="entry-header"><h2 class="entry-title"> <a href="/2015/05/23/multipathrouting-rasppi2/" rel="bookmark">Multipath routing on a Raspberry Pi 2</a>
 </h2></header><section class="entry entry-content"><p><strong>Skill level:</strong>  <em>Not for the faint hearted!</em></p>
 <p>A few years ago, when I started working at home, I had a second ADSL line installed so that I could still get online if my ISP had an outage.  As well as fault tolerance I wanted to try and use all the available bandwidth rather than just have it sitting there &#8220;just in case&#8221;.  I achieved this using multi path routing and documented the solution here:  <a href="/2012/03/over-engineering-ftw/" target="_blank" rel="noopener noreferrer">Over Engineering FTW</a>.</p>
@@ -234,7 +234,7 @@ echo 8 &gt; /sys/class/net/ppp1/queues/rx-0/rps_cpus</code></pre>
 <p>Here&#8217;s a tgz file containing my iptables rules and a script to set up the above: <a href="/wp-content/uploads/2015/05/routing.tgz">routing</a></p>
 <p><em><strong>Update:</strong></em>  I&#8217;ve put the files in this Github repo:  <a href="https://github.com/8none1/multipathrouting">https://github.com/8none1/multipathrouting</a></p>
 <p>If you&#8217;re interested in helping to make the scripts a bit more generic and adding fault-tolerance let me know.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">May 23, 2015</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2015/05/23/multipathrouting-rasppi2/#comments"><span>7 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">May 23, 2015</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
 </div></footer></article><nav class="navigation paging-navigation"> <a class="prev page-numbers" href="/category/linux/">&laquo; Previous</a> <a class="page-numbers" href="/category/linux/">1</a> <span aria-current="page" class="page-numbers current">2</span> <a class="page-numbers" href="/category/linux/page/3/">3</a> <a class="page-numbers" href="/category/linux/page/4/">4</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/category/linux/page/8/">8</a> <a class="next page-numbers" href="/category/linux/page/3/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -302,8 +302,6 @@ echo 8 &gt; /sys/class/net/ppp1/queues/rx-0/rps_cpus</code></pre>
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -321,11 +319,6 @@ echo 8 &gt; /sys/class/net/ppp1/queues/rx-0/rps_cpus</code></pre>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -397,15 +390,6 @@ echo 8 &gt; /sys/class/net/ppp1/queues/rx-0/rps_cpus</code></pre>
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

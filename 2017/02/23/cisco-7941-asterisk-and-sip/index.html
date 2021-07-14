@@ -434,7 +434,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p><iframe title="Fully configured Cisco 7941 connecting to Asterisk via SIP" width="770" height="433" src="https://www.youtube.com/embed/QlLLzbD7pHM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <div class="clearfix"></div>
 </div>
-<footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 23, 2017</span> <span class="seporator">/</span> <a class="blog-icon underline" href="#comments"><span>38 Comments</span></a>
+<footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 23, 2017</span>
 </div>
 <div class="wrapper-post-categories">
 <h5>Posted in</h5> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a><div class="clearfix"></div>
@@ -454,8 +454,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>not sure if the ports are taking affect in config as in the menus on the deivce the proxy port is blank so I bet its trying to use 5060 when it should be using 5061</p>
 <p>would you mind sharing you asterisk extension configs as I swear down that my XML files are right tried so many even the one I had working on a test server with this very phone about 5 months ago and I belive I used SIP on 5061 with that server so pretty sure a recent PIAF update has changed some asterisk extension thing</p>
 <p>also if I have sip debug on I see no attempt by mr cisco to connect, not even an auth fail, its like the phone just dont care, both server and phone on same subnet on same switch port as the working LG phone so cant be network related</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=136#respond" data-commentid="136" data-postid="882" data-belowelement="div-comment-136" data-respondelement="respond" data-replyto="Reply to Adan" aria-label="Reply to Adan">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass byuser comment-author-will bypostauthor odd alt depth-2 parent id="comment-137"><div id="div-comment-137" class="comment-body"><div class="comment-description">
@@ -472,8 +471,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>From sip_additional.conf for the 7941 extension:</p>
 <p>[1005]<br> deny=0.0.0.0/0.0.0.0<br> secret=password<br> dtmfmode=rfc2833<br> canreinvite=no<br> context=from-internal<br> host=dynamic<br> trustrpid=yes<br> sendrpid=no<br> type=friend<br> nat=no<br> port=5060<br> qualify=yes<br> qualifyfreq=60<br> transport=udp,tcp,tls<br> avpf=no<br> icesupport=no<br> encryption=no<br> callgroup=<br> pickupgroup=<br> dial=SIP/1005<br> mailbox=1001@default<br> permit=0.0.0.0/0.0.0.0<br> callerid=Study &lt;1005><br> callcounter=yes<br> faxdetect=no</p>
 <p>Let me know if that helps.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=137#respond" data-commentid="137" data-postid="882" data-belowelement="div-comment-137" data-respondelement="respond" data-replyto="Reply to Will Cooke" aria-label="Reply to Will Cooke">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass even depth-3 id="comment-158"><div id="div-comment-158" class="comment-body"><div class="comment-description">
@@ -488,8 +486,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Good day</p>
 <p>I followed the same process like above and i am success in updating the firmware and now i am able to make calls to national and international numbers but i am facing an issue when i am trying to reach operator toll free numbers i am getting an error as reorder i guess the issue is with codec and i even tried below codec but nothing didnt work out can you please suggest me the solution for this</p>
 <p>codec:<br> g711alaw<br> g711ulaw</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=158#respond" data-commentid="158" data-postid="882" data-belowelement="div-comment-158" data-respondelement="respond" data-replyto="Reply to Ashok kumar" aria-label="Reply to Ashok kumar">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol></liclass>
@@ -502,8 +499,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> March 17, 2017 <span>at 8:52 pm</span>
 </div>
 <p>Hey Will, thank you so much for this article. I am working now for almost one year (time to time) to get my CIsco 7961 working. I tried almost all configurations you can find on the internet. I got to a point where I could receive calls but not place them. Thanks to you it is now working. So I can confirm that it works for Cisco 7961, too.<br> Kind regards,<br> Ralf</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=138#respond" data-commentid="138" data-postid="882" data-belowelement="div-comment-138" data-respondelement="respond" data-replyto="Reply to Ralf" aria-label="Reply to Ralf">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass byuser comment-author-will bypostauthor even depth-2 id="comment-139"><div id="div-comment-139" class="comment-body"><div class="comment-description">
@@ -515,8 +511,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> March 25, 2017 <span>at 2:05 pm</span>
 </div>
 <p>Excellent!  Glad to hear you got it working.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=139#respond" data-commentid="139" data-postid="882" data-belowelement="div-comment-139" data-respondelement="respond" data-replyto="Reply to Will Cooke" aria-label="Reply to Will Cooke">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol> <liclass odd alt thread-even depth-1 parent id="comment-140"><div id="div-comment-140" class="comment-body"><div class="comment-description">
@@ -528,8 +523,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> April 23, 2017 <span>at 12:53 am</span>
 </div>
 <p>Hey Will,<br> What version of Asterisk or FreePBX is recommended?<br> Kind regards, IVG</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=140#respond" data-commentid="140" data-postid="882" data-belowelement="div-comment-140" data-respondelement="respond" data-replyto="Reply to IVG" aria-label="Reply to IVG">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass byuser comment-author-will bypostauthor even depth-2 id="comment-141"><div id="div-comment-141" class="comment-body"><div class="comment-description">
@@ -541,8 +535,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> April 27, 2017 <span>at 10:30 am</span>
 </div>
 <p>I dont think you need a specific version.  I&#8217;d say use whatever is packaged for your distro, or the latest upstream version.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=141#respond" data-commentid="141" data-postid="882" data-belowelement="div-comment-141" data-respondelement="respond" data-replyto="Reply to Will Cooke" aria-label="Reply to Will Cooke">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol> <liclass odd alt thread-odd thread-alt depth-1 parent id="comment-142"><div id="div-comment-142" class="comment-body"><div class="comment-description">
@@ -554,8 +547,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> June 20, 2017 <span>at 2:32 pm</span>
 </div>
 <p>Do you know of any major differences between the 79&#215;1 models and 79&#215;2 models? I am trying to get a 7942 and 7962 working with Switchvox, and having problems at the SIP OPTIONS stage.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=142#respond" data-commentid="142" data-postid="882" data-belowelement="div-comment-142" data-respondelement="respond" data-replyto="Reply to CB" aria-label="Reply to CB">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass byuser comment-author-will bypostauthor even depth-2 parent id="comment-143"><div id="div-comment-143" class="comment-body"><div class="comment-description">
@@ -568,8 +560,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </div>
 <p>This site should give you some hints:</p>
 <p><a href="https://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP" rel="nofollow ugc">https://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79&#215;1+xml+configuration+files+for+SIP</a></p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=143#respond" data-commentid="143" data-postid="882" data-belowelement="div-comment-143" data-respondelement="respond" data-replyto="Reply to Will Cooke" aria-label="Reply to Will Cooke">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass odd alt depth-3 id="comment-145"><div id="div-comment-145" class="comment-body"><div class="comment-description">
@@ -583,8 +574,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Hi All,<br> We bought CISCO7941 phones from ebay and I migrated couple of phones to our network with factory reset. Phones are migrated to our network.<br> Phone is loading SEPMAC.cnf.xml and shows the configured users and phone show registering or &#8220;Enregistration&#8221; . Phone is sending SIP registration request to our server frequenetly though SIP server respondes with 200 OK. Phone also sending Reason header in SIP register request. Below are the traces. Can you please review and suggest how to solve the issue from phone?</p>
 <p>REGISTER sip:SIP_PROXY SIP/2.0.<br> Via: SIP/2.0/UDP 192.168.0.8:5060;branch=z9hG4bK145170f7.<br> From: ;tag=002155043e14000c6e300d74-f82d1759.<br> To: .<br> Call-ID: <a href="mailto:00215504-3e14000a-88ce24a2-232a3b6b@192.168">00215504-3e14000a-88ce24a2-232a3b6b@192.168</a>.0.8.<br> Max-Forwards: 70.<br> Date: Mon, 16 Jan 2017 09:07:00 GMT.<br> CSeq: 105 REGISTER.<br> User-Agent: Cisco-CP7941G/9.4.2.<br> Contact: ;+sip.instance=&#8221;&#8221;;+u.sip!devicename.ccm.cisco.com=&#8221;SEP002155043E14&#8243;;+u.sip!model.ccm.cisco.com=&#8221;115&#8243;.<br> Supported: replaces,join,sdp-anat,norefersub,resource-priority,extended-refer,X-cisco-callinfo,X-cisco-serviceuri,X-cisco-escapecodes,X-cisco-service-control,X-cisco-srtp-fallback,X-cisco-monrec,X-cisco-config,X-cisco-sis-6.0.0,X-cisco-xsi-8.5.1.<br> Content-Length: 0.<br> Reason: SIP;cause=200;text=&#8221;cisco-alarm:14 Name=SEP002155043E14 Load=SIP41.9-4-2SR3-1S Last=cm-closed-tcp&#8221;.<br> Expires: 3600.<br> .</p>
 <p>SIP/2.0 200 OK.<br> Via: SIP/2.0/UDP 192.168.0.8:5060;branch=z9hG4bK145170f7;rport=50509;received=73.213.191.57.<br> From: ;tag=002155043e14000c6e300d74-f82d1759.<br> To: ;tag=9b61c4013306e65e16fef2a53c4669e3.6550.<br> Call-ID: <a href="mailto:00215504-3e14000a-88ce24a2-232a3b6b@192.168">00215504-3e14000a-88ce24a2-232a3b6b@192.168</a>.0.8.<br> CSeq: 105 REGISTER.<br> Contact: ;expires=300;received=&#8221;sip:73.213.191.57:50509&#8243;;+sip.instance=&#8221;&#8221;.<br> Server: kamailio (4.3.4 (x86_64/linux)).<br> Content-Length: 0.<br> .</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=145#respond" data-commentid="145" data-postid="882" data-belowelement="div-comment-145" data-respondelement="respond" data-replyto="Reply to Kimo" aria-label="Reply to Kimo">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol></liclass>
@@ -600,8 +590,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Just got one from ebay about 12 pounds.<br> Updated to latest firware from Cisco and tried every configuration found here or other blogs and site.</p>
 <p>I have installed asterisk local and TFTP server success.<br> All the time i got unprocisioned 🙁</p>
 <p>I am one step to give it away for recycling.<br> Is there anyone who can help me to configure it to my Asterisk local server?<br> I can give you some Teamviewer access  to work directly.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=144#respond" data-commentid="144" data-postid="882" data-belowelement="div-comment-144" data-respondelement="respond" data-replyto="Reply to John" aria-label="Reply to John">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-odd thread-alt depth-1 id="comment-146"><div id="div-comment-146" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/bd0bdfa54578bb963ffc9f36dea55372?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/bd0bdfa54578bb963ffc9f36dea55372?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -614,8 +603,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Hello will</p>
 <p>I am trying to register a cisco IP 7941G phone with an asterisk server and then upload the firmware version .8-5-4 phone work. Now I can take calls but I can not route incoming calls to the IP phone because the attachment is not registered on the plant.</p>
 <p>Do you have to modify any additional parameters in the SEP  .cnf.xml file to make the IP phone register with the plant to be able to assign calls?</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=146#respond" data-commentid="146" data-postid="882" data-belowelement="div-comment-146" data-respondelement="respond" data-replyto="Reply to Ricardo Díaz" aria-label="Reply to Ricardo Díaz">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-even depth-1 parent id="comment-147"><div id="div-comment-147" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/edbfc54f1aba4dedc668ece105ed3d06?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/edbfc54f1aba4dedc668ece105ed3d06?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -628,8 +616,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Hi Will,</p>
 <p>i&#8217;ve Cisco 7960 IP Phone setup, I managed to get phone registered and got a dial tone but whenever I try to place an outgoing call it just wouldn&#8217;t call out. In addition to that, I&#8217;ve that little X next to the extension on line 1, could this be cause of my issue?</p>
 <p>&#8220;If everything has worked you should see your extension listed on the right hand side of the screen near the buttons, and the name of the phone should appear at the top of the screen.  If the icon next to the line buttons is that of a phone without an x through it, then you’re probably good to go!  Press the line button and see if you get a dial tone.  If not, then check the&#8221;</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=147#respond" data-commentid="147" data-postid="882" data-belowelement="div-comment-147" data-respondelement="respond" data-replyto="Reply to Has" aria-label="Reply to Has">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass byuser comment-author-will bypostauthor odd alt depth-2 id="comment-148"><div id="div-comment-148" class="comment-body"><div class="comment-description">
@@ -642,8 +629,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </div>
 <p>Hi, thanks for the comment.</p>
 <p>The little X indicates (I think) that the phone hasn&#8217;t correctly registered with Asterisk.  The dial tone is being generated from the phone itself, not Asterisk, so that could well be a red herring.  I&#8217;d suggest turning up the logging on Asterisk to the max and switching on SIP debugging.  This could be something as simple as a port number or password.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=148#respond" data-commentid="148" data-postid="882" data-belowelement="div-comment-148" data-respondelement="respond" data-replyto="Reply to Will Cooke" aria-label="Reply to Will Cooke">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol> <liclass even thread-odd thread-alt depth-1 id="comment-149"><div id="div-comment-149" class="comment-body"><div class="comment-description">
@@ -655,8 +641,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> December 2, 2017 <span>at 9:53 pm</span>
 </div>
 <p>Hello will,<br> Thank you for great the guide. Following  I managed to get a 7961g working with freepbx.  I am in Toronto,Canada. I can make and receive local (10 digits) only remaining issue is that I can&#8217;t make any international calls (I am able to make the same international calls from other extentions  connected to my freepbx) . I suspect that it&#8217;s an issue with the dialplan.xml.<br> Any suggestions would be greatly appreciated.  Thanks .</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=149#respond" data-commentid="149" data-postid="882" data-belowelement="div-comment-149" data-respondelement="respond" data-replyto="Reply to amar" aria-label="Reply to amar">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-even depth-1 id="comment-150"><div id="div-comment-150" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/9c31da168d9bd271cf5352ec0a9a89ff?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/9c31da168d9bd271cf5352ec0a9a89ff?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -671,8 +656,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>NOT 15:03:16.252056 JVM: Startup Module Loader|cip.sipcc.SipCcAdapter:  &#8211; cmname=192.168.0.150 cmIp=192.168.0.150 port=5063 isValid=true<br> NOT 15:03:16.253352 JVM: Startup Module Loader|cip.sipcc.d:  &#8211; initializeLinePlane(): Mgmt Interface is in Service now..<br> ERR 15:03:16.254597 JVM: Startup Module Loader|cip.sipcc.d:  &#8211; regAllFailed(): mgmtState=5<br> WRN 15:03:16.255820 JVM: Startup Module Loader|JPlatUi:  &#8211; platformResetReq: resetRequest type=2</p>
 <p>One key thing is that each sip account is different and they both use different ports 5063 and 5062 but the server is the same, matching the settings on the server for each line.  I did try and put them both on the same port, but that didn&#8217;t work either.</p>
 <p>Everything works if I just use one or the other.  Any ideas?</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=150#respond" data-commentid="150" data-postid="882" data-belowelement="div-comment-150" data-respondelement="respond" data-replyto="Reply to Chris" aria-label="Reply to Chris">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-odd thread-alt depth-1 id="comment-151"><div id="div-comment-151" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/5ac0d06eac3cbc2e4ec38dd36dd79dac?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/5ac0d06eac3cbc2e4ec38dd36dd79dac?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -683,8 +667,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> April 18, 2018 <span>at 9:00 am</span>
 </div>
 <p>Mr. WILL COOKE   please i need your help i have Cisco Phone and its firmware SIP and i want to change it to SCCP can you help me please ?</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=151#respond" data-commentid="151" data-postid="882" data-belowelement="div-comment-151" data-respondelement="respond" data-replyto="Reply to Muayad" aria-label="Reply to Muayad">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-even depth-1 id="comment-152"><div id="div-comment-152" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/8643ae1bfc0299f4b3619e7e10e1d412?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8643ae1bfc0299f4b3619e7e10e1d412?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -696,8 +679,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </div>
 <p>Hi good day<br> I thank you very much for your contribution to make this tutorial I followed it at the foot<br> and the firmware went up without problems but when making the configuration of the sip file<br> As you mention, I have these errors that I post when sending the files to the phone and I do not know what it could be, could you please help me by giving me some indication that I should correct</p>
 <p>Connection received from 192.168.3.2 on port 52076 [27/04 14:40:40.172]<br> Read request for file . Mode octet [27/04 14:40:40.172]<br> File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:40:40.172]<br> Connection received from 192.168.3.2 on port 51644 [27/04 14:41:11.072]<br> Read request for file . Mode octet [27/04 14:41:11.072]<br> Using local port 57768 [27/04 14:41:11.072]<br> : sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:41:11.103]<br> Connection received from 192.168.3.2 on port 51366 [27/04 14:42:14.778]<br> Read request for file . Mode octet [27/04 14:42:14.778]<br> File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:14.778]<br> Connection received from 192.168.3.2 on port 49532 [27/04 14:42:45.468]<br> Read request for file . Mode octet [27/04 14:42:45.468]<br> File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:42:45.468]<br> Connection received from 192.168.3.2 on port 51186 [27/04 14:43:16.168]<br> Read request for file . Mode octet [27/04 14:43:16.168]<br> File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:43:16.168]<br> Connection received from 192.168.3.2 on port 52421 [27/04 14:43:46.984]<br> Read request for file . Mode octet [27/04 14:43:46.984]<br> Using local port 62389 [27/04 14:43:46.984]<br> : sent 15 blks, 7604 bytes in 0 s. 0 blk resent [27/04 14:43:46.999]<br> Connection received from 192.168.3.2 on port 52761 [27/04 14:44:49.282]<br> Read request for file . Mode octet [27/04 14:44:49.282]<br> File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:44:49.282]<br> Connection received from 192.168.3.2 on port 51344 [27/04 14:45:19.984]<br> Read request for file . Mode octet [27/04 14:45:19.984]<br> File  : error 2 in system call CreateFile El sistema no puede encontrar el archivo especificado. [27/04 14:45:19.984]</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=152#respond" data-commentid="152" data-postid="882" data-belowelement="div-comment-152" data-respondelement="respond" data-replyto="Reply to Bladimir Sampayo" aria-label="Reply to Bladimir Sampayo">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-odd thread-alt depth-1 parent id="comment-153"><div id="div-comment-153" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/a1bcb121c6bc6ea4b605c62088831d5e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/a1bcb121c6bc6ea4b605c62088831d5e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -710,8 +692,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Thanks for this post, it helped me after countless hours of trying to get 7961G running.</p>
 <p>Weird thing though, the phone registered to a VoIP provider only when I set the transport protocol to TCP. UDP just didn&#8217;t work. I spoke with the provider and they told me I&#8217;m rejecting the UDP packets coming back from them.</p>
 <p>So I&#8217;ve tried to forward ports, even putting the phone to DMZ, no luck. Maybe there are more settings related to using UDP?</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=153#respond" data-commentid="153" data-postid="882" data-belowelement="div-comment-153" data-respondelement="respond" data-replyto="Reply to AM" aria-label="Reply to AM">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass odd alt depth-2 id="comment-159"><div id="div-comment-159" class="comment-body"><div class="comment-description">
@@ -723,8 +704,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> March 3, 2019 <span>at 3:32 pm</span>
 </div>
 <p>I had this exact same problem using FreePBX and pjSIP.  Tried for hours to get the phone to work with the default FreePBX setting of UDP only but then finally tried to enable TCP on the FreePBX side and it starting working instantly.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=159#respond" data-commentid="159" data-postid="882" data-belowelement="div-comment-159" data-respondelement="respond" data-replyto="Reply to Nick D" aria-label="Reply to Nick D">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol> <liclass even thread-even depth-1 id="comment-154"><div id="div-comment-154" class="comment-body"><div class="comment-description">
@@ -743,8 +723,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>&#8211;</p>
 <p></p>
 <p>Thanks so much!</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=154#respond" data-commentid="154" data-postid="882" data-belowelement="div-comment-154" data-respondelement="respond" data-replyto="Reply to Steve Manley" aria-label="Reply to Steve Manley">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-odd thread-alt depth-1 id="comment-155"><div id="div-comment-155" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/9f95e9ac55ecd79894b48afafc54075c?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/9f95e9ac55ecd79894b48afafc54075c?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -760,8 +739,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>User can go to any phone and login to their ext?</p>
 <p>&#8211;</p>
 <p>Thank you again!!!</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=155#respond" data-commentid="155" data-postid="882" data-belowelement="div-comment-155" data-respondelement="respond" data-replyto="Reply to Jonathan" aria-label="Reply to Jonathan">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-even depth-1 id="comment-156"><div id="div-comment-156" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/c34c780710a6676596154d57b133ee65?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c34c780710a6676596154d57b133ee65?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -773,8 +751,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </div>
 <p>Hi everyone,<br> It&#8217;s since July that I try to register my Cisco 7961G on Asterisk, but I can not.<br> I&#8217;ve read the post so many times, but I can not.<br> I have the sip firmware 9.4.2sr3.1s and asterisk 15.4.0 FreePBX 14.0.3.19.<br> I&#8217;m using sepmac.cnf.xml of the copied from this post.</p>
 <p>Who managed to run the cisco 7961g, can send me the configuration.<br> Thank you!</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=156#respond" data-commentid="156" data-postid="882" data-belowelement="div-comment-156" data-respondelement="respond" data-replyto="Reply to Michele Giambra" aria-label="Reply to Michele Giambra">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-odd thread-alt depth-1 id="comment-157"><div id="div-comment-157" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/f751428006454d0002ac75f53b6762c5?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/f751428006454d0002ac75f53b6762c5?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -785,8 +762,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> November 5, 2018 <span>at 8:03 pm</span>
 </div>
 <p>Hello.<br> I have set up a phone server with FreePBX and Asterisk on a Raspberry PI3+ (i&#8217;m using raspbx distro, a complete system) and I have my phones to work with SCCP. I have also set up a phone directory made with PHP. It fetches all phone numbers from the systems MySQL-database, so I don&#8217;t need to add entries manually. So, if I create a new extension, then it will show up in the phonedirectory.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=157#respond" data-commentid="157" data-postid="882" data-belowelement="div-comment-157" data-respondelement="respond" data-replyto="Reply to rolakron" aria-label="Reply to rolakron">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-even depth-1 id="comment-160"><div id="div-comment-160" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/7d05dc77e21f19d2179b2085f8f4b67e?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/7d05dc77e21f19d2179b2085f8f4b67e?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -801,8 +777,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>TFTP shows mk-sip.jat error where do I get this file from, I presume its missing this which is the main cause of the locale issue???<br> Connection received from 192.168.1.51 on port 50544 [24/03 16:50:44.621]<br> Read request for file . Mode octet [24/03 16:50:44.621]<br> Using local port 49705 [24/03 16:50:44.621]<br> : sent 15 blks, 7534 bytes in 0 s. 0 blk resent [24/03 16:50:44.822]<br> Connection received from 192.168.1.51 on port 50769 [24/03 16:51:27.410]<br> Read request for file . Mode octet [24/03 16:51:27.410]<br> File  : error 2 in system call CreateFile The system cannot find the file specified. [24/03 16:51:27.410]<br> Connection received from 192.168.1.51 on port 52626 [24/03 16:52:00.026]<br> Read request for file . Mode octet [24/03 16:52:00.026]<br> Using local port 55186 [24/03 16:52:00.026]<br> : sent 2 blks, 953 bytes in 0 s. 0 blk resent [24/03 16:52:00.048]</p>
 <p>Any help appreciated!</p>
 <p>Thanks<br> BOB</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=160#respond" data-commentid="160" data-postid="882" data-belowelement="div-comment-160" data-respondelement="respond" data-replyto="Reply to bobmclane" aria-label="Reply to bobmclane">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-odd thread-alt depth-1 id="comment-161"><div id="div-comment-161" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/cc147379b3f286af9bf964aea6a8c3f9?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/cc147379b3f286af9bf964aea6a8c3f9?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -813,8 +788,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> April 7, 2019 <span>at 12:02 pm</span>
 </div>
 <p>This piece of work is awesome!!<br> I managed to migrate the all the phones in one single day!!<br> You, sir, make my day!!!<br> Thanks!<br> Just a note: there is a chance the the &#8220;Wallpaper&#8221; section is missing some infos?<br> I followed the instructions, but I was not able to set my custom wallpaper 🙁<br> In any case, great work!</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=161#respond" data-commentid="161" data-postid="882" data-belowelement="div-comment-161" data-respondelement="respond" data-replyto="Reply to Arsenio" aria-label="Reply to Arsenio">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-even depth-1 id="comment-162"><div id="div-comment-162" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/81fb446c4a69049696acb1f868450e16?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/81fb446c4a69049696acb1f868450e16?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -834,8 +808,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Cheers &#8211; John</p>
 <p>A fuller sample of the log from the TFTP server is listed below &#8211;</p>
 <p>Connection received from 192.168.1.82 on port 50869 [13/06 22:42:10.439]<br> Read request for file . Mode octet [13/06 22:42:10.439]<br> File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.439]<br> Connection received from 192.168.1.82 on port 52770 [13/06 22:42:10.533]<br> Read request for file . Mode octet [13/06 22:42:10.533]<br> File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.533]<br> Connection received from 192.168.1.82 on port 49583 [13/06 22:42:10.658]<br> Read request for file . Mode octet [13/06 22:42:10.658]<br> File  : error 2 in system call CreateFile The system cannot find the file specified. [13/06 22:42:10.658]<br> Connection received from 192.168.1.82 on port 52363 [13/06 22:42:10.956]<br> Read request for file . Mode octet [13/06 22:42:10.956]<br> Using local port 60547 [13/06 22:42:10.957]<br> : sent 14 blks, 7057 bytes in 0 s. 0 blk resent [13/06 22:42:10.980]</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=162#respond" data-commentid="162" data-postid="882" data-belowelement="div-comment-162" data-respondelement="respond" data-replyto="Reply to John" aria-label="Reply to John">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-odd thread-alt depth-1 id="comment-163"><div id="div-comment-163" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/f9ad5beffd8adb7384430ca0732dd9b6?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/f9ad5beffd8adb7384430ca0732dd9b6?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -847,8 +820,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </div>
 <p>Thank you so much for this comprehensive how-to. I&#8217;ve got things working between the Cyber Attic and the kitchen after a couple of days wrestling with dhcpd, tftpd etc.</p>
 <p>Current freePBX on raspberry pi uses port 5160 for CHAN_SIP and 5060 for CHAN_PJSP, which I spotted for the SEP[MAC].cnf.xml files. For a while I got error tones when trying to dial, but changing that port number in the FreePBX gui -&gt; Settings -&gt; Asterisk SIP settings seemed to help, or maybe it was the reboot.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=163#respond" data-commentid="163" data-postid="882" data-belowelement="div-comment-163" data-respondelement="respond" data-replyto="Reply to Angus Mackenzie" aria-label="Reply to Angus Mackenzie">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-even depth-1 parent id="comment-164"><div id="div-comment-164" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/c3340728969f6b9723d856b4f3d0fb03?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3340728969f6b9723d856b4f3d0fb03?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -862,8 +834,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Solution is very easy:<br> Enable TCP in FreePBX at Settings =&gt; Asterisk SIP Settings =&gt; SIP Leacy Settings tab =&gt; Activate TCP =&gt; Yes</p>
 <p>Change the config file from above from<br> 2<br> to<br> 1<br> for TCP.</p>
 <p>Done the phone works instantly.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=164#respond" data-commentid="164" data-postid="882" data-belowelement="div-comment-164" data-respondelement="respond" data-replyto="Reply to Dominikk" aria-label="Reply to Dominikk">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass byuser comment-author-will bypostauthor odd alt depth-2 id="comment-165"><div id="div-comment-165" class="comment-body"><div class="comment-description">
@@ -875,8 +846,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> March 24, 2020 <span>at 10:37 am</span>
 </div>
 <p>Thanks Dominikk, that&#8217;s good to know</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=165#respond" data-commentid="165" data-postid="882" data-belowelement="div-comment-165" data-respondelement="respond" data-replyto="Reply to Will Cooke" aria-label="Reply to Will Cooke">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol> <liclass even thread-odd thread-alt depth-1 id="comment-166"><div id="div-comment-166" class="comment-body"><div class="comment-description">
@@ -888,8 +858,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> May 9, 2020 <span>at 1:51 pm</span>
 </div>
 <p>Thank you for your SEPxxx.cnf.xml work for my 7945G SIP45.9-3-1SR4-1S after stuck at registering.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=166#respond" data-commentid="166" data-postid="882" data-belowelement="div-comment-166" data-respondelement="respond" data-replyto="Reply to JD" aria-label="Reply to JD">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-even depth-1 id="comment-167"><div id="div-comment-167" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/56c7310309fc3654fbd899a270ce319f?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/56c7310309fc3654fbd899a270ce319f?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -900,8 +869,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> June 4, 2020 <span>at 2:47 am</span>
 </div>
 <p>Worked like a champ for me.  Asterisk 16 running on FreeNAS (in a jail).  Got several Cisco IP 7941&#8217;s from Goodwill for a few bucks.  Flashed firmware to the SIP firmware you mentioned (it is still the latest on this old model).  Carefully crafted the SEPMAC.cnf.xml file and spent several nights troubleshooting (and being very frustrated). I relied a lot on the Cisco web interface to carefully review the logs.  I think if any addition to your very well done post would be to walk people thru that cause it does give line numbers etc on the XML file parsing errors.  Anyways, thank you again for creating this.  A fun little technical project to keep me occupied in these troubling times.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=167#respond" data-commentid="167" data-postid="882" data-belowelement="div-comment-167" data-respondelement="respond" data-replyto="Reply to Rich Pavlovsky" aria-label="Reply to Rich Pavlovsky">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-odd thread-alt depth-1 id="comment-168"><div id="div-comment-168" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/1b85791be2cdaae04a44a5c419bba362?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1b85791be2cdaae04a44a5c419bba362?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -912,8 +880,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> June 10, 2020 <span>at 2:18 am</span>
 </div>
 <p>Hi. The Mitel PBX I am connecting the 7941 phones to has System Speed Calls. Example 829 is a speed dial for 430829. The Mitel phone recognise the speed dial but the cisco 7941 doesn&#8217;t. Is there a way to configure the phone to recognise system speed calls?</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=168#respond" data-commentid="168" data-postid="882" data-belowelement="div-comment-168" data-respondelement="respond" data-replyto="Reply to Graham Galea" aria-label="Reply to Graham Galea">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-even depth-1 id="comment-169"><div id="div-comment-169" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/af5ad27b7343e8112b26c6357f506e35?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/af5ad27b7343e8112b26c6357f506e35?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -927,8 +894,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>i need help i am using 7941 and 7942 SIP phone but i am unable to load Telephone Directory and Wallpaper as per the above given procedure through TFTP32 application, please be so kind to let me know how can i upload.</p>
 <p>i am using below mention firmware :</p>
 <p>7941 | 7941-7961-sip.8-4-2S<br> 7942 | 7942-7962-sip.8-4-2S</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=169#respond" data-commentid="169" data-postid="882" data-belowelement="div-comment-169" data-respondelement="respond" data-replyto="Reply to Taha Siddiqi" aria-label="Reply to Taha Siddiqi">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass even thread-odd thread-alt depth-1 parent id="comment-170"><div id="div-comment-170" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/a406a1b0f97668c2b555c3d57812a4e0?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/a406a1b0f97668c2b555c3d57812a4e0?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -940,8 +906,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </div>
 <p>Cisco seem to have removed the 7941/7961 firmware from their support section.</p>
 <p>Any chance I could get a copy of the version you are using since it is later than mine?</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=170#respond" data-commentid="170" data-postid="882" data-belowelement="div-comment-170" data-respondelement="respond" data-replyto="Reply to Gareth" aria-label="Reply to Gareth">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div>
 <ol class="children"> <liclass byuser comment-author-will bypostauthor odd alt depth-2 id="comment-171"><div id="div-comment-171" class="comment-body"><div class="comment-description">
@@ -953,8 +918,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> October 19, 2020 <span>at 6:21 pm</span>
 </div>
 <p>Someone seems to have uploaded the files here: <a href="http://s000.tinyupload.com/index.php?file_id=44134296078826321023" rel="nofollow ugc">http://s000.tinyupload.com/index.php?file_id=44134296078826321023</a></p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=171#respond" data-commentid="171" data-postid="882" data-belowelement="div-comment-171" data-respondelement="respond" data-replyto="Reply to Will Cooke" aria-label="Reply to Will Cooke">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass>
 </ol> <liclass even thread-even depth-1 id="comment-6648"><div id="div-comment-6648" class="comment-body"><div class="comment-description">
@@ -966,8 +930,7 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <div class="comment-meta commentmetadata date-post h6"> April 22, 2021 <span>at 5:11 pm</span>
 </div>
 <p>Just found this post/thread.  Looks like excellent work.  I note that the link to the firmware update files is not responding (tinyupload.com site) &#8211; if someone has a different link (or can make one to offer) that would be appreciated.   we have a number of these phones to integrate into our asterisk server.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=6648#respond" data-commentid="6648" data-postid="882" data-belowelement="div-comment-6648" data-respondelement="respond" data-replyto="Reply to Dan Keizer" aria-label="Reply to Dan Keizer">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div> <liclass odd alt thread-odd thread-alt depth-1 id="comment-7480"><div id="div-comment-7480" class="comment-body"><div class="comment-description">
 <div class="comment-author vcard"> <noscript><img alt="" src="https://secure.gravatar.com/avatar/48fa2e89363149a43484c40d5d3ee1a3?s=72&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/48fa2e89363149a43484c40d5d3ee1a3?s=144&#038;d=mm&#038;r=g 2x" class="avatar avatar-72 photo" height="72" width="72"></noscript>
@@ -980,34 +943,11 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Hi there,</p>
 <p>I downloaded the provided firmware here at the current date, but it wouldn&#8217;t upgrade. I searched in the web, found several firmwares, I upgraded to 8.4.2 first, then 8.5.4, then 9.2.1, but whenever I would try to upgrade to the provided 9.4.2RS3 it would fail.<br> In the meanwhile I found this link: <a href="https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares" rel="nofollow ugc">https://git.synchron.com.ua/sysadmin/synchron_voip/-/tree/master/tftp/Cisco_Firmwares</a><br> Which has 9.4.2-1 which worked as well. In the meanwhile I believe that this firmware 9.4.2RS3 here is for another phone model and someone just changed the name of the files, as all other firmwares worked fine on my 7941 phone.</p>
 <p>Thank you for the tutorial, its super and was super helpful nonetheless.</p>
-<div class="reply"> <a rel="nofollow" class="comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/?replytocom=7480#respond" data-commentid="7480" data-postid="882" data-belowelement="div-comment-7480" data-respondelement="respond" data-replyto="Reply to Ricardo" aria-label="Reply to Ricardo">Reply</a>
-</div>
+<div class="reply"></div>
 </div>
 </div></div></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass></liclass>
 </ol>
-<div id="respond" class="comment-respond">
-<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2017/02/23/cisco-7941-asterisk-and-sip/#respond" style="display:none;">Cancel reply</a></small>
-</h3>
-<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
-<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
-<div class="form-group comment-form-comment">
-<label for="comment" class="control-label">Comment</label> <span class="required">*</span><br><textarea rows="8" class="form-control" id="comment" name="comment" aria-required="true"></textarea>
-</div>
-<div class="form-group comment-form-author">
-<label for="author" class="control-label">Name</label> <span class="required">*</span><input class="form-control" id="author" name="author" type="text" value="" size="30" aria-required="true">
-</div>
-<div class="form-group comment-form-email">
-<label for="email" class="control-label">Email</label> <span class="required">*</span><input class="form-control" id="email" name="email" type="text" value="" size="30" aria-required="true">
-</div>
-<div class="form-group comment-form-url">
-<label for="url" class="control-label">Website</label><input class="form-control" id="url" name="url" type="text" value="" size="30">
-</div>
-<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="882" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
-<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f441f83fad"></p>
-<input type="hidden" id="ak_js" name="ak_js" value="164"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
-</form>
-</div>
+<p class="no-comments">Comments are closed.</p>
 </div>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -1075,8 +1015,6 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -1094,11 +1032,6 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -1172,15 +1105,6 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
 </div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
-</ul>
-</div>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
@@ -1191,6 +1115,6 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </div></div></footer>
 </div> <noscript><style>.lazyload{display:none;}</style></noscript>
 <script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src="/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=2.8.4"></script> <script type="text/javascript" id="emmet-script-js-extra">var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
-var template_directory_uri = {"url":"https:\/\/www.whizzy.org\/wp-content\/themes\/emmet-lite"};</script> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_0c4e6943d595a4b301cbebfdd35003d5.js"></script>
+var template_directory_uri = {"url":"https:\/\/www.whizzy.org\/wp-content\/themes\/emmet-lite"};</script> <script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_78789ca997016d9e81ffd10b2fcdec4f.js"></script>
 </body>
 </html>

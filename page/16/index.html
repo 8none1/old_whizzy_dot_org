@@ -47,7 +47,7 @@
 <p>It seems SMSq or Asterisk is quite picky about who sends the SMS.  If I tired to send an SMS as myself it would fail, and then clog up /var/spool/asterisk/sms/motx with undead SMSes.</p>
 <p>If I run smsq as the same user as Asterisk is running as it works (once you&#8217;ve deleted all the crap out of motx directory.</p>
 <p>Just need to work out why now.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 15, 2010</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2010/10/15/smsq-no-call-scheduled-as-already-sending/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/uncategorized/" rel="category tag">Uncategorized</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 15, 2010</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/uncategorized/" rel="category tag">Uncategorized</a>
 </div></footer></article><article id="post-297" class="post-in-blog post post-297 type-post status-publish format-standard hentry category-linux"><header class="entry-header"><h2 class="entry-title"> <a href="/2010/10/06/getting-nut-to-talk-to-liebertpsp-ups/" rel="bookmark">Getting NUT to talk to LiebertPSP UPS</a>
 </h2></header><section class="entry entry-content"><p>I got hold of a couple of LiebertPSP UPSes and connected to my servers.  They&#8217;re perfectly good for what I need them for, namely stopping my servers having the rug pulled out from underneath them with no notice if there is a power cut.</p>
 <p>They don&#8217;t appear to have advanced functions like switching off the load independently of the supply which means you can&#8217;t power down the servers and then have the UPS switch them back on again once the power is restored and the battery has had a chance to charge, but I can live without that sort of thing.</p>
@@ -109,12 +109,12 @@
 <p>Search hints:</p>
 <p>Vendor ID: 0x10af</p>
 <p>Product ID: 0x0001</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 6, 2010</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2010/10/06/getting-nut-to-talk-to-liebertpsp-ups/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 6, 2010</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a>
 </div></footer></article><article id="post-299" class="post-in-blog post post-299 type-post status-publish format-standard hentry category-linux category-making-the-world-a-better-place"><header class="entry-header"><h2 class="entry-title"> <a href="/2010/09/27/logwatch-smart-monitoring/" rel="bookmark">LogWatch SMART monitoring</a>
 </h2></header><section class="entry entry-content"><p>Why is one of my boxes reporting SMART data in the LogWatch and the others not?</p>
 <p>I&#8217;d installed smartmontools but it just doesn&#8217;t seem to be working.</p>
 <p>Finally sussed it.   Have a look at /etc/default/smartmontools and enable deamon</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 27, 2010</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2010/09/27/logwatch-smart-monitoring/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 27, 2010</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
 </div></footer></article><nav class="navigation paging-navigation"> <a class="prev page-numbers" href="/page/15/">&laquo; Previous</a> <a class="page-numbers" href="/">1</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/page/14/">14</a> <a class="page-numbers" href="/page/15/">15</a> <span aria-current="page" class="page-numbers current">16</span> <a class="page-numbers" href="/page/17/">17</a> <a class="page-numbers" href="/page/18/">18</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/page/24/">24</a> <a class="next page-numbers" href="/page/17/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -182,8 +182,6 @@
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -201,11 +199,6 @@
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div></div>
@@ -276,15 +269,6 @@
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

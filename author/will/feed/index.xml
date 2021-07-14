@@ -12,7 +12,7 @@
 	<atom:link href="/author/will/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Mon, 03 May 2021 12:57:35 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:22 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -124,7 +124,6 @@
 		<item>
 		<title>DNS over HTTPS in a snap</title>
 		<link>/2019/07/16/dns-over-https-in-a-snap/</link>
-					<comments>/2019/07/16/dns-over-https-in-a-snap/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 16 Jul 2019 20:07:44 +0000</pubDate>
@@ -248,15 +247,12 @@
 <p><a href="https://github.com/8none1/cloudflarednsproxy">https://github.com/8none1/cloudflarednsproxy</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2019/07/16/dns-over-https-in-a-snap/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Whizzy Labs Wireless Sensor</title>
 		<link>/2019/06/11/whizzy-labs-wireless-sensor/</link>
-					<comments>/2019/06/11/whizzy-labs-wireless-sensor/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 11 Jun 2019 15:36:26 +0000</pubDate>
@@ -293,15 +289,12 @@ The Si443x also has a temperature sensor and a wake up timer on board.  However
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2019/06/11/whizzy-labs-wireless-sensor/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Ubuntu Developer Desktop Survey 2019</title>
 		<link>/2019/05/07/ubuntu-developer-desktop-survey-2019/</link>
-					<comments>/2019/05/07/ubuntu-developer-desktop-survey-2019/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 07 May 2019 17:53:31 +0000</pubDate>
@@ -354,8 +347,6 @@ The Si443x also has a temperature sensor and a wake up timer on board.  However
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2019/05/07/ubuntu-developer-desktop-survey-2019/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -1079,7 +1070,6 @@ SIP41.9-4-2SR3-1S.loads</pre>
 		<item>
 		<title>bravialib &#8211; a Python library to abstract the Bravia web API</title>
 		<link>/2016/11/30/bravialib-a-python-library-to-abstract-the-bravia-web-api/</link>
-					<comments>/2016/11/30/bravialib-a-python-library-to-abstract-the-bravia-web-api/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 30 Nov 2016 20:17:01 +0000</pubDate>
@@ -1153,15 +1143,12 @@ SIP41.9-4-2SR3-1S.loads</pre>
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2016/11/30/bravialib-a-python-library-to-abstract-the-bravia-web-api/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>24 hours with Amazon Prime</title>
 		<link>/2016/11/18/24-hours-with-amazon-prime/</link>
-					<comments>/2016/11/18/24-hours-with-amazon-prime/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Fri, 18 Nov 2016 19:05:14 +0000</pubDate>
@@ -1207,8 +1194,6 @@ The selection is ok. It feels like they&#8217;ve taken the time to make it just-
 <p>So all in all you&#8217;re getting what you pay for.  It&#8217;s not amazing value, but neither is it a total rip off.  Someone at Amazon has done their job well.  I would recommend you get it.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2016/11/18/24-hours-with-amazon-prime/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -1328,7 +1313,6 @@ end script</pre>
 		<item>
 		<title>DHCP clients not registering hostnames in DNS automatically</title>
 		<link>/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/</link>
-					<comments>/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 17 Feb 2016 20:43:59 +0000</pubDate>
@@ -1347,8 +1331,6 @@ end script</pre>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -1394,7 +1376,6 @@ end script</pre>
 		<item>
 		<title>Hacking 433Mhz support into a cheap Carbon Monoxide detector</title>
 		<link>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/</link>
-					<comments>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 20 Oct 2015 20:37:27 +0000</pubDate>
@@ -1452,15 +1433,12 @@ end script</pre>
 <p>As with the smoke alarms, this is not my only source of Carbon Monoxide detection.  I&#8217;ve yet to test it&#8217;s sensitivity.  This is considered to be a &#8220;well, if it works, and it turns the boiler off automatically then it&#8217;s certainly worth a go, but I&#8217;m not relying on it&#8221; project.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>My first 10 years with Ubuntu</title>
 		<link>/2015/10/14/10-years-with-ubuntu/</link>
-					<comments>/2015/10/14/10-years-with-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 14 Oct 2015 08:00:57 +0000</pubDate>
@@ -1488,8 +1466,6 @@ end script</pre>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2015/10/14/10-years-with-ubuntu/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -1807,7 +1783,6 @@ echo 8 &gt; /sys/class/net/ppp1/queues/rx-0/rps_cpus</code></pre>
 		<item>
 		<title>Snapping Mosquitto MQTT broker</title>
 		<link>/2015/02/04/snapping-mosquitto-mqtt-broker/</link>
-					<comments>/2015/02/04/snapping-mosquitto-mqtt-broker/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 04 Feb 2015 17:32:44 +0000</pubDate>
@@ -1980,15 +1955,12 @@ client.on_message = on_message</pre>
 armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/" href="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/">https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/</a> (please note, I haven&#8217;t been able to test the ARM version because of a lack of hardware.  If it doesn&#8217;t work let me know and I can fix it.)</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2015/02/04/snapping-mosquitto-mqtt-broker/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Recording screencasts from the Unity 8 Desktop Preview</title>
 		<link>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/</link>
-					<comments>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Thu, 28 Aug 2014 12:33:10 +0000</pubDate>
@@ -2034,8 +2006,6 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -2396,7 +2366,6 @@ Next we create another thing called mapOptions.  The format of this is as per t
 		<item>
 		<title>Combining MythTV and Asterisk</title>
 		<link>/2013/12/15/combining-mythtv-and-asterisk/</link>
-					<comments>/2013/12/15/combining-mythtv-and-asterisk/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Sun, 15 Dec 2013 10:56:04 +0000</pubDate>
@@ -2413,15 +2382,12 @@ Next we create another thing called mapOptions.  The format of this is as per t
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2013/12/15/combining-mythtv-and-asterisk/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Convincing MythTV to tune in to DVB-T2 MUXes</title>
 		<link>/2013/11/25/convincing-mythtv-to-tune-in-to-dvb-t2-muxes/</link>
-					<comments>/2013/11/25/convincing-mythtv-to-tune-in-to-dvb-t2-muxes/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 25 Nov 2013 19:09:38 +0000</pubDate>
@@ -2445,8 +2411,6 @@ Hierarchy:  None</pre>
 <p>If that doesn&#8217;t work, and you know it should (as in you are on the same transmitter) try setting the tuning timeouts higher. Also, just blindly re-trying because &#8220;WHY DOESN&#8217;T IT WORK&#8221; seemed to help.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2013/11/25/convincing-mythtv-to-tune-in-to-dvb-t2-muxes/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -2473,7 +2437,6 @@ Hierarchy:  None</pre>
 		<item>
 		<title>Asterisk UK Caller ID &#038; SMS redux</title>
 		<link>/2013/02/12/asterisk-uk-caller-id-sms-redux/</link>
-					<comments>/2013/02/12/asterisk-uk-caller-id-sms-redux/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 12 Feb 2013 12:41:57 +0000</pubDate>
@@ -2569,15 +2532,12 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 <p>Save that, and in asterisk do a “dialplan reload”. From smsq send an SMS to 00000 saying “register”· If everything works you should get a text file in /var/spool/asterisk/sms/mtrx.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2013/02/12/asterisk-uk-caller-id-sms-redux/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Device control over HDMI via CEC.  libcec FTW.</title>
 		<link>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/</link>
-					<comments>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 26 Nov 2012 15:28:18 +0000</pubDate>
@@ -2640,15 +2600,12 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Fixing &#8220;warning: Please check that your locale settings&#8221;</title>
 		<link>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/</link>
-					<comments>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Thu, 16 Aug 2012 17:01:58 +0000</pubDate>
@@ -2675,8 +2632,6 @@ sudo dpkg-reconfigure locales</pre>
 <p>And you should be all set.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -2840,7 +2795,6 @@ iptables --append FORWARD --in-interface $IF0 -j ACCEPT</pre>
 		<item>
 		<title>Overriding Outbound Dial Command Options</title>
 		<link>/2011/09/05/overriding-outbound-dial-command-options/</link>
-					<comments>/2011/09/05/overriding-outbound-dial-command-options/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 05 Sep 2011 19:03:24 +0000</pubDate>
@@ -2865,15 +2819,12 @@ iptables --append FORWARD --in-interface $IF0 -j ACCEPT</pre>
 <p>A better way might be to look at the dial prefix? I&#8217;ll investigate that option, but for now that will have to do.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/09/05/overriding-outbound-dial-command-options/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>NOOP scheduler &#8211; not worth it for SSD</title>
 		<link>/2011/08/16/noop-scheduler-not-worth-it-for-ssd/</link>
-					<comments>/2011/08/16/noop-scheduler-not-worth-it-for-ssd/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 16 Aug 2011 09:45:33 +0000</pubDate>
@@ -2908,15 +2859,12 @@ iptables --append FORWARD --in-interface $IF0 -j ACCEPT</pre>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/08/16/noop-scheduler-not-worth-it-for-ssd/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Off to pastures new</title>
 		<link>/2011/07/22/off-to-pastures-new/</link>
-					<comments>/2011/07/22/off-to-pastures-new/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Fri, 22 Jul 2011 15:33:27 +0000</pubDate>
@@ -2927,15 +2875,12 @@ iptables --append FORWARD --in-interface $IF0 -j ACCEPT</pre>
 										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400.jpg"><img class="alignnone size-medium wp-image-355" title="tumblr_l56x4xU4ct1qzpwi0o1_400" src="/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400-207x300.jpg" alt="" width="207" height="300" /></a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/07/22/off-to-pastures-new/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>TCP sessions causing lag</title>
 		<link>/2011/07/04/tcp-sessions-causing-lag/</link>
-					<comments>/2011/07/04/tcp-sessions-causing-lag/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 04 Jul 2011 12:06:33 +0000</pubDate>
@@ -2951,15 +2896,12 @@ iptables --append FORWARD --in-interface $IF0 -j ACCEPT</pre>
 <p>Of course, you&#8217;re still at the mercy of the internet connection of whoever hosts the match &#8211; but that&#8217;s beyond your control.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/07/04/tcp-sessions-causing-lag/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Trimming Freesat Channels In MythTV</title>
 		<link>/2011/06/08/trimming-freesat-channels-in-mythtv/</link>
-					<comments>/2011/06/08/trimming-freesat-channels-in-mythtv/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 08 Jun 2011 12:42:58 +0000</pubDate>
@@ -2992,8 +2934,6 @@ iptables --append FORWARD --in-interface $IF0 -j ACCEPT</pre>
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/06/08/trimming-freesat-channels-in-mythtv/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -3062,7 +3002,6 @@ Anyway &#8211; we have the technology to defeat them!</p>
 		<item>
 		<title>Meridian Mail</title>
 		<link>/2011/02/13/meridian-mail/</link>
-					<comments>/2011/02/13/meridian-mail/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Sun, 13 Feb 2011 17:34:26 +0000</pubDate>
@@ -3073,8 +3012,6 @@ Anyway &#8211; we have the technology to defeat them!</p>
 										<content:encoded><![CDATA[<p>Has anyone got a WAV or similar of the lady from Nortel saying &#8220;Meridian Mail.  Mailbox?&#8221;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/02/13/meridian-mail/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -3113,7 +3050,6 @@ Anyway &#8211; we have the technology to defeat them!</p>
 		<item>
 		<title>Asterisk VoIP calls causing PPP to drop on ADSL modems</title>
 		<link>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/</link>
-					<comments>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 18 Oct 2010 15:02:28 +0000</pubDate>
@@ -3133,15 +3069,12 @@ Anyway &#8211; we have the technology to defeat them!</p>
 <p>DrayTek VoIP Asterisk dropping ADSL PPP drop DDoS SIP</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>SMSq No call scheduled as already sending</title>
 		<link>/2010/10/15/smsq-no-call-scheduled-as-already-sending/</link>
-					<comments>/2010/10/15/smsq-no-call-scheduled-as-already-sending/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Fri, 15 Oct 2010 10:06:13 +0000</pubDate>
@@ -3157,15 +3090,12 @@ Anyway &#8211; we have the technology to defeat them!</p>
 <p>Just need to work out why now.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2010/10/15/smsq-no-call-scheduled-as-already-sending/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Getting NUT to talk to LiebertPSP UPS</title>
 		<link>/2010/10/06/getting-nut-to-talk-to-liebertpsp-ups/</link>
-					<comments>/2010/10/06/getting-nut-to-talk-to-liebertpsp-ups/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 06 Oct 2010 16:17:07 +0000</pubDate>
@@ -3235,15 +3165,12 @@ Anyway &#8211; we have the technology to defeat them!</p>
 <p>Product ID: 0x0001</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2010/10/06/getting-nut-to-talk-to-liebertpsp-ups/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>LogWatch SMART monitoring</title>
 		<link>/2010/09/27/logwatch-smart-monitoring/</link>
-					<comments>/2010/09/27/logwatch-smart-monitoring/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 27 Sep 2010 11:09:23 +0000</pubDate>
@@ -3257,8 +3184,6 @@ Anyway &#8211; we have the technology to defeat them!</p>
 <p>Finally sussed it.   Have a look at /etc/default/smartmontools and enable deamon</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2010/09/27/logwatch-smart-monitoring/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

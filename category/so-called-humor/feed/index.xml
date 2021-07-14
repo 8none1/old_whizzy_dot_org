@@ -12,7 +12,7 @@
 	<atom:link href="/category/so-called-humor/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Mon, 26 Oct 2009 17:28:57 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:22 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -45,7 +45,6 @@
 		<item>
 		<title>The Same</title>
 		<link>/2009/09/28/the-same/</link>
-					<comments>/2009/09/28/the-same/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 28 Sep 2009 10:24:43 +0000</pubDate>
@@ -56,8 +55,6 @@
 										<content:encoded><![CDATA[<p><img src="/wp-content/uploads/2009/09/brown.jpg" alt="Brown" title="Brown" width="144" height="196" class="alignnone size-full wp-image-229" /><img src="/wp-content/uploads/2009/09/uppity.jpg" alt="Uppity" title="Uppity" width="180" height="196" class="alignnone size-full wp-image-230" /></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/09/28/the-same/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

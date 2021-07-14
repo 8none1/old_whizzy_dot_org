@@ -12,7 +12,7 @@
 	<atom:link href="/category/arduino/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Sat, 14 Nov 2020 08:51:27 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:11 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,7 +22,6 @@
 	<item>
 		<title>Whizzy Labs Wireless Sensor</title>
 		<link>/2019/06/11/whizzy-labs-wireless-sensor/</link>
-					<comments>/2019/06/11/whizzy-labs-wireless-sensor/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 11 Jun 2019 15:36:26 +0000</pubDate>
@@ -59,15 +58,12 @@ The Si443x also has a temperature sensor and a wake up timer on board.  However
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2019/06/11/whizzy-labs-wireless-sensor/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Hacking 433Mhz support into a cheap Carbon Monoxide detector</title>
 		<link>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/</link>
-					<comments>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 20 Oct 2015 20:37:27 +0000</pubDate>
@@ -125,8 +121,6 @@ The Si443x also has a temperature sensor and a wake up timer on board.  However
 <p>As with the smoke alarms, this is not my only source of Carbon Monoxide detection.  I&#8217;ve yet to test it&#8217;s sensitivity.  This is considered to be a &#8220;well, if it works, and it turns the boiler off automatically then it&#8217;s certainly worth a go, but I&#8217;m not relying on it&#8221; project.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

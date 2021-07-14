@@ -78,14 +78,14 @@
 <p>google.maps.event.addDomListener is provided via the Google APIs and we pass in three pieces of information.  window is the object provided by the browser.  The &#8216;load&#8217; event is actually is separate from the &#8220;onload&#8221; event you might have read about.  The load event signifies that the page is fully rendered and any JavaScript which wants to manipulate the DOM can begin work, and that&#8217;s what we want to do.  We want to swap the empty div with the id of &#8220;map&#8221; with the actual map.  So once the page is indeed loaded the command will execute the &#8220;initialize&#8221; function and all the magic will happen.</p>
 <p>And that&#8217;s it.  We&#8217;re done.  We&#8217;ve got a map on the page centred at our chosen location, and there is a little marker to show a specific part of the map.</p>
 <p>If you compare this to the original <a title="Absolute beginners guide to Google Maps Javascript" href="/2009/05/absolute-beginners-guide-to-google-maps-javascript/">Beginners Guide</a> I think you&#8217;ll say that this new version of the API is even easier to use.  I will try and find time of the next few months to jot down a few notes on doing more interesting things with the map but I hope that this will get you started.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 17, 2013</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2013/12/17/absolute-beginners-guide-to-google-maps-javascript-v3/#comments"><span>2 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 17, 2013</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
 </div></footer></article><article id="post-468" class="post-in-blog post post-468 type-post status-publish format-standard hentry category-asterisk category-linux category-tv"><header class="entry-header"><h2 class="entry-title"> <a href="/2013/12/15/combining-mythtv-and-asterisk/" rel="bookmark">Combining MythTV and Asterisk</a>
 </h2></header><section class="entry entry-content"><p>I&#8217;ve had this idea for a while and with the discovery of the Google Text-to-speech and Voice Recognition AGI scripts from Zaf (<a href="http://zaf.github.io/asterisk-googletts/">http://zaf.github.io/asterisk-googletts/</a> &amp; <a href="http://zaf.github.io/asterisk-speech-recog/">http://zaf.github.io/asterisk-speech-recog/</a>) I&#8217;ve implemented a quick proof-of-concept.</p>
 <p>You can see the results in this YouTube video:</p>
 <p><iframe width="770" height="433" src="https://www.youtube.com/embed/7DMeRVU9hik?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
 <p>Over the next few days I&#8217;ll tidy up the code and write up a blog post about how to do it.  It&#8217;s pretty straight forward though, using APIs provided by Google, MythTV and Asterisk and then just glueing them together.</p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 15, 2013</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2013/12/15/combining-mythtv-and-asterisk/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 15, 2013</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
 </div></footer></article><nav class="navigation paging-navigation"></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -153,8 +153,6 @@
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -172,11 +170,6 @@
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -248,15 +241,6 @@
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

@@ -12,7 +12,7 @@
 	<atom:link href="/category/tv/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Sun, 15 Dec 2013 10:56:04 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:33 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,7 +22,6 @@
 	<item>
 		<title>Combining MythTV and Asterisk</title>
 		<link>/2013/12/15/combining-mythtv-and-asterisk/</link>
-					<comments>/2013/12/15/combining-mythtv-and-asterisk/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Sun, 15 Dec 2013 10:56:04 +0000</pubDate>
@@ -39,15 +38,12 @@
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2013/12/15/combining-mythtv-and-asterisk/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Convincing MythTV to tune in to DVB-T2 MUXes</title>
 		<link>/2013/11/25/convincing-mythtv-to-tune-in-to-dvb-t2-muxes/</link>
-					<comments>/2013/11/25/convincing-mythtv-to-tune-in-to-dvb-t2-muxes/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 25 Nov 2013 19:09:38 +0000</pubDate>
@@ -71,15 +67,12 @@ Hierarchy:  None</pre>
 <p>If that doesn&#8217;t work, and you know it should (as in you are on the same transmitter) try setting the tuning timeouts higher. Also, just blindly re-trying because &#8220;WHY DOESN&#8217;T IT WORK&#8221; seemed to help.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2013/11/25/convincing-mythtv-to-tune-in-to-dvb-t2-muxes/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Device control over HDMI via CEC.  libcec FTW.</title>
 		<link>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/</link>
-					<comments>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 26 Nov 2012 15:28:18 +0000</pubDate>
@@ -142,15 +135,12 @@ Hierarchy:  None</pre>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2012/11/26/device-control-over-hdmi-via-cec-libcec-ftw/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Trimming Freesat Channels In MythTV</title>
 		<link>/2011/06/08/trimming-freesat-channels-in-mythtv/</link>
-					<comments>/2011/06/08/trimming-freesat-channels-in-mythtv/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 08 Jun 2011 12:42:58 +0000</pubDate>
@@ -183,8 +173,6 @@ Hierarchy:  None</pre>
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/06/08/trimming-freesat-channels-in-mythtv/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -220,7 +208,6 @@ Hierarchy:  None</pre>
 		<item>
 		<title>Bandwagons roll</title>
 		<link>/2009/09/28/bandwagons-roll/</link>
-					<comments>/2009/09/28/bandwagons-roll/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 28 Sep 2009 12:55:20 +0000</pubDate>
@@ -235,8 +222,6 @@ This genre has been done before and it&#8217;s been done very very well.  <a hre
 <p>The stylised gardening-cum-cookery show is perfectly well presented.  What isn&#8217;t, and what should be, is a TV series of &#8220;Joe&#8217;s Allotment&#8221;.  A proper vegetable programme with some human aspects to keep the commissioners happy.  I&#8217;m sure there is room in the schedules for something like this, call it Alys&#8217; Naughty Allotment if you think that&#8217;ll help.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/09/28/bandwagons-roll/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -379,7 +364,6 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 		<item>
 		<title>Aspire Revo as a MythTV frontend</title>
 		<link>/2009/06/22/aspire-revo-as-a-mythtv-frontend/</link>
-					<comments>/2009/06/22/aspire-revo-as-a-mythtv-frontend/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 22 Jun 2009 10:34:33 +0000</pubDate>
@@ -409,15 +393,12 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 <p>I think I might buy another one.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/06/22/aspire-revo-as-a-mythtv-frontend/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>DVB-T reception on the cheap</title>
 		<link>/2009/06/18/dvb-t-reception-on-the-cheap/</link>
-					<comments>/2009/06/18/dvb-t-reception-on-the-cheap/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Thu, 18 Jun 2009 16:07:04 +0000</pubDate>
@@ -445,8 +426,6 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 <p>UPDATE:  So here we are two and a bit years later.  I&#8217;ve just found this same tuner in the bottom of a box and plugged it in to my 11.04 Ubuntu machine.  When I plugged it in Ubuntu automatically suggested I download the firmware.  Awesome.  It now &#8220;just works&#8221;.  Well pleased.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/06/18/dvb-t-reception-on-the-cheap/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

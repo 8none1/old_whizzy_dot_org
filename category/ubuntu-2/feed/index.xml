@@ -12,7 +12,7 @@
 	<atom:link href="/category/ubuntu-2/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Sat, 02 Jan 2021 17:45:23 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:11 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -124,7 +124,6 @@
 		<item>
 		<title>DNS over HTTPS in a snap</title>
 		<link>/2019/07/16/dns-over-https-in-a-snap/</link>
-					<comments>/2019/07/16/dns-over-https-in-a-snap/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 16 Jul 2019 20:07:44 +0000</pubDate>
@@ -248,15 +247,12 @@
 <p><a href="https://github.com/8none1/cloudflarednsproxy">https://github.com/8none1/cloudflarednsproxy</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2019/07/16/dns-over-https-in-a-snap/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Ubuntu Developer Desktop Survey 2019</title>
 		<link>/2019/05/07/ubuntu-developer-desktop-survey-2019/</link>
-					<comments>/2019/05/07/ubuntu-developer-desktop-survey-2019/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 07 May 2019 17:53:31 +0000</pubDate>
@@ -309,8 +305,6 @@
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2019/05/07/ubuntu-developer-desktop-survey-2019/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -429,7 +423,6 @@ end script</pre>
 		<item>
 		<title>My first 10 years with Ubuntu</title>
 		<link>/2015/10/14/10-years-with-ubuntu/</link>
-					<comments>/2015/10/14/10-years-with-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 14 Oct 2015 08:00:57 +0000</pubDate>
@@ -457,8 +450,6 @@ end script</pre>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2015/10/14/10-years-with-ubuntu/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -550,7 +541,6 @@ end script</pre>
 		<item>
 		<title>Snapping Mosquitto MQTT broker</title>
 		<link>/2015/02/04/snapping-mosquitto-mqtt-broker/</link>
-					<comments>/2015/02/04/snapping-mosquitto-mqtt-broker/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 04 Feb 2015 17:32:44 +0000</pubDate>
@@ -723,15 +713,12 @@ client.on_message = on_message</pre>
 armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/" href="https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/">https://myapps.developer.ubuntu.com/dev/click-apps/ubuntu/1502/</a> (please note, I haven&#8217;t been able to test the ARM version because of a lack of hardware.  If it doesn&#8217;t work let me know and I can fix it.)</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2015/02/04/snapping-mosquitto-mqtt-broker/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Recording screencasts from the Unity 8 Desktop Preview</title>
 		<link>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/</link>
-					<comments>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Thu, 28 Aug 2014 12:33:10 +0000</pubDate>
@@ -777,8 +764,6 @@ armhf version: <a title="https://myapps.developer.ubuntu.com/dev/click-apps/ubu
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2014/08/28/recording-screencasts-from-the-unity-8-desktop-preview/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

@@ -80,14 +80,14 @@
 <p>google.maps.event.addDomListener is provided via the Google APIs and we pass in three pieces of information.  window is the object provided by the browser.  The &#8216;load&#8217; event is actually is separate from the &#8220;onload&#8221; event you might have read about.  The load event signifies that the page is fully rendered and any JavaScript which wants to manipulate the DOM can begin work, and that&#8217;s what we want to do.  We want to swap the empty div with the id of &#8220;map&#8221; with the actual map.  So once the page is indeed loaded the command will execute the &#8220;initialize&#8221; function and all the magic will happen.</p>
 <p>And that&#8217;s it.  We&#8217;re done.  We&#8217;ve got a map on the page centred at our chosen location, and there is a little marker to show a specific part of the map.</p>
 <p>If you compare this to the original <a title="Absolute beginners guide to Google Maps Javascript" href="/2009/05/absolute-beginners-guide-to-google-maps-javascript/">Beginners Guide</a> I think you&#8217;ll say that this new version of the API is even easier to use.  I will try and find time of the next few months to jot down a few notes on doing more interesting things with the map but I hope that this will get you started.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 17, 2013</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2013/12/17/absolute-beginners-guide-to-google-maps-javascript-v3/#comments"><span>2 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 17, 2013</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
 </div></footer></article><article id="post-159" class="post-in-blog post post-159 type-post status-publish format-standard hentry category-google-maps category-javascript"><header class="entry-header"><h2 class="entry-title"> <a href="/2009/05/29/google-announce-maps-api-version-3/" rel="bookmark">Google announce Maps API version 3</a>
 </h2></header><section class="entry entry-content"><p>In a post on the Google Geo Developers Blog, Mickey Kataria, Product Manager of something &#8211; Google Maps I&#8217;m guessing, announced Google Maps API version 3.  It will move away from the G&#8230;. name space and to the google&#8230;&#8230; name space.  </p>
 <p>What does this mean for you?  Not a lot probably.  I expect that version 3 will still be a long time coming and that version 2 will be around for a while.  Still, it might be worth starting to move your code over to the google name space and the Google loader.</p>
 <p>There are a raft of new features, most interesting to me is the improved support for mobile browsers.</p>
 <p>Anyway, check out the post here:  <a href="http://googlegeodevelopers.blogspot.com/2009/05/announcing-google-maps-api-v3.html">http://googlegeodevelopers.blogspot.com/2009/05/announcing-google-maps-api-v3.html</a></p>
 <p>and the new version 3 API reference:  <a href="http://code.google.com/apis/maps/documentation/v3/reference.html">http://code.google.com/apis/maps/documentation/v3/reference.html</a></p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">May 29, 2009</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2009/05/29/google-announce-maps-api-version-3/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">May 29, 2009</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a>
 </div></footer></article><article id="post-146" class="post-in-blog post post-146 type-post status-publish format-standard hentry category-google-maps category-javascript"><header class="entry-header"><h2 class="entry-title"> <a href="/2009/05/11/absolute-begineers-guide-to-google-maps-javascript-part-2/" rel="bookmark">Absolute beginners guide to Google Maps Javascript Part 2</a>
 </h2></header><section class="entry entry-content"><h1 style="text-align: center;"><span style="color: #339966;">Stop!  This page is out of date.  <a title="Absolute beginners guide to Google Maps JavaScript v3" href="/2013/12/absolute-beginners-guide-to-google-maps-javascript-v3/"><span style="color: #339966;">Read this one first</span></a>.</span></h1>
 <h1></h1>
@@ -318,7 +318,7 @@ return myMarker;
 <p>and then</p>
 <pre class="codestyle">newMarker1.show();</pre>
 <p>Now you got something else to play with. You could use this to show only markers of a particular type. We&#8217;ll cover this next time.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">May 11, 2009</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2009/05/11/absolute-begineers-guide-to-google-maps-javascript-part-2/#comments"><span>3 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">May 11, 2009</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/google-maps/" rel="category tag">Google Maps</a><span>,</span> <a href="/category/javascript/" rel="category tag">Javascript</a>
 </div></footer></article><nav class="navigation paging-navigation"> <span aria-current="page" class="page-numbers current">1</span> <a class="page-numbers" href="/category/javascript/page/2/">2</a> <a class="next page-numbers" href="/category/javascript/page/2/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -386,8 +386,6 @@ return myMarker;
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -405,11 +403,6 @@ return myMarker;
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -481,15 +474,6 @@ return myMarker;
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

@@ -12,7 +12,7 @@
 	<atom:link href="/category/javascript/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Tue, 17 Dec 2013 14:58:55 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:34 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -113,7 +113,6 @@ Next we create another thing called mapOptions.  The format of this is as per t
 		<item>
 		<title>Google announce Maps API version 3</title>
 		<link>/2009/05/29/google-announce-maps-api-version-3/</link>
-					<comments>/2009/05/29/google-announce-maps-api-version-3/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Fri, 29 May 2009 08:57:44 +0000</pubDate>
@@ -129,8 +128,6 @@ Next we create another thing called mapOptions.  The format of this is as per t
 <p>and the new version 3 API reference:  <a href="http://code.google.com/apis/maps/documentation/v3/reference.html">http://code.google.com/apis/maps/documentation/v3/reference.html</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/05/29/google-announce-maps-api-version-3/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

@@ -12,7 +12,7 @@
 	<atom:link href="/category/asterisk/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Mon, 03 May 2021 12:57:35 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:22 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -435,7 +435,6 @@ SIP41.9-4-2SR3-1S.loads</pre>
 		<item>
 		<title>Combining MythTV and Asterisk</title>
 		<link>/2013/12/15/combining-mythtv-and-asterisk/</link>
-					<comments>/2013/12/15/combining-mythtv-and-asterisk/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Sun, 15 Dec 2013 10:56:04 +0000</pubDate>
@@ -452,15 +451,12 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2013/12/15/combining-mythtv-and-asterisk/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Asterisk UK Caller ID &#038; SMS redux</title>
 		<link>/2013/02/12/asterisk-uk-caller-id-sms-redux/</link>
-					<comments>/2013/02/12/asterisk-uk-caller-id-sms-redux/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 12 Feb 2013 12:41:57 +0000</pubDate>
@@ -556,15 +552,12 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 <p>Save that, and in asterisk do a “dialplan reload”. From smsq send an SMS to 00000 saying “register”· If everything works you should get a text file in /var/spool/asterisk/sms/mtrx.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2013/02/12/asterisk-uk-caller-id-sms-redux/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Overriding Outbound Dial Command Options</title>
 		<link>/2011/09/05/overriding-outbound-dial-command-options/</link>
-					<comments>/2011/09/05/overriding-outbound-dial-command-options/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 05 Sep 2011 19:03:24 +0000</pubDate>
@@ -589,8 +582,6 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 <p>A better way might be to look at the dial prefix? I&#8217;ll investigate that option, but for now that will have to do.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/09/05/overriding-outbound-dial-command-options/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

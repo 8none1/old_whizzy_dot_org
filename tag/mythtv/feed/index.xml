@@ -12,7 +12,7 @@
 	<atom:link href="/tag/mythtv/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Mon, 22 Jun 2009 10:34:33 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:33 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,7 +22,6 @@
 	<item>
 		<title>Aspire Revo as a MythTV frontend</title>
 		<link>/2009/06/22/aspire-revo-as-a-mythtv-frontend/</link>
-					<comments>/2009/06/22/aspire-revo-as-a-mythtv-frontend/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 22 Jun 2009 10:34:33 +0000</pubDate>
@@ -52,8 +51,6 @@
 <p>I think I might buy another one.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/06/22/aspire-revo-as-a-mythtv-frontend/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

@@ -57,7 +57,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 14, 2016</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2016/10/14/what-to-do-with-unity-8-now/#comments"><span>1 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a><span>,</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 14, 2016</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a><span>,</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
 </div></footer></article><article id="post-780" class="post-in-blog post post-780 type-post status-publish format-standard hentry category-linux category-making-the-world-a-better-place"><header class="entry-header"><h2 class="entry-title"> <a href="/2016/10/13/apache-20-second-lag-before-serving-pages/" rel="bookmark">Apache &#8211; 20 second lag before serving pages</a>
 </h2></header><section class="entry entry-content"><p><strong>TL;DR</strong>:  There is no such thing as a &#8220;none&#8221; directive in Apache 2.  If you&#8217;ve got &#8220;deny from none&#8221; or &#8220;allow from none&#8221; then you&#8217;re doing DNS lookups on each host that connects regardless of whether you want to or not.</p>
 <p>I was experiencing a very annoying problem trying to serve static HTML pages and CGI scripts from Apache 2 recently.  The problem manifested itself like this:</p>
@@ -81,7 +81,7 @@ Allow from all</pre>
 <p>But, there is <span style="text-decoration: underline;">no such thing as a &#8220;none&#8221; directive</span>.  Apache interprets &#8220;none&#8221; as a host name and so has to look it up to see if it&#8217;s supposed to be blocking it or not, which causes a DNS lookup delays and hostnames to appear in your Apache logs.</p>
 <p>Enlightenment came from here:<a href="http://kb.simplywebhosting.com/idx/6/213/article/"> http://kb.simplywebhosting.com/idx/6/213/article/</a></p>
 <p>There is also a suggestion that inline comments can do the same thing here:  <a href="https://www.drovemebatty.com/wp/entries/11">https://www.drovemebatty.com/wp/entries/11</a></p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 13, 2016</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2016/10/13/apache-20-second-lag-before-serving-pages/#comments"><span>1 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 13, 2016</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
 </div></footer></article><article id="post-684" class="post-in-blog post post-684 type-post status-publish format-standard hentry category-arduino category-iot category-making-the-world-a-better-place"><header class="entry-header"><h2 class="entry-title"> <a href="/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/" rel="bookmark">Hacking 433Mhz support into a cheap Carbon Monoxide detector</a>
 </h2></header><section class="entry entry-content"><p><strong>Skill level:  Easy</strong></p>
 <p>My home automation systems use two mechanisms for communication:  Ethernet (both wired and wireless) and 433MHz OOK radio.</p>
@@ -127,7 +127,7 @@ Allow from all</pre>
 <p>It&#8217;s certainly untidy, but it does the job.  If I had PCB facilities at home I&#8217;m fairly sure it could be made to fit inside the alarm, along with some more holes in the case for ventilation.</p>
 <p>The premise is simple enough.  The Arduino is powered by the 3v3 regulator on the CO alarm PCB.  The cathode of the red alarm LED is connected to pin 2 of the Arduino as an external interrupt.  When the pin goes low the Arduino wakes up and sends it&#8217;s 24bit ID number over the radio which is picked up by the receiver which sends an SMS alert, switches the boiler off, etc.  I&#8217;ve connected the radio transmitter to directly to the 3 x AA batteries (4.5 volts) via a transistor which is switched by a pin on the Arduino.  In standy-by mode the additional equipment draws a fraction of a milliamp and so I&#8217;m not worried about draining the batteries faster.</p>
 <p>As with the smoke alarms, this is not my only source of Carbon Monoxide detection.  I&#8217;ve yet to test it&#8217;s sensitivity.  This is considered to be a &#8220;well, if it works, and it turns the boiler off automatically then it&#8217;s certainly worth a go, but I&#8217;m not relying on it&#8221; project.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 20, 2015</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/arduino/" rel="category tag">Arduino</a><span>,</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 20, 2015</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/arduino/" rel="category tag">Arduino</a><span>,</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
 </div></footer></article><nav class="navigation paging-navigation"> <a class="prev page-numbers" href="/category/making-the-world-a-better-place/">&laquo; Previous</a> <a class="page-numbers" href="/category/making-the-world-a-better-place/">1</a> <span aria-current="page" class="page-numbers current">2</span> <a class="page-numbers" href="/category/making-the-world-a-better-place/page/3/">3</a> <a class="page-numbers" href="/category/making-the-world-a-better-place/page/4/">4</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/category/making-the-world-a-better-place/page/7/">7</a> <a class="next page-numbers" href="/category/making-the-world-a-better-place/page/3/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -195,8 +195,6 @@ Allow from all</pre>
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -214,11 +212,6 @@ Allow from all</pre>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -290,15 +283,6 @@ Allow from all</pre>
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

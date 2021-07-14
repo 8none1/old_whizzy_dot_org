@@ -161,7 +161,7 @@ txgain=0
 <pre>exten =&gt; s,n,Hangup(16)
 
 The SMS application has the option to add a pause which I've set to 1500 ms.  Seems to work.</pre>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 16, 2009</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2009/09/16/asterisk-set-up-in-the-uk-with-sms/#comments"><span>1 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 16, 2009</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
 </div></footer></article><article id="post-184" class="post-in-blog post post-184 type-post status-publish format-standard hentry category-linux category-tv tag-linux tag-mythtv tag-nettop tag-revo tag-ubuntu"><header class="entry-header"><h2 class="entry-title"> <a href="/2009/06/22/aspire-revo-as-a-mythtv-frontend/" rel="bookmark">Aspire Revo as a MythTV frontend</a>
 </h2></header><section class="entry entry-content"><p><strong>It&#8217;s brilliant!</strong></p>
 <p>If you&#8217;re reading this then I will assume you already know about MythTV and you&#8217;ve searched Google to find out if the Aspire Revo box will make a decent MythTV frontend.  In short, yes &#8211; it works fantastically well.</p>
@@ -178,7 +178,7 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 <p>Sound was a bit of a faff &#8211; the Revo has an HDMI connector with the audio path built in.  To hear anything I needed to enable and unmute the IEC958 (spdif) channel and then tell Myth to use ALSA:hdmi for audio.   Ubuntu detected the sound card perfectly well, so trust me when I say you do not need to download a later version of ALSA, you just need to get the settings right.   You might also need to tell your telly to pick up digital audio, not analogue.   I haven&#8217;t got system sounds going down the HDMI just yet , but I don&#8217;t think this will be a problem.</p>
 <p>Summary then;  very very good choice for a small, quiet and cheap frontend that can also double as an Internet browser.</p>
 <p>I think I might buy another one.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">June 22, 2009</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2009/06/22/aspire-revo-as-a-mythtv-frontend/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Tagged with</span> <a href="/tag/linux/" rel="tag">linux</a><span>,</span> <a href="/tag/mythtv/" rel="tag">mythtv</a><span>,</span> <a href="/tag/nettop/" rel="tag">nettop</a><span>,</span> <a href="/tag/revo/" rel="tag">revo</a><span>,</span> <a href="/tag/ubuntu/" rel="tag">ubuntu</a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">June 22, 2009</span> <span class="seporator">/</span> <span>Tagged with</span> <a href="/tag/linux/" rel="tag">linux</a><span>,</span> <a href="/tag/mythtv/" rel="tag">mythtv</a><span>,</span> <a href="/tag/nettop/" rel="tag">nettop</a><span>,</span> <a href="/tag/revo/" rel="tag">revo</a><span>,</span> <a href="/tag/ubuntu/" rel="tag">ubuntu</a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
 </div></footer></article><article id="post-178" class="post-in-blog post post-178 type-post status-publish format-standard hentry category-linux category-tv"><header class="entry-header"><h2 class="entry-title"> <a href="/2009/06/18/dvb-t-reception-on-the-cheap/" rel="bookmark">DVB-T reception on the cheap</a>
 </h2></header><section class="entry entry-content"><p>In an effort to reduce noise and electricity consumption in my living room I&#8217;m removing the current MythTV frontend and replacing it with an Aspire Revo.</p>
 <p>The box under the telly at the moment is a dual-core Pentium 4 somethingorother running at about 2Gz in a nice looking &#8220;media&#8221; case.   It&#8217;s great and everything, and it decodes HD perfectly well but it has fans on the processor, fans on the video card and fans in the PSU which all add up to a noisy box.</p>
@@ -196,7 +196,7 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 <p>You probably need to bear in mind that if you apply any future kernel/driver updates from Ubuntu then your drivers might get over written.  There&#8217;s a change that the new version of the Ubuntu drivers will include the required AF9015 driver, but it might not.  Also, you probably don&#8217;t need to compile all the drivers, just the ones for the AF9015 and QT1010 modules.  I&#8217;ll look in to this, and if you promise to be good I&#8217;ll provide a nice little package with everything in.</p>
 <p>&nbsp;</p>
 <p>UPDATE:  So here we are two and a bit years later.  I&#8217;ve just found this same tuner in the bottom of a box and plugged it in to my 11.04 Ubuntu machine.  When I plugged it in Ubuntu automatically suggested I download the firmware.  Awesome.  It now &#8220;just works&#8221;.  Well pleased.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">June 18, 2009</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2009/06/18/dvb-t-reception-on-the-cheap/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">June 18, 2009</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
 </div></footer></article><nav class="navigation paging-navigation"> <a class="prev page-numbers" href="/category/tv/page/2/">&laquo; Previous</a> <a class="page-numbers" href="/category/tv/">1</a> <a class="page-numbers" href="/category/tv/page/2/">2</a> <span aria-current="page" class="page-numbers current">3</span> <a class="page-numbers" href="/category/tv/page/4/">4</a> <a class="next page-numbers" href="/category/tv/page/4/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -264,8 +264,6 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -283,11 +281,6 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -359,15 +352,6 @@ The SMS application has the option to add a pause which I've set to 1500 ms.  Se
 <li class="cat-item cat-item-13 current-cat"><a aria-current="page" href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

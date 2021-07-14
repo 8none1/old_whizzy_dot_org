@@ -430,14 +430,14 @@ SIP41.9-4-2SR3-1S.loads</pre>
 <p>Watch /var/log/syslog on the machine running the TFTP server.  You&#8217;ll be able to see exactly what files the phone is asking for.  Bear in mind that it does ask for files it doesn&#8217;t strictly need, so don&#8217;t worry too much about file not found errors unless it&#8217;s one of the above.</p>
 <p>Here&#8217;s a final video showing the boot up for a fully configured phone</p>
 <p><iframe title="Fully configured Cisco 7941 connecting to Asterisk via SIP" width="770" height="433" src="https://www.youtube.com/embed/QlLLzbD7pHM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 23, 2017</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2017/02/23/cisco-7941-asterisk-and-sip/#comments"><span>38 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 23, 2017</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
 </div></footer></article><article id="post-468" class="post-in-blog post post-468 type-post status-publish format-standard hentry category-asterisk category-linux category-tv"><header class="entry-header"><h2 class="entry-title"> <a href="/2013/12/15/combining-mythtv-and-asterisk/" rel="bookmark">Combining MythTV and Asterisk</a>
 </h2></header><section class="entry entry-content"><p>I&#8217;ve had this idea for a while and with the discovery of the Google Text-to-speech and Voice Recognition AGI scripts from Zaf (<a href="http://zaf.github.io/asterisk-googletts/">http://zaf.github.io/asterisk-googletts/</a> &amp; <a href="http://zaf.github.io/asterisk-speech-recog/">http://zaf.github.io/asterisk-speech-recog/</a>) I&#8217;ve implemented a quick proof-of-concept.</p>
 <p>You can see the results in this YouTube video:</p>
 <p><iframe width="770" height="433" src="https://www.youtube.com/embed/7DMeRVU9hik?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
 <p>Over the next few days I&#8217;ll tidy up the code and write up a blog post about how to do it.  It&#8217;s pretty straight forward though, using APIs provided by Google, MythTV and Asterisk and then just glueing them together.</p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 15, 2013</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2013/12/15/combining-mythtv-and-asterisk/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 15, 2013</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/tv/" rel="category tag">tv</a>
 </div></footer></article><article id="post-443" class="post-in-blog post post-443 type-post status-publish format-standard hentry category-asterisk"><header class="entry-header"><h2 class="entry-title"> <a href="/2013/02/12/asterisk-uk-caller-id-sms-redux/" rel="bookmark">Asterisk UK Caller ID &#038; SMS redux</a>
 </h2></header><section class="entry entry-content"><p><span style="text-decoration: underline;"><strong>Update 28 Dec 2013:</strong> </span> As far as caller ID goes, I might have been barking up completely the wrong tree here.  Have a look here: <a href="http://forums.digium.com/viewtopic.php?f=1&amp;t=85028">http://forums.digium.com/viewtopic.php?f=1&amp;t=85028</a>.  I&#8217;ve re-implemented that patch for Dahdi and I&#8217;m testing it now.  Get in touch if you want to test it as well.  Once I&#8217;m happy it&#8217;s actually working, I&#8217;ll post it here.</p>
 <p>&nbsp;</p>
@@ -520,7 +520,7 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 ;; to what ever you use. You should see this at the end of the
 ;; from-pstn context in extensions_additional.conf</pre>
 <p>Save that, and in asterisk do a “dialplan reload”. From smsq send an SMS to 00000 saying “register”· If everything works you should get a text file in /var/spool/asterisk/sms/mtrx.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 12, 2013</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2013/02/12/asterisk-uk-caller-id-sms-redux/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 12, 2013</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/asterisk/" rel="category tag">asterisk</a>
 </div></footer></article><nav class="navigation paging-navigation"> <span aria-current="page" class="page-numbers current">1</span> <a class="page-numbers" href="/category/asterisk/page/2/">2</a> <a class="next page-numbers" href="/category/asterisk/page/2/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -588,8 +588,6 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -607,11 +605,6 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -683,15 +676,6 @@ exten =&gt; s,n(dest-ext),Goto(ext-group,1100,1)
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

@@ -12,7 +12,7 @@
 	<atom:link href="/tag/bes/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Wed, 22 Jul 2009 11:42:21 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:33 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,7 +22,6 @@
 	<item>
 		<title>BES 5 Folder Redirection</title>
 		<link>/2009/07/22/bes-5-folder-redirection/</link>
-					<comments>/2009/07/22/bes-5-folder-redirection/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 22 Jul 2009 11:42:21 +0000</pubDate>
@@ -37,8 +36,6 @@
 <p>et voilà.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/07/22/bes-5-folder-redirection/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

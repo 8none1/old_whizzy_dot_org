@@ -12,7 +12,7 @@
 	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>On code and gadgets.</description>
-	<lastBuildDate>Sat, 02 Jan 2021 15:56:14 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Jul 2021 11:40:33 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -22,7 +22,6 @@
 	<item>
 		<title>DNS over HTTPS in a snap</title>
 		<link>/2019/07/16/dns-over-https-in-a-snap/</link>
-					<comments>/2019/07/16/dns-over-https-in-a-snap/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 16 Jul 2019 20:07:44 +0000</pubDate>
@@ -146,8 +145,6 @@
 <p><a href="https://github.com/8none1/cloudflarednsproxy">https://github.com/8none1/cloudflarednsproxy</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2019/07/16/dns-over-https-in-a-snap/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -259,7 +256,6 @@ We will start tracking the Snaps here:<br />
 		<item>
 		<title>Fixing &#8220;warning: Please check that your locale settings&#8221;</title>
 		<link>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/</link>
-					<comments>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Thu, 16 Aug 2012 17:01:58 +0000</pubDate>
@@ -286,15 +282,12 @@ sudo dpkg-reconfigure locales</pre>
 <p>And you should be all set.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2012/08/16/fixing-warning-please-check-that-your-locale-settings/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Off to pastures new</title>
 		<link>/2011/07/22/off-to-pastures-new/</link>
-					<comments>/2011/07/22/off-to-pastures-new/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Fri, 22 Jul 2011 15:33:27 +0000</pubDate>
@@ -305,8 +298,6 @@ sudo dpkg-reconfigure locales</pre>
 										<content:encoded><![CDATA[<p><a href="http://whizzy.org/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400.jpg"><img class="alignnone size-medium wp-image-355" title="tumblr_l56x4xU4ct1qzpwi0o1_400" src="/wp-content/uploads/2011/07/tumblr_l56x4xU4ct1qzpwi0o1_400-207x300.jpg" alt="" width="207" height="300" /></a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/07/22/off-to-pastures-new/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -375,7 +366,6 @@ Anyway &#8211; we have the technology to defeat them!</p>
 		<item>
 		<title>Meridian Mail</title>
 		<link>/2011/02/13/meridian-mail/</link>
-					<comments>/2011/02/13/meridian-mail/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Sun, 13 Feb 2011 17:34:26 +0000</pubDate>
@@ -386,15 +376,12 @@ Anyway &#8211; we have the technology to defeat them!</p>
 										<content:encoded><![CDATA[<p>Has anyone got a WAV or similar of the lady from Nortel saying &#8220;Meridian Mail.  Mailbox?&#8221;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2011/02/13/meridian-mail/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Asterisk VoIP calls causing PPP to drop on ADSL modems</title>
 		<link>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/</link>
-					<comments>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 18 Oct 2010 15:02:28 +0000</pubDate>
@@ -414,15 +401,12 @@ Anyway &#8211; we have the technology to defeat them!</p>
 <p>DrayTek VoIP Asterisk dropping ADSL PPP drop DDoS SIP</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2010/10/18/asterisk-voip-calls-causing-ppp-to-drop-on-adsl-modems/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>SMSq No call scheduled as already sending</title>
 		<link>/2010/10/15/smsq-no-call-scheduled-as-already-sending/</link>
-					<comments>/2010/10/15/smsq-no-call-scheduled-as-already-sending/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Fri, 15 Oct 2010 10:06:13 +0000</pubDate>
@@ -438,8 +422,6 @@ Anyway &#8211; we have the technology to defeat them!</p>
 <p>Just need to work out why now.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2010/10/15/smsq-no-call-scheduled-as-already-sending/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -472,7 +454,6 @@ Anyway &#8211; we have the technology to defeat them!</p>
 		<item>
 		<title>Can&#8217;t use online photo printers from Picasa in Linux?</title>
 		<link>/2010/01/31/cant-use-online-photo-printers-from-picasa-in-linux/</link>
-					<comments>/2010/01/31/cant-use-online-photo-printers-from-picasa-in-linux/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Sun, 31 Jan 2010 10:54:17 +0000</pubDate>
@@ -486,15 +467,12 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 </a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2010/01/31/cant-use-online-photo-printers-from-picasa-in-linux/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>The Same</title>
 		<link>/2009/10/26/the-same-2/</link>
-					<comments>/2009/10/26/the-same-2/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Mon, 26 Oct 2009 17:54:26 +0000</pubDate>
@@ -505,15 +483,12 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 										<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-243" title="Toad" src="/wp-content/uploads/2009/10/toad-300x225.jpg" alt="Toad" width="300" height="225" /><img class="alignnone size-full wp-image-244" title="Griffin" src="/wp-content/uploads/2009/10/thatcunt.jpg" alt="Griffin" width="298" height="298" /></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/10/26/the-same-2/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Tesco web API</title>
 		<link>/2009/08/25/tesco-web-api/</link>
-					<comments>/2009/08/25/tesco-web-api/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Tue, 25 Aug 2009 09:19:34 +0000</pubDate>
@@ -527,8 +502,6 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 <p>It looks like a RESTful API is still in the works, but I&#8217;m going to start playing with it and see what I can do.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/08/25/tesco-web-api/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -556,7 +529,6 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 		<item>
 		<title>BES 5 Folder Redirection</title>
 		<link>/2009/07/22/bes-5-folder-redirection/</link>
-					<comments>/2009/07/22/bes-5-folder-redirection/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Wed, 22 Jul 2009 11:42:21 +0000</pubDate>
@@ -571,8 +543,6 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 <p>et voilà.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/07/22/bes-5-folder-redirection/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
@@ -620,7 +590,6 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 		<item>
 		<title>Ginger Beer</title>
 		<link>/2009/06/05/ginger-beer/</link>
-					<comments>/2009/06/05/ginger-beer/#respond</comments>
 		
 		<dc:creator><![CDATA[will]]></dc:creator>
 		<pubDate>Fri, 05 Jun 2009 19:50:04 +0000</pubDate>
@@ -633,8 +602,6 @@ http://groups.google.com/group/google-labs-picasa-for-linux/msg/42dac98f28485f9e
 										<content:encoded><![CDATA[<p>Sainsbury&#8217;s Ginger Beer has more sneezes in it than Tesco&#8217;s.  That can only be a good thing.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2009/06/05/ginger-beer/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

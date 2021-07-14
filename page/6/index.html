@@ -85,7 +85,7 @@
 <p>It&#8217;s certainly untidy, but it does the job.  If I had PCB facilities at home I&#8217;m fairly sure it could be made to fit inside the alarm, along with some more holes in the case for ventilation.</p>
 <p>The premise is simple enough.  The Arduino is powered by the 3v3 regulator on the CO alarm PCB.  The cathode of the red alarm LED is connected to pin 2 of the Arduino as an external interrupt.  When the pin goes low the Arduino wakes up and sends it&#8217;s 24bit ID number over the radio which is picked up by the receiver which sends an SMS alert, switches the boiler off, etc.  I&#8217;ve connected the radio transmitter to directly to the 3 x AA batteries (4.5 volts) via a transistor which is switched by a pin on the Arduino.  In standy-by mode the additional equipment draws a fraction of a milliamp and so I&#8217;m not worried about draining the batteries faster.</p>
 <p>As with the smoke alarms, this is not my only source of Carbon Monoxide detection.  I&#8217;ve yet to test it&#8217;s sensitivity.  This is considered to be a &#8220;well, if it works, and it turns the boiler off automatically then it&#8217;s certainly worth a go, but I&#8217;m not relying on it&#8221; project.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 20, 2015</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2015/10/20/hacking-433mhz-support-into-a-cheap-carbon-monoxide-detector/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/arduino/" rel="category tag">Arduino</a><span>,</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 20, 2015</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/arduino/" rel="category tag">Arduino</a><span>,</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/making-the-world-a-better-place/" rel="category tag">Making the world a better place</a>
 </div></footer></article><article id="post-685" class="post-in-blog post post-685 type-post status-publish format-standard hentry category-linux category-ubuntu-2"><header class="entry-header"><h2 class="entry-title"> <a href="/2015/10/14/10-years-with-ubuntu/" rel="bookmark">My first 10 years with Ubuntu</a>
 </h2></header><section class="entry entry-content"><p><a href="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg"><noscript><img class="alignleft wp-image-691" src="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg" alt="IMG_1220" width="799" height="132" srcset="/wp-content/uploads/2015/10/IMG_1220.jpg 1005w, /wp-content/uploads/2015/10/IMG_1220-300x50.jpg 300w, /wp-content/uploads/2015/10/IMG_1220-768x127.jpg 768w" sizes="(max-width: 799px) 100vw, 799px"></noscript>
 <img class="lazyload alignleft wp-image-691" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20799%20132%22%3E%3C/svg%3E" data-src="http://whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg" alt="IMG_1220" width="799" height="132" data-srcset="https://www.whizzy.org/wp-content/uploads/2015/10/IMG_1220.jpg 1005w, https://www.whizzy.org/wp-content/uploads/2015/10/IMG_1220-300x50.jpg 300w, https://www.whizzy.org/wp-content/uploads/2015/10/IMG_1220-768x127.jpg 768w" data-sizes="(max-width: 799px) 100vw, 799px"></a></p>
@@ -105,7 +105,7 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 14, 2015</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2015/10/14/10-years-with-ubuntu/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">October 14, 2015</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
 </div></footer></article><article id="post-679" class="post-in-blog post post-679 type-post status-publish format-standard hentry category-ubuntu-2"><header class="entry-header"><h2 class="entry-title"> <a href="/2015/09/14/big-bug-bonanza-16-04-lts/" rel="bookmark">Big Bug Bonanza Ubuntu 16.04 LTS</a>
 </h2></header><section class="entry entry-content"><p>The vast majority of Ubuntu desktop users prefer to stick with a long term support release (<a href="https://wiki.ubuntu.com/LTS">https://wiki.ubuntu.com/LTS</a>) rather than the regular 6 monthly releases, so 16.04 LTS represents the next big upgrade for most Ubuntu users.  16.04 LTS will be running Unity 7 by default as it has done for the last six years and our focus for the Unity 7 stack is fixing bugs which adversely affect the user experience of the desktop.</p>
 <p>Over the years the bug lists for Unity 7 and Compiz have grown to become unmanageable.  To make sure we are focusing on the most important issues we have to do some serious tidying up of the bug lists and we need some help.</p>
@@ -181,7 +181,7 @@
 <p>&nbsp;</p>
 <h2>Ubuntu Online Summit</h2>
 <p>We will have a session at UOS to review how the bug triage is going, discuss our tooling and policy on which bugs to auto-close etc.</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 14, 2015</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2015/09/14/big-bug-bonanza-16-04-lts/#comments"><span>6 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 14, 2015</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
 </div></footer></article><nav class="navigation paging-navigation"> <a class="prev page-numbers" href="/page/5/">&laquo; Previous</a> <a class="page-numbers" href="/">1</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/page/4/">4</a> <a class="page-numbers" href="/page/5/">5</a> <span aria-current="page" class="page-numbers current">6</span> <a class="page-numbers" href="/page/7/">7</a> <a class="page-numbers" href="/page/8/">8</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/page/24/">24</a> <a class="next page-numbers" href="/page/7/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -249,8 +249,6 @@
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -268,11 +266,6 @@
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div></div>
@@ -343,15 +336,6 @@
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>

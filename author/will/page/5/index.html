@@ -71,7 +71,7 @@ end script</pre>
 <p><iframe src="//www.youtube.com/embed/gWUyP-oTRVg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 1, 2016</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2016/09/01/unity-7-low-graphics-mode/#comments"><span>4 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">September 1, 2016</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
 </div></footer></article><article id="post-730" class="post-in-blog post post-730 type-post status-publish format-standard hentry category-iot category-linux category-raspberrypi"><header class="entry-header"><h2 class="entry-title"> <a href="/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/" rel="bookmark">DHCP clients not registering hostnames in DNS automatically</a>
 </h2></header><section class="entry entry-content"><p>To remind myself as much as anything:</p>
 <p>I run a dnsmasq server on my router (which is a <a href="/2015/05/multipathrouting-rasppi2/">Raspberry Pi 2</a>) to handle local DNS, DNS proxying and DHCP. For some reason one of the hosts stopped registering its hostname with the DHCP server, and so I couldn&#8217;t resolve its name to an IP address from other clients on my network.</p>
@@ -80,7 +80,7 @@ end script</pre>
 <p>This is fixed by creating (or editing) <code>/etc/dhcp/dhclient.conf</code> and adding this line:</p>
 <p><code>send host-name = gethostname();</code></p>
 <p>&nbsp;</p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 17, 2016</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2016/02/17/dhcp-clients-not-registering-hostnames-in-dns-automatically/#comments"><span>0 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">February 17, 2016</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/iot/" rel="category tag">IoT</a><span>,</span> <a href="/category/linux/" rel="category tag">linux</a><span>,</span> <a href="/category/raspberrypi/" rel="category tag">RaspberryPi</a>
 </div></footer></article><article id="post-721" class="post-in-blog post post-721 type-post status-publish format-standard hentry category-ubuntu-2"><header class="entry-header"><h2 class="entry-title"> <a href="/2015/12/10/online-searches-in-the-dash-to-be-off-by-default/" rel="bookmark">Online searches in the dash to be off by default.</a>
 </h2></header><section class="entry entry-content"><p><span style="font-weight: 400;">Scopes are a leading feature of the Ubuntu Phone and of Unity 8 in general.  That concept, the story of scopes, started out in Unity 7 and in 12.10 when we added results from online searches to the dash home screen. </span></p>
 <p><span style="font-weight: 400;">Well, we’re making some changes to the Unity 7 Dash searches in 16.04 LTS.  On Unity 8 the Scopes concept has evolved into something which gives the user finer control over what is searched and provides more targeted results.  This functionality cannot be added into Unity 7 and so we’ve taken the decision to gracefully retire some aspects of the Unity 7 online search features.</span></p>
@@ -101,7 +101,7 @@ end script</pre>
 <p><span style="font-weight: 400;">Search results being off by default will not affect previous releases or upgrades, only new installs (i.e. we will not touch your existing settings).  Changes to search results from Amazon &amp; Skimlinks will also only affect 16.04 and beyond.  The removal of the Music Store will be SRU’d back to older supported releases and the option will be removed from the Dash.</span></p>
 <h3><span style="font-weight: 400;">When will this happen?</span></h3>
 <p><span style="font-weight: 400;">We’re preparing the make the changes in the archive, to Unity 7 and to the Online Search servers right now.  This will take a little while to test and roll out.  We’ll let you know once all the changes are in Xenial.</span></p>
-<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 10, 2015</span> <span class="seporator">/</span> <a class="blog-icon underline" href="/2015/12/10/online-searches-in-the-dash-to-be-off-by-default/#comments"><span>33 Comments</span></a> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
+<div class="clearfix"></div></section><footer class="entry-footer"><div class="meta"> <span class="author">Posted by </span><a href="/author/will/" title="Posts by will" rel="author">will</a> <span class="seporator">/</span> <span class="date-post h6">December 10, 2015</span> <span class="seporator">/</span> <span>Posted in</span> <a href="/category/ubuntu-2/" rel="category tag">Ubuntu</a>
 </div></footer></article><nav class="navigation paging-navigation"> <a class="prev page-numbers" href="/author/will/page/4/">&laquo; Previous</a> <a class="page-numbers" href="/author/will/">1</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/author/will/page/3/">3</a> <a class="page-numbers" href="/author/will/page/4/">4</a> <span aria-current="page" class="page-numbers current">5</span> <a class="page-numbers" href="/author/will/page/6/">6</a> <a class="page-numbers" href="/author/will/page/7/">7</a> <span class="page-numbers dots">&hellip;</span> <a class="page-numbers" href="/author/will/page/24/">24</a> <a class="next page-numbers" href="/author/will/page/6/">Next &raquo;</a></nav>
 </div>
 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4"><aside id="sidebar"><div class="widget-area">
@@ -169,8 +169,6 @@ end script</pre>
 </li>
 </ul>
 </div>
-<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="/"> <input type="text" class="search-field" placeholder="Search &#8230;" value="" name="s" title="Search for:"> <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-</form></div>
 <div id="categories-4" class="widget widget_categories">
 <h3 class="widget-title">Categories</h3>
 <ul>
@@ -188,11 +186,6 @@ end script</pre>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
 </ul>
-</div>
-<div id="text-3" class="widget widget_text">
-<h3 class="widget-title">Feeds</h3>
-<div class="textwidget"><p><a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml"><noscript><img style="vertical-align: middle; border: 0;" src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></noscript>
-<img class="lazyload" style="vertical-align: middle; border: 0;" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E" data-src="https://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a> <a href="https://feeds.feedburner.com/Whizzyorg" rel="alternate" type="application/rss+xml">Subscribe in a reader</a></p></div>
 </div>
 </div></aside></div>
 </div></div>
@@ -264,15 +257,6 @@ end script</pre>
 <li class="cat-item cat-item-13"><a href="/category/tv/">tv</a></li>
 <li class="cat-item cat-item-14"><a href="/category/ubuntu-2/">Ubuntu</a></li>
 <li class="cat-item cat-item-15"><a href="/category/uncategorized/">Uncategorized</a></li>
-</ul>
-</div>
-<div id="meta-2" class="widget widget_meta">
-<h4 class="widget-title">Meta</h4>
-<ul>
-<li><a href="/wp-login.php">Log in</a></li>
-<li><a href="/feed/">Entries feed</a></li>
-<li><a href="/comments/feed/">Comments feed</a></li>
-<li><a href="https://en-gb.wordpress.org/">WordPress.org</a></li>
 </ul>
 </div>
 </div>
